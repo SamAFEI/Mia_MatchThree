@@ -13,10 +13,12 @@ public class Board : MonoBehaviour
 
     public TextMeshProUGUI Text;
     public ScrollRect scrollRect;
+    public GameObject Result;
     public Row[] rows;
     public Tile[,] Tiles { get; private set; }
     public bool[,] CanPopTiles { get; private set; } 
     public bool IsBusy { get; private set; }
+    private int currentTrun;
     public int Width => Tiles.GetLength(0);
     public int Height => Tiles.GetLength(1);
 
@@ -30,14 +32,19 @@ public class Board : MonoBehaviour
     private List<(Item, int)> _hitList = new List<(Item, int)>();
     private const float TweenDuration = 0.25f;
     private const float FallDuration = 0.05f;
+    private const int MaxTrun = 40;
+    private const float HitBonus = 0.2f;
+    private int combos;
     private void Awake()
     {
         Instance = this;
         DragTile = null;
+        Result = GameObject.Find("Result");
     }
-
     private void Start()
     {
+        Result.SetActive(false);
+        currentTrun = 1;
         IsBusy = true;
         Tiles = new Tile[rows.Max(row => row.tiles.Length), rows.Length];
 
@@ -51,9 +58,12 @@ public class Board : MonoBehaviour
                 tile.y = y;
 
                 tile.Item = ItemDatabase.Items[Random.Range(0, ItemDatabase.Items.Length)];
+                // Bonus產出的會回寫到物件上 預設0 避免問題
                 tile.Item.level = 0;
+                tile.Item.bonusLevel = 0; 
                 Tiles[x, y] = tile;
                 tile.transform.name = "[" + tile.x + ", " + tile.y + "]";
+                tile.frame.transform.name = "[" + tile.x + ", " + tile.y + "]";
             }
         }
         CanPop(true);
@@ -69,7 +79,7 @@ public class Board : MonoBehaviour
         {
             foreach (Tile tile in Tiles[0, 0].GetConnectedTiles())
             {
-                tile.icon.transform.DOScale(1.25f, TweenDuration).Play();
+                tile.rune.transform.DOScale(1.25f, TweenDuration).Play();
             }
         }
         if (Input.GetKeyDown(KeyCode.S))
@@ -98,6 +108,7 @@ public class Board : MonoBehaviour
 
         if (targetTile.Item != null && CanPop())
         {
+            combos = 0;
             await Pop();
         }
         else
@@ -106,6 +117,21 @@ public class Board : MonoBehaviour
         }
         DragTile = null;
         IsBusy = false;
+        if (currentTrun % 2 == 0)
+        {
+            //EnemyAction
+        }
+        if (currentTrun == MaxTrun || Player.Instance.IsDie)
+        {
+            Result.SetActive(true);
+            BattleResult.Instance.GameResult(false);
+        }
+        if (Enemy.Instance.IsDie)
+        {
+            Result.SetActive(true);
+            BattleResult.Instance.GameResult(true);
+        }
+        currentTrun++;
     }
     public async void SelectTile(Tile tile)
     {
@@ -136,25 +162,32 @@ public class Board : MonoBehaviour
 
     public async Task Swap(Tile tile1, Tile tile2)
     {
-        Image icon1 = tile1.icon;
-        Image icon2 = tile2.icon;
+        Image frame1 = tile1.frame;
+        Image frame2 = tile2.frame;
+        Image rune1 = tile1.rune;
+        Image rune2 = tile2.rune;
 
-        Transform transform1 = icon1.transform;
-        Transform transform2 = icon2.transform;
+        Transform transform1 = frame1.transform;
+        Transform transform2 = frame2.transform;
+        Transform transform11 = rune1.transform;
+        Transform transform22 = rune2.transform;
 
         Sequence sequence = DOTween.Sequence();
 
         sequence.Join(transform1.DOMove(transform2.position, TweenDuration))
-                .Join(transform2.DOMove(transform1.position, TweenDuration));
-
+                .Join(transform2.DOMove(transform1.position, TweenDuration))
+                .Join(transform11.DOMove(transform22.position, TweenDuration))
+                .Join(transform22.DOMove(transform11.position, TweenDuration));
         await sequence.Play()
                     .AsyncWaitForCompletion();
 
         transform1.SetParent(tile2.transform);
         transform2.SetParent(tile1.transform);
 
-        tile1.icon = icon2;
-        tile2.icon = icon1;
+        tile1.frame = frame2;
+        tile2.frame = frame1;
+        tile1.rune = rune2;
+        tile2.rune = rune1;
 
         Item tileItem = tile1.Item;
         tile1.Item = tile2.Item;
@@ -211,6 +244,7 @@ public class Board : MonoBehaviour
                             {
                                 connectedTiles.Add(Tiles[i, _tile.y]);
                             }
+                            _hitList.Add((tile.Item, 8));
                         }
                         else
                         {
@@ -218,6 +252,7 @@ public class Board : MonoBehaviour
                             {
                                 connectedTiles.Add(Tiles[_tile.x, i]);
                             }
+                            _hitList.Add((tile.Item, 7));
                         }
                     }
                     else if (_tile.Item.level == 2)
@@ -230,6 +265,7 @@ public class Board : MonoBehaviour
                         {
                             connectedTiles.Add(Tiles[_tile.x, i]);
                         }
+                        _hitList.Add((tile.Item, 14));
                     }
                 }
                 //一般的消除
@@ -260,7 +296,7 @@ public class Board : MonoBehaviour
         Sequence Sequence = DOTween.Sequence();
         foreach (Tile connectedTile in connectedTiles)
         {
-            Sequence.Join(connectedTile.icon.transform.DOScale(Vector3.one * 1.5f, TweenDuration));
+            Sequence.Join(connectedTile.rune.transform.DOScale(Vector3.one * 1.5f, TweenDuration));
         }
         await Sequence.Play().AsyncWaitForCompletion();
 
@@ -268,7 +304,8 @@ public class Board : MonoBehaviour
         Sequence deflateSequence = DOTween.Sequence();
         foreach (Tile connectedTile in connectedTiles)
         {
-            deflateSequence.Join(connectedTile.icon.transform.DOScale(Vector3.zero, FallDuration));
+            deflateSequence.Join(connectedTile.frame.transform.DOScale(Vector3.zero, FallDuration));
+            deflateSequence.Join(connectedTile.rune.transform.DOScale(Vector3.zero, FallDuration));
         }
         await deflateSequence.Play()
                             .AsyncWaitForCompletion();
@@ -286,7 +323,8 @@ public class Board : MonoBehaviour
         {
             connectedTile.Item = null;
             connectedTile.SetIconAlpha(false);
-            inflateSequence.Join(connectedTile.icon.transform.DOScale(Vector3.one, TweenDuration));
+            inflateSequence.Join(connectedTile.frame.transform.DOScale(Vector3.one, TweenDuration));
+            inflateSequence.Join(connectedTile.rune.transform.DOScale(Vector3.one, TweenDuration));
         }
         await inflateSequence.Play()
                             .AsyncWaitForCompletion();
@@ -335,21 +373,29 @@ public class Board : MonoBehaviour
         {
             Tile tile1 = _tile;
             Tile tile2 = _tile.Bottom;
-            Image icon1 = tile1.icon;
-            Image icon2 = tile2.icon;
+            Image frame1 = tile1.frame;
+            Image frame2 = tile2.frame;
+            Image rune1 = tile1.rune;
+            Image rune2 = tile2.rune;
 
-            Transform transform1 = icon1.transform;
-            Transform transform2 = icon2.transform;
+            Transform transform1 = frame1.transform;
+            Transform transform2 = frame2.transform;
+            Transform transform11 = rune1.transform;
+            Transform transform22 = rune2.transform;
 
             sequence.Join(transform1.DOMove(transform2.position, FallDuration))
-                    .Join(transform2.DOMove(transform1.position, FallDuration));
+                    .Join(transform2.DOMove(transform1.position, FallDuration))
+                    .Join(transform11.DOMove(transform22.position, FallDuration))
+                    .Join(transform22.DOMove(transform11.position, FallDuration));
             //Debug.Log(_tile.name);
 
             transform1.SetParent(tile2.transform);
             transform2.SetParent(tile1.transform);
 
-            tile1.icon = icon2;
-            tile2.icon = icon1;
+            tile1.frame = frame2;
+            tile2.frame = frame1;
+            tile1.rune = rune2;
+            tile2.rune = rune1;
 
             Item tileItem = tile1.Item;
             tile1.Item = tile2.Item;
@@ -374,7 +420,8 @@ public class Board : MonoBehaviour
         {
             _tile.Item = ItemDatabase.Items[Random.Range(0, ItemDatabase.Items.Length)];
             _tile.Item.bonusLevel = 0; // Bonus產出的會回寫到物件上 要改回0
-            sequence.Join(_tile.icon.transform.DOScale(Vector3.one, 0));
+            sequence.Join(_tile.frame.transform.DOScale(Vector3.one, 0));
+            sequence.Join(_tile.rune.transform.DOScale(Vector3.one, 0));
             _tile.SetIconAlpha(true);
             if (_tile.Bottom.Item == null) //下面是空的時要掉落
             {
@@ -423,7 +470,8 @@ public class Board : MonoBehaviour
                 else if (_tile.Item.bonusLevel == 1)
                     _tile.Item = ItemDatabase.YellowBonus[Random.Range(0, ItemDatabase.YellowBonus.Length)];
             }
-            sequence.Join(_tile.icon.transform.DOScale(Vector3.one, TweenDuration));
+            sequence.Join(_tile.frame.transform.DOScale(Vector3.one, TweenDuration));
+            sequence.Join(_tile.rune.transform.DOScale(Vector3.one, TweenDuration));
             _tile.SetIconAlpha(true); 
             _bonusTiles.Remove(_tile);
         }
@@ -437,10 +485,32 @@ public class Board : MonoBehaviour
     {
         List<(Item, int)> list = new List<(Item, int)>();
         list.AddRange(_hitList);
+        float _rate = 1;
         foreach ((Item, int) _hit in list)
         {
-            Text.text += _hit.Item1.color.ToString() + " = " + _hit.Item2 + "\n";
+            float _damage = 100 * Random.Range(0.80f,1.20f);
+            combos++;
+            if (_hit.Item1.color == ItemColorEnum.Green)
+            {
+                
+            }
+            else if (_hit.Item1.color == ItemColorEnum.Blue)
+            {
+
+            }
+            else if (_hit.Item1.color == ItemColorEnum.Yellow)
+            {
+
+            }
+            else if (_hit.Item1.color == ItemColorEnum.Red)
+            {
+
+            }
+            //基礎傷害 * 顆數 * 連擊倍率(1 + combos * 0.1) * 被動加成
+            _damage = _damage * _hit.Item2 * (1 + combos * HitBonus) * _rate;
+            Text.text += _hit.Item1.color.ToString() + " = " + (int)_damage + "\n";
             scrollRect.normalizedPosition = Vector2.zero; //Scroll to Bottom
+            Enemy.Instance.Hurt((int)_damage);
             _hitList.Remove(_hit);
         }
     }

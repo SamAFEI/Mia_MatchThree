@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: tileBlue
   m_EditorClassIdentifier: 
   value: 2
-  sprite: {fileID: 21300000, guid: 9f735eb6569d0af479bf4ef0ecff8915, type: 3}
+  rune: {fileID: 21300000, guid: d9fa8949840afc6488179ad83b98bba2, type: 3}
+  frame: {fileID: 21300000, guid: a0cc9a941c94776439bb01d2a05bb6b1, type: 3}
   color: 2
   isEffectH: 0
   level: 0
+  bonusLevel: 0

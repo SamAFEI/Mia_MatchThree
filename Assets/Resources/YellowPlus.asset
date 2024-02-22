@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: YellowPlus
   m_EditorClassIdentifier: 
   value: 6
-  sprite: {fileID: 21300000, guid: 794f187cbe85d754cac508fe30e338ad, type: 3}
+  rune: {fileID: 21300000, guid: 0e438566cdd447545a93398d1f9d763a, type: 3}
+  frame: {fileID: 21300000, guid: bfcf6685b117dbe499a0685a29498830, type: 3}
   color: 3
+  isEffectH: 0
   level: 2
+  bonusLevel: 0

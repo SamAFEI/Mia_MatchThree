@@ -1,17 +1,16 @@
 ﻿using UnityEngine.UI;
 using UnityEngine;
-using UnityEngine.Experimental.AI;
-
 
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
+
 namespace Assets.Scripts.GUI
 {
     [RequireComponent(typeof(PolygonCollider2D))]
     public class PolygonImage : Image
     {
-        private PolygonCollider2D _polygonCollider; 
+        private PolygonCollider2D _polygonCollider;
         private PolygonCollider2D polygonCollider
         {
             get
@@ -33,7 +32,7 @@ namespace Assets.Scripts.GUI
         {
             return polygonCollider.OverlapPoint(eventCamera.ScreenToWorldPoint(screenPoint));
         }
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         protected override void Reset()
         {
             base.Reset();
@@ -48,9 +47,9 @@ namespace Assets.Scripts.GUI
                 new Vector2(-w,h)
             };
         }
-        #endif
+#endif
     }
-    #if UNITY_EDITOR
+#if UNITY_EDITOR
     [CustomEditor(typeof(PolygonImage), true)]
     public class PolygonImageInspector : Editor
     {
@@ -58,5 +57,5 @@ namespace Assets.Scripts.GUI
         {
         }
     }
-    #endif
+#endif
 }

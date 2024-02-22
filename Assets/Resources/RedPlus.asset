@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: RedPlus
   m_EditorClassIdentifier: 
   value: 5
-  sprite: {fileID: 21300000, guid: e7fe557a1eccd3e45bb24a0c60844cb5, type: 3}
+  rune: {fileID: 21300000, guid: 1599d8f2a6d92284185c93e68e4e9023, type: 3}
+  frame: {fileID: 21300000, guid: f94791fac936d0f42a8e015d774956f6, type: 3}
   color: 0
+  isEffectH: 0
   level: 2
+  bonusLevel: 0

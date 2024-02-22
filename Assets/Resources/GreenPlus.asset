@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: GreenPlus
   m_EditorClassIdentifier: 
   value: 3
-  sprite: {fileID: 21300000, guid: 413b68bd54cf3b44eb32b1268e599e22, type: 3}
+  rune: {fileID: 21300000, guid: d5be18aafe3c0724fad0b94acbeefc15, type: 3}
+  frame: {fileID: 21300000, guid: f06c89f499a019f48b7ce27a9aa18067, type: 3}
   color: 1
+  isEffectH: 0
   level: 2
+  bonusLevel: 0

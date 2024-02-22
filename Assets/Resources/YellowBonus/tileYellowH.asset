@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: tileYellowH
   m_EditorClassIdentifier: 
   value: 6
-  sprite: {fileID: 21300000, guid: 634fd22af828f9142afdb0e5a13c3841, type: 3}
+  rune: {fileID: 21300000, guid: 0cea3ed3c6c3e864099304d7c34bb147, type: 3}
+  frame: {fileID: 21300000, guid: bfcf6685b117dbe499a0685a29498830, type: 3}
   color: 3
   isEffectH: 1
   level: 1
+  bonusLevel: 0

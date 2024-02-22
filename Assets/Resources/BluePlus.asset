@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: BluePlus
   m_EditorClassIdentifier: 
   value: 2
-  sprite: {fileID: 21300000, guid: ebf3c9ad033f74541b47b6200c2628f6, type: 3}
+  rune: {fileID: 21300000, guid: db7a37c65351fa04c84c08d3bfb76225, type: 3}
+  frame: {fileID: 21300000, guid: a0cc9a941c94776439bb01d2a05bb6b1, type: 3}
   color: 2
+  isEffectH: 0
   level: 2
+  bonusLevel: 0

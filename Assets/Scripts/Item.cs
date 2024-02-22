@@ -4,7 +4,8 @@ using UnityEngine;
 public class Item : ScriptableObject
 {
     public int value;
-    public Sprite sprite;
+    public Sprite rune;
+    public Sprite frame;
     public ItemColorEnum color;
     public bool isEffectH = false;
     public int level = 0; //¥Ø«e level

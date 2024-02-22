@@ -20,17 +20,21 @@ public class Tile : MonoBehaviour, IPointerEnterHandler, IPointerDownHandler, IP
             _item = value;
             if (_item != null)
             {
-                icon.sprite = _item.sprite;
+                rune.sprite = _item.rune;
+                frame.sprite = _item.frame;
+                color = _item.color;
             }
             else
             {
-                icon.sprite = null;
+                rune.sprite = null;
+                frame.sprite = null;
             }
         }
     }
-    public Image icon;
-    public RectTransform rectTransform;
+    public Image rune;
+    public Image frame;
     public Button button;
+    public ItemColorEnum color;
 
     public Tile Left => x > 0 ? Board.Instance.Tiles[x - 1, y] : null;
     public Tile Top => y > 0 ? Board.Instance.Tiles[x, y - 1] : null;
@@ -39,8 +43,8 @@ public class Tile : MonoBehaviour, IPointerEnterHandler, IPointerDownHandler, IP
     public Tile[] Neighbours => new[] { Left, Right, Top, Bottom };
     private void Awake()
     {
-        icon = transform.Find("Image").GetComponent<Image>();
-        rectTransform = icon.GetComponent<RectTransform>();
+        frame = this.transform.Find("frame").GetComponent<Image>();
+        rune = frame.transform.Find("rune").GetComponent<Image>();
         button = GetComponent<Button>();
     }
 
@@ -89,11 +93,13 @@ public class Tile : MonoBehaviour, IPointerEnterHandler, IPointerDownHandler, IP
     {
         if (value)
         {
-            icon.color = new Color(icon.color.r, icon.color.g, icon.color.b, 255);
+            rune.color = new Color(rune.color.r, rune.color.g, rune.color.b, 255);
+            frame.color = new Color(frame.color.r, frame.color.g, frame.color.b, 255);
         }
         else
         {
-            icon.color = new Color(icon.color.r, icon.color.g, icon.color.b, 0);
+            rune.color = new Color(rune.color.r, rune.color.g, rune.color.b, 0);
+            frame.color = new Color(frame.color.r, frame.color.g, frame.color.b, 0);
         }
     }
     public bool DoCheckNeighbour(Tile tile)

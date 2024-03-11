@@ -33,7 +33,7 @@ public class Board : MonoBehaviour
     private const float TweenDuration = 0.25f;
     private const float FallDuration = 0.05f;
     private const int MaxTrun = 40;
-    private const float HitBonus = 0.2f;
+    private const float HitBonus = 0.5f;
     private int combos;
     private void Awake()
     {
@@ -43,6 +43,7 @@ public class Board : MonoBehaviour
     }
     private void Start()
     {
+        AudioManager.PlayBattleBGM();
         Result.SetActive(false);
         currentTrun = 1;
         IsBusy = true;
@@ -95,6 +96,10 @@ public class Board : MonoBehaviour
             }
         }
     }
+    private void LateUpdate()
+    {
+        Enemy.Instance.TrunText.text = currentTrun + " / " + MaxTrun;
+    }
 
     #region 交換
     public async void ChangeTile(Tile originTile, Tile targetTile)
@@ -125,11 +130,13 @@ public class Board : MonoBehaviour
         {
             Result.SetActive(true);
             BattleResult.Instance.GameResult(false);
+            return;
         }
         if (Enemy.Instance.IsDie)
         {
             Result.SetActive(true);
             BattleResult.Instance.GameResult(true);
+            return;
         }
         currentTrun++;
     }
@@ -307,6 +314,7 @@ public class Board : MonoBehaviour
             deflateSequence.Join(connectedTile.frame.transform.DOScale(Vector3.zero, FallDuration));
             deflateSequence.Join(connectedTile.rune.transform.DOScale(Vector3.zero, FallDuration));
         }
+        AudioManager.PlayPopFX();
         await deflateSequence.Play()
                             .AsyncWaitForCompletion();
 
@@ -506,8 +514,8 @@ public class Board : MonoBehaviour
             {
 
             }
-            //基礎傷害 * 顆數 * 連擊倍率(1 + combos * 0.1) * 被動加成
-            _damage = _damage * _hit.Item2 * (1 + combos * HitBonus) * _rate;
+            //基礎傷害 * 顆數 * 連擊倍率(1 + combos * 0.5) * 被動加成 * Level
+            _damage = _damage * _hit.Item2 * (1 + combos * HitBonus) * _rate * (_hit.Item1.level+1);
             Text.text += _hit.Item1.color.ToString() + " = " + (int)_damage + "\n";
             scrollRect.normalizedPosition = Vector2.zero; //Scroll to Bottom
             Enemy.Instance.Hurt((int)_damage);

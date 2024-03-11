@@ -6,22 +6,24 @@ using UnityEngine.UI;
 public class Enemy : MonoBehaviour
 {
     public static Enemy Instance { get; private set; }
-    public TextMeshProUGUI HPText;
-    public Image HPMax;
-    public Image HPBar;
-    public int CurrentHP;
-    public int MaxHP;
-    public bool IsDie { get { return CurrentHP <= 0; } }
+    public TextMeshProUGUI TrunText { get; private set; }
+    public TextMeshProUGUI HPText { get; private set; }
+    public Slider HPSlider { get; private set; }
+    public int CurrentHP { get; private set; }
+    public bool IsDie { get { return HPSlider.value <= 0; } }
     private void Awake()
     {
         Instance = this;
-        HPMax = transform.Find("HPMax").GetComponent<Image>();
-        HPBar = HPMax.transform.Find("HPBar").GameObject().GetComponent<Image>();
+        HPSlider = transform.Find("HPSlider").GetComponent<Slider>();
+        HPText = HPSlider.transform.Find("HPText").GameObject().GetComponent<TextMeshProUGUI>();
+        TrunText = transform.Find("TrunText").GetComponent<TextMeshProUGUI>();
     }
     private void Start()
     {
-        MaxHP = 1000;
-        CurrentHP = MaxHP;
+        HPSlider.maxValue = 10000;
+        HPSlider.maxValue = GameManager.Instance.CurrentStage.MaxHP;
+        HPSlider.value = HPSlider.maxValue;
+        CurrentHP = (int)HPSlider.maxValue;
     }
     private void Update()
     {
@@ -33,12 +35,13 @@ public class Enemy : MonoBehaviour
 
     public void Hurt(int _damage)
     {
-        CurrentHP = (int)Mathf.Clamp(CurrentHP - _damage, 0, MaxHP);
+        CurrentHP = (int)Mathf.Clamp(CurrentHP - _damage, 0, HPSlider.maxValue);
     }
     public void UpdateHPBar()
     {
-        float hp = (float)CurrentHP / (float)MaxHP;
-        hp = Mathf.Lerp(HPBar.fillAmount, hp, 0.01f);
-        HPBar.fillAmount = hp;
+        float hp = CurrentHP;
+        hp = Mathf.Lerp(HPSlider.value, hp, 0.1f);
+        HPSlider.value = (int)hp;
+        HPText.text = HPSlider.value + " / " + HPSlider.maxValue;
     }
 }

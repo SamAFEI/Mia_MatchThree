@@ -16,7 +16,7 @@ public class Board : MonoBehaviour
     public GameObject Result;
     public Row[] rows;
     public Tile[,] Tiles { get; private set; }
-    public bool[,] CanPopTiles { get; private set; } 
+    public bool[,] CanPopTiles { get; private set; }
     public bool IsBusy { get; private set; }
     private int currentTrun;
     public int Width => Tiles.GetLength(0);
@@ -30,11 +30,15 @@ public class Board : MonoBehaviour
     private List<Tile> _bonusTiles = new List<Tile>();
     private List<Tile> _moveTiles = new List<Tile>();
     private List<(Item, int)> _hitList = new List<(Item, int)>();
-    private const float TweenDuration = 0.25f;
-    private const float FallDuration = 0.05f;
+    private float TweenDuration = 0.25f;
+    private float FallDuration = 0.05f;
     private const int MaxTrun = 40;
     private const float HitBonus = 0.5f;
     private int combos;
+    public int MaxCombos;
+    public float ATKDown;
+    public float DEFDown;
+    public float Poison;
     private void Awake()
     {
         Instance = this;
@@ -44,6 +48,7 @@ public class Board : MonoBehaviour
     private void Start()
     {
         AudioManager.PlayBattleBGM();
+        TooltipManager.ShowToolTip("");
         Result.SetActive(false);
         currentTrun = 1;
         IsBusy = true;
@@ -58,10 +63,12 @@ public class Board : MonoBehaviour
                 tile.x = x;
                 tile.y = y;
 
-                tile.Item = ItemDatabase.Items[Random.Range(0, ItemDatabase.Items.Length)];
+                Item newItem = ItemDatabase.Items[Random.Range(0, ItemDatabase.Items.Count)];
+                tile.Item = Instantiate(newItem);
                 // Bonus產出的會回寫到物件上 預設0 避免問題
                 tile.Item.level = 0;
-                tile.Item.bonusLevel = 0; 
+                tile.Item.bonusLevel = 0;
+                tile.debuffIndex = ItemDebuffEnum.Non;
                 Tiles[x, y] = tile;
                 tile.transform.name = "[" + tile.x + ", " + tile.y + "]";
                 tile.frame.transform.name = "[" + tile.x + ", " + tile.y + "]";
@@ -91,7 +98,7 @@ public class Board : MonoBehaviour
                 for (int x = 0; x < Width; x++)
                 {
                     Tile tile = rows[y].tiles[x];
-                    tile.transform.name = "[" + tile.x + ", " + tile.y + "]" + " LV"+tile.Item.level;
+                    tile.transform.name = "[" + tile.x + ", " + tile.y + "]" + " LV" + tile.Item.level;
                 }
             }
         }
@@ -99,6 +106,22 @@ public class Board : MonoBehaviour
     private void LateUpdate()
     {
         Enemy.Instance.TrunText.text = currentTrun + " / " + MaxTrun;
+
+        if (!IsBusy && !Result.activeSelf)
+        {
+            if (Enemy.Instance.IsDie)
+            {
+                Result.SetActive(true);
+                BattleResult.Instance.GameResult(true);
+                return;
+            }
+            if (currentTrun == MaxTrun || Player.Instance.IsDie)
+            {
+                Result.SetActive(true);
+                BattleResult.Instance.GameResult(false);
+                return;
+            }
+        }
     }
 
     #region 交換
@@ -115,30 +138,29 @@ public class Board : MonoBehaviour
         {
             combos = 0;
             await Pop();
+            if (!Enemy.Instance.IsDie && currentTrun > 1 && currentTrun % 3 == 1)
+            {
+                if (currentTrun % 6 == 1)
+                {
+                    NewDebuffTiles();
+                }
+
+                if (currentTrun % 3 == 1)
+                {
+                    Enemy.Instance.Attack();
+                }
+            }
+            currentTrun++;
+            SkillManager.UpdateSkillTime();
+            DoPoison();
         }
         else
         {
             await Swap(targetTile, originTile);
         }
+        if (MaxCombos < combos) { MaxCombos = combos; }
         DragTile = null;
         IsBusy = false;
-        if (currentTrun % 2 == 0)
-        {
-            //EnemyAction
-        }
-        if (currentTrun == MaxTrun || Player.Instance.IsDie)
-        {
-            Result.SetActive(true);
-            BattleResult.Instance.GameResult(false);
-            return;
-        }
-        if (Enemy.Instance.IsDie)
-        {
-            Result.SetActive(true);
-            BattleResult.Instance.GameResult(true);
-            return;
-        }
-        currentTrun++;
     }
     public async void SelectTile(Tile tile)
     {
@@ -173,6 +195,8 @@ public class Board : MonoBehaviour
         Image frame2 = tile2.frame;
         Image rune1 = tile1.rune;
         Image rune2 = tile2.rune;
+        Image debuffIcon1 = tile1.debuffIcon;
+        Image debuffIcon2 = tile2.debuffIcon;
 
         Transform transform1 = frame1.transform;
         Transform transform2 = frame2.transform;
@@ -195,10 +219,48 @@ public class Board : MonoBehaviour
         tile2.frame = frame1;
         tile1.rune = rune2;
         tile2.rune = rune1;
+        tile1.debuffIcon = debuffIcon2;
+        tile2.debuffIcon = debuffIcon1;
 
         Item tileItem = tile1.Item;
         tile1.Item = tile2.Item;
         tile2.Item = tileItem;
+    }
+    #endregion
+
+    #region 破壞
+    public async void BreakTile(Tile tile)
+    {
+        if (IsBusy) { return; }
+        IsBusy = true;
+        SkillManager.SetBreakSkill(false);
+        //變大1.5倍
+        Sequence Sequence = DOTween.Sequence();
+        Sequence.Join(tile.rune.transform.DOScale(Vector3.one * 1.5f, TweenDuration));
+        await Sequence.Play().AsyncWaitForCompletion();
+
+        //縮到最小 消失效果
+        Sequence deflateSequence = DOTween.Sequence();
+        deflateSequence.Join(tile.frame.transform.DOScale(Vector3.zero, FallDuration));
+        deflateSequence.Join(tile.rune.transform.DOScale(Vector3.zero, FallDuration));
+        AudioManager.PlayPopFX();
+        await deflateSequence.Play()
+                            .AsyncWaitForCompletion();
+        //清空圖片 設定透明 還原大小
+        Sequence inflateSequence = DOTween.Sequence();
+        tile.Item = null;
+        tile.SetIconAlpha(false);
+        inflateSequence.Join(tile.frame.transform.DOScale(Vector3.one, TweenDuration));
+        inflateSequence.Join(tile.rune.transform.DOScale(Vector3.one, TweenDuration));
+        await inflateSequence.Play()
+                            .AsyncWaitForCompletion();
+
+        await FallTile();
+        if (CanPop())
+        {
+            await Pop();
+        }
+        IsBusy = false;
     }
     #endregion
 
@@ -215,7 +277,8 @@ public class Board : MonoBehaviour
                     {
                         while ((Tiles[x, y].GetConnectedTiles().Skip(1).Count() >= 2))
                         {//有連線就換Tile
-                            Tiles[x, y].Item = ItemDatabase.Items[Random.Range(0, ItemDatabase.Items.Length)];
+                            Item newItem = ItemDatabase.Items[Random.Range(0, ItemDatabase.Items.Count)];
+                            Tiles[x, y].Item = Instantiate(newItem);
                         }
                     }
                     else
@@ -229,27 +292,31 @@ public class Board : MonoBehaviour
     }
     private async Task Pop()
     {
+        DoDebuff();
         List<Tile> connectedTiles = new List<Tile>();
+        List<Tile> bonusConnected = new List<Tile>();
         for (int y = 0; y < Height; y++)
         {
             for (int x = 0; x < Width; x++)
             {
                 Tile tile = Tiles[x, y];
                 List<Tile> tiles = tile.GetConnectedTiles();
-                
+
                 //排除已連線Tile
                 if (connectedTiles.IndexOf(tile) >= 0) continue;
                 if (tiles.Skip(1).Count() < 2) continue;
                 //Bonus的消除
                 foreach (Tile _tile in tiles)
                 {
+                    if (_tile.debuffIndex != ItemDebuffEnum.Non) { continue; }
                     if (_tile.Item.level == 1)
                     {
                         if (_tile.Item.isEffectH)
                         {
                             for (int i = 0; i < Width; i++)
                             {
-                                connectedTiles.Add(Tiles[i, _tile.y]);
+                                bonusConnected.Add(Tiles[i, _tile.y]);
+                                //connectedTiles.Add(Tiles[i, _tile.y]);
                             }
                             _hitList.Add((tile.Item, 8));
                         }
@@ -257,7 +324,8 @@ public class Board : MonoBehaviour
                         {
                             for (int i = 0; i < Height; i++)
                             {
-                                connectedTiles.Add(Tiles[_tile.x, i]);
+                                bonusConnected.Add(Tiles[_tile.x, i]);
+                                //connectedTiles.Add(Tiles[_tile.x, i]);
                             }
                             _hitList.Add((tile.Item, 7));
                         }
@@ -266,11 +334,13 @@ public class Board : MonoBehaviour
                     {
                         for (int i = 0; i < Width; i++)
                         {
-                            connectedTiles.Add(Tiles[i, _tile.y]);
+                            bonusConnected.Add(Tiles[i, _tile.y]);
+                            //connectedTiles.Add(Tiles[i, _tile.y]);
                         }
                         for (int i = 0; i < Height; i++)
                         {
-                            connectedTiles.Add(Tiles[_tile.x, i]);
+                            bonusConnected.Add(Tiles[_tile.x, i]);
+                            //connectedTiles.Add(Tiles[_tile.x, i]);
                         }
                         _hitList.Add((tile.Item, 14));
                     }
@@ -278,6 +348,33 @@ public class Board : MonoBehaviour
                 //一般的消除
                 if (tiles.Count() > 3) //3消以上 產生BounsTile
                 {
+                    bool _isCross = false;
+                    foreach (Tile _tile in tiles)
+                    {
+                        List<Tile> tilesH = new List<Tile>();
+                        List<Tile> tilesV = new List<Tile>();
+                        tilesH.AddRange(_tile.GetConnectedTiles(true));
+                        tilesV.AddRange(_tile.GetConnectedTiles(false));
+                        //交叉的 Tile 產生 BonusTile
+                        if ((tilesH.Count > 2 && tilesV.Count > 2))
+                        {
+                            tile = _tile;
+                            _isCross = true;
+                            break;
+                        }
+                    }
+                    if (!_isCross)
+                    {   //移動的 Tile 產生 BonusTile
+                        foreach (Tile _tile in tiles)
+                        {
+                            if (_moveTiles.IndexOf(_tile) > -1)
+                            {
+                                tile = _tile;
+                                break;
+                            }
+                        }
+                    }
+                    /*
                     //讓有移動的Tile 優先產生BonusTile
                     foreach (Tile _tile in tiles)
                     {   
@@ -287,14 +384,16 @@ public class Board : MonoBehaviour
                             break;
                         }
                     }
+                    */
                     if (tiles.Count() == 4)
                         tile.Item.bonusLevel = 1;
                     if (tiles.Count() > 4)
                         tile.Item.bonusLevel = 2;
                     _bonusTiles.Add(tile);
                 }
-                _hitList.Add( (tile.Item, tiles.Count()) );
+                _hitList.Add((tile.Item, tiles.Count()));
                 connectedTiles.AddRange(tiles);
+                connectedTiles.AddRange(bonusConnected);
                 connectedTiles = connectedTiles.Distinct(new TileCompare()).ToList();
                 _moveTiles.Clear();
             }
@@ -359,7 +458,7 @@ public class Board : MonoBehaviour
                     continue;
                 }
                 //自己有Item or Top沒有Item 不動作
-                if (Tiles[x, y].Item != null || Tiles[x, y].Top.Item == null) 
+                if (Tiles[x, y].Item != null || Tiles[x, y].Top.Item == null)
                 { continue; }
 
                 //自己沒有 Item && Top有Item 可以掉落
@@ -381,10 +480,13 @@ public class Board : MonoBehaviour
         {
             Tile tile1 = _tile;
             Tile tile2 = _tile.Bottom;
+
             Image frame1 = tile1.frame;
             Image frame2 = tile2.frame;
             Image rune1 = tile1.rune;
             Image rune2 = tile2.rune;
+            Image debuffIcon1 = tile1.debuffIcon;
+            Image debuffIcon2 = tile2.debuffIcon;
 
             Transform transform1 = frame1.transform;
             Transform transform2 = frame2.transform;
@@ -404,6 +506,8 @@ public class Board : MonoBehaviour
             tile2.frame = frame1;
             tile1.rune = rune2;
             tile2.rune = rune1;
+            tile1.debuffIcon = debuffIcon2;
+            tile2.debuffIcon = debuffIcon1;
 
             Item tileItem = tile1.Item;
             tile1.Item = tile2.Item;
@@ -426,8 +530,10 @@ public class Board : MonoBehaviour
 
         foreach (Tile _tile in Tiles)
         {
-            _tile.Item = ItemDatabase.Items[Random.Range(0, ItemDatabase.Items.Length)];
+            Item newItem = ItemDatabase.Items[Random.Range(0, ItemDatabase.Items.Count)];
+            _tile.Item = Instantiate(newItem);
             _tile.Item.bonusLevel = 0; // Bonus產出的會回寫到物件上 要改回0
+            _tile.debuffIndex = ItemDebuffEnum.Non;
             sequence.Join(_tile.frame.transform.DOScale(Vector3.one, 0));
             sequence.Join(_tile.rune.transform.DOScale(Vector3.one, 0));
             _tile.SetIconAlpha(true);
@@ -440,51 +546,67 @@ public class Board : MonoBehaviour
         await sequence.Play()
             .AsyncWaitForCompletion();
     }
-
     private async Task NewBounsTile()
     {
         if (_bonusTiles.Count == 0) { return; }
         List<Tile> Tiles = new List<Tile>();
         Tiles.AddRange(_bonusTiles);
         Sequence sequence = DOTween.Sequence();
-
+        Item newItem = new Item();
         foreach (Tile _tile in Tiles)
         {
             if (_tile.Item.color == ItemColorEnum.Red)
             {
                 if (_tile.Item.bonusLevel == 2)
-                    _tile.Item = ItemDatabase.RedPlus;
+                    newItem = ItemDatabase.RedPlus;
                 else if (_tile.Item.bonusLevel == 1)
-                    _tile.Item = ItemDatabase.RedBonus[Random.Range(0, ItemDatabase.RedBonus.Length)];
+                    newItem = ItemDatabase.RedBonus[Random.Range(0, ItemDatabase.RedBonus.Count)];
             }
             else if (_tile.Item.color == ItemColorEnum.Blue)
             {
                 if (_tile.Item.bonusLevel == 2)
-                    _tile.Item = ItemDatabase.BluePlus;
+                    newItem = ItemDatabase.BluePlus;
                 else if (_tile.Item.bonusLevel == 1)
-                    _tile.Item = ItemDatabase.BlueBonus[Random.Range(0, ItemDatabase.BlueBonus.Length)];
+                    newItem = ItemDatabase.BlueBonus[Random.Range(0, ItemDatabase.BlueBonus.Count)];
             }
             else if (_tile.Item.color == ItemColorEnum.Green)
             {
                 if (_tile.Item.bonusLevel == 2)
-                    _tile.Item = ItemDatabase.GreenPlus;
+                    newItem = ItemDatabase.GreenPlus;
                 else if (_tile.Item.bonusLevel == 1)
-                    _tile.Item = ItemDatabase.GreenBonus[Random.Range(0, ItemDatabase.GreenBonus.Length)];
+                    newItem = ItemDatabase.GreenBonus[Random.Range(0, ItemDatabase.GreenBonus.Count)];
             }
             else if (_tile.Item.color == ItemColorEnum.Yellow)
             {
                 if (_tile.Item.bonusLevel == 2)
-                    _tile.Item = ItemDatabase.YellowPlus;
+                    newItem = ItemDatabase.YellowPlus;
                 else if (_tile.Item.bonusLevel == 1)
-                    _tile.Item = ItemDatabase.YellowBonus[Random.Range(0, ItemDatabase.YellowBonus.Length)];
+                    newItem = ItemDatabase.YellowBonus[Random.Range(0, ItemDatabase.YellowBonus.Count)];
             }
+            _tile.Item = Instantiate(newItem);
             sequence.Join(_tile.frame.transform.DOScale(Vector3.one, TweenDuration));
             sequence.Join(_tile.rune.transform.DOScale(Vector3.one, TweenDuration));
-            _tile.SetIconAlpha(true); 
+            _tile.SetIconAlpha(true);
             _bonusTiles.Remove(_tile);
         }
         await sequence.Play()
             .AsyncWaitForCompletion();
+    }
+    private void NewDebuffTiles()
+    {
+        int count = 0;
+        int debuffIndex = Random.Range(1, 4);
+        while (count < 2)
+        {
+            int x = Random.Range(0, Width - 1);
+            int y = Random.Range(0, Height - 1);
+            Item debuffItem = Instantiate(Tiles[x, y].Item);
+            if (debuffItem.debuffIndex != ItemDebuffEnum.Non) { continue; }
+            debuffItem.debuffIndex = (ItemDebuffEnum)debuffIndex;
+            Tiles[x, y].Item = debuffItem;
+            count++;
+        }
+        DoDebuff();
     }
     #endregion
 
@@ -493,34 +615,63 @@ public class Board : MonoBehaviour
     {
         List<(Item, int)> list = new List<(Item, int)>();
         list.AddRange(_hitList);
-        float _rate = 1;
+        float _rate = SkillManager.Instance.ATK;
         foreach ((Item, int) _hit in list)
         {
-            float _damage = 100 * Random.Range(0.80f,1.20f);
+            float _damage = 100 * Random.Range(1.000f, 1.500f);
             combos++;
-            if (_hit.Item1.color == ItemColorEnum.Green)
-            {
-                
-            }
-            else if (_hit.Item1.color == ItemColorEnum.Blue)
-            {
-
-            }
-            else if (_hit.Item1.color == ItemColorEnum.Yellow)
-            {
-
-            }
-            else if (_hit.Item1.color == ItemColorEnum.Red)
-            {
-
-            }
             //基礎傷害 * 顆數 * 連擊倍率(1 + combos * 0.5) * 被動加成 * Level
-            _damage = _damage * _hit.Item2 * (1 + combos * HitBonus) * _rate * (_hit.Item1.level+1);
+            _damage = _damage * _hit.Item2 * (1 + combos * HitBonus) * _rate * (_hit.Item1.level + 1) * SkillManager.Instance.Power * ATKDown;
             Text.text += _hit.Item1.color.ToString() + " = " + (int)_damage + "\n";
             scrollRect.normalizedPosition = Vector2.zero; //Scroll to Bottom
-            Enemy.Instance.Hurt((int)_damage);
+            if (_hit.Item1.color == ItemColorEnum.Green)
+            {
+                Player.Instance.Hurt((int)(_damage * -1));
+            }
+            else
+            {
+                Enemy.Instance.Hurt((int)_damage);
+            }
             _hitList.Remove(_hit);
         }
     }
+    private void DoDebuff()
+    {
+        ATKDown = 1;
+        DEFDown = 1;
+        Poison = 0;
+        for (int y = 0; y < Height; y++)
+        {
+            for (int x = 0; x < Width; x++)
+            {
+                if (Tiles[x, y].debuffIndex == ItemDebuffEnum.ATKDown)
+                {
+                    ATKDown = 0.8f;
+                }
+                else if (Tiles[x, y].debuffIndex == ItemDebuffEnum.DEFDown)
+                {
+                    DEFDown = 1.5f;
+                }
+                else if (Tiles[x, y].debuffIndex == ItemDebuffEnum.Poison)
+                {
+                    Poison = 4000;
+                }
+            }
+        }
+        SkillManager.SetActiveDebuffs(ItemDebuffEnum.ATKDown, ATKDown < 1);
+        SkillManager.SetActiveDebuffs(ItemDebuffEnum.DEFDown, DEFDown > 1);
+        SkillManager.SetActiveDebuffs(ItemDebuffEnum.Poison, Poison > 0);
+    }
+    private void DoPoison()
+    {
+        if (Poison == 0) { return; }
+        Player.Instance.Hurt((int)Poison);
+    }
     #endregion
+
+    public void QuitStage()
+    {
+        Result.SetActive(true);
+        BattleResult.Instance.GameResult(false);
+    }
 }

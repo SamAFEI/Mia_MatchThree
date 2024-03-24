@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class Tile : MonoBehaviour, IPointerEnterHandler, IPointerDownHandler, IPointerUpHandler
+public class Tile : MonoBehaviour, IPointerEnterHandler, IPointerDownHandler, IPointerUpHandler, IPointerExitHandler
 {
     public int x;
     public int y;
@@ -22,19 +22,24 @@ public class Tile : MonoBehaviour, IPointerEnterHandler, IPointerDownHandler, IP
             {
                 rune.sprite = _item.rune;
                 frame.sprite = _item.frame;
+                debuffIndex = _item.debuffIndex;
                 color = _item.color;
             }
             else
             {
                 rune.sprite = null;
                 frame.sprite = null;
+                debuffIndex = ItemDebuffEnum.Non;
             }
         }
     }
     public Image rune;
     public Image frame;
+    public Image debuffIcon;
     public Button button;
     public ItemColorEnum color;
+    public ItemDebuffEnum debuffIndex = ItemDebuffEnum.Non;
+    private List<Sprite> _debuffIcons = new List<Sprite>();
 
     public Tile Left => x > 0 ? Board.Instance.Tiles[x - 1, y] : null;
     public Tile Top => y > 0 ? Board.Instance.Tiles[x, y - 1] : null;
@@ -45,14 +50,27 @@ public class Tile : MonoBehaviour, IPointerEnterHandler, IPointerDownHandler, IP
     {
         frame = this.transform.Find("frame").GetComponent<Image>();
         rune = frame.transform.Find("rune").GetComponent<Image>();
+        debuffIcon = rune.transform.Find("debuffIcon").GetComponent<Image>();
         button = GetComponent<Button>();
     }
 
     private void Start()
     {
+        _debuffIcons.AddRange(SkillManager.Instance.DebuffIcons);
         //button.onClick.AddListener(() => Board.Instance.SelectTile(this));
     }
-
+    private void LateUpdate()
+    {
+        debuffIcon.sprite = _debuffIcons[(int)debuffIndex];
+        if (debuffIndex == ItemDebuffEnum.Non)
+        {
+            debuffIcon.color = new Color(debuffIcon.color.r, debuffIcon.color.g, debuffIcon.color.b, 0); 
+        }
+        else
+        {
+            debuffIcon.color = new Color(debuffIcon.color.r, debuffIcon.color.g, debuffIcon.color.b, 50);
+        }
+    }
     public List<Tile> GetConnectedTiles(List<Tile> exclude = null)
     {
         List<Tile> result = new List<Tile>() { this, };
@@ -66,7 +84,44 @@ public class Tile : MonoBehaviour, IPointerEnterHandler, IPointerDownHandler, IP
             exclude.Add(this);
         }
         if (this.Item == null) { return result; }
-        if (Left != null && Right != null && Left.Item.color == Item.color && Right.Item.color == Item.color)
+
+        List<Tile> resultH = new List<Tile>();
+        List<Tile> resultV = new List<Tile>();
+        //找 水平連線 Tiles 
+        resultH.Clear();
+        resultH.AddRange(GetConnectedTiles(true));
+        if (resultH.Count() > 2)
+        {
+            result.AddRange(resultH);
+            //水平 Tiles 找每個 垂直 Tiles
+            foreach (Tile _tile in resultH)
+            {
+                resultV.Clear();
+                resultV.AddRange(_tile.GetConnectedTiles(false));
+                if (resultV.Count() > 2)
+                {
+                    result.AddRange(resultV);
+                }
+            }
+        }
+        //找 垂直連線 Tiles 
+        resultV.Clear();
+        resultV.AddRange(GetConnectedTiles(false));
+        if (resultV.Count() > 2)
+        {
+            result.AddRange(resultV);
+            //垂直 Tiles 找每個 水平 Tiles
+            foreach (Tile _tile in resultV)
+            {
+                resultH.Clear();
+                resultH.AddRange(_tile.GetConnectedTiles(true));
+                if (resultH.Count() > 2)
+                {
+                    result.AddRange(resultH);
+                }
+            }
+        }
+        /*if (Left != null && Right != null && Left.Item.color == Item.color && Right.Item.color == Item.color)
         {
             result.Add(Left);
             result.AddRange(Right.GetConnectedTiles(exclude));
@@ -75,7 +130,7 @@ public class Tile : MonoBehaviour, IPointerEnterHandler, IPointerDownHandler, IP
         {
             result.Add(Top);
             result.AddRange(Bottom.GetConnectedTiles(exclude));
-        }
+        }*/
 
         /*foreach (Tile neighbour in Neighbours)
         {
@@ -85,6 +140,47 @@ public class Tile : MonoBehaviour, IPointerEnterHandler, IPointerDownHandler, IP
             }
             result.AddRange(neighbour.GetConnectedTiles(exclude));
         }*/
+        //List過濾重複 使用 Distinct (方法很多種)
+        return result.Distinct(new TileCompare()).ToList();
+        //return result.DistinctBy(tile => tile.Index).ToList();
+    }
+    public List<Tile> GetConnectedTiles(bool IsHorizontal, List<Tile> exclude = null)
+    {
+        List<Tile> result = new List<Tile>() { this, };
+
+        if (exclude == null)
+        {
+            exclude = new List<Tile>() { this, };
+        }
+        else
+        {
+            exclude.Add(this);
+        }
+        if (this.Item == null) { return result; }
+
+        if (IsHorizontal)
+        {
+            if (Left != null && Left.Item.color == Item.color && !exclude.Contains(Left))
+            {
+                result.AddRange(Left.GetConnectedTiles(IsHorizontal, exclude));
+            }
+            if (Right != null && Right.Item.color == Item.color && !exclude.Contains(Right))
+            {
+                result.AddRange(Right.GetConnectedTiles(IsHorizontal, exclude));
+            }
+        }
+        else
+        {
+            if (Top != null && Top.Item.color == Item.color && !exclude.Contains(Top))
+            {
+                //result.Add(Top);
+                result.AddRange(Top.GetConnectedTiles(IsHorizontal, exclude));
+            }
+            if (Bottom != null && Bottom.Item.color == Item.color && !exclude.Contains(Bottom))
+            {
+                result.AddRange(Bottom.GetConnectedTiles(IsHorizontal, exclude));
+            }
+        }
         //List過濾重複 使用 Distinct (方法很多種)
         return result.Distinct(new TileCompare()).ToList();
         //return result.DistinctBy(tile => tile.Index).ToList();
@@ -122,10 +218,15 @@ public class Tile : MonoBehaviour, IPointerEnterHandler, IPointerDownHandler, IP
         {
             Board.Instance.ChangeTile(Board.Instance.DragTile, this);
         }
+        GameManager.SetCursorSwap();
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        if (SkillManager.Instance.IsBreakSkill)
+        {
+            Board.Instance.BreakTile(this);
+        }
         if (!Board.Instance.IsBusy)
         {
             Board.Instance.DragTile = this;
@@ -136,5 +237,10 @@ public class Tile : MonoBehaviour, IPointerEnterHandler, IPointerDownHandler, IP
     public void OnPointerUp(PointerEventData eventData)
     {
         Board.Instance.DragTile = null;
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        GameManager.SetCursorDefault();
     }
 }

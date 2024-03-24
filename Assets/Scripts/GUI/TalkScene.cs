@@ -16,8 +16,8 @@ public class TalkScene : MonoBehaviour
     }
     private void Start()
     {
-        Instantiate(Stage.Character, transform.position, Quaternion.identity);
-        string _blockName = "Talk" + Stage.Id;
+        Instantiate(Stage.Data.Character, transform.position, Quaternion.identity);
+        string _blockName = "Talk" + Stage.Data.Id;
         Dialog.ExecuteIfHasBlock(_blockName);
         AudioManager.StopBGM();
     }

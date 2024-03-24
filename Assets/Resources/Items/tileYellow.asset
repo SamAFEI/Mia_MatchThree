@@ -18,4 +18,5 @@ MonoBehaviour:
   color: 3
   isEffectH: 0
   level: 0
-  bonusLevel: 1
+  bonusLevel: 0
+  debuff: 0

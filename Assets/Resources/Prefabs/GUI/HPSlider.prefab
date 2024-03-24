@@ -85,7 +85,7 @@ MonoBehaviour:
   m_Direction: 1
   m_MinValue: 0
   m_MaxValue: 600000
-  m_WholeNumbers: 0
+  m_WholeNumbers: 1
   m_Value: 600000
   m_OnValueChanged:
     m_PersistentCalls:

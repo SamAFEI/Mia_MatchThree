@@ -23,6 +23,9 @@ public class GameManager : MonoBehaviour
     public string CurrentStageBtnName;
     public Stage CurrentStage { get; private set; }
     public static string LoadSceneName;
+    public Texture2D CursorDefault;
+    public Texture2D CursorSwap;
+    public Texture2D CursorBreak;
     private void Awake()
     {
         if (instance != null)
@@ -78,10 +81,33 @@ public class GameManager : MonoBehaviour
     {
         Application.Quit();
     }
+    public static void SetCursorSwap()
+    {
+        if (!SkillManager.Instance.IsBreakSkill)
+        {
+            Cursor.SetCursor(Instance.CursorSwap, new Vector2(21, 21), CursorMode.ForceSoftware);
+        }
+        else
+        {
+            SetCursorBreak();
+        }
+    }
+    public static void SetCursorDefault()
+    {
+        Cursor.SetCursor(Instance.CursorDefault, new Vector2(25, 17), CursorMode.ForceSoftware);
+    }
+    public static void SetCursorBreak()
+    {
+        Cursor.SetCursor(Instance.CursorBreak, new Vector2(23, 21), CursorMode.ForceSoftware);
+    }
     private static void CreateDefault()
     {
         GameObject obj = Resources.Load<GameObject>("Prefabs/Manager/GameManager");
         obj = Instantiate(obj, Vector3.zero, Quaternion.identity);
         instance = obj.GetComponent<GameManager>();
+        Instance.CursorDefault = Resources.Load<Texture2D>("Sprites/GUI/CursorDefault");
+        Instance.CursorSwap = Resources.Load<Texture2D>("Sprites/GUI/CursorSwap");
+        Instance.CursorBreak = Resources.Load<Texture2D>("Sprites/GUI/CursorBreak");
+        SetCursorDefault();
     }
 }

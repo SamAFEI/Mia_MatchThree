@@ -83,7 +83,7 @@ public class AudioManager : MonoBehaviour
     }
     public static void PlayMainBGM()
     {
-        if (Instance.BGMSource.isPlaying) return;
+        if (Instance.BGMSource.clip == Instance.MainBGMClip && Instance.BGMSource.isPlaying) return;
         Instance.BGMSource.clip = Instance.MainBGMClip;
         Instance.BGMSource.Play();
     }

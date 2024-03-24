@@ -10,7 +10,8 @@ public class Enemy : MonoBehaviour
     public TextMeshProUGUI HPText { get; private set; }
     public Slider HPSlider { get; private set; }
     public int CurrentHP { get; private set; }
-    public bool IsDie { get { return HPSlider.value <= 0; } }
+    public int ATK { get; private set; }
+    public bool IsDie { get { return CurrentHP <= 0; } }
     private void Awake()
     {
         Instance = this;
@@ -20,6 +21,7 @@ public class Enemy : MonoBehaviour
     }
     private void Start()
     {
+        ATK = GameManager.Instance.CurrentStage.ATK;
         HPSlider.maxValue = 10000;
         HPSlider.maxValue = GameManager.Instance.CurrentStage.MaxHP;
         HPSlider.value = HPSlider.maxValue;
@@ -39,9 +41,13 @@ public class Enemy : MonoBehaviour
     }
     public void UpdateHPBar()
     {
-        float hp = CurrentHP;
-        hp = Mathf.Lerp(HPSlider.value, hp, 0.1f);
+        float hp = Mathf.Lerp(HPSlider.value, CurrentHP, 0.1f);
         HPSlider.value = (int)hp;
         HPText.text = HPSlider.value + " / " + HPSlider.maxValue;
+    }
+    public void Attack()
+    {
+        float _damage = ATK * Random.Range(0.800f, 1.200f) * Board.Instance.DEFDown;
+        Player.Instance.Hurt((int)_damage);
     }
 }

@@ -51,6 +51,7 @@ public class SettingManager : MonoBehaviour
         BGMVolumeSlider = transform.Find("Area/Menu/BGMVolumeSlider").GetComponent<Slider>();
         SEVolumeSlider = transform.Find("Area/Menu/SEVolumeSlider").GetComponent<Slider>();
         VoiceVolumeSlider = transform.Find("Area/Menu/VoiceVolumeSlider").GetComponent<Slider>();
+        SetAreaActive(false);
     }
     private void Start()
     {

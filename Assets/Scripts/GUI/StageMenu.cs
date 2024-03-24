@@ -3,6 +3,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 
+[DefaultExecutionOrder(200)]
 public class StageMenu : MonoBehaviour
 {
     public List<Button> StageBtns = new List<Button>();
@@ -32,7 +33,6 @@ public class StageMenu : MonoBehaviour
             GameManager.RegisterCurrentStage(CurrentStage);
         }
         CurrentStageBtn.transform.localScale = new Vector2(1.1f, 1.1f);
-        AudioManager.PlayMainBGM();
     }
 
     private void OnClick(Button _sender)

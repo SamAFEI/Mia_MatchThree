@@ -19,3 +19,5 @@ MonoBehaviour:
   isEffectH: 0
   level: 0
   bonusLevel: 0
+  debuffIcon: {fileID: 0}
+  debuff: 0

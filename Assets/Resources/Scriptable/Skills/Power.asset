@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa82f5dc18e503b4cb797c92901f858a, type: 3}
   m_Name: Power
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 21300000, guid: 5322bde9867fcc948a364312fa258c5a, type: 3}
+  Sprite: {fileID: 21300000, guid: e52a3605a14d1d342ab2c6183cab9f86, type: 3}
   Name: Power
   Content: "\u653B\u64CA\u529B\u4E0A\u5347 \u6301\u7E8C2\u56DE\u5408"
   Level: 0

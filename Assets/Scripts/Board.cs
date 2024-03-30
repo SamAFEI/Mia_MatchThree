@@ -403,6 +403,7 @@ public class Board : MonoBehaviour
         foreach (Tile connectedTile in connectedTiles)
         {
             Sequence.Join(connectedTile.rune.transform.DOScale(Vector3.one * 1.5f, TweenDuration));
+            connectedTile.rune.material = connectedTile.Item.GlowMaterial;
         }
         await Sequence.Play().AsyncWaitForCompletion();
 
@@ -412,6 +413,7 @@ public class Board : MonoBehaviour
         {
             deflateSequence.Join(connectedTile.frame.transform.DOScale(Vector3.zero, FallDuration));
             deflateSequence.Join(connectedTile.rune.transform.DOScale(Vector3.zero, FallDuration));
+            connectedTile.rune.material = null;
         }
         AudioManager.PlayPopFX();
         await deflateSequence.Play()

@@ -18,6 +18,7 @@ public class Enemy : MonoBehaviour
         HPSlider = transform.Find("HPSlider").GetComponent<Slider>();
         HPText = HPSlider.transform.Find("HPText").GameObject().GetComponent<TextMeshProUGUI>();
         TrunText = transform.Find("TrunText").GetComponent<TextMeshProUGUI>();
+        GameManager.LoadSceneName = "";
     }
     private void Start()
     {

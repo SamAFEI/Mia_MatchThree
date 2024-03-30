@@ -19,5 +19,5 @@ MonoBehaviour:
   isEffectH: 0
   level: 0
   bonusLevel: 0
-  debuffIcon: {fileID: 0}
-  debuff: 0
+  debuffIndex: 0
+  GlowMaterial: {fileID: 2100000, guid: e8843d527a79566458e2e539241989ff, type: 2}

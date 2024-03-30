@@ -25,7 +25,13 @@ public class AudioManager : MonoBehaviour
     public AudioSource VoiceSource { get; private set; }
     public AudioClip MainBGMClip;
     public AudioClip BattleBGMClip;
+    [Header("消除符文")]
     public AudioClip PopFXClip;
+    [Header("失敗")]
+    public AudioClip FailedClip;
+    [Header("勝利")]
+    public AudioClip VictoryClip;
+    [Header("語音")]
     public AudioClip VoiceClip;
 
     private void Awake()

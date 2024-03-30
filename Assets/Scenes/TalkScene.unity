@@ -259,6 +259,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SayDialog
       objectReference: {fileID: 0}
+    - target: {fileID: 8294266, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 2728702691222403682, guid: 37e7b11042e7a0c4099402d9e8792daf, type: 2}
     - target: {fileID: 11493918, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -398,7 +402,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -811,9 +815,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1813460309}
+  - {fileID: 1813460281}
   selectedCommands:
-  - {fileID: 1813460310}
+  - {fileID: 1813460285}
   variables: []
   description: 
   stepPause: 0
@@ -843,7 +847,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: b410315beddf97f4cade2e1ed3bc54a9, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -944,7 +948,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: b410315beddf97f4cade2e1ed3bc54a9, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -971,7 +975,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 0}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: b410315beddf97f4cade2e1ed3bc54a9, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0

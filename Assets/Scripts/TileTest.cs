@@ -1,0 +1,51 @@
+using UnityEngine;
+using UnityEngine.UI;
+
+public class TileTest : MonoBehaviour
+{
+    public int x;
+    public int y;
+    public string Index { get => x + "," + y; }
+    public Item Item;
+    public Image rune;
+    public Image frame;
+    public Button button;
+    public ItemColorEnum color;
+    public ItemDebuffEnum debuffIndex = ItemDebuffEnum.Non;
+    private void Awake()
+    {
+        frame = this.transform.Find("frame").GetComponent<Image>();
+        rune = frame.transform.Find("rune").GetComponent<Image>();
+        button = GetComponent<Button>();
+    }
+
+    private void Start()
+    {
+        //button.onClick.AddListener(() => Board.Instance.SelectTile(this));
+        if (Item != null)
+        {
+            rune.sprite = Item.rune;
+            frame.sprite = Item.frame;
+            debuffIndex = Item.debuffIndex;
+            color = Item.color;
+            SetIconAlpha(true);
+        }
+    }
+    private void LateUpdate()
+    {
+    }
+    public void SetIconAlpha(bool value)
+    {
+        if (value)
+        {
+            rune.color = new Color(rune.color.r, rune.color.g, rune.color.b, 255);
+            frame.color = new Color(frame.color.r, frame.color.g, frame.color.b, 255);
+        }
+        else
+        {
+            rune.color = new Color(rune.color.r, rune.color.g, rune.color.b, 0);
+            frame.color = new Color(frame.color.r, frame.color.g, frame.color.b, 0);
+        }
+    }
+
+}

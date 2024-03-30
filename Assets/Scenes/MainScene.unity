@@ -3168,7 +3168,7 @@ PrefabInstance:
     - target: {fileID: 485050061086444897, guid: dcb5b0ec8eabc684696995f6a9ed7299, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: ae986fe5f2c78b4418efa6e911e5f5f3, type: 3}
+      objectReference: {fileID: 21300000, guid: 006f487a8c7c96644a2e59999f264b7f, type: 3}
     - target: {fileID: 2372604218731311151, guid: dcb5b0ec8eabc684696995f6a9ed7299, type: 3}
       propertyPath: m_Name
       value: Break

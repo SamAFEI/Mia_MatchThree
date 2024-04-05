@@ -109,7 +109,7 @@ public class SettingManager : MonoBehaviour
     public static void SetSEVolume(float _volume)
     {
         AudioManager.SetSEVolume(_volume);
-        AudioManager.PlayPopFX();
+        AudioManager.PlaySE(SEEnum.Pop);
     }
     public static void SetVoiceVolume(float _volume)
     {

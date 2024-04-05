@@ -8,4 +8,7 @@ public class StageData : ScriptableObject
     public int Id = 0;
     public int ATK = 5000;
     public string AnimName;
+    public string StageName;
+    public bool IsComplete;
+    public StageData PriorStage;
 }

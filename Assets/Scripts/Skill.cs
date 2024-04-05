@@ -15,6 +15,8 @@ public class Skill : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     public TextMeshProUGUI SkillName { get; private set; }
     public TextMeshProUGUI SkillContent { get; private set; }
     public bool IsBattleScene { get { return SceneManager.GetActiveScene().name == "MatchThreeScene"; } }
+    private static LTDescr DelayTime;
+    private string content;
     private void Awake()
     {
         Button = transform.Find("SkillButton").GetComponent<Button>();
@@ -26,14 +28,16 @@ public class Skill : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     private void Start()
     {
         Button.onClick.AddListener(() => { ClickButton(); });
-        SkillImage.sprite = Data.Sprite;
-        SkillName.text = Data.Name;
+        SkillImage.sprite = Data.Sprite; 
+        CDContent.text = "";
+        //SkillName.text = Data.Name;
     }
     private void LateUpdate()
     {
         UpdateContent();
         if (IsBattleScene)
         {
+            SkillContent.text = "";
             CDContent.text = "";
             if (ColdDownTime > 0)
             {
@@ -43,16 +47,14 @@ public class Skill : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         }
         else
         {
-            if (Data.Level == Data.MaxLevel || Data.Cost > SkillManager.Instance.Coin)
-            {
-                Button.interactable = false;
-            }
+            Button.interactable = !(Data.Level == Data.MaxLevel || Data.Cost > SkillManager.Instance.Coin);
         }
     }
     public void UpLevel()
     {
         SkillManager.SetCoin(Data.Cost * -1);
-        Data.UpLevel();
+        Data.UpLevel(); 
+        AudioManager.PlaySE(SEEnum.LevelUp);
     }
     public void DoSkill()
     {
@@ -81,32 +83,47 @@ public class Skill : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         {
             SkillContent.text = SkillContent.text + " $" + Data.Cost;
         }
+
+        content = Data.Content;
+        if (!IsBattleScene)
+        {
+            if (content != "") { content += "\n"; }
+            content += "Level UP $" + Data.Cost + "\n" + Data.LeveContent;
+        }
     }
     public void ClickButton()
     {
+        string content;
+        content = Data.Content;
+        if (content == "") { content = Data.Name; }
         if (IsBattleScene)
         {
-            Confirmation.ShowDioalog(Data.Content,
+            Confirmation.ShowDioalog(content,
                 () => { DoSkill(); },
                 () => { }
             );
         }
         else
         {
-            Confirmation.ShowDioalog(Data.Content, 
+            content = "Level Up $" + Data.Cost + "\n" + Data.LeveContent;
+            Confirmation.ShowDioalog(content, 
                 () => { UpLevel(); },
                 () => { }
             );
         }
     }
 
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        DelayTime = LeanTween.delayedCall(0.5f, () =>
+        {
+            TooltipManager.ShowToolTip(content, Data.Name);
+        });
+    }
     public void OnPointerExit(PointerEventData eventData)
     {
+        LeanTween.cancel(DelayTime.uniqueId);
         TooltipManager.HideToolTip();
     }
 
-    public void OnPointerEnter(PointerEventData eventData)
-    {
-        TooltipManager.ShowToolTip(Data.Content);
-    }
 }

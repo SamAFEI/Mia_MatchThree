@@ -9,6 +9,7 @@ public class TileTest : MonoBehaviour
     public Item Item;
     public Image rune;
     public Image frame;
+    public Image debuffIcon;
     public Button button;
     public ItemColorEnum color;
     public ItemDebuffEnum debuffIndex = ItemDebuffEnum.Non;
@@ -16,6 +17,7 @@ public class TileTest : MonoBehaviour
     {
         frame = this.transform.Find("frame").GetComponent<Image>();
         rune = frame.transform.Find("rune").GetComponent<Image>();
+        debuffIcon = rune.transform.Find("debuffIcon").GetComponent<Image>();
         button = GetComponent<Button>();
     }
 
@@ -26,13 +28,20 @@ public class TileTest : MonoBehaviour
         {
             rune.sprite = Item.rune;
             frame.sprite = Item.frame;
-            debuffIndex = Item.debuffIndex;
             color = Item.color;
             SetIconAlpha(true);
         }
     }
     private void LateUpdate()
     {
+        if (debuffIndex == ItemDebuffEnum.Non)
+        {
+            debuffIcon.color = new Color(debuffIcon.color.r, debuffIcon.color.g, debuffIcon.color.b, 0);
+        }
+        else
+        {
+            debuffIcon.color = new Color(debuffIcon.color.r, debuffIcon.color.g, debuffIcon.color.b, 0.8f);
+        }
     }
     public void SetIconAlpha(bool value)
     {

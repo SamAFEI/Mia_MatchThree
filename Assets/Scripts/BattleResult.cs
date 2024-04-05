@@ -27,10 +27,13 @@ public class BattleResult : MonoBehaviour
         if (isWin)
         {
             txtWin.text = "Victory";
+            AudioManager.PlaySE(SEEnum.Victory);
+            GameManager.CompleteStage();
         }
         else
         {
             txtWin.text = "Failed";
+            AudioManager.PlaySE(SEEnum.Failed);
         }
     }
     public void Continue()

@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8348eb6994cc7c740837177afe39fefa, type: 3}
-  m_Name: tileYellow
+  m_Name: tileBlue
   m_EditorClassIdentifier: 
-  value: 6
-  rune: {fileID: 21300000, guid: 94f0cd79642fcee4e8fc8dc138df5d5f, type: 3}
-  frame: {fileID: 21300000, guid: bfcf6685b117dbe499a0685a29498830, type: 3}
-  color: 3
+  value: 2
+  rune: {fileID: 21300000, guid: d9fa8949840afc6488179ad83b98bba2, type: 3}
+  frame: {fileID: 21300000, guid: a0cc9a941c94776439bb01d2a05bb6b1, type: 3}
+  color: 2
   isEffectH: 0
   level: 0
   bonusLevel: 0
   debuffIndex: 0
-  GlowMaterial: {fileID: 2100000, guid: 8d089349bfa82014085b76e78ea0893c, type: 2}
+  GlowMaterial: {fileID: 2100000, guid: b85321dec3754cb4297658462f616863, type: 2}

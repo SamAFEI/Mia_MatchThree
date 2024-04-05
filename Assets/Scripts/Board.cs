@@ -1,4 +1,5 @@
 ﻿using Assets.Scripts;
+using Assets.Scripts.Manager;
 using DG.Tweening;
 using System.Collections.Generic;
 using System.Linq;
@@ -53,7 +54,6 @@ public class Board : MonoBehaviour
         currentTrun = 1;
         IsBusy = true;
         Tiles = new Tile[rows.Max(row => row.tiles.Length), rows.Length];
-
         for (int y = 0; y < Height; y++)
         {
             for (int x = 0; x < Width; x++)
@@ -83,6 +83,19 @@ public class Board : MonoBehaviour
     }
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            Result.SetActive(true);
+            BattleResult.Instance.GameResult(true);
+        }
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            SaveManager.SaveGame();
+        }
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            SaveManager.LoadGame();
+        }
         if (Input.GetKeyDown(KeyCode.A))
         {
             foreach (Tile tile in Tiles[0, 0].GetConnectedTiles())
@@ -243,7 +256,7 @@ public class Board : MonoBehaviour
         Sequence deflateSequence = DOTween.Sequence();
         deflateSequence.Join(tile.frame.transform.DOScale(Vector3.zero, FallDuration));
         deflateSequence.Join(tile.rune.transform.DOScale(Vector3.zero, FallDuration));
-        AudioManager.PlayPopFX();
+        AudioManager.PlaySE(SEEnum.Pop);
         await deflateSequence.Play()
                             .AsyncWaitForCompletion();
         //清空圖片 設定透明 還原大小
@@ -415,7 +428,7 @@ public class Board : MonoBehaviour
             deflateSequence.Join(connectedTile.rune.transform.DOScale(Vector3.zero, FallDuration));
             connectedTile.rune.material = null;
         }
-        AudioManager.PlayPopFX();
+        AudioManager.PlaySE(SEEnum.Pop);
         await deflateSequence.Play()
                             .AsyncWaitForCompletion();
 
@@ -670,7 +683,6 @@ public class Board : MonoBehaviour
         Player.Instance.Hurt((int)Poison);
     }
     #endregion
-
     public void QuitStage()
     {
         Result.SetActive(true);

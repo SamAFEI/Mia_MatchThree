@@ -17,3 +17,6 @@ MonoBehaviour:
   Id: 0
   ATK: 5000
   AnimName: miku_01
+  StageName: Stage01
+  IsComplete: 0
+  PriorStage: {fileID: 0}

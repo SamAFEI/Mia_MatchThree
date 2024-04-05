@@ -50,6 +50,9 @@ MonoBehaviour:
   MainBGMClip: {fileID: 8300000, guid: 03fe86b5aa146914394fc4e4e0a331ca, type: 3}
   BattleBGMClip: {fileID: 8300000, guid: 6980393f5cf7fee49bf86b08c5e146ae, type: 3}
   PopFXClip: {fileID: 8300000, guid: acf8e082c5616254bb3f1b3a97a9cfe6, type: 3}
+  LevelUpClip: {fileID: 8300000, guid: 701d298a4ec6d0840a5b47a625a8e1b9, type: 3}
+  FailedClip: {fileID: 8300000, guid: 3f9c259dc7e17e7468b5b381abb7df13, type: 3}
+  VictoryClip: {fileID: 8300000, guid: b410315beddf97f4cade2e1ed3bc54a9, type: 3}
   VoiceClip: {fileID: 8300000, guid: b410315beddf97f4cade2e1ed3bc54a9, type: 3}
 --- !u!1 &957400753545423164
 GameObject:

@@ -1,9 +1,9 @@
+using Assets.Scripts;
+using Assets.Scripts.Manager;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class SkillManager : MonoBehaviour
+public class SkillManager : MonoBehaviour, ISaveManager
 {
     private static SkillManager instance;
     public static SkillManager Instance
@@ -29,7 +29,7 @@ public class SkillManager : MonoBehaviour
     public float ATK;
     public float Power;
     public int Coin;
-    public bool IsBreakSkill {  get; private set; }
+    public bool IsBreakSkill { get; private set; }
     private void Awake()
     {
         if (instance != null)
@@ -43,17 +43,24 @@ public class SkillManager : MonoBehaviour
     private void Start()
     {
         Instance.Power = 1;
+        SaveManager.LoadGame();
     }
     private static void CreateDefault()
     {
         GameObject obj = Resources.Load<GameObject>("Prefabs/Manager/SkillManager");
         obj = Instantiate(obj, Vector3.zero, Quaternion.identity);
         instance = obj.GetComponent<SkillManager>();
-        Instance.Coin = 4000;
         Instance.DebuffIcons.Add(null);
         Instance.DebuffIcons.Add(Resources.Load<Sprite>("Sprites/Skills/ATKDown"));
         Instance.DebuffIcons.Add(Resources.Load<Sprite>("Sprites/Skills/DEFDown"));
         Instance.DebuffIcons.Add(Resources.Load<Sprite>("Sprites/Skills/Poison"));
+        Instance.Skills.Add(Resources.Load<Skill>("Prefabs/Skills/ATK"));
+        Instance.Skills.Add(Resources.Load<Skill>("Prefabs/Skills/Break"));
+        Instance.Skills.Add(Resources.Load<Skill>("Prefabs/Skills/Heal"));
+        Instance.Skills.Add(Resources.Load<Skill>("Prefabs/Skills/MaxHP"));
+        Instance.Skills.Add(Resources.Load<Skill>("Prefabs/Skills/Power"));
+        Instance.Coin = 4000;
+        InitSkillValue();
     }
     public static void UpdateSkillTime()
     {
@@ -73,10 +80,10 @@ public class SkillManager : MonoBehaviour
     {
         Instance.ActiveSkills.Remove(_skill);
     }
-    public static void SetActiveDebuffs(ItemDebuffEnum _debuff,bool _active)
+    public static void SetActiveDebuffs(ItemDebuffEnum _debuff, bool _active)
     {
         Sprite sprite = Instance.DebuffIcons[(int)_debuff];
-        if (_active && !Instance.ActiveDebuffs.Contains(sprite)) 
+        if (_active && !Instance.ActiveDebuffs.Contains(sprite))
         {
             Instance.ActiveDebuffs.Add(sprite);
         }
@@ -93,21 +100,32 @@ public class SkillManager : MonoBehaviour
     {
         Instance.Coin += _value;
     }
-    public static void InitSkillLevel()
+    public static void InitSkillValue()
     {
-        if (Instance.Skills.Count > 0) { return; }
-        List<Skill> _skills = GameObject.FindObjectsOfType<Skill>().ToList();
+        List<Skill> _skills = new List<Skill>();
+        _skills.AddRange(Instance.Skills);
         foreach (Skill _skill in _skills)
         {
             _skill.Data.Level = 0;
             _skill.Data.SetValue();
-            GameObject obj = Instantiate(_skill.GetComponent<Skill>().gameObject, Vector3.zero, Quaternion.identity, Instance.transform);
-            obj.name = _skill.name;
-            Instance.Skills.Add(obj.GetComponent<Skill>());
         }
     }
     public static void SetBreakSkill(bool _value)
     {
         Instance.IsBreakSkill = _value;
+    }
+
+    public void LoadData(GameData _data)
+    {
+        Instance.Coin = _data.Coin;
+        //Instance.Skills = _data.Skills;
+        Debug.Log("LoadData=" + Instance.Coin);
+    }
+
+    public void SaveData(ref GameData _data)
+    {
+        _data.Coin = Instance.Coin;
+        //_data.Skills = Instance.Skills;
+        Debug.Log("SaveData=" + Instance.Coin);
     }
 }

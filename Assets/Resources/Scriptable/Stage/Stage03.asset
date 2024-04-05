@@ -17,3 +17,6 @@ MonoBehaviour:
   Id: 2
   ATK: 5000
   AnimName: haru_g_m07
+  StageName: Stage03
+  IsComplete: 0
+  PriorStage: {fileID: 0}

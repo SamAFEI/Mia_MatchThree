@@ -19,28 +19,51 @@ public class TooltipManager : MonoBehaviour
             return instance;
         }
     }
+    public TextMeshProUGUI Header;
     public TextMeshProUGUI Content;
     public RectTransform Background;
+    public RectTransform MyRectTransform;
+    public Canvas MyCanvas;
     private void Awake()
     {
-        Content = transform.Find("Content").GetComponent<TextMeshProUGUI>();
-        Background = GetComponent<RectTransform>();
+        MyRectTransform = GetComponent<RectTransform>();
+        MyCanvas = GetComponent<Canvas>();
+        Background = transform.Find("Background").GetComponent<RectTransform>();
+        Header = Background.Find("Header").GetComponent<TextMeshProUGUI>();
+        Content = Background.Find("Content").GetComponent<TextMeshProUGUI>();
     }
     private void Start()
     {
+        MyCanvas.renderMode = RenderMode.ScreenSpaceCamera;
+        MyCanvas.worldCamera = Camera.main;
         Cursor.visible = true;
         HideToolTip();
     }
     private void Update()
     {
         Vector2 localPoint;
-        RectTransformUtility.ScreenPointToLocalPointInRectangle(transform.parent.GetComponent<RectTransform>()
+        RectTransformUtility.ScreenPointToLocalPointInRectangle(Instance.MyRectTransform
                                                                 , Input.mousePosition, Camera.main, out localPoint);
-        transform.localPosition = localPoint;
+        Vector2 anchoredPosition = Instance.Background.anchoredPosition;
+        float pivotX = 0;
+        float pivotY = 0;
+        if (Instance.Background.rect.width + anchoredPosition.x > Instance.MyRectTransform.rect.width)
+        {
+            pivotX = 1;
+        }
+        if (Instance.Background.rect.height + anchoredPosition.y > Instance.MyRectTransform.rect.height)
+        {
+            pivotX = 1;
+            pivotY = 1;
+        }
+        Instance.Background.pivot = new Vector2(pivotX, pivotY);
+        Instance.Background.localPosition = localPoint;
     }
-    public static void ShowToolTip(string _content)
+    public static void ShowToolTip(string _content, string _header = "")
     {
-        Instance.gameObject.SetActive(true);
+        Instance.Background.gameObject.SetActive(true);
+        Instance.Header.gameObject.SetActive(!string.IsNullOrEmpty(_header));
+        Instance.Header.text = _header;
         Instance.Content.text = _content;
         /*float paddingSize = 4f;
         Vector2 size = new Vector2(Instance.Content.preferredWidth + paddingSize * 2
@@ -49,13 +72,14 @@ public class TooltipManager : MonoBehaviour
     }
     public static void HideToolTip()
     {
-        Instance.gameObject.SetActive(false);
+        Instance.Background.gameObject.SetActive(false);
+        Instance.Header.text = string.Empty;
         Instance.Content.text = string.Empty;
     }
     private static void CreateDefault()
     {
-        GameObject obj = Resources.Load<GameObject>("Prefabs/Manager/TooltipManager");
-        obj = Instantiate(obj, Vector3.zero, Quaternion.identity, GameObject.Find("TooltipCanvas").transform);
+        GameObject obj = Resources.Load<GameObject>("Prefabs/GUI/TooltipCanvas");
+        obj = Instantiate(obj, Vector3.zero, Quaternion.identity);
         instance = obj.GetComponent<TooltipManager>();
     }
 }

@@ -17,3 +17,6 @@ MonoBehaviour:
   Id: 5
   ATK: 8000
   AnimName: hiyori_m08
+  StageName: Stage06
+  IsComplete: 0
+  PriorStage: {fileID: 11400000, guid: f4f6a401051556e4a9136a192a7f0d6a, type: 2}

@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Break
   m_EditorClassIdentifier: 
   Sprite: {fileID: 21300000, guid: 12bdbf3072846a94fa76198d39715eac, type: 3}
-  Name: Break
+  Name: "\u6D88\u9664"
   Content: "\u6D88\u9664\u4E00\u500B\u7B26\u6587"
+  LeveContent: "\u6E1B\u5C11\u51B7\u537B\u6642\u95931\u56DE\u5408"
   Level: 0
   MaxLevel: 2
   Values:

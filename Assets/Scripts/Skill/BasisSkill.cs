@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +7,8 @@ public class BasisSkill : ScriptableObject
     public string Name;
     [TextArea]
     public string Content;
+    [TextArea]
+    public string LeveContent;
     public int Level;
     public int MaxLevel = 2;
     [SerializeField] private List<float> Values = new List<float>();
@@ -22,7 +23,7 @@ public class BasisSkill : ScriptableObject
     public virtual void SetValue() { }
     public virtual void DoSkill() { }
     public virtual void FinishSkill() { }
-    public virtual void UpLevel() 
+    public virtual void UpLevel()
     {
         Level++;
         SetValue();

@@ -1,12 +1,16 @@
+using Assets.Scripts;
+using Assets.Scripts.Manager;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public class GameManager : MonoBehaviour, ISaveManager
 {
     private static GameManager instance;
-    public static GameManager Instance 
+    public static GameManager Instance
     {
-        get 
+        get
         {
             if (instance == null)
             {
@@ -20,8 +24,8 @@ public class GameManager : MonoBehaviour
         }
     }
     public bool IsPaused { get; private set; }
-    public string CurrentStageBtnName;
     public Stage CurrentStage { get; private set; }
+    public List<Stage> Stages { get; private set; } = new List<Stage>();
     public static string LoadSceneName;
     public Texture2D CursorDefault;
     public Texture2D CursorSwap;
@@ -36,9 +40,17 @@ public class GameManager : MonoBehaviour
         //Instance = this;
         DontDestroyOnLoad(this);
     }
+    private void Start()
+    {
+        SaveManager.LoadGame();
+    }
     public static void RegisterCurrentStage(Stage _stage)
     {
         Instance.CurrentStage = _stage;
+    }
+    public static void CompleteStage()
+    {
+        Instance.CurrentStage.Data.IsComplete = true;
     }
     public static void PausedGame(bool paused)
     {
@@ -79,7 +91,13 @@ public class GameManager : MonoBehaviour
     }
     public void ExitGame()
     {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#elif UNITY_WEBPLAYER
+        //Application.OpenURL(webplayerQuitURL);
+#else
         Application.Quit();
+#endif
     }
     public static void SetCursorSwap()
     {
@@ -108,6 +126,29 @@ public class GameManager : MonoBehaviour
         Instance.CursorDefault = Resources.Load<Texture2D>("Sprites/GUI/CursorDefault");
         Instance.CursorSwap = Resources.Load<Texture2D>("Sprites/GUI/CursorSwap");
         Instance.CursorBreak = Resources.Load<Texture2D>("Sprites/GUI/CursorBreak");
+        InitStages();
+        Stage stage = Resources.Load<Stage>("Prefabs/Stage/Stage01");
+        Instance.CurrentStage = stage;
         SetCursorDefault();
+    }
+    private static void InitStages()
+    {
+        Instance.Stages.AddRange(Resources.LoadAll<Stage>("Prefabs/Stage/").ToList<Stage>());
+        foreach (Stage stage in Instance.Stages)
+        {
+            if (stage.Data != null) { stage.Data.IsComplete = false; }
+        }
+    }
+
+    public void LoadData(GameData _data)
+    {
+        //Instance.CurrentStage.name = _data.CurrentStage.name;
+        //Instance.Stages = _data.Stages;
+    }
+
+    public void SaveData(ref GameData _data)
+    {
+        //_data.CurrentStage.name = Instance.CurrentStage.name;
+        //_data.Stages = Instance.Stages;
     }
 }

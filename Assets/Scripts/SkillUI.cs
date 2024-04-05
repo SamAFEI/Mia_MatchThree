@@ -10,7 +10,7 @@ public class SkillUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         SkillImage = GetComponent<Image>();
     }
-    void IPointerEnterHandler.OnPointerEnter(PointerEventData eventData)
+    public void OnPointerEnter(PointerEventData eventData)
     {
         string content = string.Empty;
         if (SkillImage.enabled)
@@ -37,7 +37,7 @@ public class SkillUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         TooltipManager.ShowToolTip(content);
     }
 
-    void IPointerExitHandler.OnPointerExit(PointerEventData eventData)
+    public void OnPointerExit(PointerEventData eventData)
     {
         TooltipManager.HideToolTip();
     }

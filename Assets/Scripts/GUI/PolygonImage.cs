@@ -20,6 +20,13 @@ namespace Assets.Scripts.GUI
                 return _polygonCollider;
             }
         }
+        private Image parentImage;
+        protected override void Start()
+        {
+            base.Start();
+            parentImage = transform.parent.GetComponent<Image>();
+            parentImage.raycastTarget = false;
+        }
         protected PolygonImage()
         {
             useLegacyMeshGeneration = true;

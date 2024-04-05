@@ -1,3 +1,4 @@
+using Assets.Scripts.Manager;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -15,6 +16,7 @@ public class LoadingScene : MonoBehaviour
     }
     private void Start()
     {
+        SaveManager.SaveGame();
         StartCoroutine(LoadSecne(GameManager.LoadSceneName));
     }
 

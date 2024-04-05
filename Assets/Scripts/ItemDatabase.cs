@@ -15,15 +15,15 @@ public static class ItemDatabase
     public static Item YellowPlus { get; private set; }
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     private static void Initialize()
-    {    
-        Items = Resources.LoadAll<Item>("Items/").ToList();
-        RedBonus = Resources.LoadAll<Item>("RedBonus/").ToList(); ;
-        BlueBonus = Resources.LoadAll<Item>("BlueBonus/").ToList();
-        GreenBonus = Resources.LoadAll<Item>("GreenBonus/").ToList();
-        YellowBonus = Resources.LoadAll<Item>("YellowBonus/").ToList();
-        RedPlus = Resources.Load<Item>("RedPlus");
-        BluePlus = Resources.Load<Item>("BluePlus");
-        GreenPlus = Resources.Load<Item>("GreenPlus");
-        YellowPlus = Resources.Load<Item>("YellowPlus");
+    {
+        Items = Resources.LoadAll<Item>("Items/Base/").ToList();
+        RedBonus = Resources.LoadAll<Item>("Items/RedBonus/").ToList();
+        BlueBonus = Resources.LoadAll<Item>("Items/BlueBonus/").ToList();
+        GreenBonus = Resources.LoadAll<Item>("Items/GreenBonus/").ToList();
+        YellowBonus = Resources.LoadAll<Item>("Items/YellowBonus/").ToList();
+        RedPlus = Resources.Load<Item>("Items/Plus/RedPlus");
+        BluePlus = Resources.Load<Item>("Items/Plus/BluePlus");
+        GreenPlus = Resources.Load<Item>("Items/Plus/GreenPlus");
+        YellowPlus = Resources.Load<Item>("Items/Plus/YellowPlus");
     }
 }

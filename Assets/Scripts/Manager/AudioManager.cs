@@ -1,3 +1,4 @@
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -27,13 +28,14 @@ public class AudioManager : MonoBehaviour
     public AudioClip BattleBGMClip;
     [Header("消除符文")]
     public AudioClip PopFXClip;
+    [Header("技能升級")]
+    public AudioClip LevelUpClip;
     [Header("失敗")]
     public AudioClip FailedClip;
     [Header("勝利")]
     public AudioClip VictoryClip;
     [Header("語音")]
     public AudioClip VoiceClip;
-
     private void Awake()
     {
         if (instance != null)
@@ -102,14 +104,21 @@ public class AudioManager : MonoBehaviour
         Instance.BGMSource.clip = Instance.BattleBGMClip;
         Instance.BGMSource.Play();
     }
-    public static void PlayPopFX()
-    {
-        Instance.SESource.clip = Instance.PopFXClip;
-        Instance.SESource.Play();
-    }
     public static void PlayVoice()
     {
         Instance.VoiceSource.clip = Instance.VoiceClip;
         Instance.VoiceSource.Play();
     }
+    public static void PlaySE(SEEnum type)
+    {
+        if (type == SEEnum.Pop) { Instance.SESource.clip = Instance.PopFXClip; }
+        else if (type == SEEnum.LevelUp) { Instance.SESource.clip = Instance.LevelUpClip; }
+        else if (type == SEEnum.Victory) { Instance.SESource.clip = Instance.VictoryClip; }
+        else if (type == SEEnum.Failed) { Instance.SESource.clip = Instance.FailedClip; }
+        Instance.SESource.Play();
+    }
+}
+public enum SEEnum
+{
+    Pop, LevelUp, Failed, Victory
 }

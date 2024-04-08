@@ -68,7 +68,7 @@ public class Tile : MonoBehaviour, IPointerEnterHandler, IPointerDownHandler, IP
         }
         else
         {
-            debuffIcon.color = new Color(debuffIcon.color.r, debuffIcon.color.g, debuffIcon.color.b, 0.8f);
+            debuffIcon.color = new Color(debuffIcon.color.r, debuffIcon.color.g, debuffIcon.color.b, 0.5f);
         }
     }
     public List<Tile> GetConnectedTiles(List<Tile> exclude = null)

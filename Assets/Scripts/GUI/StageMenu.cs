@@ -15,15 +15,7 @@ public class StageMenu : MonoBehaviour
     }
     private void Start()
     {
-        foreach (Button _btn in StageBtns)
-        {
-            _btn.onClick.AddListener(() => OnClick(_btn));
-            if (_btn.name == GameManager.Instance.CurrentStage.StageName)
-            {
-                CurrentStage = _btn.GetComponent<Stage>();
-                _btn.transform.localScale = new Vector2(1.1f, 1.1f);
-            }
-        }
+        SetCurrentStage();
     }
 
     private void OnClick(Button _sender)
@@ -35,5 +27,17 @@ public class StageMenu : MonoBehaviour
         _sender.transform.localScale = new Vector2(1.1f, 1.1f);
         CurrentStage = _sender.GetComponent<Stage>();
         GameManager.RegisterCurrentStage(CurrentStage);
+    }
+    public void SetCurrentStage()
+    {
+        foreach (Button _btn in StageBtns)
+        {
+            _btn.onClick.AddListener(() => OnClick(_btn));
+            if (_btn.name == GameManager.Instance.CurrentStage.StageName)
+            {
+                CurrentStage = _btn.GetComponent<Stage>();
+                _btn.transform.localScale = new Vector2(1.1f, 1.1f);
+            }
+        }
     }
 }

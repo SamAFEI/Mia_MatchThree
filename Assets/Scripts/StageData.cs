@@ -1,3 +1,4 @@
+using Assets.Scripts;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "StageData", menuName = "Match3/StageData", order = 1)]

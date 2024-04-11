@@ -1,3 +1,4 @@
+using Assets.Scripts.Manager;
 using UnityEngine;
 
 public class TitleScene : MonoBehaviour
@@ -5,12 +6,20 @@ public class TitleScene : MonoBehaviour
     private void Start()
     {
         AudioManager.PlayMainBGM();
+        GameManager.SetCursorDefault();
     }
     private void Update()
     {
         if (Input.anyKeyDown)
         {
-            GameManager.Instance.LoadMainScene();
+            if (Input.GetKeyDown(KeyCode.D))
+            {
+                SaveManager.Instance.DeleteSaveData();
+            }
+            else
+            {
+                GameManager.Instance.LoadMainScene();
+            }
         }
     }
 }

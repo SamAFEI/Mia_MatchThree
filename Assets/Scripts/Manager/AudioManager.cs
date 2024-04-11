@@ -1,4 +1,3 @@
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -51,7 +50,7 @@ public class AudioManager : MonoBehaviour
         GameObject obj = Resources.Load<GameObject>("Prefabs/Manager/AudioManager");
         obj = Instantiate(obj, Vector3.zero, Quaternion.identity);
         instance = obj.GetComponent<AudioManager>();
-        Instance.AudioMixer = Resources.Load<AudioMixer>("Audio/MainMixer"); 
+        Instance.AudioMixer = Resources.Load<AudioMixer>("Audio/MainMixer");
         Instance.BGMSource = obj.transform.Find("BGM").GetComponent<AudioSource>();
         Instance.BGMSource.loop = true;
         Instance.SESource = obj.transform.Find("SE").GetComponent<AudioSource>();
@@ -74,7 +73,7 @@ public class AudioManager : MonoBehaviour
     public static float GetBGMVolume()
     {
         float _volume;
-        Instance.AudioMixer.GetFloat("BGMVolume",out _volume);
+        Instance.AudioMixer.GetFloat("BGMVolume", out _volume);
         return _volume;
     }
     public static float GetSEVolume()

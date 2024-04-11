@@ -142,13 +142,38 @@ public class GameManager : MonoBehaviour, ISaveManager
 
     public void LoadData(GameData _data)
     {
-        //Instance.CurrentStage.name = _data.CurrentStage.name;
-        //Instance.Stages = _data.Stages;
+        if (_data.CurrentStage != null)
+        {
+            foreach (Stage stage in Instance.Stages)
+            {
+                if (stage.Data != null && stage.Data.StageName == _data.CurrentStage.StageName)
+                {
+                    Instance.CurrentStage = stage;
+                    break;
+                }
+            }
+        }
+        if (_data.Stages != null)
+        {
+            foreach (Stage stage in Instance.Stages)
+            {
+                StageStore _store = _data.Stages.Where(x => x.StageName == stage.StageName).FirstOrDefault();
+                if (_store != null)
+                {
+                    stage.StageName = _store.StageName;
+                }
+            }
+        }
     }
 
     public void SaveData(ref GameData _data)
     {
-        //_data.CurrentStage.name = Instance.CurrentStage.name;
-        //_data.Stages = Instance.Stages;
+        _data.CurrentStage = new StageStore(Instance.CurrentStage.Data);
+        _data.Stages = new List<StageStore>();
+        foreach (Stage stage in Instance.Stages)
+        {
+            if (stage.Data == null) { continue; }
+            _data.Stages.Add(new StageStore(stage.Data));
+        }
     }
 }

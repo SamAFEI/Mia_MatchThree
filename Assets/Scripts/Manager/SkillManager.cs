@@ -1,6 +1,7 @@
 using Assets.Scripts;
 using Assets.Scripts.Manager;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class SkillManager : MonoBehaviour, ISaveManager
@@ -44,6 +45,13 @@ public class SkillManager : MonoBehaviour, ISaveManager
     {
         Instance.Power = 1;
         SaveManager.LoadGame();
+    }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            Instance.Coin += 1000;
+        }
     }
     private static void CreateDefault()
     {
@@ -118,14 +126,23 @@ public class SkillManager : MonoBehaviour, ISaveManager
     public void LoadData(GameData _data)
     {
         Instance.Coin = _data.Coin;
-        //Instance.Skills = _data.Skills;
-        Debug.Log("LoadData=" + Instance.Coin);
+        foreach(Skill skill in Instance.Skills)
+        {
+            SkillStore _store = _data.Skills.Where(x => x.Name == skill.Data.Name).FirstOrDefault();
+            if (_store != null)
+            {
+                skill.Data.Level = _store.Level;
+            }
+        }
     }
 
     public void SaveData(ref GameData _data)
     {
         _data.Coin = Instance.Coin;
-        //_data.Skills = Instance.Skills;
-        Debug.Log("SaveData=" + Instance.Coin);
+        _data.Skills = new List<SkillStore>();
+        foreach (Skill _skill in Instance.Skills)
+        {
+            _data.Skills.Add(new SkillStore(_skill.Data));
+        }
     }
 }

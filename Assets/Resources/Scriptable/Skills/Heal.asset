@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Heal
   m_EditorClassIdentifier: 
   Sprite: {fileID: 21300000, guid: 006f487a8c7c96644a2e59999f264b7f, type: 3}
-  Name: Heal
-  Content: "\u6CBB\u7652HP\n"
-  LeveContent: "\u589E\u52A0\u6CBB\u7652\u91CF"
+  Name: "\u6CBB\u7642"
+  Content: "\u6CBB\u7642HP\n"
+  LeveContent: "\u589E\u52A0\u6CBB\u7642\u91CF"
   Level: 0
   MaxLevel: 2
   Values:

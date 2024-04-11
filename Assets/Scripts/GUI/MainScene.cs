@@ -26,14 +26,6 @@ public class MainScene : MonoBehaviour
     {
         CoinContent.text = "$ " + SkillManager.Instance.Coin;
         BtnCG.interactable = GameManager.Instance.CurrentStage.Data.IsComplete;
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            SaveManager.SaveGame();
-        }
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            SaveManager.LoadGame();
-        }
     }
 
     private void BtnExitOnClick()

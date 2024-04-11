@@ -24,6 +24,7 @@ namespace Assets.Scripts.Manager
         }
 
         [SerializeField] private string fileName;
+        [SerializeField] private bool encrptData = true;
         private GameData gameData;
         private List<ISaveManager> saveManagers;
         private FileDataHandler dataHandler;
@@ -40,9 +41,21 @@ namespace Assets.Scripts.Manager
 
         private void Start()
         {
-            Instance.dataHandler = new FileDataHandler(Application.persistentDataPath,fileName);
+            Instance.dataHandler = new FileDataHandler(Application.persistentDataPath, fileName, encrptData);
             Instance.saveManagers = FindAllSaveManagers();
             LoadGame();
+        }
+
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                SaveGame();
+            }
+            if (Input.GetKeyDown(KeyCode.L))
+            {
+                LoadGame();
+            }
         }
 
         private static void CreateDefault()
@@ -56,10 +69,8 @@ namespace Assets.Scripts.Manager
             Instance.gameData = new GameData();
             Instance.gameData.Coin = 4000;
         }
-
         public static void LoadGame()
         {
-            return;
             if (Instance.dataHandler == null) { return; }
             Instance.saveManagers = FindAllSaveManagers();
             Instance.gameData = Instance.dataHandler.Load();
@@ -74,7 +85,6 @@ namespace Assets.Scripts.Manager
         }
         public static void SaveGame()
         {
-            return;
             if (Instance.dataHandler == null) { return; }
             Instance.saveManagers = FindAllSaveManagers();
             foreach (ISaveManager _saveManager in Instance.saveManagers) 
@@ -91,6 +101,13 @@ namespace Assets.Scripts.Manager
         {
             IEnumerable<ISaveManager> saveManagers = FindObjectsOfType<MonoBehaviour>().OfType<ISaveManager>();
             return new List<ISaveManager>(saveManagers);
+        }
+
+        [ContextMenu("Delete Save File")]
+        public void DeleteSaveData()
+        {
+            dataHandler = new FileDataHandler(Application.persistentDataPath, fileName, encrptData);
+            dataHandler.Delete();
         }
     }
 }

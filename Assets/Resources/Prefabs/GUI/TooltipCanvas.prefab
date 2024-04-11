@@ -186,8 +186,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u6700\u5927\u8840\u91CF"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f5389fe4646ee36449f4ccfb5817d10a, type: 2}
-  m_sharedMaterial: {fileID: -567698299247768920, guid: f5389fe4646ee36449f4ccfb5817d10a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 89dcd14d8d3a99d4aaa43b99def884d2, type: 2}
+  m_sharedMaterial: {fileID: -8864097933910991635, guid: 89dcd14d8d3a99d4aaa43b99def884d2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -371,7 +371,8 @@ MonoBehaviour:
   Header: {fileID: 0}
   Content: {fileID: 0}
   Background: {fileID: 0}
-  TooltipCanvas: {fileID: 0}
+  MyRectTransform: {fileID: 0}
+  MyCanvas: {fileID: 0}
 --- !u!1 &8306180618212857066
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,8 +440,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\u6700\u5927\u8840\u91CF"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f5389fe4646ee36449f4ccfb5817d10a, type: 2}
-  m_sharedMaterial: {fileID: -567698299247768920, guid: f5389fe4646ee36449f4ccfb5817d10a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 89dcd14d8d3a99d4aaa43b99def884d2, type: 2}
+  m_sharedMaterial: {fileID: -8864097933910991635, guid: 89dcd14d8d3a99d4aaa43b99def884d2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

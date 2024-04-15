@@ -2,9 +2,11 @@
 
 ---
 
-# CubismUnityComponents
+# Cubism Unity Components
 
-Unity用のCubismSDKのオープンコンポーネントです。
+Unity用のCubism SDKのオープンコンポーネントです。
+
+モデルをロードするには Live2D Cubism Core と組み合わせて使用します。
 
 SDKパッケージのダウンロードページをお探しの場合は、[ダウンロードページ](https://www.live2d.com/download/cubism-sdk/download-unity/)にアクセスしてください。
 
@@ -15,6 +17,12 @@ SDKパッケージのダウンロードページをお探しの場合は、[ダ�
 ## お知らせ
 
 ご使用前に[お知らせ](NOTICE.ja.md)をお読みください。
+
+## Cubism 5新機能や過去バージョンとの互換性について
+
+本 SDK はCubism 5に対応した製品です。  
+Cubism 5 Editorに搭載された新機能のSDK対応については [こちら](https://docs.live2d.com/cubism-sdk-manual/cubism-5-new-functions/)をご確認ください。  
+過去バージョンのCubism SDKとの互換性については [こちら](https://docs.live2d.com/cubism-sdk-manual/compatibility-with-cubism-5/)をご確認ください。
 
 ## 構造
 
@@ -46,18 +54,27 @@ Unity Editor拡張機能は、`./Assets/Live2D/Cubism/Editor`にあります。
 
 | Unity | バージョン |
 | --- | --- |
-| Tech Stream | 2022.2.18f1 |
-| LTS | 2021.3.24f1 |
-| LTS | 2020.3.47f1 |
+| Latest | 2023.2.14f1 (*1) |
+| LTS | 2022.3.21f1 |
+| LTS | 2021.3.36f1 |
+
+*1 ARMv7のAndroidは非対応です。
 
 | ライブラリ / ツール | バージョン |
 | --- | --- |
-| Android SDK / NDK | *1 |
-| Visual Studio 2022 | 17.5.5 |
+| Android SDK / NDK | *2 |
+| Visual Studio 2022 | 17.9.3 |
 | Windows SDK | 10.0.22621.0 |
-| Xcode | 14.2 |
+| Xcode | 15.3 |
 
-*1 Unityに組み込まれたライブラリまたは推奨ライブラリを使用してください。
+*2 Unityに組み込まれたライブラリまたは推奨ライブラリを使用してください。
+
+| HarmonyOS NEXT 対応ツール | バージョン |
+| --- | --- |
+| Tuanjie | 1.0.1 |
+| DevEco Studio *3 | 4.0 |
+
+*3 中国国外でのHarmonyOS NEXT向けビルドはDevEcoを通じてビルドする必要があります。
 
 ### C#コンパイラ
 
@@ -73,17 +90,18 @@ https://docs.unity3d.com/ja/2018.4/Manual/CSharpCompiler.html
 
 | プラットフォーム | バージョン |
 | --- | --- |
-| Android | 13 |
-| iOS | 16.4.1 |
-| iPadOS | 16.4.1 |
+| Android | 14 |
+| iOS | 17.4 |
+| iPadOS | 17.4 |
 | Ubuntu | 20.04.6 |
-| macOS | 13.3.1 |
-| Windows 10 | 22H2 |
-| Google Chrome | 113.0.5672.93 |
-| Chrome OS 64bit (x86_64) | 113.0.5672.114 |
-| Chrome OS 32bit (ARMv8) (*2) | 113.0.5672.114 |
+| macOS | 14.4 |
+| Windows 11 | 23H2 |
+| Google Chrome | 122.0.6261.129 |
+| Chrome OS 64bit (x86_64) | 122.0.6261.118 |
+| Chrome OS 32bit (ARMv8) (*3) | 122.0.6261.118 |
+| HarmonyOS NEXT | 4.0.0.66 |
 
-*2 Android向けAPKファイルでの動作確認です。
+*3 Android向けAPKファイルでの動作確認です。
 
 ## ブランチ
 
@@ -105,7 +123,7 @@ Coreラッパーでは、unsafeコードのブロックを許可する必要が�
 
 ### フォークとプルリクエスト
 
-修正、改善、さらには新機能をもたらすかどうかにかかわらず、プルリクエストに感謝します。ただし、ラッパーは可能な限り軽量で浅くなるように設計されているため、バグ修正とメモリ/パフォーマンスの改善のみを行う必要があることに注意してください。メインリポジトリを可能な限りクリーンに保つために、必要に応じて個人用フォークと機能ブランチを作成してください。
+修正、改善、さらには新機能をもたらすかどうかにかかわらず、プルリクエストに感謝します。メインリポジトリを可能な限りクリーンに保つために、必要に応じて個人用フォークと機能ブランチを作成してください。
 
 ### バグ
 
@@ -127,9 +145,9 @@ SDKの将来についてのフィードバックにも関心があります。Li
 - それ以外の場所ではLINQを使用せず、`foreach`よりも`for`を優先してください。
 - アクセス修飾子を明示的にするようにしてください。`void Update()`ではなく `private void Update()`を使いましょう。
 
-## コミュニティ
+## フォーラム
 
-ご不明な点がございましたら、公式のLive2Dコミュニティに参加して、他のユーザーと話し合ってください。
+ご不明な点がございましたら、公式のLive2Dフォーラムに参加して、他のユーザーと話し合ってください。
 
-- [Live2D 公式コミュニティ](https://creatorsforum.live2d.com/)
-- [Live2D community (English)](https://community.live2d.com/)
+- [Live2D 公式クリエイターズフォーラム](https://creatorsforum.live2d.com/)
+- [Live2D Creator's Forum(English)](https://community.live2d.com/)

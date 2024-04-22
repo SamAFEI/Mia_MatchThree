@@ -11,7 +11,7 @@ public class MainScene : MonoBehaviour
 
     private void Awake()
     {
-        CoinContent = transform.Find("CoinContent").GetComponent<TextMeshProUGUI>();
+        CoinContent = transform.Find("Coin").transform.Find("CoinContent").GetComponent<TextMeshProUGUI>();
         BtnExit = transform.Find("BtnExit").GetComponent<Button>();
         BtnCG = transform.Find("BtnCG").GetComponent<Button>();
     }

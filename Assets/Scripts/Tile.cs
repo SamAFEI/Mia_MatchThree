@@ -36,6 +36,7 @@ public class Tile : MonoBehaviour, IPointerEnterHandler, IPointerDownHandler, IP
     public Image rune;
     public Image frame;
     public Image debuffIcon;
+    public Animator animator;
     public Button button;
     public ItemColorEnum color;
     public ItemDebuffEnum debuffIndex = ItemDebuffEnum.Non;
@@ -51,6 +52,7 @@ public class Tile : MonoBehaviour, IPointerEnterHandler, IPointerDownHandler, IP
         frame = this.transform.Find("frame").GetComponent<Image>();
         rune = frame.transform.Find("rune").GetComponent<Image>();
         debuffIcon = rune.transform.Find("debuffIcon").GetComponent<Image>();
+        animator = debuffIcon.GetComponent<Animator>();
         button = GetComponent<Button>();
     }
 
@@ -65,10 +67,17 @@ public class Tile : MonoBehaviour, IPointerEnterHandler, IPointerDownHandler, IP
         if (debuffIndex == ItemDebuffEnum.Non)
         {
             debuffIcon.color = new Color(debuffIcon.color.r, debuffIcon.color.g, debuffIcon.color.b, 0); 
+            animator.Play("NoState");
         }
         else
         {
-            debuffIcon.color = new Color(debuffIcon.color.r, debuffIcon.color.g, debuffIcon.color.b, 0.5f);
+            //debuffIcon.color = new Color(debuffIcon.color.r, debuffIcon.color.g, debuffIcon.color.b, 1f);
+            if (Board.Instance.Result.activeSelf)
+                animator.Play("NoState");
+            else
+            {
+                animator.Play(debuffIndex.ToString());
+            }
         }
     }
     public List<Tile> GetConnectedTiles(List<Tile> exclude = null)

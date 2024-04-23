@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -12,6 +13,7 @@ public class Enemy : MonoBehaviour
     public int CurrentHP { get; private set; }
     public int ATK { get; private set; }
     public bool IsDie { get { return CurrentHP <= 0; } }
+    public float HPSmooth { get; private set; }
     private void Awake()
     {
         Instance = this;
@@ -27,27 +29,47 @@ public class Enemy : MonoBehaviour
         HPSlider.maxValue = GameManager.Instance.CurrentStage.MaxHP;
         HPSlider.value = HPSlider.maxValue;
         CurrentHP = (int)HPSlider.maxValue;
+        HPText.text = HPSlider.value + " / " + HPSlider.maxValue;
     }
-    private void Update()
+    public void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            EnemyController.PlayAnim("Break1");
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            EnemyController.PlayAnim("Break2");
+        }
     }
-    private void LateUpdate()
-    {
-        UpdateHPBar();
-    }
-
     public void Hurt(int _damage)
     {
-        CurrentHP = (int)Mathf.Clamp(CurrentHP - _damage, 0, HPSlider.maxValue);
+        CurrentHP = (int)Mathf.Clamp(CurrentHP - _damage, 0, HPSlider.maxValue); 
+        HPSmooth = 0;
+        StartCoroutine(LerpHP());
+        if (!EnemyController.GetIsBreak1() && CurrentHP < HPSlider.maxValue / 3 * 2)
+        { EnemyController.PlayAnim("Break1"); }
+        else if (!EnemyController.GetIsBreak2() && CurrentHP < HPSlider.maxValue / 3 * 1)
+        { EnemyController.PlayAnim("Break2"); }
+        else
+        { EnemyController.PlayAnim("Hurt"); }
     }
-    public void UpdateHPBar()
+    public IEnumerator LerpHP()
     {
-        float hp = Mathf.Lerp(HPSlider.value, CurrentHP, 0.1f);
-        HPSlider.value = (int)hp;
-        HPText.text = HPSlider.value + " / " + HPSlider.maxValue;
+        float smooth = 2;
+        float startHP = HPSlider.value;
+        while (HPSmooth < 1)
+        {
+            HPSmooth += Time.deltaTime * smooth;
+            HPSlider.value = Mathf.Lerp(startHP, CurrentHP, HPSmooth);
+            HPText.text = HPSlider.value + " / " + HPSlider.maxValue;
+            yield return null;
+        }
+        yield return null;
     }
     public void Attack()
     {
+        EnemyController.PlayAnim("Attack");
         float _damage = ATK * Random.Range(0.800f, 1.200f) * Board.Instance.DEFDown;
         Player.Instance.Hurt((int)_damage);
     }

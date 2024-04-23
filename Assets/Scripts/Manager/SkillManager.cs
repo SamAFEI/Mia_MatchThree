@@ -25,7 +25,8 @@ public class SkillManager : MonoBehaviour, ISaveManager
     public List<Skill> Skills = new List<Skill>();
     public List<Skill> ActiveSkills = new List<Skill>();
     public List<Sprite> DebuffIcons = new List<Sprite>();
-    public List<Sprite> ActiveDebuffs = new List<Sprite>();
+    public List<BasisSkill> Debuffs = new List<BasisSkill>();
+    public List<BasisSkill> ActiveDebuffs = new List<BasisSkill>();
     public int MaxHP;
     public float ATK;
     public float Power;
@@ -58,7 +59,7 @@ public class SkillManager : MonoBehaviour, ISaveManager
         GameObject obj = Resources.Load<GameObject>("Prefabs/Manager/SkillManager");
         obj = Instantiate(obj, Vector3.zero, Quaternion.identity);
         instance = obj.GetComponent<SkillManager>();
-        Instance.DebuffIcons.Add(null);
+        Instance.DebuffIcons.Add(Resources.Load<Sprite>("Sprites/Skills/Frame"));
         Instance.DebuffIcons.Add(Resources.Load<Sprite>("Sprites/Skills/ATKDown"));
         Instance.DebuffIcons.Add(Resources.Load<Sprite>("Sprites/Skills/DEFDown"));
         Instance.DebuffIcons.Add(Resources.Load<Sprite>("Sprites/Skills/Poison"));
@@ -67,6 +68,10 @@ public class SkillManager : MonoBehaviour, ISaveManager
         Instance.Skills.Add(Resources.Load<Skill>("Prefabs/Skills/Heal"));
         Instance.Skills.Add(Resources.Load<Skill>("Prefabs/Skills/MaxHP"));
         Instance.Skills.Add(Resources.Load<Skill>("Prefabs/Skills/Power"));
+        Instance.Debuffs.Add(null);
+        Instance.Debuffs.Add(Resources.Load<BasisSkill>("Scriptable/Debuffs/ATKDown"));
+        Instance.Debuffs.Add(Resources.Load<BasisSkill>("Scriptable/Debuffs/DEFDown"));
+        Instance.Debuffs.Add(Resources.Load<BasisSkill>("Scriptable/Debuffs/Poison"));
         Instance.Coin = 4000;
         InitSkillValue();
     }
@@ -90,19 +95,20 @@ public class SkillManager : MonoBehaviour, ISaveManager
     }
     public static void SetActiveDebuffs(ItemDebuffEnum _debuff, bool _active)
     {
-        Sprite sprite = Instance.DebuffIcons[(int)_debuff];
-        if (_active && !Instance.ActiveDebuffs.Contains(sprite))
+        BasisSkill debuff = Instance.Debuffs[(int)_debuff];
+        if (_active && !Instance.ActiveDebuffs.Contains(debuff))
         {
-            Instance.ActiveDebuffs.Add(sprite);
+            Instance.ActiveDebuffs.Add(debuff);
         }
-        if (!_active && Instance.ActiveDebuffs.Contains(sprite))
+        if (!_active && Instance.ActiveDebuffs.Contains(debuff))
         {
-            Instance.ActiveDebuffs.Remove(sprite);
+            Instance.ActiveDebuffs.Remove(debuff);
         }
     }
     public static void ClearActiveSkills()
     {
         Instance.ActiveSkills.Clear();
+        Instance.ActiveDebuffs.Clear();
     }
     public static void SetCoin(int _value)
     {
@@ -132,6 +138,7 @@ public class SkillManager : MonoBehaviour, ISaveManager
             if (_store != null)
             {
                 skill.Data.Level = _store.Level;
+                skill.Data.SetValue();
             }
         }
     }

@@ -151,14 +151,14 @@ public class Board : MonoBehaviour
         {
             combos = 0;
             await Pop();
-            if (!Enemy.Instance.IsDie && currentTrun > 1 && currentTrun % 3 == 1)
+            if (!Enemy.Instance.IsDie)
             {
-                if (currentTrun % 6 == 1)
+                if (currentTrun % 4 == 0)
                 {
                     NewDebuffTiles();
                 }
 
-                if (currentTrun % 3 == 1)
+                if (currentTrun % 3 == 0)
                 {
                     Enemy.Instance.Attack();
                 }
@@ -210,6 +210,8 @@ public class Board : MonoBehaviour
         Image rune2 = tile2.rune;
         Image debuffIcon1 = tile1.debuffIcon;
         Image debuffIcon2 = tile2.debuffIcon;
+        Animator animator1 = tile1.animator;
+        Animator animator2 = tile2.animator;
 
         Transform transform1 = frame1.transform;
         Transform transform2 = frame2.transform;
@@ -234,6 +236,8 @@ public class Board : MonoBehaviour
         tile2.rune = rune1;
         tile1.debuffIcon = debuffIcon2;
         tile2.debuffIcon = debuffIcon1;
+        tile1.animator = animator2;
+        tile2.animator = animator1;
 
         Item tileItem = tile1.Item;
         tile1.Item = tile2.Item;
@@ -267,7 +271,7 @@ public class Board : MonoBehaviour
         inflateSequence.Join(tile.rune.transform.DOScale(Vector3.one, TweenDuration));
         await inflateSequence.Play()
                             .AsyncWaitForCompletion();
-
+        DoDebuff();
         await FallTile();
         if (CanPop())
         {
@@ -502,6 +506,8 @@ public class Board : MonoBehaviour
             Image rune2 = tile2.rune;
             Image debuffIcon1 = tile1.debuffIcon;
             Image debuffIcon2 = tile2.debuffIcon;
+            Animator animator1 = tile1.animator;
+            Animator animator2 = tile2.animator;
 
             Transform transform1 = frame1.transform;
             Transform transform2 = frame2.transform;
@@ -523,6 +529,8 @@ public class Board : MonoBehaviour
             tile2.rune = rune1;
             tile1.debuffIcon = debuffIcon2;
             tile2.debuffIcon = debuffIcon1;
+            tile1.animator = animator2;
+            tile2.animator = animator1;
 
             Item tileItem = tile1.Item;
             tile1.Item = tile2.Item;

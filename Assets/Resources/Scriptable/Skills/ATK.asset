@@ -12,16 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 519941e8654b4c042abfb741e66e7b5b, type: 3}
   m_Name: ATK
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 21300000, guid: caf95043eed45ee439761d68160dde8d, type: 3}
+  Sprite: {fileID: 21300000, guid: ff0b712ed6cdcc045aba3bb940147c07, type: 3}
   Name: "\u653B\u64CA\u529B"
   Content: 
   LeveContent: "\u653B\u64CA\u529B\u4E0A\u5347"
-  Level: 0
+  Level: 1
   MaxLevel: 2
   Values:
   - 1
   - 1.2
   - 1.5
-  Costs: c4090000a00f0000
+  Costs: c4090000a00f000000000000
   ColdDowns: 000000000000000000000000
   Durations: 000000000000000000000000

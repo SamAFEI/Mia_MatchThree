@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adbe4c27f57227940b160f5a26beecba, type: 3}
   m_Name: Stage02
   m_EditorClassIdentifier: 
-  Character: {fileID: 3194285846937258199, guid: 0b2e53b45e584274aa1160d367d752f8, type: 3}
+  Character: {fileID: 6901929363060950283, guid: 9c7d415b0b16692469a007ebb6a02c60, type: 3}
   MaxHP: 600000
   Id: 1
   ATK: 8000
-  AnimName: miku_02
+  AnimName: "\u5F85\u6A5FLOOP"
   StageName: Stage02
   IsComplete: 0
   PriorStage: {fileID: 11400000, guid: 976ea2d783bd9cf4bbd42ca927036461, type: 2}

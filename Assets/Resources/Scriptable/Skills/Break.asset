@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1c1a96af3236834a9ab8a947a34e725, type: 3}
   m_Name: Break
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 21300000, guid: 12bdbf3072846a94fa76198d39715eac, type: 3}
+  Sprite: {fileID: 21300000, guid: 144fd46ef78544948ba0b5feec63f9cd, type: 3}
   Name: "\u6D88\u9664"
   Content: "\u6D88\u9664\u4E00\u500B\u7B26\u6587"
   LeveContent: "\u6E1B\u5C11\u51B7\u537B\u6642\u95931\u56DE\u5408"
@@ -22,6 +22,6 @@ MonoBehaviour:
   - 0
   - 0
   - 0
-  Costs: c4090000a00f0000
+  Costs: c4090000a00f000000000000
   ColdDowns: 060000000500000004000000
   Durations: 000000000000000000000000

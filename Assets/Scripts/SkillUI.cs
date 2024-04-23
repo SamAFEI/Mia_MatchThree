@@ -6,9 +6,11 @@ using UnityEngine.UI;
 public class SkillUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public Image SkillImage;
+    public Animator Animator;
     private void Awake()
     {
         SkillImage = GetComponent<Image>();
+        Animator = GetComponent<Animator>();
     }
     public void OnPointerEnter(PointerEventData eventData)
     {

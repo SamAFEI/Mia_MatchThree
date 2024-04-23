@@ -276,8 +276,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 32.51634}
-  m_SizeDelta: {x: 436.2661, y: 158.8276}
+  m_AnchoredPosition: {x: 0, y: 30.8988}
+  m_SizeDelta: {x: 436.2661, y: 162.0626}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5620789667577616708
 CanvasRenderer:
@@ -523,7 +523,7 @@ GameObject:
   - component: {fileID: 2039769304148449465}
   - component: {fileID: 6801650543706006228}
   m_Layer: 5
-  m_Name: Confirmation
+  m_Name: Confirmation_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

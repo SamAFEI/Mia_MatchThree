@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(menuName = "Match3/Skills/BasisSkill", order = 1)]
 public class BasisSkill : ScriptableObject
 {
     public Sprite Sprite;

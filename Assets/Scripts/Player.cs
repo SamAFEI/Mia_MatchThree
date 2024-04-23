@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
@@ -12,8 +14,10 @@ public class Player : MonoBehaviour
     public Slider HPSlider { get; private set; }
     public GameObject StateUI { get; private set; }
     public List<Image> StateLists { get; private set; } = new List<Image>();
+    public Sprite FrameSprite { get; private set; }
     public int CurrentHP { get; private set; }
     public bool IsDie { get { return CurrentHP <= 0; } }
+    public float HPSmooth { get; private set; }
     private void Awake()
     {
         Instance = this;
@@ -21,55 +25,74 @@ public class Player : MonoBehaviour
         HPText = HPSlider.transform.Find("HPText").GameObject().GetComponent<TextMeshProUGUI>();
         StateUI = transform.Find("StateUI").gameObject;
         StateLists = StateUI.GetComponentsInChildren<Image>().ToList();
+        FrameSprite = Resources.Load<Sprite>("Sprites/Skills/Frame");
     }
     private void Start()
     {
         HPSlider.maxValue = SkillManager.Instance.MaxHP;
         HPSlider.value = HPSlider.maxValue;
         CurrentHP = (int)HPSlider.maxValue;
+        HPText.text = HPSlider.value + " / " + HPSlider.maxValue;
     }
-    private void LateUpdate()
+    private void FixedUpdate()
     {
-        UpdateHPBar();
         UpdateStateUI();
     }
 
     public void Hurt(int _damage)
     {
         CurrentHP = (int)Mathf.Clamp(CurrentHP - _damage, 0, HPSlider.maxValue);
+        HPSmooth = 0;
+        StartCoroutine(LerpHP());
     }
-    public void UpdateHPBar()
+    public IEnumerator LerpHP()
     {
-        float hp = Mathf.Lerp(HPSlider.value, CurrentHP, 0.1f);
-        HPSlider.value = (int)hp;
-        HPText.text = HPSlider.value + " / " + HPSlider.maxValue;
+        float smooth = 2;
+        float startHP = HPSlider.value;
+        while (HPSmooth < 1)
+        {
+            HPSmooth += Time.deltaTime * smooth;
+            HPSlider.value = Mathf.Lerp(startHP, CurrentHP, HPSmooth);
+            HPText.text = HPSlider.value + " / " + HPSlider.maxValue;
+            yield return null;
+        }
+        yield return null;
     }
     public void UpdateStateUI()
     {
-        foreach (Image image in StateLists)
+        List<BasisSkill> activeList = new List<BasisSkill>();
+        Skill skill = SkillManager.Instance.ActiveSkills.FirstOrDefault(x => x.DurationTime > 0);
+        if (skill != null)
         {
-            //image.color = new Color(1,1,1,0);
-            image.enabled = false;
+            activeList.Add(skill.Data);
         }
-        int count = 0;
-        if (SkillManager.Instance.ActiveSkills.Count != 0)
+        activeList.AddRange(SkillManager.Instance.ActiveDebuffs);
+        for (int i = 0; i < StateLists.Count; i++)
         {
-            for (int i = 0; i < SkillManager.Instance.ActiveSkills.Count; i++)
+            Animator animator = StateLists[i].gameObject.GetComponent<Animator>();
+            SpriteRenderer spriteRenderer = StateLists[i].gameObject.GetComponent<SpriteRenderer>();
+            if (i < activeList.Count)
             {
-                Skill skill = SkillManager.Instance.ActiveSkills[i];
-                if (skill.DurationTime == 0) { continue; }
-                StateLists[count].sprite = skill.SkillImage.sprite;
-                StateLists[count].enabled = true;
-                count++;
+                if (!animator.enabled || activeList[i].name != StateLists[i].name)
+                {
+                    StateLists[i].sprite = activeList[i].Sprite;
+                    StateLists[i].enabled = true;
+                    bool animEnabled = Enum.GetNames(typeof(ItemDebuffEnum)).FirstOrDefault(x => x == activeList[i].name) != null;
+                    spriteRenderer.enabled = animEnabled;
+                    animator.enabled = animEnabled;
+                    if (animator.enabled)
+                    {
+                        animator.Play(StateLists[i].sprite.name);
+                    }
+                }
             }
-        }
-        if (SkillManager.Instance.ActiveDebuffs.Count != 0)
-        {
-            for (int i = 0; i < SkillManager.Instance.ActiveDebuffs.Count; i++)
+            else
             {
-                Sprite sprite = SkillManager.Instance.ActiveDebuffs[i];
-                StateLists[i + count].sprite = sprite;
-                StateLists[i + count].enabled = true;
+                StateLists[i].sprite = null;
+                StateLists[i].enabled = false;
+                animator.Play("NoState");
+                spriteRenderer.enabled = false;
+                animator.enabled = false;
             }
         }
     }

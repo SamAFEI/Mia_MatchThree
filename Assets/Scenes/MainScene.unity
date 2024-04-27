@@ -725,7 +725,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2010411116, guid: 26bcbc5760193d449a3c300637bcff9b, type: 3}
+  m_Sprite: {fileID: 1315748127, guid: 26bcbc5760193d449a3c300637bcff9b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1725,7 +1725,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1495121829, guid: 744f5810645409a49beb51afffdbd185, type: 3}
+  m_Sprite: {fileID: 1881020626, guid: 2cad929f75d1d4c40bb2d27801f83ee6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3066,8 +3066,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -892, y: 459}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -881, y: 469}
+  m_SizeDelta: {x: 169.34, y: 173.67}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1984796796
 MonoBehaviour:
@@ -3126,14 +3126,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.64705884, g: 0.16078432, b: 0.24313726, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -831161685, guid: 744f5810645409a49beb51afffdbd185, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cd71f30cffa6a6b4da0d65ae438ef981, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3907,16 +3907,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 1084122481}
     m_Modifications:
     - target: {fileID: 318712071034087663, guid: 94128125d11f2d8408693fee8fe9467c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 50db86f8cf10ec0409a33ed4f564250f, type: 3}
+    - target: {fileID: 318712071034087663, guid: 94128125d11f2d8408693fee8fe9467c, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.24313726
       objectReference: {fileID: 0}
     - target: {fileID: 318712071034087663, guid: 94128125d11f2d8408693fee8fe9467c, type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.16078432
       objectReference: {fileID: 0}
     - target: {fileID: 318712071034087663, guid: 94128125d11f2d8408693fee8fe9467c, type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.64705884
       objectReference: {fileID: 0}
     - target: {fileID: 563957332555568310, guid: 94128125d11f2d8408693fee8fe9467c, type: 3}
       propertyPath: m_Pivot.x

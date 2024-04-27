@@ -12,6 +12,29 @@ public class Live2DController : MonoBehaviour
         Anim = GetComponent<Animator>();
         Model = this.FindCubismModel();
     }
+    public void Update()
+    {
+        if (Input.GetKey(KeyCode.Alpha1))
+        {
+            PlayAnim("Hurt");
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            PlayAnim("Attack");
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            PlayAnim("Break1");
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            PlayAnim("Break2");
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            PlayAnim("Idle");
+        }
+    }
     private void LateUpdate()
     {
         if (IsBreak1)
@@ -26,7 +49,6 @@ public class Live2DController : MonoBehaviour
     public void PlayAnim(string _anim)
     {
         Anim.Play(_anim);
-        Debug.Log(_anim);
     }
     public virtual void PlayIdle()
     {

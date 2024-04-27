@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
     public int CurrentHP { get; private set; }
     public bool IsDie { get { return CurrentHP <= 0; } }
     public float HPSmooth { get; private set; }
+    public GameObject HealFX;
     private void Awake()
     {
         Instance = this;
@@ -34,8 +35,12 @@ public class Player : MonoBehaviour
         CurrentHP = (int)HPSlider.maxValue;
         HPText.text = HPSlider.value + " / " + HPSlider.maxValue;
     }
-    private void FixedUpdate()
+    private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            Hurt(0);
+        }
         UpdateStateUI();
     }
 
@@ -45,10 +50,15 @@ public class Player : MonoBehaviour
         HPSmooth = 0;
         StartCoroutine(LerpHP());
     }
-    public IEnumerator LerpHP()
+    private IEnumerator LerpHP()
     {
         float smooth = 2;
-        float startHP = HPSlider.value;
+        float startHP = HPSlider.value; 
+        if (CurrentHP >= startHP) //Heal
+        {
+            GameObject Obj = Instantiate(Instance.HealFX, HPSlider.transform.position, Quaternion.identity);
+            Destroy(Obj,1f);
+        }
         while (HPSmooth < 1)
         {
             HPSmooth += Time.deltaTime * smooth;

@@ -31,28 +31,18 @@ public class Enemy : MonoBehaviour
         CurrentHP = (int)HPSlider.maxValue;
         HPText.text = HPSlider.value + " / " + HPSlider.maxValue;
     }
-    public void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            EnemyController.PlayAnim("Break1");
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            EnemyController.PlayAnim("Break2");
-        }
-    }
+
     public void Hurt(int _damage)
     {
-        CurrentHP = (int)Mathf.Clamp(CurrentHP - _damage, 0, HPSlider.maxValue); 
-        HPSmooth = 0;
-        StartCoroutine(LerpHP());
         if (!EnemyController.GetIsBreak1() && CurrentHP < HPSlider.maxValue / 3 * 2)
         { EnemyController.PlayAnim("Break1"); }
         else if (!EnemyController.GetIsBreak2() && CurrentHP < HPSlider.maxValue / 3 * 1)
         { EnemyController.PlayAnim("Break2"); }
         else
         { EnemyController.PlayAnim("Hurt"); }
+        CurrentHP = (int)Mathf.Clamp(CurrentHP - _damage, 0, HPSlider.maxValue);
+        HPSmooth = 0;
+        StartCoroutine(LerpHP());
     }
     public IEnumerator LerpHP()
     {

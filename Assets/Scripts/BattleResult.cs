@@ -21,9 +21,6 @@ public class BattleResult : MonoBehaviour
         isWin = _isWin;
         int _coin = (int) (Enemy.Instance.HPSlider.maxValue / 100 * (1 - Enemy.Instance.HPSlider.value / Enemy.Instance.HPSlider.maxValue));
         _coin += Board.Instance.MaxCombos * 50;
-        txtCoin.text = "$ " + _coin;
-        txtCombos.text = Board.Instance.MaxCombos + " Hits";
-        SkillManager.SetCoin(_coin);
         if (isWin)
         {
             txtWin.text = "Victory";
@@ -32,9 +29,13 @@ public class BattleResult : MonoBehaviour
         }
         else
         {
+            _coin = _coin / 3;
             txtWin.text = "Failed";
             AudioManager.PlaySE(SEEnum.Failed);
         }
+        txtCoin.text = "$ " + _coin;
+        txtCombos.text = Board.Instance.MaxCombos + " Hits";
+        SkillManager.SetCoin(_coin);
     }
     public void Continue()
     {

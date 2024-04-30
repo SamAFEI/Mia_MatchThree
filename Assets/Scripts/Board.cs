@@ -30,7 +30,7 @@ public class Board : MonoBehaviour
     private List<Tile> _newTopTiles = new List<Tile>();
     private List<Tile> _bonusTiles = new List<Tile>();
     private List<Tile> _moveTiles = new List<Tile>();
-    private List<(Item, int)> _hitList = new List<(Item, int)>();
+    private List<(Item, int, Vector3)> _hitList = new List<(Item, int, Vector3)>();
     private float TweenDuration = 0.25f;
     private float FallDuration = 0.05f;
     private const int MaxTrun = 40;
@@ -335,7 +335,7 @@ public class Board : MonoBehaviour
                                 bonusConnected.Add(Tiles[i, _tile.y]);
                                 //connectedTiles.Add(Tiles[i, _tile.y]);
                             }
-                            _hitList.Add((tile.Item, 8));
+                            _hitList.Add((tile.Item, 8, _tile.transform.position));
                         }
                         else
                         {
@@ -344,7 +344,7 @@ public class Board : MonoBehaviour
                                 bonusConnected.Add(Tiles[_tile.x, i]);
                                 //connectedTiles.Add(Tiles[_tile.x, i]);
                             }
-                            _hitList.Add((tile.Item, 7));
+                            _hitList.Add((tile.Item, 7, _tile.transform.position));
                         }
                     }
                     else if (_tile.Item.level == 2)
@@ -359,7 +359,7 @@ public class Board : MonoBehaviour
                             bonusConnected.Add(Tiles[_tile.x, i]);
                             //connectedTiles.Add(Tiles[_tile.x, i]);
                         }
-                        _hitList.Add((tile.Item, 14));
+                        _hitList.Add((tile.Item, 14, _tile.transform.position));
                     }
                 }
                 //一般的消除
@@ -408,7 +408,7 @@ public class Board : MonoBehaviour
                         tile.Item.bonusLevel = 2;
                     _bonusTiles.Add(tile);
                 }
-                _hitList.Add((tile.Item, tiles.Count()));
+                _hitList.Add((tile.Item, tiles.Count(), tile.transform.position));
                 connectedTiles.AddRange(tiles);
                 connectedTiles.AddRange(bonusConnected);
                 connectedTiles = connectedTiles.Distinct(new TileCompare()).ToList();
@@ -636,10 +636,10 @@ public class Board : MonoBehaviour
     #region 計算
     private void Calculate()
     {
-        List<(Item, int)> list = new List<(Item, int)>();
+        List<(Item, int, Vector3)> list = new List<(Item, int, Vector3)>();
         list.AddRange(_hitList);
         float _rate = SkillManager.Instance.ATK;
-        foreach ((Item, int) _hit in list)
+        foreach ((Item, int, Vector3) _hit in list)
         {
             float _damage = 100 * Random.Range(1.000f, 1.500f);
             combos++;
@@ -653,7 +653,7 @@ public class Board : MonoBehaviour
             }
             else
             {
-                Enemy.Instance.Hurt((int)_damage);
+                EnemyController.EnemyHurt(_hit.Item3, (int)_damage);
             }
             _hitList.Remove(_hit);
         }
@@ -691,9 +691,16 @@ public class Board : MonoBehaviour
         Player.Instance.Hurt((int)Poison);
     }
     #endregion
+
     public void QuitStage()
     {
-        Result.SetActive(true);
-        BattleResult.Instance.GameResult(false);
+        Confirmation.ShowDioalog("是否放棄此次戰鬥？",
+                () => 
+                {
+                    Result.SetActive(true);
+                    BattleResult.Instance.GameResult(false);
+                },
+                () => { }
+            );
     }
 }

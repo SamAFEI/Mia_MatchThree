@@ -1198,7 +1198,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: Value
-    path: Parameters/break1
+    path: Parameters/Break1
     classID: 114
     script: {fileID: 11500000, guid: dafbb7ec1700e8147a48dbed2e4e543c, type: 3}
     flags: 0
@@ -1228,7 +1228,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: Value
-    path: Parameters/break2
+    path: Parameters/Break2
     classID: 114
     script: {fileID: 11500000, guid: dafbb7ec1700e8147a48dbed2e4e543c, type: 3}
     flags: 0
@@ -1613,7 +1613,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3131664102
+      path: 3171247056
       attribute: 3702945584
       script: {fileID: 11500000, guid: dafbb7ec1700e8147a48dbed2e4e543c, type: 3}
       typeID: 114
@@ -1622,7 +1622,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 597702492
+      path: 604779114
       attribute: 3702945584
       script: {fileID: 11500000, guid: dafbb7ec1700e8147a48dbed2e4e543c, type: 3}
       typeID: 114
@@ -2833,7 +2833,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: Value
-    path: Parameters/break1
+    path: Parameters/Break1
     classID: 114
     script: {fileID: 11500000, guid: dafbb7ec1700e8147a48dbed2e4e543c, type: 3}
     flags: 0
@@ -2863,7 +2863,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: Value
-    path: Parameters/break2
+    path: Parameters/Break2
     classID: 114
     script: {fileID: 11500000, guid: dafbb7ec1700e8147a48dbed2e4e543c, type: 3}
     flags: 0
@@ -2933,5 +2933,5 @@ AnimationClip:
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
-    intParameter: -8894
+    intParameter: -11956
     messageOptions: 1

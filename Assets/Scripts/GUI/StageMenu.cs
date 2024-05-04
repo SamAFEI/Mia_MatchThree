@@ -32,6 +32,7 @@ public class StageMenu : MonoBehaviour
     {
         foreach (Button _btn in StageBtns)
         {
+            _btn.onClick.AddListener(() => AudioManager.Instance.PlayClick());
             _btn.onClick.AddListener(() => OnClick(_btn));
             if (_btn.name == GameManager.Instance.CurrentStage.StageName)
             {

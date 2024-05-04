@@ -33,8 +33,22 @@ public class AudioManager : MonoBehaviour
     public AudioClip FailedClip;
     [Header("勝利")]
     public AudioClip VictoryClip;
+    [Header("魔法擊中")]
+    public AudioClip ImapctClip;
+    [Header("回復")]
+    public AudioClip HealClip;
+    [Header("按鈕")]
+    public AudioClip ClickClip;
+    [Header("刀痕")]
+    public AudioClip SlashClip;
+    [Header("中毒")]
+    public AudioClip PoisonClip;
+    [Header("Debuff")]
+    public AudioClip DebuffClip;
+
     [Header("語音")]
     public AudioClip VoiceClip;
+
     private void Awake()
     {
         if (instance != null)
@@ -114,10 +128,21 @@ public class AudioManager : MonoBehaviour
         else if (type == SEEnum.LevelUp) { Instance.SESource.clip = Instance.LevelUpClip; }
         else if (type == SEEnum.Victory) { Instance.SESource.clip = Instance.VictoryClip; }
         else if (type == SEEnum.Failed) { Instance.SESource.clip = Instance.FailedClip; }
-        Instance.SESource.Play();
+        else if (type == SEEnum.Imapct) { Instance.SESource.clip = Instance.ImapctClip; }
+        else if (type == SEEnum.Heal) { Instance.SESource.clip = Instance.HealClip; }
+        else if (type == SEEnum.Click) { Instance.SESource.clip = Instance.ClickClip; }
+        else if (type == SEEnum.Slash) { Instance.SESource.clip = Instance.SlashClip; }
+        else if (type == SEEnum.Debuff) { Instance.SESource.clip = Instance.DebuffClip; }
+        else if (type == SEEnum.Poison) { Instance.SESource.clip = Instance.PoisonClip; }
+        Instance.SESource.PlayOneShot(Instance.SESource.clip);
+        //Instance.SESource.Play();
+    }
+    public void PlayClick()
+    {
+        PlaySE(SEEnum.Click);
     }
 }
 public enum SEEnum
 {
-    Pop, LevelUp, Failed, Victory
+    Pop, LevelUp, Failed, Victory, Imapct, Heal, Click, Slash, Debuff, Poison
 }

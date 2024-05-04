@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adbe4c27f57227940b160f5a26beecba, type: 3}
   m_Name: Stage01
   m_EditorClassIdentifier: 
-  Character: {fileID: 6901929363060950283, guid: 9c7d415b0b16692469a007ebb6a02c60, type: 3}
+  Character: {fileID: 6279108308481357563, guid: 9c7d415b0b16692469a007ebb6a02c60, type: 3}
   MaxHP: 300000
   Id: 0
   ATK: 5000
-  AnimName: "\u5F85\u6A5FLOOP"
+  AnimName: Idle
   StageName: Stage01
   IsComplete: 0
   PriorStage: {fileID: 0}

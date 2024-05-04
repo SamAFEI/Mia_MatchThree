@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adbe4c27f57227940b160f5a26beecba, type: 3}
   m_Name: Stage04
   m_EditorClassIdentifier: 
-  Character: {fileID: 989955404773393117, guid: 8244fdfbea4f2a24497165c9d5c5aa8f, type: 3}
+  Character: {fileID: 2028098005782327841, guid: c81eda1db35718a47b4ea3c28e910c8c, type: 3}
   MaxHP: 600000
   Id: 3
   ATK: 8000
-  AnimName: haru_g_m05
+  AnimName: Idle
   StageName: Stage04
   IsComplete: 0
   PriorStage: {fileID: 11400000, guid: b73887800f2f6bd4889e532823b27eac, type: 2}

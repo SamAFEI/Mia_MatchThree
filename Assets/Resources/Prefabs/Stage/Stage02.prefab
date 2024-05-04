@@ -26,12 +26,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: AnimName
-      value: "\u5F85\u6A5FLOOP"
+      value: Idle
       objectReference: {fileID: 0}
     - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: Character
       value: 
-      objectReference: {fileID: 6901929363060950283, guid: 9c7d415b0b16692469a007ebb6a02c60, type: 3}
+      objectReference: {fileID: 6279108308481357563, guid: 9c7d415b0b16692469a007ebb6a02c60, type: 3}
     - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: StageName
       value: Stage02

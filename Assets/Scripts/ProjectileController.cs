@@ -36,12 +36,11 @@ public class ProjectileController : MonoBehaviour
         y = Random.Range(-2f, 2f);
         p1 = new Vector3(_start.x + x, y, z);
         p2 = new Vector3(_target.x - (Mathf.Abs(x * 2)), y, z);
-        Debug.Log(TargetPoint);
     }
     public void BezierCurves()
     {
         Vector3 pt = BezierUtility.BezierPoint(p1, StartPoint, TargetPoint, p2, time);
-        this.transform.LookAt(pt); // z軸箭頭 對向自己
+        this.transform.LookAt(pt); //3D物件 用z軸箭頭轉向 
         this.transform.position = pt;
     }
     public void OnDestroy()
@@ -50,6 +49,7 @@ public class ProjectileController : MonoBehaviour
             Enemy.Instance.Hurt(Damage);
         if (Impact != null)
         {
+            AudioManager.PlaySE(SEEnum.Imapct);
             GameObject obj = Instantiate(Impact,this.transform.position,Quaternion.identity);
             Destroy(obj, 0.5f);
         }

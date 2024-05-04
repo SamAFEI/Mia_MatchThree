@@ -53,7 +53,13 @@ MonoBehaviour:
   LevelUpClip: {fileID: 8300000, guid: 414fc30d1ae98a44da63fbd328db55cc, type: 3}
   FailedClip: {fileID: 8300000, guid: 3f9c259dc7e17e7468b5b381abb7df13, type: 3}
   VictoryClip: {fileID: 8300000, guid: 701d298a4ec6d0840a5b47a625a8e1b9, type: 3}
-  VoiceClip: {fileID: 8300000, guid: c33709792df865b4c8dddd7e98e26345, type: 3}
+  ImapctClip: {fileID: 8300000, guid: a921b9346b0281a41bf66db4e82ca82a, type: 3}
+  HealClip: {fileID: 8300000, guid: 88b07d0721a24ed439eb04ded74ff280, type: 3}
+  ClickClip: {fileID: 8300000, guid: acf8e082c5616254bb3f1b3a97a9cfe6, type: 3}
+  SlashClip: {fileID: 8300000, guid: cef0dd8559f910740bef029ed6dd10da, type: 3}
+  PoisonClip: {fileID: 8300000, guid: df390ae8010a58f4ba662a7b85b20394, type: 3}
+  DebuffClip: {fileID: 8300000, guid: 6438a7dfc8a71564198c7399d46a3104, type: 3}
+  VoiceClip: {fileID: 8300000, guid: b410315beddf97f4cade2e1ed3bc54a9, type: 3}
 --- !u!1 &957400753545423164
 GameObject:
   m_ObjectHideFlags: 0

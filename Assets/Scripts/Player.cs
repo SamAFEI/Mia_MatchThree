@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,6 +18,8 @@ public class Player : MonoBehaviour
     public bool IsDie { get { return CurrentHP <= 0; } }
     public float HPSmooth { get; private set; }
     public GameObject HealFX;
+    public GameObject SlashFX;
+    public GameObject Object;
     private void Awake()
     {
         Instance = this;
@@ -41,9 +42,25 @@ public class Player : MonoBehaviour
         {
             Hurt(0);
         }
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            SlashHurt(0);
+        }
         UpdateStateUI();
     }
-
+    public void SlashHurt(int _damage)
+    {
+        //Debug.Log(Object.transform.position);
+        float length = 2.5f;
+        float startX = Random.Range(-8f, -2.5f);
+        float endX = startX >= -5.5f ? startX - length : startX + length;
+        Vector3 startPoint = new Vector3(startX, -2.5f, 90f);
+        Vector3 endPoint = new Vector3(endX, -5, 90f);
+        GameObject Obj = Instantiate(SlashFX, startPoint, Quaternion.identity);
+        Obj.GetComponent<SlashController>().SetPoint(startPoint, endPoint, _damage);
+        StartCoroutine(GameManager.ShakeCamera(0.15f, 0.4f));
+        Debug.Log("SlashHurt");
+    }
     public void Hurt(int _damage)
     {
         CurrentHP = (int)Mathf.Clamp(CurrentHP - _damage, 0, HPSlider.maxValue);
@@ -56,6 +73,7 @@ public class Player : MonoBehaviour
         float startHP = HPSlider.value; 
         if (CurrentHP >= startHP) //Heal
         {
+            AudioManager.PlaySE(SEEnum.Heal);
             GameObject Obj = Instantiate(Instance.HealFX, HPSlider.transform.position, Quaternion.identity);
             Destroy(Obj,1f);
         }
@@ -87,7 +105,7 @@ public class Player : MonoBehaviour
                 {
                     StateLists[i].sprite = activeList[i].Sprite;
                     StateLists[i].enabled = true;
-                    bool animEnabled = Enum.GetNames(typeof(ItemDebuffEnum)).FirstOrDefault(x => x == activeList[i].name) != null;
+                    bool animEnabled = System.Enum.GetNames(typeof(ItemDebuffEnum)).FirstOrDefault(x => x == activeList[i].name) != null;
                     spriteRenderer.enabled = animEnabled;
                     animator.enabled = animEnabled;
                     if (animator.enabled)

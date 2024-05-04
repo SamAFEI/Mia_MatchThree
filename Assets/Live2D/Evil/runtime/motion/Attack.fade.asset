@@ -48,12 +48,12 @@ MonoBehaviour:
   - ParamHairSide
   - ParamHairBack
   - Param
+  - Hair1
   - Param6
   - Param7
   - Break1
   - Break2
   - Param9
-  - Param11
   - Param12
   - Param13
   - Param14
@@ -972,6 +972,29 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1.3
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  - serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
       value: 30
       inSlope: 0
       outSlope: 0
@@ -1114,29 +1137,6 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 1.3
       value: 30
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  - serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1.3
-      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0

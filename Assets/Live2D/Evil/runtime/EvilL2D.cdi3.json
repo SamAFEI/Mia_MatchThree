@@ -162,7 +162,7 @@
 			"Name": "翅膀"
 		},
 		{
-			"Id": "hair1",
+			"Id": "Hair1",
 			"GroupId": "",
 			"Name": "透明後髮"
 		},
@@ -190,11 +190,6 @@
 			"Id": "Param9",
 			"GroupId": "",
 			"Name": "位移"
-		},
-		{
-			"Id": "Param11",
-			"GroupId": "",
-			"Name": "参数37"
 		},
 		{
 			"Id": "Param12",

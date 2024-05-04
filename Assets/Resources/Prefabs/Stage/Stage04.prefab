@@ -26,12 +26,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: AnimName
-      value: haru_g_m05
+      value: Idle
       objectReference: {fileID: 0}
     - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: Character
       value: 
-      objectReference: {fileID: 989955404773393117, guid: 8244fdfbea4f2a24497165c9d5c5aa8f, type: 3}
+      objectReference: {fileID: 2028098005782327841, guid: c81eda1db35718a47b4ea3c28e910c8c, type: 3}
     - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: StageName
       value: Stage04

@@ -7,6 +7,7 @@ public class Live2DController : MonoBehaviour
     public CubismModel Model { get; private set; }
     public bool IsBreak1 { get; private set; }
     public bool IsBreak2 { get; private set; }
+    public int Damage { get; private set; }
     private void Start()
     {
         Anim = GetComponent<Animator>();
@@ -39,11 +40,15 @@ public class Live2DController : MonoBehaviour
     {
         if (IsBreak1)
         {
-            Model.Parameters.FindById("Break1").Value = -10;
+            Model.Parameters.FindById("Break1").Value = -30;
+            if (!Model.Parameters.FindById("Break1"))
+            {
+                Model.Parameters.FindById("Hair1").Value = 30;
+            }
         }
         if (IsBreak2)
         {
-            Model.Parameters.FindById("Break2").Value = -10;
+            Model.Parameters.FindById("Break2").Value = -30;
         }
     }
     public void PlayAnim(string _anim)
@@ -56,4 +61,10 @@ public class Live2DController : MonoBehaviour
     }
     public void SetBreak1() { IsBreak1 = true; }
     public void SetBreak2() { IsBreak2 = true; }
+    public void SetDamage(int _damage) { Damage = _damage; }
+    public void DoAttack() 
+    { 
+        Player.Instance.SlashHurt(Damage); 
+        Debug.Log("DoAttack"); 
+    }
 }

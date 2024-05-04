@@ -1,5 +1,6 @@
 using Assets.Scripts;
 using Assets.Scripts.Manager;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -138,6 +139,24 @@ public class GameManager : MonoBehaviour, ISaveManager
         {
             if (stage.Data != null) { stage.Data.IsComplete = false; }
         }
+    }
+
+    public static IEnumerator ShakeCamera(float _duration, float magnitude) 
+    {
+        Camera _camera = Camera.main;
+        Vector3 orignalPos = _camera.transform.localPosition;
+        float elapsed = 0.0f;
+        while (elapsed < _duration)
+        {
+            float x = Random.Range(-1f, 1f) * magnitude;
+            float y = Random.Range(-1f, 1f) * magnitude;
+
+            _camera.transform.localPosition = new Vector3(x, y, orignalPos.z);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+        _camera.transform.localPosition = orignalPos;
+        yield return null;
     }
 
     public void LoadData(GameData _data)

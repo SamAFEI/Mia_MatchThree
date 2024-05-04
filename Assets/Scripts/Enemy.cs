@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour
     public int ATK { get; private set; }
     public bool IsDie { get { return CurrentHP <= 0; } }
     public float HPSmooth { get; private set; }
+    public float BusyTime { get; private set; }
     private void Awake()
     {
         Instance = this;
@@ -30,6 +31,10 @@ public class Enemy : MonoBehaviour
         HPSlider.value = HPSlider.maxValue;
         CurrentHP = (int)HPSlider.maxValue;
         HPText.text = HPSlider.value + " / " + HPSlider.maxValue;
+    }
+    private void Update()
+    {
+        Instance.BusyTime -= Time.deltaTime;
     }
 
     public void Hurt(int _damage)
@@ -59,8 +64,7 @@ public class Enemy : MonoBehaviour
     }
     public void Attack()
     {
-        EnemyController.PlayAnim("Attack");
-        float _damage = ATK * Random.Range(0.800f, 1.200f) * Board.Instance.DEFDown;
-        Player.Instance.Hurt((int)_damage);
+        float damage = ATK * Random.Range(0.800f, 1.200f) * Board.Instance.DEFDown;
+        EnemyController.EneymAttack((int)damage);
     }
 }

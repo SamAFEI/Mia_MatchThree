@@ -16,7 +16,7 @@ public class CGScene : MonoBehaviour
     }
     private void Start()
     {
-        GameObject obj = Instantiate(Stage.Data.Character, transform.position, Quaternion.identity);
+        GameObject obj = Instantiate(Stage.Data.Character, transform.position, Quaternion.identity, transform);
         string _blockName = "CG" + Stage.Data.Id;
         Dialog.ExecuteIfHasBlock(_blockName);
         AudioManager.StopBGM();

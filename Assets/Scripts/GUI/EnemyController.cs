@@ -5,7 +5,9 @@ public class EnemyController : MonoBehaviour
     public static EnemyController Instance { get; private set; }
     public GameObject Character { get; private set; }
     public Live2DController L2DController { get; private set; }
-    public GameObject Projectile;
+    public GameObject Projectile_Red;
+    public GameObject Projectile_Yellow;
+    public GameObject Projectile_Blue;
     private void Awake()
     {
         Instance = this;
@@ -41,9 +43,34 @@ public class EnemyController : MonoBehaviour
         else return Instance.L2DController.IsBreak2;
     }
 
-    public static void EnemyHurt(Vector3 _startPoint,int _damage)
+    public static void EnemyHurt(Vector3 _startPoint,int _damage, ItemColorEnum itemColor = ItemColorEnum.Red)
     {
-        GameObject Obj = Instantiate(Instance.Projectile, _startPoint, Quaternion.identity);
+        GameObject projectile = Instance.Projectile_Red;
+        if (itemColor == ItemColorEnum.Red)
+        {
+            projectile = Instance.Projectile_Red;
+        }
+        else if (itemColor == ItemColorEnum.Blue)
+        {
+            projectile = Instance.Projectile_Blue;
+        }
+        else if (itemColor == ItemColorEnum.Yellow)
+        {
+            projectile = Instance.Projectile_Yellow;
+        }
+        GameObject Obj = Instantiate(projectile, _startPoint, Quaternion.identity);
         Obj.GetComponent<ProjectileController>().SetPoint(_startPoint, Instance.transform.position, _damage);
+    }
+    public static void EneymAttack(int _damage)
+    {
+        if (Instance.L2DController == null)
+        {
+            Player.Instance.SlashHurt(_damage);
+        }
+        else 
+        {
+            Instance.L2DController.SetDamage(_damage);
+            PlayAnim("Attack");
+        }
     }
 }

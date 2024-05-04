@@ -36,7 +36,7 @@ public class SettingManager : MonoBehaviour
     public Slider VoiceVolumeSlider { get; private set; }
     private void Awake()
     {
-        Debug.Log(Application.systemLanguage.ToString());
+        //Debug.Log(Application.systemLanguage.ToString());
         if (instance != null)
         {
             Destroy(this.gameObject);
@@ -55,10 +55,12 @@ public class SettingManager : MonoBehaviour
     }
     private void Start()
     {
+#if !UNITY_WEBPLAYER
         SetResolutionDropdown();
+        FullScreenToggle.isOn = IsFullScreen;
+#endif
         SetLanguageDropdown();
         SetAudioVolumeSlider();
-        FullScreenToggle.isOn = IsFullScreen;
     }
     private void Update()
     {
@@ -76,7 +78,7 @@ public class SettingManager : MonoBehaviour
         GameObject obj = Resources.Load<GameObject>("Prefabs/Manager/SettingManager");
         obj = Instantiate(obj, Vector3.zero, Quaternion.identity);
         instance = obj.GetComponent<SettingManager>();
-        //Instance.Resolution = Screen.currentResolution;
+        Instance.Resolution = Screen.currentResolution;
         Instance.IsFullScreen = Screen.fullScreen;
         Instance.Language = LanguageEnum.EN;
         if (Application.systemLanguage == SystemLanguage.ChineseTraditional)

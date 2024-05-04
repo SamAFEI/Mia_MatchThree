@@ -140,7 +140,7 @@ public class Board : MonoBehaviour
     #region 交換
     public async void ChangeTile(Tile originTile, Tile targetTile)
     {
-        if (IsBusy) { return; }
+        if (IsBusy || Enemy.Instance.BusyTime > 0) { return; }
         IsBusy = true;
         _moveTiles.Clear();
         _moveTiles.Add(originTile);
@@ -166,6 +166,7 @@ public class Board : MonoBehaviour
             currentTrun++;
             SkillManager.UpdateSkillTime();
             DoPoison();
+            await Task.Delay(1000);
         }
         else
         {
@@ -617,6 +618,7 @@ public class Board : MonoBehaviour
     }
     private void NewDebuffTiles()
     {
+        AudioManager.PlaySE(SEEnum.Debuff);
         int count = 0;
         int debuffIndex = Random.Range(1, 4);
         while (count < 2)
@@ -653,7 +655,7 @@ public class Board : MonoBehaviour
             }
             else
             {
-                EnemyController.EnemyHurt(_hit.Item3, (int)_damage);
+                EnemyController.EnemyHurt(_hit.Item3, (int)_damage, _hit.Item1.color);
             }
             _hitList.Remove(_hit);
         }

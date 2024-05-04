@@ -993,15 +993,15 @@ MonoBehaviour:
       time: 0.333
       value: 0.4
       inSlope: -0.30030027
-      outSlope: 0.099999964
+      outSlope: 0
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
       time: 0.833
-      value: 0.45
-      inSlope: 0.099999964
+      value: 0.4
+      inSlope: 0
       outSlope: 0
       tangentMode: 0
       weightedMode: 0

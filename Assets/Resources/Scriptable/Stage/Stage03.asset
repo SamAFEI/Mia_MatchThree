@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adbe4c27f57227940b160f5a26beecba, type: 3}
   m_Name: Stage03
   m_EditorClassIdentifier: 
-  Character: {fileID: 6756384131730112942, guid: c81eda1db35718a47b4ea3c28e910c8c, type: 3}
+  Character: {fileID: 7282186830000946022, guid: c81eda1db35718a47b4ea3c28e910c8c, type: 3}
   MaxHP: 300000
   Id: 2
   ATK: 5000

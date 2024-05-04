@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: break2
+  m_Name: Break2
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -3041,24 +3041,5 @@ AnimationClip:
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
-<<<<<<< HEAD
-    intParameter: -10450
+    intParameter: -13050
     messageOptions: 1
-=======
-    intParameter: 31114
-    messageOptions: 1
-  - time: 0.53333336
-    functionName: PlayIdle
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.53333336
-    functionName: SetBreak2
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
->>>>>>> 0cc607cf54c766a68a69ad5c89606cf75912da4c

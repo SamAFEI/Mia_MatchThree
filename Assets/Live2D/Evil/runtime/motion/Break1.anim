@@ -3036,27 +3036,10 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-<<<<<<< HEAD
   - time: 0
     functionName: InstanceId
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
-    intParameter: -10490
+    intParameter: -13090
     messageOptions: 1
-=======
-  - time: 0.53333336
-    functionName: PlayIdle
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.53333336
-    functionName: SetBreak1
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
->>>>>>> 0cc607cf54c766a68a69ad5c89606cf75912da4c

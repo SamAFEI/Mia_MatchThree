@@ -151,6 +151,7 @@ public class Board : MonoBehaviour
         {
             combos = 0;
             await Pop();
+            await Task.Delay(1000);
             if (!Enemy.Instance.IsDie)
             {
                 if (currentTrun % 4 == 0)
@@ -160,13 +161,13 @@ public class Board : MonoBehaviour
 
                 if (currentTrun % 3 == 0)
                 {
-                    Enemy.Instance.Attack();
+                    Enemy.Instance.Attack(); 
+                    await Task.Delay(1000);
                 }
             }
             currentTrun++;
             SkillManager.UpdateSkillTime();
             DoPoison();
-            await Task.Delay(1000);
         }
         else
         {

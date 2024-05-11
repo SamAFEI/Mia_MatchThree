@@ -1,0 +1,13 @@
+﻿Key,Description,Standard,ZH,EN,JP
+SAY.Flowchart.1.Mia,,"師傅,我出門採藥草了!","師傅,我出門採藥草了!","Master, I'm going out to gather herbs!",マスター、私は薬草を採りに行きます！
+SAY.Flowchart.41.Mia,,"哇,這裡長了好多藥草!今天大豐收!","哇,這裡長了好多藥草!今天大豐收!","Wow, there are so many herbs growing here! It's a harvest today!",わあ、ここにはたくさんのハーブが生えている！ いい収穫だ！
+SAY.Flowchart.4.,,隨後，米婭發現了一種散發著神秘香味的藥草。,隨後，米婭發現了一種散發著神秘香味的藥草。,Then Mia discovers a strange herb that emits a mysterious scent.,そんな折、ミアは不思議な香りを放つハーブを発見する。
+SAY.Flowchart.3.Mia,,"嗯?這是什麼,沒有看過耶!","嗯?這是什麼,沒有看過耶!","Oh,? What's this? I've never seen it before!",おや？これは何？初めて見たよ！
+SAY.Flowchart.35.,,"米婭蹲下開始採集藥草,當她拔起藤蔓時,一條巨大的觸手連著藥草的根部,直直的往米婭身上竄。","米婭蹲下開始採集藥草,當她拔起藤蔓時,一條巨大的觸手連著藥草的根部,直直的往米婭身上竄。","Mia crouched down and began to gather herbs, and as he pulled up the vines, a huge tentacle attached to the root of the herbs tampered with Mia's body.",ミアがひざまずいて薬草を集め始めると、彼がつるを引っ張り上げ、薬草の根についた巨大な触手がまっすぐミアに向かってき上向きだ。
+SAY.Flowchart.36.Mia,,咿呀?!,咿呀?!,Eeeeeeeeeeeee?,えええおおおおおおお？
+SAY.Flowchart.37.Wizard,,....,....,....,....
+SAY.Flowchart.38.Mia,,你是誰?請救救我!,你是誰?請救救我!,Who are you? Please help me!,誰なの？ 助けてください！
+SAY.Flowchart.39.Wizard,,看來有人掉到陷阱裡了,看來有人掉到陷阱裡了,It seems that someone has fallen into the very trap.,まさしく誰かが罠にはまったようだ。
+SAY.Flowchart.40.Mia,,什麼?!,什麼?!,Hmm?,え？
+CHARACTER.Wizard,,魔法師,魔法師,Wizard,ウィザード
+CHARACTER.Mia,,米婭,米婭,Mia,ミア

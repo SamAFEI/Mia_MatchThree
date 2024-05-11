@@ -1,4 +1,5 @@
 using Assets.Scripts;
+using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "StageData", menuName = "Match3/StageData", order = 1)]
@@ -12,4 +13,6 @@ public class StageData : ScriptableObject
     public string StageName;
     public bool IsComplete;
     public StageData PriorStage;
+    public Sprite Background;
+    public List<Sprite> CGList = new List<Sprite>();
 }

@@ -41,7 +41,7 @@ public class Live2DController : MonoBehaviour
         if (IsBreak1)
         {
             Model.Parameters.FindById("Break1").Value = -30;
-            if (!Model.Parameters.FindById("Break1"))
+            if (Model.Parameters.FindById("Hair1"))
             {
                 Model.Parameters.FindById("Hair1").Value = 30;
             }
@@ -57,14 +57,21 @@ public class Live2DController : MonoBehaviour
     }
     public virtual void PlayIdle()
     {
-        Anim.Play("Idle");
+        Anim.Play("Idle"); 
+        if (Model.Parameters.FindById("Hair1"))
+        {
+            Model.Parameters.FindById("Param17").Value = 0;
+        }
     }
     public void SetBreak1() { IsBreak1 = true; }
     public void SetBreak2() { IsBreak2 = true; }
     public void SetDamage(int _damage) { Damage = _damage; }
     public void DoAttack() 
     { 
-        Player.Instance.SlashHurt(Damage); 
+        if (Player.Instance)
+        {
+            Player.Instance.SlashHurt(Damage);
+        }
         Debug.Log("DoAttack"); 
     }
 }

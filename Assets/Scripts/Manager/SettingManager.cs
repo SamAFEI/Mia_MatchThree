@@ -1,7 +1,9 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization.Settings;
 using UnityEngine.UI;
 
 public class SettingManager : MonoBehaviour
@@ -34,6 +36,8 @@ public class SettingManager : MonoBehaviour
     public Slider BGMVolumeSlider { get; private set; }
     public Slider SEVolumeSlider { get; private set; }
     public Slider VoiceVolumeSlider { get; private set; }
+    private float TestTime;
+    private float DelayTime = 0.2f;
     private void Awake()
     {
         //Debug.Log(Application.systemLanguage.ToString());
@@ -64,6 +68,7 @@ public class SettingManager : MonoBehaviour
     }
     private void Update()
     {
+        TestTime -= Time.deltaTime;
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             SetAreaActive(!Area.activeSelf);
@@ -94,6 +99,12 @@ public class SettingManager : MonoBehaviour
     {
         Instance.Area.SetActive(_value);
     }
+    public static void SetLanguage(int _index)
+    {
+        Instance.Language = (LanguageEnum)_index;;
+        Instance.StartCoroutine(Instance.SetLocale(_index));
+        Debug.Log(Instance.Language.ToString());
+    }
     public static void SetResolution(int _index)
     {
         Instance.Resolution = Instance.Resolutions[_index];
@@ -111,12 +122,14 @@ public class SettingManager : MonoBehaviour
     public static void SetSEVolume(float _volume)
     {
         AudioManager.SetSEVolume(_volume);
-        AudioManager.PlaySE(SEEnum.Pop);
+        Instance.TestTime = Instance.DelayTime;
+        Instance.StartCoroutine(Instance.TestPlaySE());
     }
     public static void SetVoiceVolume(float _volume)
     {
-        AudioManager.SetVoiceVolume(_volume); ;
-        AudioManager.PlayVoice();
+        AudioManager.SetVoiceVolume(_volume);
+        Instance.TestTime = Instance.DelayTime;
+        Instance.StartCoroutine(Instance.TestPlayVoice());
     }
     private static void SetLanguageDropdown()
     {
@@ -132,10 +145,10 @@ public class SettingManager : MonoBehaviour
     private static void SetResolutionDropdown()
     {
         Instance.Resolutions = new List<Resolution>();
-        List<Resolution> _resolutions = Screen.resolutions.Select(resolution => new Resolution { width = resolution.width, height = resolution.height}).Distinct().ToList();
+        List<Resolution> _resolutions = Screen.resolutions.Select(resolution => new Resolution { width = resolution.width, height = resolution.height }).Distinct().ToList();
         Instance.ResolutionsDropdown.ClearOptions();
         List<string> options = new List<string>();
-        for (int i = 0; i < _resolutions.Count ; i++) 
+        for (int i = 0; i < _resolutions.Count; i++)
         {
             if (Mathf.Approximately(9f / 16f, (float)_resolutions[i].height / (float)_resolutions[i].width))
             {
@@ -145,7 +158,7 @@ public class SettingManager : MonoBehaviour
             }
         }
         Instance.ResolutionsDropdown.AddOptions(options);
-        for (int i = 0; i < Instance.Resolutions.Count ;i++)
+        for (int i = 0; i < Instance.Resolutions.Count; i++)
         {
             if (Instance.Resolutions[i].width == Instance.Resolution.width &&
                 Instance.Resolutions[i].height == Instance.Resolution.height)
@@ -165,6 +178,30 @@ public class SettingManager : MonoBehaviour
         Instance.BGMVolumeSlider.value = AudioManager.GetBGMVolume();
         Instance.SEVolumeSlider.value = AudioManager.GetSEVolume();
         Instance.VoiceVolumeSlider.value = AudioManager.GetVoiceVolume();
+        Instance.TestTime = 1000f; //避免初始化時 觸發 TestPlay
+    }
+    private IEnumerator TestPlayVoice()
+    {
+        yield return new WaitForSeconds(Instance.DelayTime);
+        if (Instance.TestTime <= 0)
+        {
+            AudioManager.PlayVoice();
+            Instance.TestTime = 0f;
+        }
+    }
+    private IEnumerator TestPlaySE()
+    {
+        yield return new WaitForSeconds(Instance.DelayTime);
+        if (Instance.TestTime <= 0)
+        {
+            AudioManager.PlaySE(SEEnum.Pop);
+            Instance.TestTime = 0f;
+        }
+    }
+    private IEnumerator SetLocale(int _localeID)
+    {
+        yield return LocalizationSettings.InitializationOperation;
+        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[_localeID];
     }
 }
 public enum LanguageEnum

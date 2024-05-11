@@ -22,18 +22,10 @@ public class SkillUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
             {
                 content = skill.Data.Content;
             }
-            int index = SkillManager.Instance.DebuffIcons.IndexOf(SkillImage.sprite);
-            if (index == 1)
+            BasisSkill basisSkill = SkillManager.Instance.ActiveDebuffs.Where(x => x.Sprite == SkillImage.sprite).SingleOrDefault();
+            if (basisSkill)
             {
-                content = "攻擊力降低";
-            }
-            else if (index == 2)
-            {
-                content = "防禦力降低";
-            }
-            else if (index == 3)
-            {
-                content = "每回合 -4000 HP";
+                content = basisSkill.Content;
             }
         }
         TooltipManager.ShowToolTip(content);

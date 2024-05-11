@@ -1,0 +1,13 @@
+Key,Description,Standard,ZH,EN,JP
+SAY.Flowchart.1.Mia,," Master, I'm going out to gather herbs!",,,
+SAY.Flowchart.41.Mia,,"Wow, there are so many herbs growing here! It's a harvest today!",,,
+SAY.Flowchart.4.,,Then Mia discovers a strange herb that emits a mysterious scent.,,,
+SAY.Flowchart.3.Mia,,"Oh,? What's this? I've never seen it before!",,,
+SAY.Flowchart.35.,,"Mia crouched down and began to gather herbs, and as he pulled up the vines, a huge tentacle attached to the root of the herbs tampered with Mia's body.",,,
+SAY.Flowchart.36.Mia,,Eeeeeeeeeeeee?,,,
+SAY.Flowchart.37.Wizard,,....,,,
+SAY.Flowchart.38.Mia,,Who are you? Please help me!,,,
+SAY.Flowchart.39.Wizard,,It seems that someone has fallen into the very trap.,,,
+SAY.Flowchart.40.Mia,,Hmm?,,,
+CHARACTER.Wizard,,Wizard,,,
+CHARACTER.Mia,,Mia,,,

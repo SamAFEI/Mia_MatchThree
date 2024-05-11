@@ -23,4 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TalkScene.unity
     guid: d8f30da677f515b4fb1adaceecd7f6ce
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: a57c32fbd65af4e4ca8e18bfe4e1306c, type: 2}
+    com.unity.localization.settings: {fileID: 11400000, guid: 1e47c84b985fdbd4bad0f14edc3cfa58, type: 2}

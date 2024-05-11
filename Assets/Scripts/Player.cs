@@ -59,7 +59,6 @@ public class Player : MonoBehaviour
         GameObject Obj = Instantiate(SlashFX, startPoint, Quaternion.identity);
         Obj.GetComponent<SlashController>().SetPoint(startPoint, endPoint, _damage);
         StartCoroutine(GameManager.ShakeCamera(0.15f, 0.4f));
-        Debug.Log("SlashHurt");
     }
     public void Hurt(int _damage)
     {

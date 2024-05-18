@@ -1,12 +1,15 @@
+using Assets.Scripts;
+using Assets.Scripts.Manager;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Localization.Settings;
 using UnityEngine.UI;
 
-public class SettingManager : MonoBehaviour
+public class SettingManager : MonoBehaviour , ISaveManager
 {
     private static SettingManager instance;
     public static SettingManager Instance
@@ -25,6 +28,8 @@ public class SettingManager : MonoBehaviour
         }
     }
     public Resolution Resolution { get; private set; }
+    public int ResolutionWidth { get; private set; }
+    public int ResolutionHeight { get; private set; }
     public bool IsFullScreen { get; private set; }
     public LanguageEnum Language { get; private set; }
     public List<Resolution> Resolutions { get; private set; }
@@ -59,12 +64,7 @@ public class SettingManager : MonoBehaviour
     }
     private void Start()
     {
-#if !UNITY_WEBPLAYER
-        SetResolutionDropdown();
-        FullScreenToggle.isOn = IsFullScreen;
-#endif
-        SetLanguageDropdown();
-        SetAudioVolumeSlider();
+        SaveManager.LoadGame();
     }
     private void Update()
     {
@@ -84,6 +84,8 @@ public class SettingManager : MonoBehaviour
         obj = Instantiate(obj, Vector3.zero, Quaternion.identity);
         instance = obj.GetComponent<SettingManager>();
         Instance.Resolution = Screen.currentResolution;
+        Instance.ResolutionWidth = Instance.Resolution.width;
+        Instance.ResolutionHeight = Instance.Resolution.height;
         Instance.IsFullScreen = Screen.fullScreen;
         Instance.Language = LanguageEnum.EN;
         if (Application.systemLanguage == SystemLanguage.ChineseTraditional)
@@ -141,6 +143,7 @@ public class SettingManager : MonoBehaviour
         Instance.LanguageDropdown.AddOptions(Instance.LanguageList);
         Instance.LanguageDropdown.value = (int)Instance.Language;
         Instance.LanguageDropdown.RefreshShownValue();
+        SetLanguage(Instance.LanguageDropdown.value);
     }
     private static void SetResolutionDropdown()
     {
@@ -160,8 +163,8 @@ public class SettingManager : MonoBehaviour
         Instance.ResolutionsDropdown.AddOptions(options);
         for (int i = 0; i < Instance.Resolutions.Count; i++)
         {
-            if (Instance.Resolutions[i].width == Instance.Resolution.width &&
-                Instance.Resolutions[i].height == Instance.Resolution.height)
+            if (Instance.Resolutions[i].width == Instance.ResolutionWidth &&
+                Instance.Resolutions[i].height == Instance.ResolutionHeight)
             {
                 Instance.ResolutionsDropdown.value = i;
                 break;
@@ -172,6 +175,7 @@ public class SettingManager : MonoBehaviour
             }
         }
         Instance.ResolutionsDropdown.RefreshShownValue();
+        SetResolution(Instance.ResolutionsDropdown.value);
     }
     private static void SetAudioVolumeSlider()
     {
@@ -185,7 +189,7 @@ public class SettingManager : MonoBehaviour
         yield return new WaitForSeconds(Instance.DelayTime);
         if (Instance.TestTime <= 0)
         {
-            AudioManager.PlayVoice();
+            AudioManager.PlayVoice(VoiceEnum.Hurt);
             Instance.TestTime = 0f;
         }
     }
@@ -202,6 +206,37 @@ public class SettingManager : MonoBehaviour
     {
         yield return LocalizationSettings.InitializationOperation;
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[_localeID];
+    }
+
+    public void LoadData(GameData _data)
+    {
+        if (_data.PlayerSetting != null)
+        {
+            SetBGMVolume(_data.PlayerSetting.BGMVolume);
+            SetSEVolume(_data.PlayerSetting.SEVolume);
+            SetVoiceVolume(_data.PlayerSetting.VoiceVolume);
+            Instance.Language = (LanguageEnum)_data.PlayerSetting.LanguageIndex;
+            Instance.IsFullScreen = _data.PlayerSetting.IsFullScreen;
+            Instance.ResolutionWidth = _data.PlayerSetting.ResolutionWidth;
+            Instance.ResolutionHeight = _data.PlayerSetting.ResolutionHeight;
+        }
+#if !UNITY_WEBPLAYER
+        SetResolutionDropdown();
+        FullScreenToggle.isOn = IsFullScreen;
+#endif
+        SetLanguageDropdown();
+        SetAudioVolumeSlider();
+    }
+
+    public void SaveData(ref GameData _data)
+    {
+        _data.PlayerSetting.BGMVolume = AudioManager.GetBGMVolume();
+        _data.PlayerSetting.SEVolume = AudioManager.GetSEVolume();
+        _data.PlayerSetting.VoiceVolume = AudioManager.GetVoiceVolume();
+        _data.PlayerSetting.LanguageIndex = (int)Instance.Language;
+        _data.PlayerSetting.IsFullScreen = Instance.IsFullScreen;
+        _data.PlayerSetting.ResolutionWidth = Instance.ResolutionWidth;
+        _data.PlayerSetting.ResolutionHeight = Instance.ResolutionHeight;
     }
 }
 public enum LanguageEnum

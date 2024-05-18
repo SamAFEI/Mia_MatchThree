@@ -1,19 +1,45 @@
 ﻿Key,Description,Standard,ZH,EN,JP
-SAY.Flowchart.1.,,CG Start,CG Start,CG Start,CG Start
-SAY.Flowchart.4.,,這是 CG1,這是 CG1,This is CG1,これわ CG1
-SAY.Flowchart.3.,,CG  End,CG  End,CG  End,CG  End
-SAY.Flowchart.6.,,CG Start,CG Start,CG Start,CG Start
-SAY.Flowchart.7.,,這是 CG3,這是 CG3,This is CG3,これわ CG3
-SAY.Flowchart.8.,,CG End,CG End,CG End,CG End
-SAY.Flowchart.11.,,CG Start,CG Start,CG Start,CG Start
-SAY.Flowchart.12.,,這是 CG2,這是 CG2,This is CG2,これわ CG2
-SAY.Flowchart.13.,,CG End,CG End,CG End,CG End
-SAY.Flowchart.16.,,Talk Start,Talk Start,Talk Start,Talk Start
-SAY.Flowchart.17.,,這是 CG5,這是 CG5,This is CG5,これわ CG5
-SAY.Flowchart.18.,,Talk End,Talk End,Talk End,Talk End
-SAY.Flowchart.21.,,Talk Start,Talk Start,Talk Start,Talk Start
-SAY.Flowchart.22.,,這是 CG4,這是 CG4,This is CG4,これわ CG4
-SAY.Flowchart.23.,,Talk End,Talk End,Talk End,Talk End
-SAY.Flowchart.26.,,CG Start,CG Start,CG Start,CG Start
-SAY.Flowchart.27.,,這是 CG5,這是 CG5,This is CG5,これわ CG5
-SAY.Flowchart.28.,,CG End,CG End,CG End,CG End
+SAY.Flowchart.1.Mia,,Ouch! ,疼疼疼...,Ouch! ,痛いよ、痛いよ、痛いよ...
+SAY.Flowchart.4.,,"Mia's eyes went black and he lost all consciousness. Looking around, he realized he had fallen into a cave. There was only one path that led deeper into the cave, as if to tell those who had fallen into the trap that they didn't have much of a choice.","隨後米婭眼前一片漆黑,徹底地失去了意識。環顧四周,發現他墜落在一個洞穴中。洞穴只有一條通往更深的道路,彷彿在告訴落入陷阱的人他並沒有太多的選擇。","Mia's eyes went black and he lost all consciousness. Looking around, he realized he had fallen into a cave. There was only one path that led deeper into the cave, as if to tell those who had fallen into the trap that they didn't have much of a choice.",ミアの目の前が真っ暗になり、意識を失った。 辺りを見回すと、彼は洞窟に落ちたことに気づいた。 洞窟の奥へと続く道は一本しかなく、まるで罠に落ちた者に選択の余地はないと教えているかのようだ。
+SAY.Flowchart.3.Mia,,"Having crept deeper into the cave,  entered a small room and then saw a ladder not far away.","躡手躡腳的往洞窟深處邁進,進到一個小房間,隨後看到不遠處有一把梯子。","Having crept deeper into the cave,  entered a small room and then saw a ladder not far away.",洞窟の奥深くまで忍び込んだは、小さな部屋に入り、そう遠くないところに梯子が見えた。
+SAY.Flowchart.35.,,"Mia rushed to the ladder as if she had seen a lifeline, and suddenly, Mia fell on the rope under her feet.","米婭急忙像是看到救命稻草快速的跑向梯子,突然,米婭被腳下的繩子拌了一跤","Mia rushed to the ladder as if she had seen a lifeline, and suddenly, Mia fell on the rope under her feet.",ミアは命綱を見たかのように梯子に駆け寄ったが、突然、足元のロープに倒れこんだ。
+SAY.Flowchart.36.Mia,,Oops!,哎呀!,Oops!,おっと！
+SAY.Flowchart.37.,,Mia gets up on the floor and realises that the ladder is gone where it used to be.,"米婭撐著地板起身,卻發現原本梯子所在的地方不見了。",Mia gets up on the floor and realises that the ladder is gone where it used to be.,ミアは床で体を支えながら立ち上がったが、はしごがなくなっていた。
+SAY.Flowchart.38.Mia,,Eh? Where's the ladder?,咦?梯子呢?,Eh? Where's the ladder?,おや？ 梯子はどだ？
+SAY.Flowchart.39.,,"Before Mia could finish her sentence, the rope that had tripped Mia seemed to come to life and flung itself at Mia's feet.","還沒等米婭說完,剛才絆倒米婭的繩子像是活過來一般,朝著米婭的腳下甩了過來。","Before Mia could finish her sentence, the rope that had tripped Mia seemed to come to life and flung itself at Mia's feet.",ミアがその言葉を言い終わる前に、彼女がミアを引っ掛けたロープが息を吹き返したようにミアの足元に飛んできた。
+SAY.Flowchart.40.Mia,,Eeeeeeeeeeee?,咿呀!,Eeeeeeeeeeee?,えええおおおおおおお？
+SAY.Flowchart.41.,,"Suddenly, many tentacles appeared on the wall and on the ground and wrapped around Mia. In an instant, Mia was entangled tightly by the tentacles.","突然之間,牆壁上、地上竄出許許多多觸手朝著米婭纏去,瞬間,米婭被觸手纏得密不通風。","Suddenly, many tentacles appeared on the wall and on the ground and wrapped around Mia. In an instant, Mia was entangled tightly by the tentacles.",突然、壁や床から無数の触手がミアに向かって飛び出し、一瞬にしてミアは触手の網に包まれた。
+SAY.Flowchart.42.Mia,,Woohoo....what is this?,嗚嗚....這是甚麼?,Woohoo....what is this?,うおおお……これは何だ？
+SAY.Flowchart.43.Mia,,Let go of me! Well... What is this disgusting thing?,放開我!唔...這是什麼噁心的東西?,Let go of me! Well... What is this disgusting thing?,放してくれ まあ... この嫌なものは何だ？
+SAY.Flowchart.44.,,But the tentacles don't understand human speech and quickly bind Mia's thighs and breasts. The viscous liquid gave Mia's body an instinctive creepy feeling.,"但觸手才聽不懂人話,很快的捆住了米婭的大腿和胸部。黏稠的液體讓米婭身體本能的感到毛骨悚然。",But the tentacles don't understand human speech and quickly bind Mia's thighs and breasts. The viscous liquid gave Mia's body an instinctive creepy feeling.,しかし触手は人間の言葉を理解せず、すぐにミアの太ももと胸を縛る。 粘性のある液体は、ミアの体に本能的な不気味さを与えた。
+SAY.Flowchart.45.Mia,,Aah... It tickles... Go away!,嗚...好癢...走開!,Aah... It tickles... Go away!,ああ... くすぐったい... あっち行け
+SAY.Flowchart.46.,,"Mia tries to move her arms and legs to dislodge the tentacles, but being tied up doesn't help.","米婭嘗試擺動手腳驅散觸手,但被五花大綁之下效果並不彰。","Mia tries to move her arms and legs to dislodge the tentacles, but being tied up doesn't help.",ミアは手足を動かして触手を振りほどこうとするが、縛られているためうまくいかない。
+SAY.Flowchart.47.,,"Then, as if receiving the same signal, the tentacles began to tease Mia's body at the same time.","隨後觸手像收到同樣的訊號,同時開始挑逗米婭的身體各處。","Then, as if receiving the same signal, the tentacles began to tease Mia's body at the same time.",すると、同じ合図を受け取ったかのように、触手が同時にミアの身体をいじり始めた。
+SAY.Flowchart.48.Mia,,Eh? There... Not over there!,??那裏...那裏不可以!,Eh? There... Not over there!,あれ？ そこ... そこじゃない
+SAY.Flowchart.49.,,"The touch was teasing the outside of the tight pussy, and the slime on the touch had a good lubricating effect. Even the shy first time pussy was soon wet.","觸手在緊緻的小穴外挑逗著,觸手上的黏液起到了很好的潤滑效果。即便是靦腆的初穴,也很快便的濕潤了起來。","The touch was teasing the outside of the tight pussy, and the slime on the touch had a good lubricating effect. Even the shy first time pussy was soon wet.",触手はきつい小さな穴の外側を嬲り、触手についた粘液は良い潤滑効果を発揮した。 恥ずかしがっていた最初のポイントもすぐにしっとりしました。
+SAY.Flowchart.50.Mia,,Hmm... Mmmm... No way...,嗯...嗯..不可以...,Hmm... Mmmm... No way...,うーん... うーん... まさか...
+SAY.Flowchart.51.Mia,,Whoo... What a feeling...,嗚..這是什麼感覺...,Whoo... What a feeling...,フー... なんて気持ちだ...
+SAY.Flowchart.52.,,"When Mia's body relaxed slightly, the movements of the tentacles suddenly became violent.","在米婭身體稍微放鬆的時候,觸手的動作突然劇烈了起來。","When Mia's body relaxed slightly, the movements of the tentacles suddenly became violent.",ミアの体が少し緩んだとき、突然触手の動きが激しくなった。
+SAY.Flowchart.53.Mia,,Huh? Huh? Uh-huh....!,咦?咦?嗚咿....!,Huh? Huh? Uh-huh....!,え？ え？えええおおおおお？
+SAY.Flowchart.54.,,"The tentacles began to work their way into her pussy, and the pain that ripped through her caused Mia to whimper in agony.","觸手開始朝著小穴裡頭邁進,觸女撕裂的痛感,讓米婭發出痛苦的低鳴。","The tentacles began to work their way into her pussy, and the pain that ripped through her caused Mia to whimper in agony.",触手が膣内に向かって動き始め、触手が引き裂かれる痛みにミアはうめき声を上げた。
+SAY.Flowchart.55.Mia,,It hurts!,好痛!,It hurts!,痛いんだ！
+SAY.Flowchart.56.,,"Before Mia could react and adapt, the tentacles began to twitch restlessly, their unique shapes filling the small hole completely.","來不及讓米婭反應和習慣,觸手不安分的開始抽動,特有的形狀讓小穴內被完整的填滿。","Before Mia could react and adapt, the tentacles began to twitch restlessly, their unique shapes filling the small hole completely.",ミアが反応して慣れるまでの十分な時間がないまま、触手は落ち着きなくピクピクし始め、独特の形状が小さな穴を完全に埋めました。
+SAY.Flowchart.57.Mia,,Eeee... What a strange feeling...,嗚咿...好奇怪的感覺...,Eeee... What a strange feeling...,ええっ...。 なんか変な感じ...。
+SAY.Flowchart.58.,,"With the thrusting of the tentacles, a large amount of love juice began to secrete and flowed out of her pussy uncontrollably.","隨著觸手的抽插,大量的愛液開始分泌,不受控制地從小穴流了出來。","With the thrusting of the tentacles, a large amount of love juice began to secrete and flowed out of her pussy uncontrollably.",触手の突き上げとともに、大量の愛液が分泌され始め、アソコから止めどなく流れ出した。
+SAY.Flowchart.59.Mia,,It's weird. The body is starting to get weird...,好奇怪..身體開始變得好奇怪...,It's weird. The body is starting to get weird...,奇妙だ。 体が変な感じになってきた...。
+SAY.Flowchart.60.,,"The body became hot, and the pain in the brain blurred Mia's consciousness.","身體變得滾燙,刺激大腦的痛楚使米婭得意識變得模糊不清。","The body became hot, and the pain in the brain blurred Mia's consciousness.",体が熱くなり、脳を刺激する痛みにミアの意識は朦朧としていた。
+SAY.Flowchart.61.Mia,,It's so light... So strange...,輕飄飄的...好奇怪...,It's so light... So strange...,とても軽い... とても奇妙だ...
+SAY.Flowchart.62.,,Mia couldn't begin to tell if the new excitement was pain... Or... Comfort?,米婭開始無法分辨新的刺激感究竟是痛...還是...舒服?,Mia couldn't begin to tell if the new excitement was pain... Or... Comfort?,ミアは新しい刺激感が痛みなのか...それとも快適なのか分からなくなった？
+SAY.Flowchart.63.,,"Her pussy suddenly began to spasm as if electrified, and Mia's hips twitched, a surprised expression appearing on her face.","小穴突然像是觸電般開始痙攣,米婭的腰肢抽動了一下,臉上出現了詫異的表情。","Her pussy suddenly began to spasm as if electrified, and Mia's hips twitched, a surprised expression appearing on her face.",彼女のアソコは突然、電気が走ったように痙攣し始め、ミアの腰は痙攣し、驚いた表情を浮かべた。
+SAY.Flowchart.65.Mia,,Hoo... Ha... Hoo... Ha .... There seems to be something... It's coming ....,呼...哈...呼...哈....好像有甚麼東西...要來了....,Hoo... Ha... Hoo... Ha .... There seems to be something... It's coming ....,フー... ハ... フー... ハ... 何かあるようだ．．． 来るぞ．
+SAY.Flowchart.64.Mia,,Hoo... It's coming... That thing is coming!,呼...要來了...那個東西要來了!,Hoo... It's coming... That thing is coming!,フフ…来る…あのものが来る！
+SAY.Flowchart.66.,,"At the same time, the tentacles began to move more intensely as if they knew it too, and with Mia's gasps and louder and louder sounds of water, Mia came for the first time in her life.","同時,觸手像也知道一樣,動作開始強烈了起來,伴隨著米婭的喘息和越來越大的水聲,米婭迎來了人生第一次高潮。","At the same time, the tentacles began to move more intensely as if they knew it too, and with Mia's gasps and louder and louder sounds of water, Mia came for the first time in her life.",同時に触手もそれを知っているかのように激しく動き始め、ミアのあえぎ声と水の音がどんどん大きくなり、ミアは生まれて初めてのオーガズムを迎えた。
+SAY.Flowchart.67.,,"Mia's brain was pounding with powerful pleasure, and she was completely incapable of thinking.","米婭被強力的快感不斷地衝擊大腦,徹底的失去思考的能力。","Mia's brain was pounding with powerful pleasure, and she was completely incapable of thinking.",ミアの脳は強烈な快感でドキドキし、思考することはまったくできなかった。
+SAY.Flowchart.68.Mia,,Uh-huh! Whoo-hoo... It's coming! That one's coming again!,嗯嗯!嗚嗚...要來了!那個又要來了!,Uh-huh! Whoo-hoo... It's coming! That one's coming again!,ふふふ！ うっほー... 来るぞ また来るぞ
+SAY.Flowchart.69.,,"A tidal wave of love juice and mucus filled the pussy, and in the midst of another orgasm it finally became too much to bear, and the fused fluids flowed backwards towards the entrance.","潮水般的愛液與黏液充滿了小穴,在又來一次的高潮中終於承受不住,融合的液體朝著入口倒流而去。","A tidal wave of love juice and mucus filled the pussy, and in the midst of another orgasm it finally became too much to bear, and the fused fluids flowed backwards towards the entrance.",愛液と粘液の高波がアソコを満たし、さらなるオーガズムのさなか、ついに耐えきれなくなり、融合した体液が入り口に向かって逆流した。
+SAY.Flowchart.70.Mia,,Guwu...hu...,咕嗚..呼...,Guwu...hu...,ぐぅ…ふぅ…
+SAY.Flowchart.71.,,"Too much pleasure was poured into Mia's brain in an instant, and Mia could only make a psychedelic whimper.","過多的快感在瞬間被灌進米婭的大腦內,米婭只能發出迷幻的咽嗚聲。","Too much pleasure was poured into Mia's brain in an instant, and Mia could only make a psychedelic whimper.",あまりにも多くの快楽が一瞬にしてミアの脳裏に注ぎ込まれ、ミアはサイケデリックな泣き声をあげることしかできなかった。
+SAY.Flowchart.72.,,Then Mia goes black and loses consciousness completely.,"隨後米婭眼前一片漆黑,徹底地失去了意識。",Then Mia goes black and loses consciousness completely.,そしてミアは意識を失い、真っ暗になる。
+CHARACTER.Wizard,,Wizard,魔法師,Wizard,ウィザード
+CHARACTER.Elise,,Elise,伊莉絲,Elise,イリーゼ
+CHARACTER.Mia,,Mia,米婭,Mia,ミア

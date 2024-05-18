@@ -697,7 +697,7 @@ AnimationClip:
         time: 0
         value: 0
         inSlope: 0
-        outSlope: 59.88024
+        outSlope: 0
         tangentMode: 0
         weightedMode: 0
         inWeight: 0
@@ -706,13 +706,13 @@ AnimationClip:
         time: 0.167
         value: 10
         inSlope: 59.88024
-        outSlope: 0
+        outSlope: 59.88024
         tangentMode: 0
         weightedMode: 0
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.467
+        time: 0.46666667
         value: 0
         inSlope: 0
         outSlope: 0
@@ -1231,7 +1231,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.467
+        time: 0.46666667
         value: -30
         inSlope: 0
         outSlope: 0
@@ -2386,7 +2386,7 @@ AnimationClip:
         time: 0
         value: 0
         inSlope: 0
-        outSlope: 59.88024
+        outSlope: 0
         tangentMode: 0
         weightedMode: 0
         inWeight: 0
@@ -2395,13 +2395,13 @@ AnimationClip:
         time: 0.167
         value: 10
         inSlope: 59.88024
-        outSlope: 0
+        outSlope: 59.88024
         tangentMode: 0
         weightedMode: 0
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.467
+        time: 0.46666667
         value: 0
         inSlope: 0
         outSlope: 0
@@ -2920,7 +2920,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.467
+        time: 0.46666667
         value: -30
         inSlope: 0
         outSlope: 0
@@ -3043,3 +3043,17 @@ AnimationClip:
     floatParameter: 0
     intParameter: -5342
     messageOptions: 1
+  - time: 0.5
+    functionName: SetBreak1
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.6666667
+    functionName: PlayIdle
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

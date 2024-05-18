@@ -13,9 +13,33 @@ MonoBehaviour:
   m_Name: DEFDown
   m_EditorClassIdentifier: 
   Sprite: {fileID: 21300000, guid: 9d461645ebe372a49b91cb81f93ca723, type: 3}
-  Name: DEFDown
-  Content: "\u9632\u79A6\u529B\u964D\u4F4E"
-  LeveContent: 
+  LocalName:
+    m_TableReference:
+      m_TableCollectionName: GUID:cebfd6e7871e1b347a7c1c07e7a5c1a5
+    m_TableEntryReference:
+      m_KeyId: 661237690003465
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  LocalContent:
+    m_TableReference:
+      m_TableCollectionName: GUID:cebfd6e7871e1b347a7c1c07e7a5c1a5
+    m_TableEntryReference:
+      m_KeyId: 661237690003466
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  LocalLeveContent:
+    m_TableReference:
+      m_TableCollectionName: GUID:cebfd6e7871e1b347a7c1c07e7a5c1a5
+    m_TableEntryReference:
+      m_KeyId: 661237690003467
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   Level: 0
   MaxLevel: 0
   Values:
@@ -23,3 +47,6 @@ MonoBehaviour:
   Costs: 00000000
   ColdDowns: 00000000
   Durations: 01000000
+  references:
+    version: 2
+    RefIds: []

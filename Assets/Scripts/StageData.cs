@@ -15,4 +15,7 @@ public class StageData : ScriptableObject
     public StageData PriorStage;
     public Sprite Background;
     public List<Sprite> CGList = new List<Sprite>();
+    public List<Sprite> MosaicCGList = new List<Sprite>();
+    public AudioClip HurtClip;
+    public AudioClip AttackClip;
 }

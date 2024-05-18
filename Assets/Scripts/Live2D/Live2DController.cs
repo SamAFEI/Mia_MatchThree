@@ -15,6 +15,7 @@ public class Live2DController : MonoBehaviour
     }
     public void Update()
     {
+
         if (Input.GetKey(KeyCode.Alpha1))
         {
             PlayAnim("Hurt");
@@ -46,6 +47,13 @@ public class Live2DController : MonoBehaviour
                 Model.Parameters.FindById("Hair1").Value = 30;
             }
         }
+        else
+        {
+            if (Model.Parameters.FindById("Hair1"))
+            {
+                Model.Parameters.FindById("Hair1").Value = -30;
+            }
+        }
         if (IsBreak2)
         {
             Model.Parameters.FindById("Break2").Value = -30;
@@ -57,21 +65,28 @@ public class Live2DController : MonoBehaviour
     }
     public virtual void PlayIdle()
     {
-        Anim.Play("Idle"); 
+        Anim.Play("Idle");
         if (Model.Parameters.FindById("Hair1"))
         {
             Model.Parameters.FindById("Param17").Value = 0;
         }
     }
-    public void SetBreak1() { IsBreak1 = true; }
-    public void SetBreak2() { IsBreak2 = true; }
+    public void SetBreak1()
+    {
+        IsBreak1 = true;
+        IsBreak2 = false;
+    }
+    public void SetBreak2()
+    {
+        IsBreak1 = true;
+        IsBreak2 = true;
+    }
     public void SetDamage(int _damage) { Damage = _damage; }
-    public void DoAttack() 
-    { 
+    public void DoAttack()
+    {
         if (Player.Instance)
         {
             Player.Instance.SlashHurt(Damage);
         }
-        Debug.Log("DoAttack"); 
     }
 }

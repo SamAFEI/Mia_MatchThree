@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using UnityEngine;
 
 namespace Assets.Scripts
 {
@@ -10,6 +9,7 @@ namespace Assets.Scripts
         public StageStore CurrentStage;
         public List<StageStore> Stages;
         public List<SkillStore> Skills;
+        public PlayerSettingStore PlayerSetting;
 
         public GameData()
         {
@@ -35,6 +35,20 @@ namespace Assets.Scripts
         {
             Name = _skillData.Name;
             Level = _skillData.Level;
+        }
+    }
+    [System.Serializable]
+    public class PlayerSettingStore
+    {
+        public int ResolutionWidth;
+        public int ResolutionHeight;
+        public bool IsFullScreen;
+        public int LanguageIndex;
+        public float BGMVolume;
+        public float SEVolume;
+        public float VoiceVolume;
+        public PlayerSettingStore()
+        {
         }
     }
 }

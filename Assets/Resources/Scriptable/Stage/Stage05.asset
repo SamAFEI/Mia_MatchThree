@@ -18,3 +18,24 @@ MonoBehaviour:
   ATK: 5000
   AnimName: hiyori_m05
   StageName: Stage05
+  IsComplete: 0
+  PriorStage: {fileID: 0}
+  Background: {fileID: 0}
+  CGList:
+  - {fileID: 21300000, guid: 0eabe69b7531bce408b35eba99054901, type: 3}
+  - {fileID: 21300000, guid: 13a8492707ab54a4d894c7a82a3df193, type: 3}
+  - {fileID: 21300000, guid: a1c357be136f10647ab3bf9405b32b83, type: 3}
+  - {fileID: 21300000, guid: 7b2ff853dae32c943b7112fb903e51c9, type: 3}
+  - {fileID: 21300000, guid: f10ad2e83ff4f2048916d2e446d4f3f2, type: 3}
+  - {fileID: 21300000, guid: 957c43fa5b8a4794782c3c46935c9509, type: 3}
+  - {fileID: 21300000, guid: 7ab43056bfa107e40a3310911e22162b, type: 3}
+  MosaicCGList:
+  - {fileID: 21300000, guid: 800935ba40b73854c861a90b113dbe3b, type: 3}
+  - {fileID: 21300000, guid: f1f1aaf0c789f1a4f9ad7fe68e62f5e3, type: 3}
+  - {fileID: 21300000, guid: 9a5302663034c0d49b26f554d8be539d, type: 3}
+  - {fileID: 21300000, guid: 5142faf9dc2e54742b48e0822d9c5937, type: 3}
+  - {fileID: 21300000, guid: f51871105e303c44e887ad8cf4cdc5a5, type: 3}
+  - {fileID: 21300000, guid: 50412cd6afecd714a9b57998dfa55384, type: 3}
+  - {fileID: 21300000, guid: 4f5af8c702f7e4749bbea8f9e1fd29aa, type: 3}
+  HurtClip: {fileID: 8300000, guid: fbc6218218043504288f1ca306df1465, type: 3}
+  AttackClip: {fileID: 8300000, guid: f421c6bc67f8bf34ba416e256799cb47, type: 3}

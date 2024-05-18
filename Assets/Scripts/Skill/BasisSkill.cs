@@ -1,15 +1,19 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Localization;
 
 [CreateAssetMenu(menuName = "Match3/Skills/BasisSkill", order = 1)]
 public class BasisSkill : ScriptableObject
 {
     public Sprite Sprite;
-    public string Name;
-    [TextArea]
-    public string Content;
-    [TextArea]
-    public string LeveContent;
+    public LocalizedString LocalName;
+    public LocalizedString LocalContent;
+    public LocalizedString LocalLeveContent;
+    public string Name => LocalName.GetLocalizedString();
+    //[TextArea]
+    public string Content => LocalContent.GetLocalizedString();
+    //[TextArea]
+    public string LeveContent => LocalLeveContent.GetLocalizedString();
     public int Level;
     public int MaxLevel = 2;
     [SerializeField] private List<float> Values = new List<float>();

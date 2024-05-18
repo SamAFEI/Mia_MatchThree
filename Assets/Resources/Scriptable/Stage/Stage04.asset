@@ -20,3 +20,20 @@ MonoBehaviour:
   StageName: Stage04
   IsComplete: 0
   PriorStage: {fileID: 11400000, guid: b73887800f2f6bd4889e532823b27eac, type: 2}
+  Background: {fileID: 0}
+  CGList:
+  - {fileID: 21300000, guid: b1638654dc5e80c4e88778c9b12227ea, type: 3}
+  - {fileID: 21300000, guid: 1591325a4bca3ae4c87b4901d5445b57, type: 3}
+  - {fileID: 21300000, guid: 5b258ed83192ca6409b99fbc26d99ea5, type: 3}
+  - {fileID: 21300000, guid: 14b52124eec957549947e1f1dc771831, type: 3}
+  - {fileID: 21300000, guid: 6379c7093eb45b3468f9c2e0e6081b4d, type: 3}
+  - {fileID: 21300000, guid: 4a8132045f4de2541ba657ce602e11ea, type: 3}
+  MosaicCGList:
+  - {fileID: 21300000, guid: a68d258a983b2e841aa1d2f5797b3c6c, type: 3}
+  - {fileID: 21300000, guid: b932433a124195d42829de578c112e6d, type: 3}
+  - {fileID: 21300000, guid: 2e1d0eb56889d0c41ac1c024803b769a, type: 3}
+  - {fileID: 21300000, guid: b7f6b424f9192854e84247fc0d222ad0, type: 3}
+  - {fileID: 21300000, guid: a246dcfff30c992499bed99cb86443f1, type: 3}
+  - {fileID: 21300000, guid: 3cb161aeea7a0504ea6d1e6434904206, type: 3}
+  HurtClip: {fileID: 8300000, guid: 7e1fb531814a23c4ab2c05db28c3c3ee, type: 3}
+  AttackClip: {fileID: 8300000, guid: dabe82cd628d7034ea6b9b2e0628b1ac, type: 3}

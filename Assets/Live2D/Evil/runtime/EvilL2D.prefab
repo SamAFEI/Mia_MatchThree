@@ -8464,7 +8464,6 @@ GameObject:
   - component: {fileID: 292376673047444542}
   - component: {fileID: 7792265144990091845}
   - component: {fileID: 5435247644039192112}
-  - component: {fileID: 1193463307171029048}
   - component: {fileID: 473421028614125022}
   m_Layer: 0
   m_Name: EvilL2D
@@ -8641,19 +8640,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1193463307171029048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7282186830000946022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd9e6647bfff7542acb0200ab74bdd1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CubismFadeMotionList: {fileID: 11400000, guid: fc5ceb1b39dc2894ab78a80dea982116, type: 2}
 --- !u!114 &473421028614125022
 MonoBehaviour:
   m_ObjectHideFlags: 0

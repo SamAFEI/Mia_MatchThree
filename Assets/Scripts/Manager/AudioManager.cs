@@ -117,10 +117,13 @@ public class AudioManager : MonoBehaviour
         Instance.BGMSource.clip = Instance.BattleBGMClip;
         Instance.BGMSource.Play();
     }
-    public static void PlayVoice()
+    public static void PlayVoice(VoiceEnum type)
     {
-        Instance.VoiceSource.clip = Instance.VoiceClip;
-        Instance.VoiceSource.Play();
+        if (type == VoiceEnum.Hurt) { Instance.VoiceSource.clip = GameManager.Instance.CurrentStage.Data.HurtClip; }
+        else if (type == VoiceEnum.Failed) {  }
+        else if (type == VoiceEnum.Victory) { }
+        else if (type == VoiceEnum.Attack) { Instance.VoiceSource.clip = GameManager.Instance.CurrentStage.Data.AttackClip; }
+        Instance.VoiceSource.PlayOneShot(Instance.VoiceSource.clip);
     }
     public static void PlaySE(SEEnum type)
     {
@@ -145,4 +148,8 @@ public class AudioManager : MonoBehaviour
 public enum SEEnum
 {
     Pop, LevelUp, Failed, Victory, Imapct, Heal, Click, Slash, Debuff, Poison
+}
+public enum VoiceEnum
+{
+    Hurt, Failed, Victory, Attack
 }

@@ -13,9 +13,33 @@ MonoBehaviour:
   m_Name: ATKDown
   m_EditorClassIdentifier: 
   Sprite: {fileID: 21300000, guid: 7a436dd967b3a8f40a77c909c2fd1d96, type: 3}
-  Name: ATKDown
-  Content: "\u653B\u64CA\u529B\u964D\u4F4E"
-  LeveContent: 
+  LocalName:
+    m_TableReference:
+      m_TableCollectionName: GUID:cebfd6e7871e1b347a7c1c07e7a5c1a5
+    m_TableEntryReference:
+      m_KeyId: 661237690003462
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  LocalContent:
+    m_TableReference:
+      m_TableCollectionName: GUID:cebfd6e7871e1b347a7c1c07e7a5c1a5
+    m_TableEntryReference:
+      m_KeyId: 661237690003463
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  LocalLeveContent:
+    m_TableReference:
+      m_TableCollectionName: GUID:cebfd6e7871e1b347a7c1c07e7a5c1a5
+    m_TableEntryReference:
+      m_KeyId: 661237690003464
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
   Level: 0
   MaxLevel: 0
   Values:
@@ -23,3 +47,6 @@ MonoBehaviour:
   Costs: 00000000
   ColdDowns: 00000000
   Durations: 01000000
+  references:
+    version: 2
+    RefIds: []

@@ -13,10 +13,34 @@ MonoBehaviour:
   m_Name: MaxHP
   m_EditorClassIdentifier: 
   Sprite: {fileID: 21300000, guid: b8d3cc91d27d57d48892f20ee7112cd8, type: 3}
-  Name: HP
-  Content: 
-  LeveContent: "\u589E\u52A0\u6700\u5927HP\u503C"
-  Level: 2
+  LocalName:
+    m_TableReference:
+      m_TableCollectionName: GUID:cebfd6e7871e1b347a7c1c07e7a5c1a5
+    m_TableEntryReference:
+      m_KeyId: 661237690003456
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  LocalContent:
+    m_TableReference:
+      m_TableCollectionName: GUID:cebfd6e7871e1b347a7c1c07e7a5c1a5
+    m_TableEntryReference:
+      m_KeyId: 661237690003457
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  LocalLeveContent:
+    m_TableReference:
+      m_TableCollectionName: GUID:cebfd6e7871e1b347a7c1c07e7a5c1a5
+    m_TableEntryReference:
+      m_KeyId: 661237690003458
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  Level: 0
   MaxLevel: 2
   Values:
   - 20000
@@ -25,3 +49,6 @@ MonoBehaviour:
   Costs: c4090000a00f000000000000
   ColdDowns: 000000000000000000000000
   Durations: 000000000000000000000000
+  references:
+    version: 2
+    RefIds: []

@@ -39,12 +39,15 @@ public class Enemy : MonoBehaviour
 
     public void Hurt(int _damage)
     {
+        AudioManager.PlayVoice(VoiceEnum.Hurt);
         if (!EnemyController.GetIsBreak1() && CurrentHP < HPSlider.maxValue / 3 * 2)
         { EnemyController.PlayAnim("Break1"); }
         else if (!EnemyController.GetIsBreak2() && CurrentHP < HPSlider.maxValue / 3 * 1)
         { EnemyController.PlayAnim("Break2"); }
         else
-        { EnemyController.PlayAnim("Hurt"); }
+        { 
+            EnemyController.PlayAnim("Hurt");
+        }
         CurrentHP = (int)Mathf.Clamp(CurrentHP - _damage, 0, HPSlider.maxValue);
         HPSmooth = 0;
         StartCoroutine(LerpHP());
@@ -66,5 +69,6 @@ public class Enemy : MonoBehaviour
     {
         float damage = ATK * Random.Range(0.800f, 1.200f) * Board.Instance.DEFDown;
         EnemyController.EneymAttack((int)damage);
+        AudioManager.PlayVoice(VoiceEnum.Attack);
     }
 }

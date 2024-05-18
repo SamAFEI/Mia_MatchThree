@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour, ISaveManager
     public Texture2D CursorDefault;
     public Texture2D CursorSwap;
     public Texture2D CursorBreak;
+    public bool IsMosaic;
     private void Awake()
     {
         if (instance != null)

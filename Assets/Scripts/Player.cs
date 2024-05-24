@@ -56,6 +56,7 @@ public class Player : MonoBehaviour
         float endX = startX >= -5.5f ? startX - length : startX + length;
         Vector3 startPoint = new Vector3(startX, -2.5f, 90f);
         Vector3 endPoint = new Vector3(endX, -5, 90f);
+        SlashFX = GameManager.Instance.CurrentStage.Data.SlashFX;
         GameObject Obj = Instantiate(SlashFX, startPoint, Quaternion.identity);
         Obj.GetComponent<SlashController>().SetPoint(startPoint, endPoint, _damage);
         StartCoroutine(GameManager.ShakeCamera(0.15f, 0.4f));

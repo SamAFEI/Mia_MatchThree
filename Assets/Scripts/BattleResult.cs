@@ -34,7 +34,7 @@ public class BattleResult : MonoBehaviour
             AudioManager.PlaySE(SEEnum.Failed);
         }
         txtCoin.text = "$ " + _coin;
-        txtCombos.text = Board.Instance.MaxCombos + " Hits";
+        txtCombos.text = "Combos " + Board.Instance.MaxCombos;
         SkillManager.SetCoin(_coin);
     }
     public void Continue()

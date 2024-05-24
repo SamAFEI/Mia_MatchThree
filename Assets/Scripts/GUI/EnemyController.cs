@@ -1,3 +1,5 @@
+using System.Collections;
+using TMPro;
 using UnityEngine;
 
 public class EnemyController : MonoBehaviour
@@ -5,6 +7,11 @@ public class EnemyController : MonoBehaviour
     public static EnemyController Instance { get; private set; }
     public GameObject Character { get; private set; }
     public Live2DController L2DController { get; private set; }
+    public TextMeshProUGUI HitText { get; private set; }
+    public float HitVisibleTime { get; private set; }
+    public float Combos { get; private set; }
+    public int MaxCombos { get; private set; }
+    public float Smooth { get; private set; }
     public GameObject Projectile_Red;
     public GameObject Projectile_Yellow;
     public GameObject Projectile_Blue;
@@ -19,13 +26,32 @@ public class EnemyController : MonoBehaviour
         Character.name = "Live2DEnemy";
         Character.transform.localScale *= 100;
         L2DController = Character.GetComponent<Live2DController>();
+        HitText = transform.Find("HitText").GetComponent<TextMeshProUGUI>();
+        HitText.gameObject.SetActive(false);
     }
     private void Update()
     {
+        Instance.HitVisibleTime -= Time.deltaTime;
+        if (Instance.HitVisibleTime < 0)
+        {
+            HitText.gameObject.SetActive(false);
+            Combos = 1;
+        }
+        else 
+        { 
+            HitText.gameObject.SetActive(true); 
+        }
         if (Input.GetKeyDown(KeyCode.A))
         {
             EnemyHurt(Board.Instance.transform.position,0);
         }
+    }
+    public static void SetHitText(int _hit)
+    {
+        Instance.HitVisibleTime = 2f;
+        Instance.MaxCombos = _hit;
+        Instance.Smooth = 0f;
+        Instance.StartCoroutine(Instance.LerpCombos());
     }
     public static void PlayAnim(string _anim)
     {
@@ -72,5 +98,18 @@ public class EnemyController : MonoBehaviour
             Instance.L2DController.SetDamage(_damage);
             PlayAnim("Attack");
         }
+    }
+    public IEnumerator LerpCombos()
+    {
+        float smooth = 2;
+        float start = Combos;
+        while (Smooth < 1)
+        {
+            Smooth += Time.deltaTime * smooth;
+            Combos = Mathf.Lerp(start, MaxCombos, Smooth);
+            HitText.text = "Combos " + (int)Combos;
+            yield return null;
+        }
+        yield return null;
     }
 }

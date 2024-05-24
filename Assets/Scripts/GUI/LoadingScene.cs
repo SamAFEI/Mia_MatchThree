@@ -18,6 +18,7 @@ public class LoadingScene : MonoBehaviour
     {
         SaveManager.SaveGame();
         StartCoroutine(LoadSecne(GameManager.LoadSceneName));
+        //Resources.UnloadUnusedAssets();
     }
 
     private void OnGUI()

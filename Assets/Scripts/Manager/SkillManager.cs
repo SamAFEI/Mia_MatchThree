@@ -132,7 +132,7 @@ public class SkillManager : MonoBehaviour, ISaveManager
     public void LoadData(GameData _data)
     {
         Instance.Coin = _data.Coin;
-        foreach(Skill skill in Instance.Skills)
+        foreach (Skill skill in Instance.Skills)
         {
             SkillStore _store = _data.Skills.Where(x => x.Name == skill.Data.Name).FirstOrDefault();
             if (_store != null)

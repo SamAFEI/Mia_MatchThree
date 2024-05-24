@@ -7,8 +7,8 @@ namespace Assets.Scripts
     {
         public int Coin;
         public StageStore CurrentStage;
-        public List<StageStore> Stages;
-        public List<SkillStore> Skills;
+        public List<StageStore> Stages = new List<StageStore>();
+        public List<SkillStore> Skills = new List<SkillStore>();
         public PlayerSettingStore PlayerSetting;
 
         public GameData()

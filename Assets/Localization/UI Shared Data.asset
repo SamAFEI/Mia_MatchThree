@@ -19,6 +19,22 @@ MonoBehaviour:
     m_Key: GameTitle
     m_Metadata:
       m_Items: []
+  - m_Id: 3613781566013440
+    m_Key: ExitGameConfirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3613822150098944
+    m_Key: QuitBattleConfirm
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5553653394554880
+    m_Key: BtnYes
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5553733564481536
+    m_Key: BtnCancel
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

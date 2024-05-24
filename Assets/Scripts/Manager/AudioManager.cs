@@ -23,6 +23,8 @@ public class AudioManager : MonoBehaviour
     public AudioSource BGMSource { get; private set; }
     public AudioSource SESource { get; private set; }
     public AudioSource VoiceSource { get; private set; }
+    public AudioSource SexSource { get; private set; }
+    public AudioSource SexVoiceSource { get; private set; }
     public AudioClip MainBGMClip;
     public AudioClip BattleBGMClip;
     [Header("®ø°£²Å¤å")]
@@ -71,6 +73,10 @@ public class AudioManager : MonoBehaviour
         Instance.SESource.loop = false;
         Instance.VoiceSource = obj.transform.Find("Voice").GetComponent<AudioSource>();
         Instance.VoiceSource.loop = false;
+        Instance.SexVoiceSource = obj.transform.Find("SexVoice").GetComponent<AudioSource>();
+        Instance.SexVoiceSource.loop = true;
+        Instance.SexSource = obj.transform.Find("Sex").GetComponent<AudioSource>();
+        Instance.SexVoiceSource.loop = true;
     }
     public static void SetBGMVolume(float _volume)
     {
@@ -119,11 +125,32 @@ public class AudioManager : MonoBehaviour
     }
     public static void PlayVoice(VoiceEnum type)
     {
+        Instance.VoiceSource.loop = false;
         if (type == VoiceEnum.Hurt) { Instance.VoiceSource.clip = GameManager.Instance.CurrentStage.Data.HurtClip; }
         else if (type == VoiceEnum.Failed) {  }
         else if (type == VoiceEnum.Victory) { }
         else if (type == VoiceEnum.Attack) { Instance.VoiceSource.clip = GameManager.Instance.CurrentStage.Data.AttackClip; }
-        Instance.VoiceSource.PlayOneShot(Instance.VoiceSource.clip);
+        Instance.VoiceSource.PlayOneShot(Instance.VoiceSource.clip, 1f);
+    }
+    public void PlaySex(int _index)
+    {
+        Instance.SexSource.Stop();
+        Instance.SexSource.clip = GameManager.Instance.CurrentStage.Data.SexClips[_index];
+        Instance.SexSource.Play();
+    }
+    public void StopSexSource()
+    {
+        Instance.SexSource.Stop();
+    }
+    public void PlaySexVoice(int _index)
+    {
+        Instance.SexVoiceSource.Stop();
+        Instance.SexVoiceSource.clip = GameManager.Instance.CurrentStage.Data.SexVoiceClips[_index];
+        Instance.SexVoiceSource.Play();
+    }
+    public void StopSexVoiceSource()
+    {
+        Instance.SexVoiceSource.Stop();
     }
     public static void PlaySE(SEEnum type)
     {
@@ -137,7 +164,7 @@ public class AudioManager : MonoBehaviour
         else if (type == SEEnum.Slash) { Instance.SESource.clip = Instance.SlashClip; }
         else if (type == SEEnum.Debuff) { Instance.SESource.clip = Instance.DebuffClip; }
         else if (type == SEEnum.Poison) { Instance.SESource.clip = Instance.PoisonClip; }
-        Instance.SESource.PlayOneShot(Instance.SESource.clip);
+        Instance.SESource.PlayOneShot(Instance.SESource.clip, 0.7f);
         //Instance.SESource.Play();
     }
     public void PlayClick()

@@ -1,6 +1,7 @@
 using Assets.Scripts.Manager;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization;
 using UnityEngine.UI;
 
 public class MainScene : MonoBehaviour
@@ -8,6 +9,7 @@ public class MainScene : MonoBehaviour
     public TextMeshProUGUI CoinContent { get; private set; }
     public Button BtnExit { get; private set; }
     public Button BtnCG {  get; private set; }
+    public LocalizedString LocalBtnExit;
 
     private void Awake()
     {
@@ -30,7 +32,8 @@ public class MainScene : MonoBehaviour
 
     private void BtnExitOnClick()
     {
-        Confirmation.ShowDioalog("是否存檔離開遊戲？",
+        string content = LocalBtnExit.GetLocalizedString();
+        Confirmation.ShowDioalog(content,
                 () => { GameManager.Instance.ExitGame(); },
                 () => { }
             );

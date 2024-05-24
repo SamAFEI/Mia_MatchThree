@@ -6,6 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Localization;
 using UnityEngine.UI;
 
 public class Board : MonoBehaviour
@@ -40,6 +41,7 @@ public class Board : MonoBehaviour
     public float ATKDown;
     public float DEFDown;
     public float Poison;
+    public LocalizedString LocalBtnQuit;
     private void Awake()
     {
         Instance = this;
@@ -659,6 +661,7 @@ public class Board : MonoBehaviour
                 EnemyController.EnemyHurt(_hit.Item3, (int)_damage, _hit.Item1.color);
             }
             _hitList.Remove(_hit);
+            EnemyController.SetHitText(combos);
         }
     }
     private void DoDebuff()
@@ -697,7 +700,8 @@ public class Board : MonoBehaviour
 
     public void QuitStage()
     {
-        Confirmation.ShowDioalog("是否放棄此次戰鬥？",
+        string content = LocalBtnQuit.GetLocalizedString();
+        Confirmation.ShowDioalog(content,
                 () => 
                 {
                     Result.SetActive(true);

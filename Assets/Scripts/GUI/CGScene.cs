@@ -13,7 +13,7 @@ public class CGScene : MonoBehaviour
     public int CGIndex { get; private set; }
     public Image CGFrame { get; private set; }
     public List<Sprite> CGLists { get; private set; } = new List<Sprite>();
-
+    private GameObject Character;
     private void Awake()
     {
         CGFrame = GameObject.Find("Canvas").transform.Find("CGFrame").GetComponent<Image>();
@@ -29,10 +29,9 @@ public class CGScene : MonoBehaviour
     }
     private void Start()
     {
-        //GameObject obj = Instantiate(Stage.Data.Character, transform.position, Quaternion.identity, transform);
+        Character = Instantiate(Stage.Data.Character, transform.position, Quaternion.identity, transform);
 
         CGIndex = -1;
-        NextCGIndex();
         string _blockName = "CG" + Stage.Data.Id;
         Chart.ExecuteIfHasBlock(_blockName);
         AudioManager.StopBGM();
@@ -58,8 +57,15 @@ public class CGScene : MonoBehaviour
         }
     }
 
-    private void NextCGIndex()
+    public void ChangeCG(int _index)
     {
+        Character.SetActive(false);
+        CGFrame.sprite = CGLists[_index];
+    }
+
+    public void NextCGIndex()
+    {
+        Character.SetActive(false);
         CGIndex++;
         Debug.Log(CGIndex);
         CGFrame.sprite = CGLists[CGIndex];

@@ -21,6 +21,7 @@ MonoBehaviour:
   IsComplete: 0
   PriorStage: {fileID: 0}
   Background: {fileID: 0}
+  SlashFX: {fileID: 1478958385920008331, guid: 35404a986cd1c5b4b8ed61579ad74fd2, type: 3}
   CGList:
   - {fileID: 21300000, guid: b945590cefb162c4bada3540ef2e1044, type: 3}
   - {fileID: 21300000, guid: 82e30aae45a244a42b73fc083eb64341, type: 3}
@@ -37,3 +38,5 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5c719707c5fca2f4ba3a0f68627a490e, type: 3}
   HurtClip: {fileID: 8300000, guid: 7e1fb531814a23c4ab2c05db28c3c3ee, type: 3}
   AttackClip: {fileID: 8300000, guid: dabe82cd628d7034ea6b9b2e0628b1ac, type: 3}
+  SexClips: []
+  SexVoiceClips: []

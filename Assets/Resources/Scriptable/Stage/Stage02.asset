@@ -21,19 +21,22 @@ MonoBehaviour:
   IsComplete: 0
   PriorStage: {fileID: 11400000, guid: 976ea2d783bd9cf4bbd42ca927036461, type: 2}
   Background: {fileID: 0}
+  SlashFX: {fileID: 9178572341572247942, guid: ad16f58e66e01b643b0a5ae66a4c1551, type: 3}
   CGList:
-  - {fileID: 21300000, guid: 0ae893cd527c324458fd1c0b2e5ae60b, type: 3}
-  - {fileID: 21300000, guid: bc21cc81b3cf3304ea41380246860385, type: 3}
-  - {fileID: 21300000, guid: feb23c404e0e86c49bf133b77ed87728, type: 3}
-  - {fileID: 21300000, guid: 441f3344142798e46aea3dbaf1a5e2f6, type: 3}
-  - {fileID: 21300000, guid: 71178bd1959943445a25c4b80984602c, type: 3}
-  - {fileID: 21300000, guid: 9c689f0f984aeac40bdee2ab48cd1f3c, type: 3}
+  - {fileID: 21300000, guid: 48fd7e713e1cedf439a0cad53b8e2ebd, type: 3}
+  - {fileID: 21300000, guid: ff73b5125911ea84d98969ef8ad88dfc, type: 3}
+  - {fileID: 21300000, guid: 64e04ddf8585d0846bbe58feb693dc22, type: 3}
+  - {fileID: 21300000, guid: 5becd4be16af9da4da86983fce959bc4, type: 3}
+  - {fileID: 21300000, guid: 0e7b2b09319d4e74ca9065ea51c1ba7c, type: 3}
+  - {fileID: 21300000, guid: fe09635169c823c43a1b5ec7d1650b82, type: 3}
   MosaicCGList:
-  - {fileID: 21300000, guid: 80996334c64d0884f8d07587fe3f397f, type: 3}
-  - {fileID: 21300000, guid: ecc3be53d941d2e4186de5360fb8c5cc, type: 3}
-  - {fileID: 21300000, guid: 62dad5d3651d5904fb557b3f5e7177a2, type: 3}
-  - {fileID: 21300000, guid: 8a47518ce5d577b40964a9932c428311, type: 3}
-  - {fileID: 21300000, guid: 1a8ffdf30b345ee4981da0cefb68b6ca, type: 3}
-  - {fileID: 21300000, guid: c5f6d036d65442447b7ac6a459575ce8, type: 3}
-  HurtClip: {fileID: 8300000, guid: 07e9e5f18b083e04ea6118a1b3868db9, type: 3}
-  AttackClip: {fileID: 8300000, guid: b97140f7145c1b2428e9dc2c1e015fb6, type: 3}
+  - {fileID: 21300000, guid: c32508b0e23416245836e1c2abd580f6, type: 3}
+  - {fileID: 21300000, guid: 8b77f6fa6af11d64db9c71f58ae8a342, type: 3}
+  - {fileID: 21300000, guid: 38768dfbb9a40d34da0311d2b8e1b62d, type: 3}
+  - {fileID: 21300000, guid: 02d87e3775f01ba4ea2a97c3262766f2, type: 3}
+  - {fileID: 21300000, guid: 3fcb5a7ecec53d64dac20055e0491701, type: 3}
+  - {fileID: 21300000, guid: d9db0c012e8e9f749864e55dbf16856c, type: 3}
+  HurtClip: {fileID: 8300000, guid: d31cb8da86c3de048a5d19e338ed94c5, type: 3}
+  AttackClip: {fileID: 8300000, guid: 07f70ac8e18c9c0418fa8fb4d4160e4a, type: 3}
+  SexClips: []
+  SexVoiceClips: []

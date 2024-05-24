@@ -111,6 +111,8 @@ public class SettingManager : MonoBehaviour , ISaveManager
     {
         Instance.Resolution = Instance.Resolutions[_index];
         Screen.SetResolution(Instance.Resolution.width, Instance.Resolution.height, Instance.IsFullScreen);
+        Instance.ResolutionWidth = Instance.Resolution.width;
+        Instance.ResolutionHeight = Instance.Resolution.height;
     }
     public static void SetFullScreen(bool _isFullscreen)
     {

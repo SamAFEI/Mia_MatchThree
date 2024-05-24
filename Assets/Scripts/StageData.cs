@@ -14,8 +14,11 @@ public class StageData : ScriptableObject
     public bool IsComplete;
     public StageData PriorStage;
     public Sprite Background;
+    public GameObject SlashFX;
     public List<Sprite> CGList = new List<Sprite>();
     public List<Sprite> MosaicCGList = new List<Sprite>();
     public AudioClip HurtClip;
     public AudioClip AttackClip;
+    public List<AudioClip> SexClips = new List<AudioClip>();
+    public List<AudioClip> SexVoiceClips = new List<AudioClip>();
 }

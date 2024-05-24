@@ -45,6 +45,7 @@ public class GameManager : MonoBehaviour, ISaveManager
     private void Start()
     {
         SaveManager.LoadGame();
+        SettingManager.SetAreaActive(false);
     }
     public static void RegisterCurrentStage(Stage _stage)
     {
@@ -181,6 +182,7 @@ public class GameManager : MonoBehaviour, ISaveManager
                 if (_store != null)
                 {
                     stage.StageName = _store.StageName;
+                    stage.Data.IsComplete = _store.IsComplete;
                 }
             }
         }

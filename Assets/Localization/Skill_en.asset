@@ -94,6 +94,26 @@ MonoBehaviour:
     m_Localized: Each turn decreased by 4000 HP
     m_Metadata:
       m_Items: []
+  - m_Id: 91425337344
+    m_Localized: ' '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 661237690003457
+    m_Localized: ' '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 661237690003464
+    m_Localized: ' '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 661237690003467
+    m_Localized: ' '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 661237690003470
+    m_Localized: ' '
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

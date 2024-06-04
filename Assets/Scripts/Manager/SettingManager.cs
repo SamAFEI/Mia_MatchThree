@@ -1,4 +1,4 @@
-using Assets.Scripts;
+﻿using Assets.Scripts;
 using Assets.Scripts.Manager;
 using System.Collections;
 using System.Collections.Generic;
@@ -90,11 +90,15 @@ public class SettingManager : MonoBehaviour , ISaveManager
         Instance.Language = LanguageEnum.EN;
         if (Application.systemLanguage == SystemLanguage.ChineseTraditional)
         {
-            Instance.Language = LanguageEnum.ZH;
+            Instance.Language = LanguageEnum.CHT;
         }
         else if (Application.systemLanguage == SystemLanguage.Japanese)
         {
             Instance.Language = LanguageEnum.JP;
+        }
+        else if (Application.systemLanguage == SystemLanguage.ChineseSimplified)
+        {
+            Instance.Language = LanguageEnum.CHS;
         }
     }
     public static void SetAreaActive(bool _value)
@@ -138,9 +142,10 @@ public class SettingManager : MonoBehaviour , ISaveManager
     private static void SetLanguageDropdown()
     {
         Instance.LanguageList.Clear();
-        Instance.LanguageList.Add("�c�餤��");
+        Instance.LanguageList.Add("简体中文");
+        Instance.LanguageList.Add("繁體中文");
         Instance.LanguageList.Add("English");
-        Instance.LanguageList.Add("�饻�y");
+        Instance.LanguageList.Add("日本語");
         Instance.LanguageDropdown.ClearOptions();
         Instance.LanguageDropdown.AddOptions(Instance.LanguageList);
         Instance.LanguageDropdown.value = (int)Instance.Language;
@@ -184,7 +189,7 @@ public class SettingManager : MonoBehaviour , ISaveManager
         Instance.BGMVolumeSlider.value = AudioManager.GetBGMVolume();
         Instance.SEVolumeSlider.value = AudioManager.GetSEVolume();
         Instance.VoiceVolumeSlider.value = AudioManager.GetVoiceVolume();
-        Instance.TestTime = 1000f; //�קK��l�Ʈ� Ĳ�o TestPlay
+        Instance.TestTime = 1000f; //避免初始化時 觸發 TestPlay
     }
     private IEnumerator TestPlayVoice()
     {
@@ -232,6 +237,7 @@ public class SettingManager : MonoBehaviour , ISaveManager
 
     public void SaveData(ref GameData _data)
     {
+        _data.PlayerSetting = new PlayerSettingStore();
         _data.PlayerSetting.BGMVolume = AudioManager.GetBGMVolume();
         _data.PlayerSetting.SEVolume = AudioManager.GetSEVolume();
         _data.PlayerSetting.VoiceVolume = AudioManager.GetVoiceVolume();
@@ -243,5 +249,5 @@ public class SettingManager : MonoBehaviour , ISaveManager
 }
 public enum LanguageEnum
 {
-    ZH, EN, JP
+    CHS, CHT, EN, JP
 }

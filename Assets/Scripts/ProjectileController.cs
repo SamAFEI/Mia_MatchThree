@@ -53,5 +53,8 @@ public class ProjectileController : MonoBehaviour
             GameObject obj = Instantiate(Impact,this.transform.position,Quaternion.identity);
             Destroy(obj, 0.5f);
         }
+        float posY = Random.Range(2.5f, 3.5f);
+        Vector3 vector = new Vector3(this.transform.position.x, posY, this.transform.position.z);
+        TooltipManager.SpawnDamageHint(vector, Damage, gameObject.GetComponentInChildren<ParticleSystem>().startColor);
     }
 }

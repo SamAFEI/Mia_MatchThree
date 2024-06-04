@@ -65,9 +65,9 @@ public class Player : MonoBehaviour
     {
         CurrentHP = (int)Mathf.Clamp(CurrentHP - _damage, 0, HPSlider.maxValue);
         HPSmooth = 0;
-        StartCoroutine(LerpHP());
+        StartCoroutine(LerpHP(_damage));
     }
-    private IEnumerator LerpHP()
+    private IEnumerator LerpHP(int _damage)
     {
         float smooth = 2;
         float startHP = HPSlider.value; 
@@ -76,6 +76,9 @@ public class Player : MonoBehaviour
             AudioManager.PlaySE(SEEnum.Heal);
             GameObject Obj = Instantiate(Instance.HealFX, HPSlider.transform.position, Quaternion.identity);
             Destroy(Obj,1f);
+            float posX = Obj.transform.position.x + Random.Range(-2f, 2f);
+            Vector3 vector = new Vector3(posX, Obj.transform.position.y + 0.5f, Obj.transform.position.z);
+            TooltipManager.SpawnDamageHint(vector, _damage * -1, Color.green);
         }
         while (HPSmooth < 1)
         {

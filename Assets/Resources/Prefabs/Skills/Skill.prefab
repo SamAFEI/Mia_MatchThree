@@ -160,7 +160,7 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 89dcd14d8d3a99d4aaa43b99def884d2, type: 2}
-  m_sharedMaterial: {fileID: -8864097933910991635, guid: 89dcd14d8d3a99d4aaa43b99def884d2, type: 2}
+  m_sharedMaterial: {fileID: -6393861122729416666, guid: 89dcd14d8d3a99d4aaa43b99def884d2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -480,7 +480,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1303492717056552075}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2073101355016781420, guid: 8fbe73fce10ec8c4596f9c56dcfd54fb, type: 3}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &9061351304154761863
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,7 +561,7 @@ MonoBehaviour:
   m_text: $10000
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 89dcd14d8d3a99d4aaa43b99def884d2, type: 2}
-  m_sharedMaterial: {fileID: -8864097933910991635, guid: 89dcd14d8d3a99d4aaa43b99def884d2, type: 2}
+  m_sharedMaterial: {fileID: -6393861122729416666, guid: 89dcd14d8d3a99d4aaa43b99def884d2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

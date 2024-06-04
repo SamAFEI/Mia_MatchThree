@@ -25,6 +25,11 @@ public class Stage : MonoBehaviour
     private void LateUpdate()
     {
         this.GetComponent<Button>().interactable = (Data.PriorStage == null || Data.PriorStage.IsComplete);
+        if (Data.IsComplete)
+        {
+            Color color = this.GetComponent<Image>().color;
+            this.GetComponent<Image>().color = new Color(color.r, color.g, color.b, 1f);
+        }
     }
     private void OnValidate()
     {

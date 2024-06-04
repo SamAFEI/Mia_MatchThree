@@ -661,7 +661,7 @@ public class Board : MonoBehaviour
                 EnemyController.EnemyHurt(_hit.Item3, (int)_damage, _hit.Item1.color);
             }
             _hitList.Remove(_hit);
-            EnemyController.SetHitText(combos);
+            //EnemyController.SetHitText(combos); //暫不使用
         }
     }
     private void DoDebuff()

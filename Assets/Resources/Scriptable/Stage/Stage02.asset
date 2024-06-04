@@ -18,7 +18,7 @@ MonoBehaviour:
   ATK: 8000
   AnimName: Idle
   StageName: Stage02
-  IsComplete: 0
+  IsComplete: 1
   PriorStage: {fileID: 11400000, guid: 976ea2d783bd9cf4bbd42ca927036461, type: 2}
   Background: {fileID: 0}
   SlashFX: {fileID: 9178572341572247942, guid: ad16f58e66e01b643b0a5ae66a4c1551, type: 3}
@@ -38,5 +38,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d9db0c012e8e9f749864e55dbf16856c, type: 3}
   HurtClip: {fileID: 8300000, guid: d31cb8da86c3de048a5d19e338ed94c5, type: 3}
   AttackClip: {fileID: 8300000, guid: 07f70ac8e18c9c0418fa8fb4d4160e4a, type: 3}
-  SexClips: []
-  SexVoiceClips: []
+  SexClips:
+  - {fileID: 8300000, guid: 5082c4799804ca44a9d1425474c3ab8a, type: 3}
+  - {fileID: 8300000, guid: 65168e688817e7e488b8a895cc802160, type: 3}
+  SexVoiceClips:
+  - {fileID: 8300000, guid: 579140a2e3a10704ea78002d9bed511e, type: 3}

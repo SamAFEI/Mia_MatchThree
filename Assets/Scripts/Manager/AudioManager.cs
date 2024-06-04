@@ -130,12 +130,14 @@ public class AudioManager : MonoBehaviour
         else if (type == VoiceEnum.Failed) {  }
         else if (type == VoiceEnum.Victory) { }
         else if (type == VoiceEnum.Attack) { Instance.VoiceSource.clip = GameManager.Instance.CurrentStage.Data.AttackClip; }
-        Instance.VoiceSource.PlayOneShot(Instance.VoiceSource.clip, 1f);
+        Instance.VoiceSource.PlayOneShot(Instance.VoiceSource.clip, 3f);
     }
     public void PlaySex(int _index)
     {
         Instance.SexSource.Stop();
+        Instance.SexSource.loop = true;
         Instance.SexSource.clip = GameManager.Instance.CurrentStage.Data.SexClips[_index];
+        Instance.SexSource.volume = 0.1f;
         Instance.SexSource.Play();
     }
     public void StopSexSource()
@@ -145,6 +147,7 @@ public class AudioManager : MonoBehaviour
     public void PlaySexVoice(int _index)
     {
         Instance.SexVoiceSource.Stop();
+        Instance.SexVoiceSource.loop = true;
         Instance.SexVoiceSource.clip = GameManager.Instance.CurrentStage.Data.SexVoiceClips[_index];
         Instance.SexVoiceSource.Play();
     }

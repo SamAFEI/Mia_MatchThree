@@ -38,5 +38,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5c719707c5fca2f4ba3a0f68627a490e, type: 3}
   HurtClip: {fileID: 8300000, guid: 7e1fb531814a23c4ab2c05db28c3c3ee, type: 3}
   AttackClip: {fileID: 8300000, guid: dabe82cd628d7034ea6b9b2e0628b1ac, type: 3}
-  SexClips: []
-  SexVoiceClips: []
+  SexClips:
+  - {fileID: 8300000, guid: b1e061d008d5a1b469d2abdc54cc646a, type: 3}
+  - {fileID: 8300000, guid: b07bd544a311c774398ffbca33cef227, type: 3}
+  SexVoiceClips:
+  - {fileID: 8300000, guid: b5a3682a011d15d41877e4556efb2346, type: 3}

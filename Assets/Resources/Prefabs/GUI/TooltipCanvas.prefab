@@ -187,7 +187,7 @@ MonoBehaviour:
   m_text: "\u6700\u5927\u8840\u91CF"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 89dcd14d8d3a99d4aaa43b99def884d2, type: 2}
-  m_sharedMaterial: {fileID: -8864097933910991635, guid: 89dcd14d8d3a99d4aaa43b99def884d2, type: 2}
+  m_sharedMaterial: {fileID: -6393861122729416666, guid: 89dcd14d8d3a99d4aaa43b99def884d2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -282,7 +282,7 @@ RectTransform:
   m_GameObject: {fileID: 5214872807390154136}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.25104168, y: 0.25104168, z: 0.25104168}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8875342234770099112}
@@ -373,6 +373,7 @@ MonoBehaviour:
   Background: {fileID: 0}
   MyRectTransform: {fileID: 0}
   MyCanvas: {fileID: 0}
+  DamageHint: {fileID: 3998155975908867735, guid: 4dd0ff18069a5c742a1348d8444f0bf6, type: 3}
 --- !u!1 &8306180618212857066
 GameObject:
   m_ObjectHideFlags: 0
@@ -441,7 +442,7 @@ MonoBehaviour:
   m_text: "\u6700\u5927\u8840\u91CF"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 89dcd14d8d3a99d4aaa43b99def884d2, type: 2}
-  m_sharedMaterial: {fileID: -8864097933910991635, guid: 89dcd14d8d3a99d4aaa43b99def884d2, type: 2}
+  m_sharedMaterial: {fileID: -6393861122729416666, guid: 89dcd14d8d3a99d4aaa43b99def884d2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

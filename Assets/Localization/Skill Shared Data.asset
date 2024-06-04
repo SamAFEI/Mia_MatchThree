@@ -15,68 +15,8 @@ MonoBehaviour:
   m_TableCollectionName: Skill
   m_TableCollectionNameGuidString: cebfd6e7871e1b347a7c1c07e7a5c1a5
   m_Entries:
-  - m_Id: 52984541184
-    m_Key: ATKName
-    m_Metadata:
-      m_Items: []
   - m_Id: 91425337344
     m_Key: ATKContent
-    m_Metadata:
-      m_Items: []
-  - m_Id: 110048047104
-    m_Key: ATKLevelContent
-    m_Metadata:
-      m_Items: []
-  - m_Id: 411004955521024
-    m_Key: BreakName
-    m_Metadata:
-      m_Items: []
-  - m_Id: 411004959715328
-    m_Key: BreakContent
-    m_Metadata:
-      m_Items: []
-  - m_Id: 411004959715329
-    m_Key: BreakLevelContent
-    m_Metadata:
-      m_Items: []
-  - m_Id: 411004959715330
-    m_Key: HealName
-    m_Metadata:
-      m_Items: []
-  - m_Id: 411004959715331
-    m_Key: HealContent
-    m_Metadata:
-      m_Items: []
-  - m_Id: 411004959715332
-    m_Key: HealLevelContent
-    m_Metadata:
-      m_Items: []
-  - m_Id: 661237690003456
-    m_Key: MaxHPName
-    m_Metadata:
-      m_Items: []
-  - m_Id: 661237690003457
-    m_Key: MaxHPContent
-    m_Metadata:
-      m_Items: []
-  - m_Id: 661237690003458
-    m_Key: MaxHPLevelContent
-    m_Metadata:
-      m_Items: []
-  - m_Id: 661237690003459
-    m_Key: PowerName
-    m_Metadata:
-      m_Items: []
-  - m_Id: 661237690003460
-    m_Key: PowerContent
-    m_Metadata:
-      m_Items: []
-  - m_Id: 661237690003461
-    m_Key: PowerLevelContent
-    m_Metadata:
-      m_Items: []
-  - m_Id: 661237690003462
-    m_Key: ATKDownName
     m_Metadata:
       m_Items: []
   - m_Id: 661237690003463
@@ -87,8 +27,28 @@ MonoBehaviour:
     m_Key: ATKDownLevelContent
     m_Metadata:
       m_Items: []
-  - m_Id: 661237690003465
-    m_Key: DEFDownName
+  - m_Id: 661237690003462
+    m_Key: ATKDownName
+    m_Metadata:
+      m_Items: []
+  - m_Id: 110048047104
+    m_Key: ATKLevelContent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 52984541184
+    m_Key: ATKName
+    m_Metadata:
+      m_Items: []
+  - m_Id: 411004959715328
+    m_Key: BreakContent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 411004959715329
+    m_Key: BreakLevelContent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 411004955521024
+    m_Key: BreakName
     m_Metadata:
       m_Items: []
   - m_Id: 661237690003466
@@ -99,8 +59,32 @@ MonoBehaviour:
     m_Key: DEFDownLevelContent
     m_Metadata:
       m_Items: []
-  - m_Id: 661237690003468
-    m_Key: PoisonName
+  - m_Id: 661237690003465
+    m_Key: DEFDownName
+    m_Metadata:
+      m_Items: []
+  - m_Id: 411004959715331
+    m_Key: HealContent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 411004959715332
+    m_Key: HealLevelContent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 411004959715330
+    m_Key: HealName
+    m_Metadata:
+      m_Items: []
+  - m_Id: 661237690003457
+    m_Key: MaxHPContent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 661237690003458
+    m_Key: MaxHPLevelContent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 661237690003456
+    m_Key: MaxHPName
     m_Metadata:
       m_Items: []
   - m_Id: 661237690003469
@@ -109,6 +93,22 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 661237690003470
     m_Key: PoisonLevelContent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 661237690003468
+    m_Key: PoisonName
+    m_Metadata:
+      m_Items: []
+  - m_Id: 661237690003460
+    m_Key: PowerContent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 661237690003461
+    m_Key: PowerLevelContent
+    m_Metadata:
+      m_Items: []
+  - m_Id: 661237690003459
+    m_Key: PowerName
     m_Metadata:
       m_Items: []
   m_Metadata:

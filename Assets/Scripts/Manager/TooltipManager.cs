@@ -24,6 +24,7 @@ public class TooltipManager : MonoBehaviour
     public RectTransform Background;
     public RectTransform MyRectTransform;
     public Canvas MyCanvas;
+    public GameObject DamageHint;
     private void Awake()
     {
         MyRectTransform = GetComponent<RectTransform>();
@@ -81,5 +82,16 @@ public class TooltipManager : MonoBehaviour
         GameObject obj = Resources.Load<GameObject>("Prefabs/GUI/TooltipCanvas");
         obj = Instantiate(obj, Vector3.zero, Quaternion.identity);
         instance = obj.GetComponent<TooltipManager>();
+    }
+    public static void SpawnDamageHint(Vector3 _spawnPoint, int _damage)
+    {
+        GameObject obj = Instantiate(Instance.DamageHint, _spawnPoint, Quaternion.identity, Instance.transform);
+        obj.GetComponent<DamageHint>().Damage = _damage;
+    }
+    public static void SpawnDamageHint(Vector3 _spawnPoint, int _damage, Color _color)
+    {
+        GameObject obj = Instantiate(Instance.DamageHint, _spawnPoint, Quaternion.identity, Instance.transform);
+        obj.GetComponent<DamageHint>().Damage = _damage;
+        obj.GetComponent<DamageHint>().color = _color;
     }
 }

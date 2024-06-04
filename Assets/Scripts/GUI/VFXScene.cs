@@ -1,6 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.U2D;
+using UnityEngine.UI;
 
 public class VFXScene : MonoBehaviour
 {

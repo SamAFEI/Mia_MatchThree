@@ -52,6 +52,7 @@ MonoBehaviour:
   - Param7
   - Break1
   - Break2
+  - Param9
   - Param12
   - Param13
   - Param15
@@ -606,15 +607,15 @@ MonoBehaviour:
       time: 0
       value: 0
       inSlope: 0
-      outSlope: 59.88024
+      outSlope: 17.964073
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
       time: 0.167
-      value: 10
-      inSlope: 59.88024
+      value: 3
+      inSlope: 17.964073
       outSlope: 0
       tangentMode: 0
       weightedMode: 0
@@ -999,24 +1000,6 @@ MonoBehaviour:
       time: 0
       value: 30
       inSlope: 0
-      outSlope: -29.94012
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 0.167
-      value: 25
-      inSlope: -29.94012
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 0.333
-      value: 30
-      inSlope: 0
       outSlope: 0
       tangentMode: 0
       weightedMode: 0
@@ -1116,7 +1099,7 @@ MonoBehaviour:
       outWeight: 0
     - serializedVersion: 3
       time: 0.167
-      value: 21
+      value: 17
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1125,6 +1108,29 @@ MonoBehaviour:
       outWeight: 0
     - serializedVersion: 3
       time: 0.333
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.667
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  - serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
       value: 0
       inSlope: 0
       outSlope: 0
@@ -1302,7 +1308,9 @@ MonoBehaviour:
   - -1
   - -1
   - -1
+  - -1
   ParameterFadeOutTimes:
+  - -1
   - -1
   - -1
   - -1

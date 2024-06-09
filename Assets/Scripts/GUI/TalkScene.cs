@@ -22,7 +22,7 @@ public class TalkScene : MonoBehaviour
     }
     private void Start()
     {
-        Instantiate(Stage.Data.Character, transform.position, Quaternion.identity, transform);
+        Instantiate(Stage.Data.Character, Chart.transform.position, Quaternion.identity, transform);
         string _blockName = "Talk" + Stage.Data.Id;
         Chart.ExecuteIfHasBlock(_blockName);
         AudioManager.StopBGM();

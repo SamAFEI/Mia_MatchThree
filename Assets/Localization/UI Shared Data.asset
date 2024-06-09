@@ -35,6 +35,18 @@ MonoBehaviour:
     m_Key: BtnCancel
     m_Metadata:
       m_Items: []
+  - m_Id: 10551924038942720
+    m_Key: TitleScene/Canvas/Title
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10551924055719936
+    m_Key: TitleScene/Canvas/Title 1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10552111075540992
+    m_Key: TitleScene/Canvas/Title 2
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

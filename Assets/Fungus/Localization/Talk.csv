@@ -1,62 +1,62 @@
 ﻿Key,Description,Standard,CHT,EN,JP,CHS
-SAY.Flowchart.1.Mia,,"師傅,我出門採藥草了!","師傅,我出門採藥草了!","Master, I'm going out to gather herbs!",マスター、私は薬草を採りに行きます！,
-SAY.Flowchart.41.Mia,,"哇,這裡長了好多藥草!今天大豐收!","哇,這裡長了好多藥草!今天大豐收!","Wow, there are so many herbs growing here! It's a harvest today!",わあ、ここにはたくさんのハーブが生えている！ いい収穫だ！,
-SAY.Flowchart.4.,,隨後，米婭發現了一種散發著神秘香味的藥草。,隨後，米婭發現了一種散發著神秘香味的藥草。,Then Mia discovers a strange herb that emits a mysterious scent.,そんな折、ミアは不思議な香りを放つハーブを発見する。,
-SAY.Flowchart.3.Mia,,"嗯?這是什麼,沒有看過耶!","嗯?這是什麼,沒有看過耶!","Oh,? What's this? I've never seen it before!",おや？これは何？初めて見たよ！,
-SAY.Flowchart.35.,,"米婭蹲下開始採集藥草,當她拔起藤蔓時,一條巨大的觸手連著藥草的根部,直直的往米婭身上竄。","米婭蹲下開始採集藥草,當她拔起藤蔓時,一條巨大的觸手連著藥草的根部,直直的往米婭身上竄。","Mia crouched down and began to gather herbs, and as he pulled up the vines, a huge tentacle attached to the root of the herbs tampered with Mia's body.",ミアがひざまずいて薬草を集め始めると、彼がつるを引っ張り上げ、薬草の根についた巨大な触手がまっすぐミアに向かってき上向きだ。,
-SAY.Flowchart.36.Mia,,咿呀?!,咿呀?!,Eeeeeeeeeeeee?,えええおおおおおおお？,
-SAY.Flowchart.37.Wizard,,....,....,....,....,
-SAY.Flowchart.38.Mia,,你是誰?請救救我!,你是誰?請救救我!,Who are you? Please help me!,誰なの？ 助けてください！,
-SAY.Flowchart.39.Wizard,,看來有人掉到陷阱裡了,看來有人掉到陷阱裡了,It seems that someone has fallen into the very trap.,まさしく誰かが罠にはまったようだ。,
-SAY.Flowchart.40.Mia,,什麼?!,什麼?!,Hmm?,え？,
-SAY.Flowchart.12.Mia,,"好不容易逃離了那個恐怖的地方...不管藥草了,趕緊回家吧...","好不容易逃離了那個恐怖的地方...不管藥草了,趕緊回家吧...",,,
-SAY.Flowchart.11.Mia,,呼...終於回到草原了。,呼...終於回到草原了。,,,
-SAY.Flowchart.13.Wizard,,(唰..),(唰..),,,
-SAY.Flowchart.42.Mia,,誰在那邊?,誰在那邊?,,,
-SAY.Flowchart.43.,,"米婭往聲音的方向看去,卻什麼也沒有。","米婭往聲音的方向看去,卻什麼也沒有。",,,
-SAY.Flowchart.44.Mia,,"都是那個陷阱害的,讓我現在都疑神疑鬼的。","都是那個陷阱害的,讓我現在都疑神疑鬼的。",,,
-SAY.Flowchart.45.Wizard,,(唰..),(唰..),,,
-SAY.Flowchart.46.Mia,,咿呀!,咿呀!,,,
-SAY.Flowchart.7.Wizard,,呼~,呼~,,,
-SAY.Flowchart.8.,,"黑衣人輕輕吐出一口菸,眼睛直勾勾的盯著破舊的小門。","黑衣人輕輕吐出一口菸,眼睛直勾勾的盯著破舊的小門。",,,
-SAY.Flowchart.6.,,"門被推開了一個小小的縫,黑衣人瞇起眼睛,似乎想在陰暗的燈光下,看清對方的輪廓。","門被推開了一個小小的縫,黑衣人瞇起眼睛,似乎想在陰暗的燈光下,看清對方的輪廓。",,,
-SAY.Flowchart.47.Elise,,您好...,您好...,,,
-SAY.Flowchart.48.Wizard,,"坐上來,然後拿走你的零用錢。","坐上來,然後拿走你的零用錢。",,,
-SAY.Flowchart.49.Elise,,好..好的...,好..好的...,,,
-SAY.Flowchart.50.Wizard,,....,....,,,
-SAY.Flowchart.51.Wizard,,恩...?,恩...?,,,
-SAY.Flowchart.52.,,"在女人貼近的時候,黑衣人感受到了異樣的氣息,而女人也發現到了這一點。","在女人貼近的時候,黑衣人感受到了異樣的氣息,而女人也發現到了這一點。",,,
-SAY.Flowchart.53.Wizard,,你不是我叫的人!,你不是我叫的人!,,,
-SAY.Flowchart.54.Elise,,"哦?很敏銳嘛,我喜歡敏銳的孩子。","哦?很敏銳嘛,我喜歡敏銳的孩子。",,,
-SAY.Flowchart.55.Wizard,,"哼,就拿你代替,也不是不行。","哼,就拿你代替,也不是不行。",,,
-SAY.Flowchart.56.Elise,,哦?那看你做不做得到囉。,哦?那看你做不做得到囉。,,,
-SAY.Flowchart.21.,,"在微弱燈光的夜色中,有個男子坐在床上,輕輕吹熄桌邊的蠟燭。","在微弱燈光的夜色中,有個男子坐在床上,輕輕吹熄桌邊的蠟燭。",,,
-SAY.Flowchart.22.,,"望向半掩的門口,破舊的門扉被風吹的喀搭作響。","望向半掩的門口,破舊的門扉被風吹的喀搭作響。",,,
-SAY.Flowchart.23.,,"此時,一個融在夜色的身影悄悄的現形,男子的眼睛忽然一亮。","此時,一個融在夜色的身影悄悄的現形,男子的眼睛忽然一亮。",,,
-SAY.Flowchart.57.Wizard,,是你。,是你。,,,
-SAY.Flowchart.58.Elise,,哦?你還記得我?,哦?你還記得我?,,,
-SAY.Flowchart.59.Wizard,,"那天晚上之後,我再也無法對其他女性提起興趣了。","那天晚上之後,我再也無法對其他女性提起興趣了。",,,
-SAY.Flowchart.60.,,"伊莉絲聽出了語氣中按耐不住的情緒,卻慢條斯理的整理起自己的翅膀。","伊莉絲聽出了語氣中按耐不住的情緒,卻慢條斯理的整理起自己的翅膀。",,,
-SAY.Flowchart.61.Wizard,,"不好意思了,惡魔小姐。","不好意思了,惡魔小姐。",,,
-SAY.Flowchart.62.Wizard,,我忍不住了。,我忍不住了。,,,
-SAY.Flowchart.63.Elise,,嗯?,嗯?,,,
-SAY.Flowchart.16.Stella,,"我的主啊!請賜給我智慧,讓我能啟迪他人,請幫助我調整步伐,能行在祢為我預備的道路上。","我的主啊!請賜給我智慧,讓我能啟迪他人,請幫助我調整步伐,能行在祢為我預備的道路上。",,,
-SAY.Flowchart.17.,,"少女完成了今日的祝禱,從台下走下來,餘光瞥到了一旁陰暗的角落,那兒原本佇立了一個人。","少女完成了今日的祝禱,從台下走下來,餘光瞥到了一旁陰暗的角落,那兒原本佇立了一個人。",,,
-SAY.Flowchart.18.,,(晚上),(晚上),,,
-SAY.Flowchart.64.Wizard,,"親愛又美麗的小姐,你好。","親愛又美麗的小姐,你好。",,,
-SAY.Flowchart.65.Wizard,,"對於我現在會出現在這,你可能會感到些許的意外,但是請不要害怕。","對於我現在會出現在這,你可能會感到些許的意外,但是請不要害怕。",,,
-SAY.Flowchart.66.Wizard,,"我是來自XXX教會的成員,想必你對這個名字不會太陌生。","我是來自XXX教會的成員,想必你對這個名字不會太陌生。",,,
-SAY.Flowchart.67.Stella,,XXX教會...?!,XXX教會...?!,,,
-SAY.Flowchart.68.Stella,,為什麼高層教會的人會出現在這裡?,為什麼高層教會的人會出現在這裡?,,,
-SAY.Flowchart.69.Wizard,,"我是來試驗你對神的虔誠的,來吧,年輕的女孩,一心一意的用你的身心服侍你最敬愛的神吧!","我是來試驗你對神的虔誠的,來吧,年輕的女孩,一心一意的用你的身心服侍你最敬愛的神吧!",,,
-SAY.Flowchart.26.,,(叩叩叩),(叩叩叩),,,
-SAY.Flowchart.27.Wizard,,請進。,請進。,,,
-SAY.Flowchart.28.Stella,,您好...,您好...,,,
-SAY.Flowchart.70.Wizard,,"歡迎,美麗的少女。又或者,我應該稱您,修女大人?","歡迎,美麗的少女。又或者,我應該稱您,修女大人?",,,
-SAY.Flowchart.71.Stella,,"神啊!我要將我的軟弱、侷限和缺點都交給祢,並求祢讓祢的能力在軟弱的我身上顯得完全。懇求祢住在我裡面,也幫助我住在祢裡面。","神啊!我要將我的軟弱、侷限和缺點都交給祢,並求祢讓祢的能力在軟弱的我身上顯得完全。懇求祢住在我裡面,也幫助我住在祢裡面。",,,
-SAY.Flowchart.72.Wizard,,"真是虔誠的女孩呢,相信神明大人也會非常高興的。","真是虔誠的女孩呢,相信神明大人也會非常高興的。",,,
-SAY.Flowchart.73.Wizard,,就讓我來測試你的軟弱吧!,就讓我來測試你的軟弱吧!,,,
+SAY.Flowchart.1.Mia,,"師傅,我出門採藥草了!","師傅,我出門採藥草了!","Master, I'm going out to gather herbs!",マスター、私は薬草を採りに行きます！,"师傅,我出门采药草了!"
+SAY.Flowchart.41.Mia,,"哇,這裡長了好多藥草!今天大豐收!","哇,這裡長了好多藥草!今天大豐收!","Wow, there are so many herbs growing here! It's a harvest today!",わあ、ここにはたくさんのハーブが生えている！ いい収穫だ！,"哇,这里长了好多药草!今天大丰收!"
+SAY.Flowchart.4.,,隨後，米婭發現了一種散發著神秘香味的藥草。,隨後，米婭發現了一種散發著神秘香味的藥草。,Then Mia discovers a strange herb that emits a mysterious scent.,そんな折、ミアは不思議な香りを放つハーブを発見する。,随后，米娅发现了一种散发着神秘香味的药草。
+SAY.Flowchart.3.Mia,,"嗯?這是什麼,沒有看過耶!","嗯?這是什麼,沒有看過耶!","Oh,? What's this? I've never seen it before!",おや？これは何？初めて見たよ！,"嗯?这是什么,没有看过耶!"
+SAY.Flowchart.35.,,"米婭蹲下開始採集藥草,當她拔起藤蔓時,一條巨大的觸手連著藥草的根部,直直的往米婭身上竄。","米婭蹲下開始採集藥草,當她拔起藤蔓時,一條巨大的觸手連著藥草的根部,直直的往米婭身上竄。","Mia crouched down and began to gather herbs, and as he pulled up the vines, a huge tentacle attached to the root of the herbs tampered with Mia's body.",ミアがひざまずいて薬草を集め始めると、彼がつるを引っ張り上げ、薬草の根についた巨大な触手がまっすぐミアに向かってき上向きだ。,"米娅蹲下开始采集药草,当她拔起藤蔓时,一条巨大的触手连着药草的根部,直直的往米娅身上窜。"
+SAY.Flowchart.36.Mia,,咿呀?!,咿呀?!,Eeeeeeeeeeee?,えええおおおおおおお？,咿呀?!
+SAY.Flowchart.37.???,,....,....,....,....,....
+SAY.Flowchart.38.Mia,,你是誰?請救救我!,你是誰?請救救我!,Who are you? Please help me!,誰なの？ 助けてください！,你是谁?请救救我!
+SAY.Flowchart.39.???,,看來有人掉到陷阱裡了,,It seems that someone has fallen into the very trap.,まさしく誰かが罠にはまったようだ。,看来有人掉到陷阱里了
+SAY.Flowchart.40.Mia,,什麼?!,什麼?!,Hmm?,え？,什么?!
+SAY.Flowchart.7.???,,呼~,呼~,Phew~,ふぅ～,呼~
+SAY.Flowchart.8.,,"黑衣人輕輕吐出一口菸,眼睛直勾勾的盯著破舊的小門。","黑衣人輕輕吐出一口菸,眼睛直勾勾的盯著破舊的小門。",The man in black gently exhaled a puff of smoke and stared straight at the broken door.,黒服の男はそっと煙を吐き、壊れたドアをまっすぐに見つめた。,"黑衣人轻轻吐出一口烟,眼睛直勾勾的盯着破旧的小门。"
+SAY.Flowchart.6.,,"門被推開了一個小小的縫,黑衣人瞇起眼睛,似乎想在陰暗的燈光下,看清對方的輪廓。","門被推開了一個小小的縫,黑衣人瞇起眼睛,似乎想在陰暗的燈光下,看清對方的輪廓。","The door was pushed open a small crack, and the man in black squinted his eyes, as if trying to see his opponent's silhouette in the dim light.",ドアが押し開かれて小さな隙間ができ、黒服の男は薄暗い光の中で相手の輪郭をはっきりと見ようとするかのように目を細めた。,"门被推开了一个小小的缝,黑衣人眯起眼睛,似乎想在阴暗的灯光下,看清对方的轮廓。"
+SAY.Flowchart.47.Elise,,您好...,您好...,Hello...,こんにちは...,您好...
+SAY.Flowchart.48.???,,"坐上來,然後拿走你的零用錢。","坐上來,然後拿走你的零用錢。",Sit up and take your allowance.,座って小遣いを受け取れ。,"坐上来,然后拿走你的零用钱。"
+SAY.Flowchart.49.Elise,,好..好的...,好..好的...,Okay...,分かった...,好..好的...
+SAY.Flowchart.50.???,,....,....,....,....,....
+SAY.Flowchart.51.???,,恩...?,恩...?,Well...,ん...？,恩...?
+SAY.Flowchart.52.,,"在女人貼近的時候,黑衣人感受到了異樣的氣息,而女人也發現到了這一點。","在女人貼近的時候,黑衣人感受到了異樣的氣息,而女人也發現到了這一點。","As the woman approached, the man in black sensed a strange aura, and the woman realized it as well.",女性が近づくと黒服の男は異様なオーラを感じ、女性もそれに気づいた。,"在女人贴近的时候,黑衣人感受到了异样的气息,而女人也发现到了这一点。"
+SAY.Flowchart.53.???,,你不是我叫的人!,你不是我叫的人!,You're not the one I called!,あなたは私が呼んだ人ではありません！,你不是我叫的人!
+SAY.Flowchart.54.Elise,,"哦?很敏銳嘛,我喜歡敏銳的孩子。","哦?很敏銳嘛,我喜歡敏銳的孩子。",That's sharp. I like sharp kids.,おお？頭がいい。賢い子が好きです,"哦?很敏锐嘛,我喜欢敏锐的孩子。"
+SAY.Flowchart.55.???,,"哼,就拿你代替,也不是不行。","哼,就拿你代替,也不是不行。","Well, it wouldn't be a bad idea to replace him with you.",ふん、代わりにあなたを使うことも不可能ではありません。,"哼,就拿你代替,也不是不行。"
+SAY.Flowchart.56.Elise,,哦?那看你做不做得到囉。,哦?那看你做不做得到囉。,Oh? That depends on whether you can do it or not.,ああ、できるかどうかはあなた次第です。,哦?那看你做不做得到啰。
+SAY.Flowchart.12.Mia,,"好不容易逃離了那個恐怖的地方...不管藥草了,趕緊回家吧...","好不容易逃離了那個恐怖的地方...不管藥草了,趕緊回家吧...",I finally escaped that horrible place...Ignore the herbs and go home quickly...,はあの恐ろしい場所から逃げ出したんだ...。 ハーブのことは忘れて、家に帰ろう...。,"好不容易逃离了那个恐怖的地方...不管药草了,赶紧回家吧..."
+SAY.Flowchart.11.Mia,,呼...終於回到草原了。,呼...終於回到草原了。,Phew... finally back to the grassland.,ふぅ...。 ようやく草原に戻った。,呼...终于回到草原了。
+SAY.Flowchart.13.???,,(唰..),(唰..),whizz,びゅん,(唰..)
+SAY.Flowchart.42.Mia,,誰在那邊?,誰在那邊?,Who's over there?,そこにいるのは誰だ？,谁在那边?
+SAY.Flowchart.43.,,"米婭往聲音的方向看去,卻什麼也沒有。","米婭往聲音的方向看去,卻什麼也沒有。","Mia looked in the direction of the sound, but found nothing.",ミアは音のした方向を見たが、何もなかった。,"米娅往声音的方向看去,却什么也没有。"
+SAY.Flowchart.44.Mia,,"都是那個陷阱害的,讓我現在都疑神疑鬼的。","都是那個陷阱害的,讓我現在都疑神疑鬼的。","It was all caused by that trap, which makes me suspicious now.",その罠のせいで、私は今、被害妄想に陥っている。,"都是那个陷阱害的,让我现在都疑神疑鬼的。"
+SAY.Flowchart.45.???,,(唰..),(唰..),whizz,びゅん,(唰..)
+SAY.Flowchart.46.Mia,,咿呀!,咿呀!,Eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee?,えええおおおおおおお？,咿呀!
+SAY.Flowchart.16.Stella,,"我的主啊!請賜給我智慧,讓我能啟迪他人,請幫助我調整步伐,能行在祢為我預備的道路上。","我的主啊!請賜給我智慧,讓我能啟迪他人,請幫助我調整步伐,能行在祢為我預備的道路上。",My Lord! Please give me wisdom so that I can enlighten others. Please help me adjust my pace so that I can walk on the path You have prepared for me.,主よ！ 他者を啓発する知恵をお与えください。そして、あなたが私のために備えてくださった道に、私のペースを合わせることができるようにお助けください。,"我的主啊!请赐给我智慧,让我能启迪他人,请帮助我调整步伐,能行在祢为我预备的道路上。"
+SAY.Flowchart.17.,,"少女完成了今日的祝禱,從台下走下來,餘光瞥到了一旁陰暗的角落,那兒原本佇立了一個人。","少女完成了今日的祝禱,從台下走下來,餘光瞥到了一旁陰暗的角落,那兒原本佇立了一個人。","The girl finished her prayers for the day and walked down from the stage. From the corner of her eye, she glanced at a dark corner, where a person was standing.",若い女性はその日の祈りを終え、ステージから降りた。目の端から、そこに一人の男が立っていた。,"少女完成了今日的祝祷,从台下走下来,余光瞥到了一旁阴暗的角落,那儿原本伫立了一个人。"
+SAY.Flowchart.18.,,(晚上),(晚上),(night),(夕方),(晚上)
+SAY.Flowchart.64.???,,"親愛又美麗的小姐,你好。","親愛又美麗的小姐,你好。","Hello, dear and beautiful lady.",こんにちは、優しくて美しい女性。,"亲爱又美丽的小姐,你好。"
+SAY.Flowchart.65.???,,"對於我現在會出現在這,你可能會感到些許的意外,但是請不要害怕。","對於我現在會出現在這,你可能會感到些許的意外,但是請不要害怕。","You may be a little surprised that I'm here now, but please don't be afraid.",私が今ここにいることに少し驚かれるかもしれませんが、心配しないでください。,"对于我现在会出现在这,你可能会感到些许的意外,但是请不要害怕。"
+SAY.Flowchart.66.???,,"我是來自XXX教會的成員,想必你對這個名字不會太陌生。","我是來自XXX教會的成員,想必你對這個名字不會太陌生。",I am a member of the Church of the XXX. You must be familiar with this name.,私はXXX教会のメンバーである。あなたもこの名前をよく知っているはずです。,"我是来自XXX教会的成员,想必你对这个名字不会太陌生。"
+SAY.Flowchart.67.Stella,,XXX教會...?!,XXX教會...?!,Church of the XXX...?!,XXX教会…!?,XXX教会...?!
+SAY.Flowchart.68.Stella,,為什麼高層教會的人會出現在這裡?,為什麼高層教會的人會出現在這裡?,Why do people from high-level churches appear here?,なぜ大教会の人間がここに？,为什么高层教会的人会出现在这里?
+SAY.Flowchart.69.???,,"我是來試驗你對神的虔誠的,來吧,年輕的女孩,一心一意的用你的身心服侍你最敬愛的神吧!","我是來試驗你對神的虔誠的,來吧,年輕的女孩,一心一意的用你的身心服侍你最敬愛的神吧!","I am here to test your devotion to God. Come on, young girl, serve your most beloved God wholeheartedly with your body and mind!",私はあなたの神への献身を試すためにここにいます。さあ、お嬢さん、あなたの最も愛する神に全身全霊をかけて仕えなさい。,"我是来试验你对神的虔诚的,来吧,年轻的女孩,一心一意的用你的身心服侍你最敬爱的神吧!"
+SAY.Flowchart.21.,,"在微弱燈光的夜色中,有個男子坐在床上,輕輕吹熄桌邊的蠟燭。","在微弱燈光的夜色中,有個男子坐在床上,輕輕吹熄桌邊的蠟燭。","In the dimly lit night, there was a man sitting on the bed, gently blowing out the candle on the table.",薄暗い夜、ベッドに腰掛けた男がテーブルの上のロウソクをそっと吹き消す。,"在微弱灯光的夜色中,有个男子坐在床上,轻轻吹熄桌边的蜡烛。"
+SAY.Flowchart.22.,,"望向半掩的門口,破舊的門扉被風吹的喀搭作響。","望向半掩的門口,破舊的門扉被風吹的喀搭作響。","Looking at the half-open door, the old door leaf rattled in the wind.",半開きのドアを見ると、古いドアの葉が風でガタガタ音を立てていました。,"望向半掩的门口,破旧的门扉被风吹的喀搭作响。"
+SAY.Flowchart.23.,,"此時,一個融在夜色的身影悄悄的現形,男子的眼睛忽然一亮。","此時,一個融在夜色的身影悄悄的現形,男子的眼睛忽然一亮。","At that moment, a figure melted in the night colour quietly appeared, and the man's eyes suddenly lit up.",その瞬間、夜の色に溶けた人影が静かに現れ、男の目が突然輝いた。,"此时,一个融在夜色的身影悄悄的现形,男子的眼睛忽然一亮。"
+SAY.Flowchart.57.???,,是你。,是你。,It's you.,それはあなたです。,是你。
+SAY.Flowchart.58.Elise,,哦?你還記得我?,哦?你還記得我?,Oh? Do you still remember me?,ああ、まだ私のことを覚えていますか？,哦?你还记得我?
+SAY.Flowchart.59.???,,"那天晚上之後,我再也無法對其他女性提起興趣了。","那天晚上之後,我再也無法對其他女性提起興趣了。","After that night, I could no longer be interested in other women.",その夜以来、私は他の女性に興味を持てなくなりました。,"那天晚上之后,我再也无法对其他女性提起兴趣了。"
+SAY.Flowchart.60.,,"伊莉絲聽出了語氣中按耐不住的情緒,卻慢條斯理的整理起自己的翅膀。","伊莉絲聽出了語氣中按耐不住的情緒,卻慢條斯理的整理起自己的翅膀。","Elyse heard the pent-up emotion in the tone, but took her time to straighten her wings.",エリゼは、その口調に込められた感情を聞き取ったが、時間をかけて翼を正した。,"伊莉丝听出了语气中按耐不住的情绪,却慢条斯理的整理起自己的翅膀。"
+SAY.Flowchart.61.???,,"不好意思了,惡魔小姐。","不好意思了,惡魔小姐。","Sorry, Miss demon.",申し訳ありません、ミス悪魔。,"不好意思了,恶魔小姐。"
+SAY.Flowchart.62.???,,我忍不住了。,我忍不住了。,I can't help it.,もうどうしようもなかった。,我忍不住了。
+SAY.Flowchart.63.Elise,,嗯?,嗯?,Um?,ん？,嗯?
+SAY.Flowchart.26.,,(叩叩叩),(叩叩叩),(KNOCKING),（ノック）,(叩叩叩)
+SAY.Flowchart.27.???,,請進。,請進。,Please come in.,どうぞお入りください。,请进。
+SAY.Flowchart.28.Stella,,您好...,您好...,Hello...,こんにちは...,您好...
+SAY.Flowchart.70.???,,"歡迎,美麗的少女。又或者,我應該稱您,修女大人?","歡迎,美麗的少女。又或者,我應該稱您,修女大人?","Welcome, fair maiden. Or should I say Sister?",ようこそ、美しい乙女よ。 それともシスター・スペリオールと言うべきでしょうか？,"欢迎,美丽的少女。又或者,我应该称您,修女大人?"
+SAY.Flowchart.71.Stella,,"神啊!我要將我的軟弱、侷限和缺點都交給祢,並求祢讓祢的能力在軟弱的我身上顯得完全。懇求祢住在我裡面,也幫助我住在祢裡面。","神啊!我要將我的軟弱、侷限和缺點都交給祢,並求祢讓祢的能力在軟弱的我身上顯得完全。懇求祢住在我裡面,也幫助我住在祢裡面。","God! I want to hand over my weaknesses, limitations, and shortcomings to You, and ask You to make Your power perfect in my weakness. Please abide in me and help me abide in You.",神よ！ 私の弱さ、限界、欠点をあなたに差し出し、私の弱さのうちにあなたの力を完全なものとしてくださるようお願いします。 あなたが私の内に宿り、私があなたの内に宿るのを助けてくださいますように。,"神啊!我要将我的软弱、局限和缺点都交给祢,并求祢让祢的能力在软弱的我身上显得完全。恳求祢住在我里面,也帮助我住在祢里面。"
+SAY.Flowchart.72.???,,"真是虔誠的女孩呢,相信神明大人也會非常高興的。","真是虔誠的女孩呢,相信神明大人也會非常高興的。",What a pious girl. I'm sure Kami-sama will be very pleased.,なんて敬虔な娘なんでしょう。神様もきっと喜んでくれると思います。,"真是虔诚的女孩呢,相信神明大人也会非常高兴的。"
+SAY.Flowchart.73.???,,就讓我來測試你的軟弱吧!,就讓我來測試你的軟弱吧!,Let me test your weak!,君の弱さを試させてくれ！,就让我来测试你的软弱吧!
 CHARACTER.Stella,,Stella,史黛菈,Stella,ステラ,
 CHARACTER.Mia,,Mia,米婭,Mia,ミア,
 CHARACTER.Elise,,Elise,伊莉絲,Elise,イリース,
-CHARACTER.Wizard,,???,???,???,???,
+CHARACTER.???,,???,???,???,???,

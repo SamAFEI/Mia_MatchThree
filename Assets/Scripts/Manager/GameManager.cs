@@ -130,7 +130,7 @@ public class GameManager : MonoBehaviour, ISaveManager
         Instance.CursorSwap = Resources.Load<Texture2D>("Sprites/GUI/CursorSwap");
         Instance.CursorBreak = Resources.Load<Texture2D>("Sprites/GUI/CursorBreak");
         InitStages();
-        Stage stage = Resources.Load<Stage>("Prefabs/Stage/Stage01");
+        Stage stage = Resources.Load<Stage>("Prefabs/Stage/Stage05");
         Instance.CurrentStage = stage;
         SetCursorDefault();
     }

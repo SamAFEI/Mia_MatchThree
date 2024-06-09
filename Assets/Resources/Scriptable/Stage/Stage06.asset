@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adbe4c27f57227940b160f5a26beecba, type: 3}
   m_Name: Stage06
   m_EditorClassIdentifier: 
-  Character: {fileID: 6504991745619132353, guid: ad8689b05557e2046bdcc8fa850f5259, type: 3}
+  Character: {fileID: 2379232121419161926, guid: 2fe2fb3bba647f54c8a4dba9cefdb15c, type: 3}
   MaxHP: 600000
   Id: 5
   ATK: 8000
   AnimName: hiyori_m08
   StageName: Stage06
-  IsComplete: 0
+  IsComplete: 1
   PriorStage: {fileID: 11400000, guid: f4f6a401051556e4a9136a192a7f0d6a, type: 2}
-  Background: {fileID: 0}
+  Background: {fileID: 21300000, guid: 9159ddbffd7674742a25e1baab5b2f52, type: 3}
   SlashFX: {fileID: 2591296678764458575, guid: df723cf0673d66e458d9c75c166d9a9c, type: 3}
   CGList:
   - {fileID: 21300000, guid: b932b796ef5f0ab40b98e6362754d973, type: 3}
@@ -38,7 +38,11 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 52d19c044c6fe474f8c17e26dbda08b3, type: 3}
   - {fileID: 21300000, guid: 6232b3a216df3254bb3cd6d5c087025d, type: 3}
   - {fileID: 21300000, guid: d0f4f3717b0585a44b33a684e3741245, type: 3}
-  HurtClip: {fileID: 8300000, guid: fbc6218218043504288f1ca306df1465, type: 3}
+  HurtClip: {fileID: 8300000, guid: 753e6b11bf7cb0140bcd79bed598db95, type: 3}
   AttackClip: {fileID: 8300000, guid: f421c6bc67f8bf34ba416e256799cb47, type: 3}
-  SexClips: []
-  SexVoiceClips: []
+  SexClips:
+  - {fileID: 8300000, guid: b1e061d008d5a1b469d2abdc54cc646a, type: 3}
+  - {fileID: 8300000, guid: b07bd544a311c774398ffbca33cef227, type: 3}
+  SexVoiceClips:
+  - {fileID: 8300000, guid: 6ec5d33513e8f224294121d577e8b1c6, type: 3}
+  - {fileID: 8300000, guid: 62f42002a07f7b84ebc1e3203e7730a9, type: 3}

@@ -29,12 +29,13 @@ public class CGScene : MonoBehaviour
     }
     private void Start()
     {
-        Character = Instantiate(Stage.Data.Character, transform.position, Quaternion.identity, transform);
+        Character = Instantiate(Stage.Data.Character, Chart.transform.position, Quaternion.identity, transform);
 
         CGIndex = -1;
         string _blockName = "CG" + Stage.Data.Id;
         Chart.ExecuteIfHasBlock(_blockName);
         AudioManager.StopBGM();
+        CGFrame.sprite = Stage.Data.Background;
     }
     private void Update()
     {

@@ -17,7 +17,7 @@ public class StageMenu : MonoBehaviour
     {
         SetCurrentStage();
     }
-
+    
     private void OnClick(Button _sender)
     {
         foreach (Button _btn in StageBtns)

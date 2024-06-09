@@ -20,7 +20,7 @@ MonoBehaviour:
   StageName: Stage01
   IsComplete: 0
   PriorStage: {fileID: 0}
-  Background: {fileID: 0}
+  Background: {fileID: 21300000, guid: d4d8810e8030f3f4fbef85fb1f9b7624, type: 3}
   SlashFX: {fileID: 9178572341572247942, guid: ad16f58e66e01b643b0a5ae66a4c1551, type: 3}
   CGList:
   - {fileID: 21300000, guid: 0ae893cd527c324458fd1c0b2e5ae60b, type: 3}

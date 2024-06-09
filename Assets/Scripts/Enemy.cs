@@ -68,7 +68,6 @@ public class Enemy : MonoBehaviour
     public void Attack()
     {
         float damage = ATK * Random.Range(0.800f, 1.200f) * Board.Instance.DEFDown;
-        EnemyController.EneymAttack((int)damage);
-        AudioManager.PlayVoice(VoiceEnum.Attack);
+        EnemyController.EneymAttack((int)damage); 
     }
 }

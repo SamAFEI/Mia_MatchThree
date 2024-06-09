@@ -153,20 +153,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: AnimName
-      value: haru_g_m07
+      value: Idle
       objectReference: {fileID: 0}
     - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: Character
       value: 
-      objectReference: {fileID: 989955404773393117, guid: 8244fdfbea4f2a24497165c9d5c5aa8f, type: 3}
+      objectReference: {fileID: 6986754315798455753, guid: c81eda1db35718a47b4ea3c28e910c8c, type: 3}
     - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: StageName
       value: Stage03
       objectReference: {fileID: 0}
+    - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
+      propertyPath: HideSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ba160ff82c556c344bdd74210f67a186, type: 3}
+    - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
+      propertyPath: StageSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0319741a3e7ae9242af941b449b5a1b8, type: 3}
     - target: {fileID: 4917729000786801200, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 0319741a3e7ae9242af941b449b5a1b8, type: 3}
+    - target: {fileID: 5612732684046878284, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
+      propertyPath: m_TargetGraphic
+      value: 
+      objectReference: {fileID: 377583984}
     - target: {fileID: 6749459902699436239, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -346,6 +358,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 563957332555568310, guid: 94128125d11f2d8408693fee8fe9467c, type: 3}
   m_PrefabInstance: {fileID: 5973889276109077604}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &377583984 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4917729000786801200, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
+  m_PrefabInstance: {fileID: 8817730}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &402914517
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -376,16 +399,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: AnimName
-      value: haru_g_m05
+      value: Idle
       objectReference: {fileID: 0}
     - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: Character
       value: 
-      objectReference: {fileID: 989955404773393117, guid: 8244fdfbea4f2a24497165c9d5c5aa8f, type: 3}
+      objectReference: {fileID: 6986754315798455753, guid: c81eda1db35718a47b4ea3c28e910c8c, type: 3}
     - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: StageName
       value: Stage04
       objectReference: {fileID: 0}
+    - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
+      propertyPath: HideSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 806f2107371b94a4d85d2684ec023ed8, type: 3}
+    - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
+      propertyPath: StageSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b33e1b30e3a477a49b4c3c2fd585cf88, type: 3}
     - target: {fileID: 4917729000786801200, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -519,11 +550,19 @@ PrefabInstance:
     - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: Character
       value: 
-      objectReference: {fileID: 6504991745619132353, guid: ad8689b05557e2046bdcc8fa850f5259, type: 3}
+      objectReference: {fileID: 2379232121419161926, guid: 2fe2fb3bba647f54c8a4dba9cefdb15c, type: 3}
     - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: StageName
       value: Stage05
       objectReference: {fileID: 0}
+    - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
+      propertyPath: HideSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2b6fc4fd343b9bd479d3a6f8b7cf9651, type: 3}
+    - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
+      propertyPath: StageSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 02cfc1434a1debb44b9b395c0fe04844, type: 3}
     - target: {fileID: 4917729000786801200, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1019,6 +1058,14 @@ PrefabInstance:
       propertyPath: StageName
       value: Stage02
       objectReference: {fileID: 0}
+    - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
+      propertyPath: HideSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a85a6852aaa94b74996d27b72d6424df, type: 3}
+    - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
+      propertyPath: StageSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fa81537625e587b44936e3a05fb3b36b, type: 3}
     - target: {fileID: 4917729000786801200, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -1753,7 +1800,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -220950795, guid: 4be7218be1ce0e84493a3125e28ef2f2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f132af5575d8d674fbb938d09f4bc8db, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1806,11 +1853,19 @@ PrefabInstance:
     - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: Character
       value: 
-      objectReference: {fileID: 6504991745619132353, guid: ad8689b05557e2046bdcc8fa850f5259, type: 3}
+      objectReference: {fileID: 2379232121419161926, guid: 2fe2fb3bba647f54c8a4dba9cefdb15c, type: 3}
     - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: StageName
       value: Stage06
       objectReference: {fileID: 0}
+    - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
+      propertyPath: HideSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7e14b6ad8a8c03248b739dd21e6266a6, type: 3}
+    - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
+      propertyPath: StageSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fdfa2eeb2cb12104a93e9d0638fe2c35, type: 3}
     - target: {fileID: 4917729000786801200, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -2009,7 +2064,8 @@ PrefabInstance:
       propertyPath: Data
       value: 
       objectReference: {fileID: 11400000, guid: 8520af60b1147a24fb0754a07f8bd0a8, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4380543121288491909, guid: ac72f4fb674a75141b241b55e8a139e5, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2226,7 +2282,7 @@ MonoBehaviour:
     m_TableReference:
       m_TableCollectionName: GUID:015c39ce55727e641bcf1ad2cb98dc15
     m_TableEntryReference:
-      m_KeyId: 3613822150098944
+      m_KeyId: 3613781566013440
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
@@ -2931,15 +2987,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: $10000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 89dcd14d8d3a99d4aaa43b99def884d2, type: 2}
+  m_sharedMaterial: {fileID: -6393861122729416666, guid: 89dcd14d8d3a99d4aaa43b99def884d2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294936320
-  m_fontColor: {r: 0, g: 0.5285497, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2962,7 +3018,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 3
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -3663,6 +3719,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3389432367527337391, guid: ac72f4fb674a75141b241b55e8a139e5, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3389432367527337391, guid: ac72f4fb674a75141b241b55e8a139e5, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3389432367527337391, guid: ac72f4fb674a75141b241b55e8a139e5, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3765289916279460293, guid: ac72f4fb674a75141b241b55e8a139e5, type: 3}
       propertyPath: m_Name
       value: MaxHP
@@ -3878,7 +3946,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3425236343568712941, guid: a06c529f304f0754f8700094d7cfd021, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3910,23 +3979,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: AnimName
-      value: "\u5F85\u6A5FLOOP"
+      value: Idle
       objectReference: {fileID: 0}
     - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: Character
       value: 
-      objectReference: {fileID: 6901929363060950283, guid: 9c7d415b0b16692469a007ebb6a02c60, type: 3}
+      objectReference: {fileID: 6279108308481357563, guid: 9c7d415b0b16692469a007ebb6a02c60, type: 3}
     - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: StageName
       value: Stage01
       objectReference: {fileID: 0}
+    - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
+      propertyPath: HideSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 57dec4141fe76a049a46c0d34ec62151, type: 3}
+    - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
+      propertyPath: StageSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: aa8b45cbcc9542c4492cfb889507687b, type: 3}
     - target: {fileID: 4917729000786801200, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: fa81537625e587b44936e3a05fb3b36b, type: 3}
     - target: {fileID: 4917729000786801200, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: m_Color.a
-      value: 0.5882353
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4917729000786801200, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: m_Color.b
@@ -3943,6 +4020,22 @@ PrefabInstance:
     - target: {fileID: 4917729000786801200, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: m_RaycastTarget
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5612732684046878284, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 0.5019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 5612732684046878284, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 0.7843138
+      objectReference: {fileID: 0}
+    - target: {fileID: 5612732684046878284, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 0.7843138
+      objectReference: {fileID: 0}
+    - target: {fileID: 5612732684046878284, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 0.7843138
       objectReference: {fileID: 0}
     - target: {fileID: 6749459902699436239, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: m_Pivot.x

@@ -11,6 +11,8 @@ public class Stage : MonoBehaviour
     public int ATK = 5000;
     public string AnimName;
     public string StageName;
+    public Sprite StageSprite;
+    public Sprite HideSprite;
     private void Start()
     {
         /*if (Data != null)
@@ -21,6 +23,7 @@ public class Stage : MonoBehaviour
             ATK = Data.ATK;
             AnimName = Data.AnimName;
         }*/
+        this.GetComponent<Image>().sprite = HideSprite;
     }
     private void LateUpdate()
     {
@@ -29,6 +32,7 @@ public class Stage : MonoBehaviour
         {
             Color color = this.GetComponent<Image>().color;
             this.GetComponent<Image>().color = new Color(color.r, color.g, color.b, 1f);
+            this.GetComponent<Image>().sprite = StageSprite;
         }
     }
     private void OnValidate()

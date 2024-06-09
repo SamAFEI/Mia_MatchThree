@@ -38,6 +38,18 @@ MonoBehaviour:
     m_Localized: "\u53D6\u6D88"
     m_Metadata:
       m_Items: []
+  - m_Id: 10551924038942720
+    m_Localized: set_sprite
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10551924055719936
+    m_Localized: UnityEngine.Object, UnityEngine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10552111075540992
+    m_Localized: GUID:5932d9cd830c9ab46ab3126a1e81bd45
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

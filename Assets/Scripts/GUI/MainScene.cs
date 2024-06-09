@@ -24,6 +24,23 @@ public class MainScene : MonoBehaviour
         TooltipManager.ShowToolTip("");
         SaveManager.LoadGame();
     }
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.V))
+        {
+            if (SkillManager.Instance.Coin < 100000)
+            {
+                SkillManager.Instance.Coin = 100000;
+            }
+            for (int i = 0; i < GameManager.Instance.Stages.Count; i++)
+            {
+                if (GameManager.Instance.Stages[i].Data != null)
+                {
+                    GameManager.Instance.Stages[i].Data.IsComplete = true;
+                }
+            }
+        }
+    }
     private void LateUpdate()
     {
         CoinContent.text = "$ " + SkillManager.Instance.Coin;

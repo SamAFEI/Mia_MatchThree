@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: Stella
-  nameColor: {r: 0, g: 0, b: 0, a: 1}
+  nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits: []
   portraitsFace: 0
@@ -185,6 +185,7 @@ GameObject:
   - component: {fileID: 156779034}
   - component: {fileID: 156779036}
   - component: {fileID: 156779035}
+  - component: {fileID: 156779037}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -249,6 +250,42 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 156779033}
   m_CullTransparentMesh: 1
+--- !u!114 &156779037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156779033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 5225357640450179080
+  references:
+    version: 2
+    RefIds:
+    - rid: 5225357640450179080
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 156779035}
+        m_TrackedProperties:
+          items:
+          - rid: 5225357640450179081
+        m_UpdateType: 0
+    - rid: 5225357640450179081
+      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: m_Color.a
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: zh-TW
+          value: 1
+        - localeIdentifier:
+            m_Code: zh-Hans
+          value: 1
 --- !u!1 &211038872
 GameObject:
   m_ObjectHideFlags: 1
@@ -305,6 +342,22 @@ PrefabInstance:
     - target: {fileID: 188902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
       propertyPath: m_Name
       value: SayDialog
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493918, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: m_Color.a
+      value: 0.5882353
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493918, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493918, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11493918, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22388894, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
       propertyPath: m_Camera
@@ -389,6 +442,10 @@ PrefabInstance:
     - target: {fileID: 22488902, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4847305486131480676, guid: 8a005a9e0713f4cc1b5ad29fb07657d3, type: 3}
+      propertyPath: managedReferences[5225357640450179075].m_VariantData.Array.data[0].value
+      value: 0.39215687
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -814,7 +871,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: Mia
-  nameColor: {r: 0, g: 0, b: 0, a: 1}
+  nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits: []
   portraitsFace: 0
@@ -1033,7 +1090,7 @@ Transform:
   m_GameObject: {fileID: 1813460278}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1528,7 +1585,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 2607597}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 60015a5cb5a56d64e94c4f49c6978e0e, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -1829,7 +1886,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 2607597}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 53607728a5eef2a4587862ecfcc01852, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -2707,7 +2764,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 2607597}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: ddd312267fd04f141947a8dadfd03c43, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -2734,7 +2791,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 2607597}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 505e9a0aea73f544a9a6bf2d59f6472b, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -2896,7 +2953,7 @@ MonoBehaviour:
   description: 
   character: {fileID: 2607597}
   portrait: {fileID: 0}
-  voiceOverClip: {fileID: 0}
+  voiceOverClip: {fileID: 8300000, guid: 60015a5cb5a56d64e94c4f49c6978e0e, type: 3}
   showAlways: 1
   showCount: 1
   extendPrevious: 0
@@ -2977,7 +3034,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: Elise
-  nameColor: {r: 0, g: 0, b: 0, a: 1}
+  nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits: []
   portraitsFace: 0
@@ -3028,7 +3085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: ???
-  nameColor: {r: 0, g: 0, b: 0, a: 1}
+  nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits: []
   portraitsFace: 0

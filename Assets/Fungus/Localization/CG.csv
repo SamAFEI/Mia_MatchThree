@@ -1,246 +1,249 @@
 ﻿Key,Description,Standard,CHT,EN,JP,CHS
-SAY.Flowchart.1.Mia,,疼疼疼...,疼疼疼...,Ouch! ,痛いよ、痛いよ、痛いよ...,
-SAY.Flowchart.4.,,"隨後米婭眼前一片漆黑,徹底地失去了意識。環顧四周,發現他墜落在一個洞穴中。洞穴只有一條通往更深的道路,彷彿在告訴落入陷阱的人他並沒有太多的選擇。","隨後米婭眼前一片漆黑,徹底地失去了意識。環顧四周,發現他墜落在一個洞穴中。洞穴只有一條通往更深的道路,彷彿在告訴落入陷阱的人他並沒有太多的選擇。","Mia's eyes went black and he lost all consciousness. Looking around, he realized he had fallen into a cave. There was only one path that led deeper into the cave, as if to tell those who had fallen into the trap that they didn't have much of a choice.",ミアの目の前が真っ暗になり、意識を失った。 辺りを見回すと、彼は洞窟に落ちたことに気づいた。 洞窟の奥へと続く道は一本しかなく、まるで罠に落ちた者に選択の余地はないと教えているかのようだ。,
-SAY.Flowchart.3.Mia,,"躡手躡腳的往洞窟深處邁進,進到一個小房間,隨後看到不遠處有一把梯子。","躡手躡腳的往洞窟深處邁進,進到一個小房間,隨後看到不遠處有一把梯子。","Having crept deeper into the cave,  entered a small room and then saw a ladder not far away.",洞窟の奥深くまで忍び込んだは、小さな部屋に入り、そう遠くないところに梯子が見えた。,
-SAY.Flowchart.35.,,"米婭急忙像是看到救命稻草快速的跑向梯子,突然,米婭被腳下的繩子拌了一跤","米婭急忙像是看到救命稻草快速的跑向梯子,突然,米婭被腳下的繩子拌了一跤","Mia rushed to the ladder as if she had seen a lifeline, and suddenly, Mia fell on the rope under her feet.",ミアは命綱を見たかのように梯子に駆け寄ったが、突然、足元のロープに倒れこんだ。,
-SAY.Flowchart.36.Mia,,哎呀!,哎呀!,Oops!,おっと！,
-SAY.Flowchart.37.,,"米婭撐著地板起身,卻發現原本梯子所在的地方不見了。","米婭撐著地板起身,卻發現原本梯子所在的地方不見了。",Mia gets up on the floor and realises that the ladder is gone where it used to be.,ミアは床で体を支えながら立ち上がったが、はしごがなくなっていた。,
-SAY.Flowchart.38.Mia,,咦?梯子呢?,咦?梯子呢?,Eh? Where's the ladder?,おや？ 梯子はどだ？,
-SAY.Flowchart.39.,,"還沒等米婭說完,剛才絆倒米婭的繩子像是活過來一般,朝著米婭的腳下甩了過來。","還沒等米婭說完,剛才絆倒米婭的繩子像是活過來一般,朝著米婭的腳下甩了過來。","Before Mia could finish her sentence, the rope that had tripped Mia seemed to come to life and flung itself at Mia's feet.",ミアがその言葉を言い終わる前に、彼女がミアを引っ掛けたロープが息を吹き返したようにミアの足元に飛んできた。,
-SAY.Flowchart.40.Mia,,咿呀!,咿呀!,Eeeeeeeeeeee?,えええおおおおおおお？,
-SAY.Flowchart.41.,,"突然之間,牆壁上、地上竄出許許多多觸手朝著米婭纏去,瞬間,米婭被觸手纏得密不通風。","突然之間,牆壁上、地上竄出許許多多觸手朝著米婭纏去,瞬間,米婭被觸手纏得密不通風。","Suddenly, many tentacles appeared on the wall and on the ground and wrapped around Mia. In an instant, Mia was entangled tightly by the tentacles.",突然、壁や床から無数の触手がミアに向かって飛び出し、一瞬にしてミアは触手の網に包まれた。,
-SAY.Flowchart.42.Mia,,嗚嗚....這是甚麼?,嗚嗚....這是甚麼?,Woohoo....what is this?,うおおお……これは何だ？,
-SAY.Flowchart.43.Mia,,放開我!唔...這是什麼噁心的東西?,放開我!唔...這是什麼噁心的東西?,Let go of me! Well... What is this disgusting thing?,放してくれ まあ... この嫌なものは何だ？,
-SAY.Flowchart.44.,,"但觸手才聽不懂人話,很快的捆住了米婭的大腿和胸部。黏稠的液體讓米婭身體本能的感到毛骨悚然。","但觸手才聽不懂人話,很快的捆住了米婭的大腿和胸部。黏稠的液體讓米婭身體本能的感到毛骨悚然。",But the tentacles don't understand human speech and quickly bind Mia's thighs and breasts. The viscous liquid gave Mia's body an instinctive creepy feeling.,しかし触手は人間の言葉を理解せず、すぐにミアの太ももと胸を縛る。 粘性のある液体は、ミアの体に本能的な不気味さを与えた。,
-SAY.Flowchart.45.Mia,,嗚...好癢...走開!,嗚...好癢...走開!,Aah... It tickles... Go away!,ああ... くすぐったい... あっち行け,
-SAY.Flowchart.46.,,"米婭嘗試擺動手腳驅散觸手,但被五花大綁之下效果並不彰。","米婭嘗試擺動手腳驅散觸手,但被五花大綁之下效果並不彰。","Mia tries to move her arms and legs to dislodge the tentacles, but being tied up doesn't help.",ミアは手足を動かして触手を振りほどこうとするが、縛られているためうまくいかない。,
-SAY.Flowchart.47.,,"隨後觸手像收到同樣的訊號,同時開始挑逗米婭的身體各處。","隨後觸手像收到同樣的訊號,同時開始挑逗米婭的身體各處。","Then, as if receiving the same signal, the tentacles began to tease Mia's body at the same time.",すると、同じ合図を受け取ったかのように、触手が同時にミアの身体をいじり始めた。,
-SAY.Flowchart.48.Mia,,??那裏...那裏不可以!,??那裏...那裏不可以!,Eh? There... Not over there!,あれ？ そこ... そこじゃない,
-SAY.Flowchart.49.,,"觸手在緊緻的小穴外挑逗著,觸手上的黏液起到了很好的潤滑效果。即便是靦腆的初穴,也很快便的濕潤了起來。","觸手在緊緻的小穴外挑逗著,觸手上的黏液起到了很好的潤滑效果。即便是靦腆的初穴,也很快便的濕潤了起來。","The touch was teasing the outside of the tight pussy, and the slime on the touch had a good lubricating effect. Even the shy first time pussy was soon wet.",触手はきつい小さな穴の外側を嬲り、触手についた粘液は良い潤滑効果を発揮した。 恥ずかしがっていた最初のポイントもすぐにしっとりしました。,
-SAY.Flowchart.50.Mia,,嗯...嗯..不可以...,嗯...嗯..不可以...,Hmm... Mmmm... No way...,うーん... うーん... まさか...,
-SAY.Flowchart.51.Mia,,嗚..這是什麼感覺...,嗚..這是什麼感覺...,Whoo... What a feeling...,フー... なんて気持ちだ...,
-SAY.Flowchart.52.,,"在米婭身體稍微放鬆的時候,觸手的動作突然劇烈了起來。","在米婭身體稍微放鬆的時候,觸手的動作突然劇烈了起來。","When Mia's body relaxed slightly, the movements of the tentacles suddenly became violent.",ミアの体が少し緩んだとき、突然触手の動きが激しくなった。,
-SAY.Flowchart.53.Mia,,咦?咦?嗚咿....!,咦?咦?嗚咿....!,Huh? Huh? Uh-huh....!,え？ え？えええおおおおお？,
-SAY.Flowchart.54.,,"觸手開始朝著小穴裡頭邁進,觸女撕裂的痛感,讓米婭發出痛苦的低鳴。","觸手開始朝著小穴裡頭邁進,觸女撕裂的痛感,讓米婭發出痛苦的低鳴。","The tentacles began to work their way into her pussy, and the pain that ripped through her caused Mia to whimper in agony.",触手が膣内に向かって動き始め、触手が引き裂かれる痛みにミアはうめき声を上げた。,
-SAY.Flowchart.55.Mia,,好痛!,好痛!,It hurts!,痛いんだ！,
-SAY.Flowchart.56.,,"來不及讓米婭反應和習慣,觸手不安分的開始抽動,特有的形狀讓小穴內被完整的填滿。","來不及讓米婭反應和習慣,觸手不安分的開始抽動,特有的形狀讓小穴內被完整的填滿。","Before Mia could react and adapt, the tentacles began to twitch restlessly, their unique shapes filling the small hole completely.",ミアが反応して慣れるまでの十分な時間がないまま、触手は落ち着きなくピクピクし始め、独特の形状が小さな穴を完全に埋めました。,
-SAY.Flowchart.57.Mia,,嗚咿...好奇怪的感覺...,嗚咿...好奇怪的感覺...,Eeee... What a strange feeling...,ええっ...。 なんか変な感じ...。,
-SAY.Flowchart.58.,,"隨著觸手的抽插,大量的愛液開始分泌,不受控制地從小穴流了出來。","隨著觸手的抽插,大量的愛液開始分泌,不受控制地從小穴流了出來。","With the thrusting of the tentacles, a large amount of love juice began to secrete and flowed out of her pussy uncontrollably.",触手の突き上げとともに、大量の愛液が分泌され始め、アソコから止めどなく流れ出した。,
-SAY.Flowchart.59.Mia,,好奇怪..身體開始變得好奇怪...,好奇怪..身體開始變得好奇怪...,It's weird. The body is starting to get weird...,奇妙だ。 体が変な感じになってきた...。,
-SAY.Flowchart.60.,,"身體變得滾燙,刺激大腦的痛楚使米婭得意識變得模糊不清。","身體變得滾燙,刺激大腦的痛楚使米婭得意識變得模糊不清。","The body became hot, and the pain in the brain blurred Mia's consciousness.",体が熱くなり、脳を刺激する痛みにミアの意識は朦朧としていた。,
-SAY.Flowchart.61.Mia,,輕飄飄的...好奇怪...,輕飄飄的...好奇怪...,It's so light... So strange...,とても軽い... とても奇妙だ...,
-SAY.Flowchart.62.,,米婭開始無法分辨新的刺激感究竟是痛...還是...舒服?,米婭開始無法分辨新的刺激感究竟是痛...還是...舒服?,Mia couldn't begin to tell if the new excitement was pain... Or... Comfort?,ミアは新しい刺激感が痛みなのか...それとも快適なのか分からなくなった？,
-SAY.Flowchart.63.,,"小穴突然像是觸電般開始痙攣,米婭的腰肢抽動了一下,臉上出現了詫異的表情。","小穴突然像是觸電般開始痙攣,米婭的腰肢抽動了一下,臉上出現了詫異的表情。","Her pussy suddenly began to spasm as if electrified, and Mia's hips twitched, a surprised expression appearing on her face.",彼女のアソコは突然、電気が走ったように痙攣し始め、ミアの腰は痙攣し、驚いた表情を浮かべた。,
-SAY.Flowchart.65.Mia,,呼...哈...呼...哈....好像有甚麼東西...要來了....,呼...哈...呼...哈....好像有甚麼東西...要來了....,Hoo... Ha... Hoo... Ha .... There seems to be something... It's coming ....,フー... ハ... フー... ハ... 何かあるようだ．．． 来るぞ．,
-SAY.Flowchart.64.Mia,,呼...要來了...那個東西要來了!,呼...要來了...那個東西要來了!,Hoo... It's coming... That thing is coming!,フフ…来る…あのものが来る！,
-SAY.Flowchart.66.,,"同時,觸手像也知道一樣,動作開始強烈了起來,伴隨著米婭的喘息和越來越大的水聲,米婭迎來了人生第一次高潮。","同時,觸手像也知道一樣,動作開始強烈了起來,伴隨著米婭的喘息和越來越大的水聲,米婭迎來了人生第一次高潮。","At the same time, the tentacles began to move more intensely as if they knew it too, and with Mia's gasps and louder and louder sounds of water, Mia came for the first time in her life.",同時に触手もそれを知っているかのように激しく動き始め、ミアのあえぎ声と水の音がどんどん大きくなり、ミアは生まれて初めてのオーガズムを迎えた。,
-SAY.Flowchart.67.,,"米婭被強力的快感不斷地衝擊大腦,徹底的失去思考的能力。","米婭被強力的快感不斷地衝擊大腦,徹底的失去思考的能力。","Mia's brain was pounding with powerful pleasure, and she was completely incapable of thinking.",ミアの脳は強烈な快感でドキドキし、思考することはまったくできなかった。,
-SAY.Flowchart.68.Mia,,嗯嗯!嗚嗚...要來了!那個又要來了!,嗯嗯!嗚嗚...要來了!那個又要來了!,Uh-huh! Whoo-hoo... It's coming! That one's coming again!,ふふふ！ うっほー... 来るぞ また来るぞ,
-SAY.Flowchart.69.,,"潮水般的愛液與黏液充滿了小穴,在又來一次的高潮中終於承受不住,融合的液體朝著入口倒流而去。","潮水般的愛液與黏液充滿了小穴,在又來一次的高潮中終於承受不住,融合的液體朝著入口倒流而去。","A tidal wave of love juice and mucus filled the pussy, and in the midst of another orgasm it finally became too much to bear, and the fused fluids flowed backwards towards the entrance.",愛液と粘液の高波がアソコを満たし、さらなるオーガズムのさなか、ついに耐えきれなくなり、融合した体液が入り口に向かって逆流した。,
-SAY.Flowchart.70.Mia,,咕嗚..呼...,咕嗚..呼...,Guwu...hu...,ぐぅ…ふぅ…,
-SAY.Flowchart.71.,,"過多的快感在瞬間被灌進米婭的大腦內,米婭只能發出迷幻的咽嗚聲。","過多的快感在瞬間被灌進米婭的大腦內,米婭只能發出迷幻的咽嗚聲。","Too much pleasure was poured into Mia's brain in an instant, and Mia could only make a psychedelic whimper.",あまりにも多くの快楽が一瞬にしてミアの脳裏に注ぎ込まれ、ミアはサイケデリックな泣き声をあげることしかできなかった。,
-SAY.Flowchart.72.,,"隨後米婭眼前一片漆黑,徹底地失去了意識。","隨後米婭眼前一片漆黑,徹底地失去了意識。",Then Mia goes black and loses consciousness completely.,そしてミアは意識を失い、真っ暗になる。,
-SAY.Flowchart.11.???,,"對不起呀,米婭小姐。",,,,
-SAY.Flowchart.12.???,,"我要是就這樣把你放了回去,我好像吃虧了。",,,,
-SAY.Flowchart.13.Mia,,放開我!我聽不懂你在說甚麼。,,,,
-SAY.Flowchart.73.???,,是我有些著急了。,,,,
-SAY.Flowchart.74.???,,"我想也沒有必要自我介紹,這個東西你應該很熟悉了。",,,,
-SAY.Flowchart.76.,,"陌生男子語畢,有數條長條狀物從地板拔起,再一次纏上了米婭。",,,,
-SAY.Flowchart.78.Mia,,是你!放開我!,,,,
-SAY.Flowchart.79.???,,"抱歉,恕難從命。",,,,
-SAY.Flowchart.80.,,"米婭的身體因為方才的”激烈運動""早已疲憊不堪,擠不出一絲力氣再面對一次觸手怪物。",,,,
-SAY.Flowchart.81.???,,"呀,別這麼緊張,剛才其實還挺舒服的吧?",,,,
-SAY.Flowchart.82.Mia,,怎..怎麼可能!那種事情...,,,,
-SAY.Flowchart.83.???,,"看來是很舒服呢,我對觸手的掌控力可是一流的。",,,,
-SAY.Flowchart.84.???,,"既然你剛剛舒服完了,那該我了。",,,,
-SAY.Flowchart.86.,,"男子脫下褲子,露出了雄偉的男性器官,雙手擠壓著胸部,就這麼來回蹭動了起來。",,,,
-SAY.Flowchart.87.Mia,,變態!,,,,
-SAY.Flowchart.88.,,"米婭奮力地挺身,張開嘴想用力的咬下,但很可惜,觸手控制的力道相比米婭孤注一擲的力量大上許多。",,,,
-SAY.Flowchart.89.???,,"米婭小姐,您的行為相當危險,但也讓我更加興奮了。",,,,
-SAY.Flowchart.90.,,"男子不僅加快摩擦的速度,甚至用柔軟的胸部塑了一個更加適合抽插的孔道。",,,,
-SAY.Flowchart.91.Mia,,嗚噁...,,,,
-SAY.Flowchart.92.,,"強烈又刺激的氣味不斷衝擊米婭的鼻腔,費洛蒙在小小的範圍內越來越強烈。",,,,
-SAY.Flowchart.93.,,"作為一名純潔剛破處的少女,米婭沒有體會過這種感受。興奮、難受、違反道德的快感在米婭的心中逐漸長成。",,,,
-SAY.Flowchart.94.,,"呼吸著充滿男性味道的空氣,被做著不可名狀的事,夾雜著費洛蒙的化學作用下產生了一點變化。",,,,
-SAY.Flowchart.95.,,嘶哈...嘶哈....,,,,
-SAY.Flowchart.96.???,,"哦!學得那麼好,居然這麼快就習慣了。",,,,
-SAY.Flowchart.97.Mia,,才、才沒有!,,,,
-SAY.Flowchart.98.???,,但你的身體可不會說謊。,,,,
-SAY.Flowchart.99.,,"男子加大了腰部的動作,使得蕈狀的部分在每一次簡諧運動的過程,都會對米婭散發一次更強烈的氣味。",,,,
-SAY.Flowchart.100.Mia,,嗚...要、要碰到了...,,,,
-SAY.Flowchart.101.,,"米婭盯著胸部上滾燙的棒狀物體不斷來回摩擦,想撇開頭卻發現鼻子被氣味的方向吸引。",,,,
-SAY.Flowchart.102.,,嘶哈...嘶哈....,,,,
-SAY.Flowchart.103.,,"肉棒在胸部的夾縫中極限生存,每一次的抽插,都會讓胸部產生變形。米婭也不再反抗,只是盡情的吸取空氣中的化學激素。\n",,,,
-SAY.Flowchart.104.Mia,,哈嗚...嘶哈...哈啊、哈.....,,,,
-SAY.Flowchart.105.???,,我要射了。,,,,
-SAY.Flowchart.106.,,"短短的一句話,將米婭從夢中拉回現實。",,,,
-SAY.Flowchart.107.Mia,,嗚哈...等等..!不、不要..射在臉上...,,,,
-SAY.Flowchart.108.,,"突然,胸部上的肉棒腫脹了起來,摩擦的速度也來到了極限。",,,,
-SAY.Flowchart.109.???,,射了!,,,,
-SAY.Flowchart.110.Mia,,咿..咿呀!!!,,,,
-SAY.Flowchart.111.,,"白濁的液體從粗壯的陰莖中噴湧而出,噴射在米婭的臉上,額外的精液漫流而下到了米婭胸部間的山谷中。",,,,
-SAY.Flowchart.112.,,"伴著米婭微弱的喘息和飽和度極高的空氣,男子穿上了衣服整理了下儀容,將另外派出的觸手取回的清水放在失神的米婭旁。",,,,
-SAY.Flowchart.113.???,,"我們會再會的,米婭小姐。",,,,
-SAY.Flowchart.6.,,"伊莉絲巧聲無息的移動到床邊,用手指比了個噓的手勢。",,,,
-SAY.Flowchart.7.,,"男子配合的向後一躺,任憑伊莉絲的腳指在身體上游移。",,,,
-SAY.Flowchart.8.,,"身上的衣服被伊莉絲靈巧的腳趾脫的精光,伸出手想把伊莉絲逆推倒,卻被伊莉絲一腳踩回,那力道強的讓男子一驚。",,,,
-SAY.Flowchart.114.Elise,,不可以亂動喲。,,,,
-SAY.Flowchart.115.,,"伊莉絲邪媚的一笑,收回魔力,身上散發著淡藍的鱗光。",,,,
-SAY.Flowchart.116.,,"由魔力構成的短褲蕩然無存,健康而白皙的大腿和飽滿的小穴從下方一覽無遺。",,,,
-SAY.Flowchart.117.???,,哦!,,,,
-SAY.Flowchart.118.,,"可這時男子也注意到了一件事,伊莉絲的腰間有個鮮紅色的印記。",,,,
-SAY.Flowchart.119.Elise,,"嗯,被你注意到了嗎?",,,,
-SAY.Flowchart.120.,,"伊莉絲湊近了臉龐,輕輕的吹了口氣,酥麻的感覺像一道電流從大腦流遍全身,讓我全身失去了力氣。",,,,
-SAY.Flowchart.121.Elise,,"我可是,惡魔喲。",,,,
-SAY.Flowchart.122.???,,"我發不出任何聲音,身體好像被魔力封印了,使不上力,冷汗不斷的冒出來,沾濕了被褥。",,,,
-SAY.Flowchart.123.???,,"但伊莉絲並沒有讓我有太多思考的時間,他用腳溫柔的刺激著我的小兄弟,雖然還未從驚詫的情緒中平復,但伊莉絲熟練的技法很快就讓小弟弟堅挺無比。",,,,
-SAY.Flowchart.124.Elise,,咕姆、咕姆....,,,,
-SAY.Flowchart.125.,,"伊莉絲用腳裹住了整根陰莖,那包覆感讓人無法相信是一個人的腳掌。",,,,
-SAY.Flowchart.126.,,"不知怎地,在恐懼下變得異常的敏感的弟弟,在精神和肉體的雙重刺激下更加的腫脹起來。",,,,
-SAY.Flowchart.127.Elise,,哦! 好燙呢!,,,,
-SAY.Flowchart.128.,,"被裹住的肉棒在腳掌裡一跳一跳的,熱氣不時的從腳趾間散發出來。",,,,
-SAY.Flowchart.129.???,,咕嗚..!,,,,
-SAY.Flowchart.131.,,"伊莉絲突然強行的將包皮撥開,突如而來的刺激讓我眼前一白,回過神來看見伊莉絲使用魔力在進行加速了。",,,,
-SAY.Flowchart.130.,,"使用魔力加速的時候,伊莉絲身上的魔力相對淡薄,也導致了衣服變成了薄紗的質感,裏頭粉嫩的白兔依稀可見。",,,,
-SAY.Flowchart.132.,,嗚啊啊??!!,,,,
-SAY.Flowchart.133.,,"這輩子沒有經歷過同等的刺激,忍不住發出了驚叫,雖然快速移動的腳趾給足了快感,但腳掌溫柔的包覆性卻又減少了過度的摩擦。",,,,
-SAY.Flowchart.134.???,,好像...要...嗚!,,,,
-SAY.Flowchart.135.,,"伊莉絲一邊注意著腳趾的動作,一邊不忘用足底板對蛋蛋進行照顧,腳掌的餘溫經由溫柔的按摩再度傳回我的身體。",,,,
-SAY.Flowchart.136.Elise,,可以哦!盡情地射在我的身上吧!,,,,
-SAY.Flowchart.137.,,"伊莉絲的眼睛和印記散發著紅光,彷彿渴望著白濁的液體。",,,,
-SAY.Flowchart.138.???,,我要射了!,,,,
-SAY.Flowchart.139.,,"在腳趾和腳掌無限的刺激下,我終於沒能把持住。濃稠的液體,像噴泉一樣在一瞬間爆發,噴濺到了伊莉絲的身上,白皙的乳房和子上沾滿了精液。",,,,
-SAY.Flowchart.140.Elise,,還沒有結束喔~,,,,
-SAY.Flowchart.141.,,"身體不受控制的弓起,不聽使喚的噴泉開始了第二次的噴發,這次的噴發,比起第一次更加的洶湧,如同洩洪一般,浸濕了伊莉絲的身體。",,,,
-SAY.Flowchart.142.Elise,,"嗯..呵呵,表現的不錯嘛。",,,,
-SAY.Flowchart.143.,,"伊莉絲舔了舔手上被一起濺到的精液,慢慢地從床邊站起。",,,,
-SAY.Flowchart.144.Elise,,"呵呵,祝你好夢~",,,,
-SAY.Flowchart.145.???,,等等!你為什麼....,,,,
-SAY.Flowchart.146.,,"發現身體已回歸自由的人沒有等到伊莉絲的回答,身影早就從窗戶外消失,遁於夜色之中。",,,,
-SAY.Flowchart.21.,,"男子一把將衣物褪下,緊接著抓住伊莉絲的大腿,用身體的力量將伊莉絲按在牆上。",,,,
-SAY.Flowchart.22.,,隨後掏出炙熱的肉棒抵住伊莉絲晃動的屁股肉上。,,,,
-SAY.Flowchart.23.Elise,,"今天的你,跟上次好不一樣呢。",,,,
-SAY.Flowchart.147.Elise,,那就讓我來滿足你吧!,,,,
-SAY.Flowchart.148.,,"白皙的皮膚大片的映入眼簾,飽滿的曲線隨著擠壓抖動著,一張一合的性器引誘著肉棒將其填滿。",,,,
-SAY.Flowchart.149.Elise,,啊嗯!,,,,
-SAY.Flowchart.150.,,"蜜穴在毫無前戲的情況下,卻能利用魔力進行潤滑,而這潤滑的效果更甚淫水,於是???開始肆無忌憚的瘋狂抽插。",,,,
-SAY.Flowchart.151.Elise,,嗯...!嗯!哈啊...!,,,,
-SAY.Flowchart.152.Elise,,好大!被插到最裡面了!,,,,
-SAY.Flowchart.153.???,,"這可是...忍耐好久的結果,請你收下!",,,,
-SAY.Flowchart.154.Elise,,哈啊...肉棒...在裡面進進出出....,,,,
-SAY.Flowchart.155.,,"進入狀況的小穴纏住肉棒,每一次叫聲的腹部用力,都產生了極高的負壓,用力的吸取我的肉棒。",,,,
-SAY.Flowchart.156.???,,咕哦...好厲害!,,,,
-SAY.Flowchart.157.???,,"好像一張嘴巴,不停的往內吸入。",,,,
-SAY.Flowchart.158.Elise,,哈...哈啊...!再用力一點..!,,,,
-SAY.Flowchart.159.,,"伊莉絲萎靡的聲音隨著喘息傳來,伴著抽插的頻率扭動著腰肢,讓肉棒插進更深的地方。",,,,
-SAY.Flowchart.160.Elise,,哈啊...好舒服....被..被填滿了!,,,,
-SAY.Flowchart.161.???,,那我要加速了。,,,,
-SAY.Flowchart.162.Elise,,咿呀!啊...哈啊...!哈啊...!,,,,
-SAY.Flowchart.163.Elise,,太快了!太快了!這樣子我要....咕嗚嗚....,,,,
-SAY.Flowchart.164.,,"肉棒不斷的突進小穴深處,每一下深深撞擊著靈魂的聲音,都變得越來越大聲。",,,,
-SAY.Flowchart.165.Elise,,嗯!要...嗯...!要壞...要壞掉了...!,,,,
-SAY.Flowchart.166.,,"充著血的肉棒脹大到難以相信的大小,如同打樁機的運動不停加速衝撞著小穴,伊莉絲的表情從愉悅變得詫異,最後難以自理,只能順從自己的慾望,扭動著腰肢,尋求更激烈的快感。",,,,
-SAY.Flowchart.167.Elise,,嗯啊!啊...!再這樣下去的話...啊...嗯啊...!,,,,
-SAY.Flowchart.168.???,,我快要射了...,,,,
-SAY.Flowchart.169.Elise,,嗯...哈啊...!可以喲....,,,,
-SAY.Flowchart.170.Elise,,啊...!射在裡面...哼啊...射在我的子宮裡面...!,,,,
-SAY.Flowchart.171.Elise,,呀哈...!填滿我...哈啊...!讓我的子宮...充滿你的精液..!,,,,
-SAY.Flowchart.172.???,,要射了!,,,,
-SAY.Flowchart.173.Elise,,嗯....嗯哈...!咿咿咿咿咿咿呀呀呀呀呀呀呀呀!!!!!!!!,,,,
-SAY.Flowchart.174.,,"隨著伊莉絲的高潮,大量的白色液體灌滿了伊莉絲的小穴,進入子宮之中。",,,,
-SAY.Flowchart.175.,,"伊莉絲的身體不受控制的抽動,像是觸電一般,癱倒在牆上。",,,,
-SAY.Flowchart.176.Elise,,呼...呼啊...呼啊....,,,,
-SAY.Flowchart.177.,,"伊莉絲沉浸在小穴蔓延到小腹的酥麻快感,以及無法平復的心跳。",,,,
-SAY.Flowchart.16.,,"脫下了褲子,精神的肉棒馬上彈了出來,第一次面對男性的生殖器官,史黛拉顯得不知所措。",,,,
-SAY.Flowchart.17.Stella,,"請你停下你的行為,神的旨意是不容你這樣褻瀆的!",,,,
-SAY.Flowchart.18.,,"史黛拉露出了嚴厲的表情,試著嚇阻面前的男子。",,,,
-SAY.Flowchart.179.,,"「啪!啪!」兩下用力的耳光賞在了史黛拉的臉上,熱辣辣的痛覺馬上從臉頰上傳來,史黛拉緊盯著眼前的肉棒逐漸變大,心裡的恐懼不斷地加深...",,,,
-SAY.Flowchart.178.???,,"史黛拉小姐,雖然您日夜侍奉著神明,也不間斷地佈道。但您是否想過,為什麼人民的苦難卻不斷發生,無法結束?",,,,
-SAY.Flowchart.180.Stella,,"唔...那..那是因為人們的心不夠虔誠,或者決心不夠堅強,只要持之以恆,總有一天會感動上天,得來善報的。",,,,
-SAY.Flowchart.182.???,,"說的太好了,但有沒有可能,只是方法錯了。",,,,
-SAY.Flowchart.181.???,,"在你面前的,並不只是一般男性的肉棒,他可是聖器。",,,,
-SAY.Flowchart.183.Stella,,那是什麼...?,,,,
-SAY.Flowchart.184.???,,"我想你肯定聽說過的,無形者的使徒所持的天國的號角。",,,,
-SAY.Flowchart.185.???,,"吹響它,你將獲得把天父的旨意傳向遠方的能力。",,,,
-SAY.Flowchart.186.Stella,,吹響它?,,,,
-SAY.Flowchart.187.,,"史黛拉的內心有些動搖了,他曾行走在荒蕪的土地上為人們祈求,也曾流離在瘟疫的土地上為人們淨化,但沒有一次真正成功拯救世人。",,,,
-SAY.Flowchart.188.,,"而現在,機會就放在眼前,雖然她並不認得眼前的男子,但來自XXX教會的人絕非惡人。",,,,
-SAY.Flowchart.189.???,,"沒錯,作為前輩的我,應該為你指點迷津。把你的嘴唇,包覆住牙齒,輕柔的含住眼前的聖器。",,,,
-SAY.Flowchart.190.,,"透過一步一步的教導,史黛拉小心翼翼的照做。",,,,
-SAY.Flowchart.191.Stella,,像...像這樣?,,,,
-SAY.Flowchart.192.,,"史黛拉怯生生的張開小嘴,將眼前的肉棒緩緩含入口中。奇怪的味道刺激著史黛拉的鼻腔,但對於史黛拉來說這並不算什麼。",,,,
-SAY.Flowchart.193.???,,"沒錯,就是這樣。",,,,
-SAY.Flowchart.194.Stella,,再...再來呢?,,,,
-SAY.Flowchart.195.???,,"再來請小心的上下移動,妳將一步一步的解開聖器的封印。",,,,
-SAY.Flowchart.196.Stella,,哈姆...哈姆...哈啊姆...,,,,
-SAY.Flowchart.197.,,"雖然動作看起來笨拙了點,也偶爾會不小心用力過猛,但這一點一滴將會化作史黛拉的經驗,被好好的保留在腦袋裡。",,,,
-SAY.Flowchart.198.Stella,,哈姆...哈啊...好痠...,,,,
-SAY.Flowchart.199.,,"史黛拉的下巴由於不習慣而酸澀不已,抬起頭暫停了口交的進行。",,,,
-SAY.Flowchart.200.???,,"就這嗎?妳對佈道的嚮往,就僅僅因為痠痛而停滯了腳步嗎?",,,,
-SAY.Flowchart.201.,,"嚴厲的訓話讓史黛拉不得不提起勁,重新含起天國的號角,而在短短的練習下,史黛拉的口技已經變得愈發熟練。",,,,
-SAY.Flowchart.202.???,,"嗯!很好,我很滿意,那接下來可以開始加速了。",,,,
-SAY.Flowchart.203.Stella,,加...加速...?,,,,
-SAY.Flowchart.204.,,"不再只是史黛拉的小嘴上下移動,???挺直了腰,對史黛拉開始活塞運動。",,,,
-SAY.Flowchart.205.Stella,,咕嗚...嗚喔...咕喔...!,,,,
-SAY.Flowchart.206.,,"肉棒頂到喉嚨的撞擊聲,伴隨著史黛拉的嗚噎在房間裡迴盪著。",,,,
-SAY.Flowchart.207.Stella,,嗚...咕嗚...咕...,,,,
-SAY.Flowchart.208.???,,"習慣了嗎,這是解開封印的最後一步了!",,,,
-SAY.Flowchart.209.???,,"請包覆住聖器,並且開始吮吸。",,,,
-SAY.Flowchart.210.Stella,,嗚..嗚耶..?,,,,
-SAY.Flowchart.211.Stella,,嗯...咕啾...咕啾...,,,,
-SAY.Flowchart.212.,,"史黛拉乖乖地低著頭,忍住下巴脫臼的痠痛,努力的吸吮了起來,房間裡迴盪著淫蕩的水聲。",,,,
-SAY.Flowchart.213.???,,"沒錯,沒錯!",,,,
-SAY.Flowchart.214.Stella,,咕啾...咕啾...咕嚕嚕...,,,,
-SAY.Flowchart.215.???,,"我要射了,請接住!來自神的旨意吧!",,,,
-SAY.Flowchart.216.Stella,,呼耶...?,,,,
-SAY.Flowchart.217.,,"透過口腔,史黛拉感受到了來自號角的顫動,接著是無盡的白色液體從號角的吹口中噴湧而出,史黛拉小小的嘴巴根本無法含住,從嘴角流淌下來。",,,,
-SAY.Flowchart.218.Stella,,呼嚕...咕嗚...?,,,,
-SAY.Flowchart.219.???,,第一次嘗試天國的號角就獲得了盛宴!妳可是這方面的天才!,,,,
-SAY.Flowchart.220.,,"史黛拉意識到自己獲得了神的贈禮,急忙的把還遺留在嘴裡的液體吞下。",,,,
-SAY.Flowchart.221.,,"???離開了房間,留下房內仍在細細品味號角味道的史黛拉.....",,,,
-SAY.Flowchart.26.???,,"看來妳能善用天上賜予的贈禮,不愧是您,修女大人。",,,,
-SAY.Flowchart.27.Stella,,"您說笑了,要不是您在我的路上點了一座明燈。我怕是還在深不見底的泥沼裡混沌呢。",,,,
-SAY.Flowchart.28.???,,"但是世界這麼大,您的心願豈是一個教會的修女。您是否忘記?天父的大愛,應該讓世人所共擁。",,,,
-SAY.Flowchart.222.Stella,,"我當然沒有忘記,反倒我期待著那一天的到來,那讓我脫俗的號角,何時會再度降臨。",,,,
-SAY.Flowchart.223.???,,"今天我帶著的,是通往天國的鑰匙,而鑰匙的門扉,就在您的身上,史黛拉小姐。",,,,
-SAY.Flowchart.224.Stella,,在我的身上?,,,,
-SAY.Flowchart.225.???,,"緩緩的靠近史黛拉,輕柔的將史黛拉推倒在床上,剝開纏繞在史黛拉身上的絲絹。",,,,
-SAY.Flowchart.226.,,"粉嫩的乳頭點綴著兩隻大白兔,一絲不掛的身體透出了豐腴的線條,保養的非常良好的私處從床頭這邊一覽無遺。",,,,
-SAY.Flowchart.227.,,"魔法師露出歡喜的表情,解開了褲袋,掏出了飢渴難耐的下身。",,,,
-SAY.Flowchart.228.Stella,,這是?,,,,
-SAY.Flowchart.229.???,,"這是天國的鑰匙,同時,您的身體也進化出了聖器,天國的門扉。只要我們一結合,神無邊的法力便會降臨,造福世上所有的人!",,,,
-SAY.Flowchart.230.,,"魔法師說完,將史黛拉摁倒,雙手壓在她纖細的手臂上,肉棒對準小穴,開始了摩擦。",,,,
-SAY.Flowchart.231.Stella,,嗯...!癢癢的...好奇怪的感覺!,,,,
-SAY.Flowchart.232.???,,"第一次成為聖器的感覺總是新鮮,過一下你就會熟悉了。",,,,
-SAY.Flowchart.233.,,"魔法師並沒有停下磨蹭的動作,反倒是小穴這邊已經開始泛出一些汁水。",,,,
-SAY.Flowchart.234.,,"史黛拉的身體操癢難耐,好像身上有東西在爬但苦無解法。",,,,
-SAY.Flowchart.235.???,,讓我們一同創造通往天國的道路!,,,,
-SAY.Flowchart.236.Stella,,嗚呀!,,,,
-SAY.Flowchart.237.,,"伴隨著處女膜撕裂的聲音和史黛拉的叫聲,肉棒插入了史黛拉的密穴。",,,,
-SAY.Flowchart.238.Stella,,嗚呀..!咕嗚...好痛...!,,,,
-SAY.Flowchart.239.???,,"這是妳的身體接受了聖器的表現喔,妳應該感到光榮!",,,,
-SAY.Flowchart.240.,,"肉棒在史黛拉體內抽動著,伴隨著疼痛和一絲絲的酥麻感,史黛拉露出了欣慰的笑容。",,,,
-SAY.Flowchart.241.,,"魔法師挺直了腰,在狹窄的陰道了找尋出路。緊緻的肉壁從四面八方扒來,刺激感從小頭一路傳到大腦,讓???不禁有些把持不住。",,,,
-SAY.Flowchart.242.,,"在短暫的找回自我後,在短暫的找回自我後,魔法師開始緩慢的動了起來,肉棒在小穴裡進進出出,探尋著史黛拉的敏感帶。\n開始緩慢的動了起來,肉棒在小穴裡進進出出,探尋著史黛拉的敏感帶。",,,,
-SAY.Flowchart.243.Stella,,咕哦..!,,,,
-SAY.Flowchart.244.,,"終於,從史黛拉發出的聲音不是疼痛的嗚鳴,???規律的搖動著腰部,往敏感的地帶進行深度的衝撞。",,,,
-SAY.Flowchart.245.Stella,,嗚哦...!嗚哦....!好厲害!,,,,
-SAY.Flowchart.246.,,"酥酥麻麻的熱感從小腹一路傳上來,隱隱約約,史黛拉在腦海中想像出了那個幸福國度的畫面。",,,,
-SAY.Flowchart.247.Stella,,呼...哈啊...呼哈....,,,,
-SAY.Flowchart.248.,,"大力的喘息著,史黛拉沒有想到,通往天國的鏈結是如此的耗神。",,,,
-SAY.Flowchart.249.,,"突然,史黛拉發現,只要扭動腰肢,酥麻的刺激感就會更甚。像找到訣竅一樣,史黛拉一邊扭動著身體,一邊收縮著腹部的肌肉。",,,,
-SAY.Flowchart.250.Stella,,咕哦...!天才!天才呀!,,,,
-SAY.Flowchart.251.,,"史黛拉的動作對雙方都帶來了極大的快感,再度收緊的肉壁將肉棒死死的纏住,彷彿抓住獵物的血盆大口,在費力也無法逃脫掌握。",,,,
-SAY.Flowchart.252.Stella,,哈啊....哈啊...神啊...神啊...!啊啊...!,,,,
-SAY.Flowchart.253.,,"史黛拉開始了禱告,雖然神智不清的她無法正確的念好禱詞,但相信她的虔誠被她所信賴的神都一一看在眼裡。",,,,
-SAY.Flowchart.254.Stella,,要去了...!要去了...!請帶我去吧!,,,,
-SAY.Flowchart.255.???,,讓我們...一起...,,,,
-SAY.Flowchart.256.Stella,,哈啊...哈啊...呀啊啊啊啊啊啊!!!!!,,,,
-SAY.Flowchart.257.,,"大量的精液從肉棒被擠出,像是被捏著的水管承受不住爆發一樣,狠狠的充向史黛拉的子宮。",,,,
-SAY.Flowchart.258.,,"同一時間,史黛拉的初次高潮帶給了她額外的體驗,眼前一片空白卻不影響史黛拉看見天國的樣子。",,,,
-SAY.Flowchart.259.Stella,,好幸福...這就是..天國...!,,,,
-SAY.Flowchart.260.,,"在此時此刻,史黛拉忘卻了人世間的煩惱,不用思考著誰的苦難,也無須思考今天晚上要吃甚麼,種種的問題都被拋到九霄雲外,在某種意義上,真正的來到了天國。",,,,
-SAY.Flowchart.261.,,"史黛拉雙手扣著嘴上念念有詞,放服要將世間的苦痛全都消除一般,看著悟出道了的史黛拉,???悄聲無息的離開了房間,消失在夜色之中.......",,,,
+SAY.Flowchart.1.Mia,,疼疼疼...,疼疼疼...,Ouch! ,痛いよ、痛いよ、痛いよ...,疼疼疼...
+SAY.Flowchart.4.,,"隨後米婭眼前一片漆黑,徹底地失去了意識。環顧四周,發現他墜落在一個洞穴中。洞穴只有一條通往更深的道路,彷彿在告訴落入陷阱的人他並沒有太多的選擇。","隨後米婭眼前一片漆黑,徹底地失去了意識。環顧四周,發現他墜落在一個洞穴中。洞穴只有一條通往更深的道路,彷彿在告訴落入陷阱的人他並沒有太多的選擇。","Mia's eyes went black and he lost all consciousness. Looking around, he realized he had fallen into a cave. There was only one path that led deeper into the cave, as if to tell those who had fallen into the trap that they didn't have much of a choice.",ミアの目の前が真っ暗になり、意識を失った。 辺りを見回すと、彼は洞窟に落ちたことに気づいた。 洞窟の奥へと続く道は一本しかなく、まるで罠に落ちた者に選択の余地はないと教えているかのようだ。,"随后米娅眼前一片漆黑,彻底地失去了意识。环顾四周,发现他坠落在一个洞穴中。洞穴只有一条通往更深的道路,仿佛在告诉落入陷阱的人他并没有太多的选择。"
+SAY.Flowchart.3.Mia,,"躡手躡腳的往洞窟深處邁進,進到一個小房間,隨後看到不遠處有一把梯子。","躡手躡腳的往洞窟深處邁進,進到一個小房間,隨後看到不遠處有一把梯子。","Having crept deeper into the cave,  entered a small room and then saw a ladder not far away.",洞窟の奥深くまで忍び込んだは、小さな部屋に入り、そう遠くないところに梯子が見えた。,"蹑手蹑脚的往洞窟深处迈进,进到一个小房间,随后看到不远处有一把梯子。"
+SAY.Flowchart.35.,,"米婭急忙像是看到救命稻草快速的跑向梯子,突然,米婭被腳下的繩子拌了一跤","米婭急忙像是看到救命稻草快速的跑向梯子,突然,米婭被腳下的繩子拌了一跤","Mia rushed to the ladder as if she had seen a lifeline, and suddenly, Mia fell on the rope under her feet.",ミアは命綱を見たかのように梯子に駆け寄ったが、突然、足元のロープに倒れこんだ。,"米娅急忙像是看到救命稻草快速的跑向梯子,突然,米娅被脚下的绳子拌了一跤"
+SAY.Flowchart.36.Mia,,哎呀!,哎呀!,Oops!,おっと！,哎呀!
+SAY.Flowchart.37.,,"米婭撐著地板起身,卻發現原本梯子所在的地方不見了。","米婭撐著地板起身,卻發現原本梯子所在的地方不見了。",Mia gets up on the floor and realises that the ladder is gone where it used to be.,ミアは床で体を支えながら立ち上がったが、はしごがなくなっていた。,"米娅撑着地板起身,却发现原本梯子所在的地方不见了。"
+SAY.Flowchart.38.Mia,,咦?梯子呢?,咦?梯子呢?,Eh? Where's the ladder?,おや？ 梯子はどだ？,咦?梯子呢?
+SAY.Flowchart.39.,,"還沒等米婭說完,剛才絆倒米婭的繩子像是活過來一般,朝著米婭的腳下甩了過來。","還沒等米婭說完,剛才絆倒米婭的繩子像是活過來一般,朝著米婭的腳下甩了過來。","Before Mia could finish her sentence, the rope that had tripped Mia seemed to come to life and flung itself at Mia's feet.",ミアがその言葉を言い終わる前に、彼女がミアを引っ掛けたロープが息を吹き返したようにミアの足元に飛んできた。,"还没等米娅说完,刚才绊倒米娅的绳子像是活过来一般,朝着米娅的脚下甩了过来。"
+SAY.Flowchart.40.Mia,,咿呀!,咿呀!,Eeeeeeeeeeee?,えええおおおおおおお？,咿呀!
+SAY.Flowchart.41.,,"突然之間,牆壁上、地上竄出許許多多觸手朝著米婭纏去,瞬間,米婭被觸手纏得密不通風。","突然之間,牆壁上、地上竄出許許多多觸手朝著米婭纏去,瞬間,米婭被觸手纏得密不通風。","Suddenly, many tentacles appeared on the wall and on the ground and wrapped around Mia. In an instant, Mia was entangled tightly by the tentacles.",突然、壁や床から無数の触手がミアに向かって飛び出し、一瞬にしてミアは触手の網に包まれた。,"突然之间,墙壁上、地上窜出许许多多触手朝着米娅缠去,瞬间,米娅被触手缠得密不通风。"
+SAY.Flowchart.42.Mia,,嗚嗚....這是甚麼?,嗚嗚....這是甚麼?,Woohoo....what is this?,うおおお……これは何だ？,呜呜....这是什么?
+SAY.Flowchart.43.Mia,,放開我!唔...這是什麼噁心的東西?,放開我!唔...這是什麼噁心的東西?,Let go of me! Well... What is this disgusting thing?,放してくれ まあ... この嫌なものは何だ？,放开我!唔...这是什么恶心的东西?
+SAY.Flowchart.44.,,"但觸手才聽不懂人話,很快的捆住了米婭的大腿和胸部。黏稠的液體讓米婭身體本能的感到毛骨悚然。","但觸手才聽不懂人話,很快的捆住了米婭的大腿和胸部。黏稠的液體讓米婭身體本能的感到毛骨悚然。",But the tentacles don't understand human speech and quickly bind Mia's thighs and breasts. The viscous liquid gave Mia's body an instinctive creepy feeling.,しかし触手は人間の言葉を理解せず、すぐにミアの太ももと胸を縛る。 粘性のある液体は、ミアの体に本能的な不気味さを与えた。,"但触手才听不懂人话,很快的捆住了米娅的大腿和胸部。黏稠的液体让米娅身体本能的感到毛骨悚然。"
+SAY.Flowchart.45.Mia,,嗚...好癢...走開!,嗚...好癢...走開!,Aah... It tickles... Go away!,ああ... くすぐったい... あっち行け,呜...好痒...走开!
+SAY.Flowchart.46.,,"米婭嘗試擺動手腳驅散觸手,但被五花大綁之下效果並不彰。","米婭嘗試擺動手腳驅散觸手,但被五花大綁之下效果並不彰。","Mia tries to move her arms and legs to dislodge the tentacles, but being tied up doesn't help.",ミアは手足を動かして触手を振りほどこうとするが、縛られているためうまくいかない。,"米娅尝试摆动手脚驱散触手,但被五花大绑之下效果并不彰。"
+SAY.Flowchart.47.,,"隨後觸手像收到同樣的訊號,同時開始挑逗米婭的身體各處。","隨後觸手像收到同樣的訊號,同時開始挑逗米婭的身體各處。","Then, as if receiving the same signal, the tentacles began to tease Mia's body at the same time.",すると、同じ合図を受け取ったかのように、触手が同時にミアの身体をいじり始めた。,"随后触手像收到同样的讯号,同时开始挑逗米娅的身体各处。"
+SAY.Flowchart.48.Mia,,诶?那裏...那裏不可以!,??那裏...那裏不可以!,Eh? There... Not over there!,あれ？ そこ... そこじゃない,诶?那里...那里不可以!
+SAY.Flowchart.49.,,"觸手在緊緻的小穴外挑逗著,觸手上的黏液起到了很好的潤滑效果。即便是靦腆的初穴,也很快便的濕潤了起來。","觸手在緊緻的小穴外挑逗著,觸手上的黏液起到了很好的潤滑效果。即便是靦腆的初穴,也很快便的濕潤了起來。","The touch was teasing the outside of the tight pussy, and the slime on the touch had a good lubricating effect. Even the shy first time pussy was soon wet.",触手はきつい小さな穴の外側を嬲り、触手についた粘液は良い潤滑効果を発揮した。 恥ずかしがっていた最初のポイントもすぐにしっとりしました。,"触手在紧致的小穴外挑逗着,触手上的黏液起到了很好的润滑效果。即便是腼腆的初穴,也很快便的湿润了起来。"
+SAY.Flowchart.50.Mia,,嗯...嗯..不可以...,嗯...嗯..不可以...,Hmm... Mmmm... No way...,うーん... うーん... まさか...,嗯...嗯..不可以...
+SAY.Flowchart.51.Mia,,嗚..這是什麼感覺...,嗚..這是什麼感覺...,Whoo... What a feeling...,フー... なんて気持ちだ...,呜..这是什么感觉...
+SAY.Flowchart.52.,,"在米婭身體稍微放鬆的時候,觸手的動作突然劇烈了起來。","在米婭身體稍微放鬆的時候,觸手的動作突然劇烈了起來。","When Mia's body relaxed slightly, the movements of the tentacles suddenly became violent.",ミアの体が少し緩んだとき、突然触手の動きが激しくなった。,"在米娅身体稍微放松的时候,触手的动作突然剧烈了起来。"
+SAY.Flowchart.53.Mia,,咦?咦?嗚咿....!,咦?咦?嗚咿....!,Huh? Huh? Uh-huh....!,え？ え？えええおおおおお？,咦?咦?呜咿....!
+SAY.Flowchart.54.,,"觸手開始朝著小穴裡頭邁進,觸女撕裂的痛感,讓米婭發出痛苦的低鳴。","觸手開始朝著小穴裡頭邁進,觸女撕裂的痛感,讓米婭發出痛苦的低鳴。","The tentacles began to work their way into her pussy, and the pain that ripped through her caused Mia to whimper in agony.",触手が膣内に向かって動き始め、触手が引き裂かれる痛みにミアはうめき声を上げた。,"触手开始朝着小穴里头迈进,触女撕裂的痛感,让米娅发出痛苦的低鸣。"
+SAY.Flowchart.55.Mia,,好痛!,好痛!,It hurts!,痛いんだ！,好痛!
+SAY.Flowchart.56.,,"來不及讓米婭反應和習慣,觸手不安分的開始抽動,特有的形狀讓小穴內被完整的填滿。","來不及讓米婭反應和習慣,觸手不安分的開始抽動,特有的形狀讓小穴內被完整的填滿。","Before Mia could react and adapt, the tentacles began to twitch restlessly, their unique shapes filling the small hole completely.",ミアが反応して慣れるまでの十分な時間がないまま、触手は落ち着きなくピクピクし始め、独特の形状が小さな穴を完全に埋めました。,"来不及让米娅反应和习惯,触手不安分的开始抽动,特有的形状让小穴内被完整的填满。"
+SAY.Flowchart.57.Mia,,嗚咿...好奇怪的感覺...,嗚咿...好奇怪的感覺...,Eeee... What a strange feeling...,ええっ...。 なんか変な感じ...。,呜咿...好奇怪的感觉...
+SAY.Flowchart.58.,,"隨著觸手的抽插,大量的愛液開始分泌,不受控制地從小穴流了出來。","隨著觸手的抽插,大量的愛液開始分泌,不受控制地從小穴流了出來。","With the thrusting of the tentacles, a large amount of love juice began to secrete and flowed out of her pussy uncontrollably.",触手の突き上げとともに、大量の愛液が分泌され始め、アソコから止めどなく流れ出した。,"随着触手的抽插,大量的爱液开始分泌,不受控制地从小穴流了出来。"
+SAY.Flowchart.59.Mia,,好奇怪..身體開始變得好奇怪...,好奇怪..身體開始變得好奇怪...,It's weird. The body is starting to get weird...,奇妙だ。 体が変な感じになってきた...。,好奇怪..身体开始变得好奇怪...
+SAY.Flowchart.60.,,"身體變得滾燙,刺激大腦的痛楚使米婭得意識變得模糊不清。","身體變得滾燙,刺激大腦的痛楚使米婭得意識變得模糊不清。","The body became hot, and the pain in the brain blurred Mia's consciousness.",体が熱くなり、脳を刺激する痛みにミアの意識は朦朧としていた。,"身体变得滚烫,刺激大脑的痛楚使米娅得意识变得模糊不清。"
+SAY.Flowchart.61.Mia,,輕飄飄的...好奇怪...,輕飄飄的...好奇怪...,It's so light... So strange...,とても軽い... とても奇妙だ...,轻飘飘的...好奇怪...
+SAY.Flowchart.62.,,米婭開始無法分辨新的刺激感究竟是痛...還是...舒服?,米婭開始無法分辨新的刺激感究竟是痛...還是...舒服?,Mia couldn't begin to tell if the new excitement was pain... Or... Comfort?,ミアは新しい刺激感が痛みなのか...それとも快適なのか分からなくなった？,米娅开始无法分辨新的刺激感究竟是痛...还是...舒服?
+SAY.Flowchart.63.,,"小穴突然像是觸電般開始痙攣,米婭的腰肢抽動了一下,臉上出現了詫異的表情。","小穴突然像是觸電般開始痙攣,米婭的腰肢抽動了一下,臉上出現了詫異的表情。","Her pussy suddenly began to spasm as if electrified, and Mia's hips twitched, a surprised expression appearing on her face.",彼女のアソコは突然、電気が走ったように痙攣し始め、ミアの腰は痙攣し、驚いた表情を浮かべた。,"小穴突然像是触电般开始痉挛,米娅的腰肢抽动了一下,脸上出现了诧异的表情。"
+SAY.Flowchart.65.Mia,,呼...哈...呼...哈....好像有甚麼東西...要來了....,呼...哈...呼...哈....好像有甚麼東西...要來了....,Hoo... Ha... Hoo... Ha .... There seems to be something... It's coming ....,フー... ハ... フー... ハ... 何かあるようだ．．． 来るぞ．,呼...哈...呼...哈....好像有什么东西...要来了....
+SAY.Flowchart.64.Mia,,呼...要來了...那個東西要來了!,呼...要來了...那個東西要來了!,Hoo... It's coming... That thing is coming!,フフ…来る…あのものが来る！,呼...要来了...那个东西要来了!
+SAY.Flowchart.66.,,"同時,觸手像也知道一樣,動作開始強烈了起來,伴隨著米婭的喘息和越來越大的水聲,米婭迎來了人生第一次高潮。","同時,觸手像也知道一樣,動作開始強烈了起來,伴隨著米婭的喘息和越來越大的水聲,米婭迎來了人生第一次高潮。","At the same time, the tentacles began to move more intensely as if they knew it too, and with Mia's gasps and louder and louder sounds of water, Mia came for the first time in her life.",同時に触手もそれを知っているかのように激しく動き始め、ミアのあえぎ声と水の音がどんどん大きくなり、ミアは生まれて初めてのオーガズムを迎えた。,"同时,触手像也知道一样,动作开始强烈了起来,伴随着米娅的喘息和越来越大的水声,米娅迎来了人生第一次高潮。"
+SAY.Flowchart.67.,,"米婭被強力的快感不斷地衝擊大腦,徹底的失去思考的能力。","米婭被強力的快感不斷地衝擊大腦,徹底的失去思考的能力。","Mia's brain was pounding with powerful pleasure, and she was completely incapable of thinking.",ミアの脳は強烈な快感でドキドキし、思考することはまったくできなかった。,"米娅被强力的快感不断地冲击大脑,彻底的失去思考的能力。"
+SAY.Flowchart.68.Mia,,嗯嗯!嗚嗚...要來了!那個又要來了!,嗯嗯!嗚嗚...要來了!那個又要來了!,Uh-huh! Whoo-hoo... It's coming! That one's coming again!,ふふふ！ うっほー... 来るぞ また来るぞ,嗯嗯!呜呜...要来了!那个又要来了!
+SAY.Flowchart.69.,,"潮水般的愛液與黏液充滿了小穴,在又來一次的高潮中終於承受不住,融合的液體朝著入口倒流而去。","潮水般的愛液與黏液充滿了小穴,在又來一次的高潮中終於承受不住,融合的液體朝著入口倒流而去。","A tidal wave of love juice and mucus filled the pussy, and in the midst of another orgasm it finally became too much to bear, and the fused fluids flowed backwards towards the entrance.",愛液と粘液の高波がアソコを満たし、さらなるオーガズムのさなか、ついに耐えきれなくなり、融合した体液が入り口に向かって逆流した。,"潮水般的爱液与黏液充满了小穴,在又来一次的高潮中终于承受不住,融合的液体朝着入口倒流而去。"
+SAY.Flowchart.70.Mia,,咕嗚..呼...,咕嗚..呼...,Guwu...hu...,ぐぅ…ふぅ…,咕呜..呼...
+SAY.Flowchart.71.,,"過多的快感在瞬間被灌進米婭的大腦內,米婭只能發出迷幻的咽嗚聲。","過多的快感在瞬間被灌進米婭的大腦內,米婭只能發出迷幻的咽嗚聲。","Too much pleasure was poured into Mia's brain in an instant, and Mia could only make a psychedelic whimper.",あまりにも多くの快楽が一瞬にしてミアの脳裏に注ぎ込まれ、ミアはサイケデリックな泣き声をあげることしかできなかった。,"过多的快感在瞬间被灌进米娅的大脑内,米娅只能发出迷幻的咽呜声。
+"
+SAY.Flowchart.72.,,"隨後米婭眼前一片漆黑,徹底地失去了意識。","隨後米婭眼前一片漆黑,徹底地失去了意識。",Then Mia goes black and loses consciousness completely.,そしてミアは意識を失い、真っ暗になる。,"随后米娅眼前一片漆黑,彻底地失去了意识。"
+SAY.Flowchart.6.,,"伊莉絲巧聲無息的移動到床邊,用手指比了個噓的手勢。","伊莉絲巧聲無息的移動到床邊,用手指比了個噓的手勢。",Elyse moved silently to the side of the bed and made a shushing gesture with her fingers.,エリーゼは静かにベッドサイドに移動し、指でシュッシュするようなジェスチャーをした。,"伊莉丝巧声无息的移动到床边,用手指比了个嘘的手势。"
+SAY.Flowchart.7.,,"男子配合的向後一躺,任憑伊莉絲的腳指在身體上游移。","男子配合的向後一躺,任憑伊莉絲的腳指在身體上游移。",The man co-operated by lying back and letting Elyse's fingers run over his body.,男は仰向けになり、エリーゼのつま先を彼女の体の周りでさまよわせてください。,"男子配合的向后一躺,任凭伊莉丝的脚指在身体上游移。"
+SAY.Flowchart.8.,,"身上的衣服被伊莉絲靈巧的腳趾脫的精光,伸出手想把伊莉絲逆推倒,卻被伊莉絲一腳踩回,那力道強的讓男子一驚。","身上的衣服被伊莉絲靈巧的腳趾脫的精光,伸出手想把伊莉絲逆推倒,卻被伊莉絲一腳踩回,那力道強的讓男子一驚。","The clothes on her body were stripped off by Elise's dexterous toes, and she reached out her hand to push Elise backward, but Elise stomped her foot back, and the force was so strong that the man was shocked.",エリーゼの器用なつま先によって彼女の体に着せられていた衣服は剥ぎ取られ、彼女はエリーゼを後ろに押しやろうと手を伸ばしたが、エリーゼは足を踏み返した。,"身上的衣服被伊莉丝灵巧的脚趾脱的精光,伸出手想把伊莉丝逆推倒,却被伊莉丝一脚踩回,那力道强的让男子一惊。"
+SAY.Flowchart.114.Elise,,不可以亂動喲。,不可以亂動喲。,Don't move around.,動くな。,不可以乱动哟。
+SAY.Flowchart.115.,,"伊莉絲邪媚的一笑,收回魔力,身上散發著淡藍的鱗光。","伊莉絲邪媚的一笑,收回魔力,身上散發著淡藍的鱗光。","Elise smiled evilly, withdrew her magic power, and her body exuded light blue light.",エリスは邪悪な笑みを浮かべ魔法を取り戻しましょう、体から水色のうろこ状の光を発した。,"伊莉丝邪媚的一笑,收回魔力,身上散发着淡蓝的鳞光。"
+SAY.Flowchart.116.,,"由魔力構成的短褲蕩然無存,健康而白皙的大腿和飽滿的小穴從下方一覽無遺。","由魔力構成的短褲蕩然無存,健康而白皙的大腿和飽滿的小穴從下方一覽無遺。","The shorts made of magic were gone, and her healthy and white thighs and plump pussy were clearly visible from below.",魔法のショーツはなくなり、健康的な白い太ももとふくよかなアソコが下から見えた。,"由魔力构成的短裤荡然无存,健康而白皙的大腿和饱满的小穴从下方一览无遗。"
+SAY.Flowchart.117.???,,哦!,哦!,oh!,おお！,哦!
+SAY.Flowchart.118.,,"可這時男子也注意到了一件事,伊莉絲的腰間有個鮮紅色的印記。","可這時男子也注意到了一件事,伊莉絲的腰間有個鮮紅色的印記。","But at this time, the man also noticed something. There was a bright red mark on Elise's waist.",しかしこの時、男もエリーゼの腰にある真っ赤な跡に気づいた。,"可这时男子也注意到了一件事,伊莉丝的腰间有个鲜红色的印记。"
+SAY.Flowchart.119.Elise,,"嗯,被你注意到了嗎?","嗯,被你注意到了嗎?","Well, did you notice it?",ん、お気づきだろうか？,"嗯,被你注意到了吗?"
+SAY.Flowchart.120.,,"伊莉絲湊近了臉龐,輕輕的吹了口氣,酥麻的感覺像一道電流從大腦流遍全身,讓我全身失去了力氣。","伊莉絲湊近了臉龐,輕輕的吹了口氣,酥麻的感覺像一道電流從大腦流遍全身,讓我全身失去了力氣。","Elise came close to her face and blew gently. A numb feeling flowed from my brain through my body like an electric current, making me lose all my strength.",エリゼが私の顔に近づき、そっと息を吹きかけると、脳裏から電流のように痺れた感覚が体中に流れ、全身の力が抜けた。,"伊莉丝凑近了脸庞,轻轻的吹了口气,酥麻的感觉像一道电流从大脑流遍全身,让我全身失去了力气。"
+SAY.Flowchart.121.Elise,,"我可是,惡魔喲。","我可是,惡魔喲。",I am a demon,俺は悪魔だ。,"我可是,恶魔哟。"
+SAY.Flowchart.122.???,,"我發不出任何聲音,身體好像被魔力封印了,使不上力,冷汗不斷的冒出來,沾濕了被褥。","我發不出任何聲音,身體好像被魔力封印了,使不上力,冷汗不斷的冒出來,沾濕了被褥。","I can't make any sound, my body seems to be sealed by magic.Unable to exert any strength, cold sweat continued to break out, soaking the bedding.",声も出せず、体は魔法で封印されているようで、力も出ず、冷や汗が出続けて布団を濡らした。,"我发不出任何声音,身体好像被魔力封印了,使不上力,冷汗不断的冒出来,沾湿了被褥。"
+SAY.Flowchart.123.???,,"但伊莉絲並沒有讓我有太多思考的時間,他用腳溫柔的刺激著我的小兄弟,雖然還未從驚詫的情緒中平復,但伊莉絲熟練的技法很快就讓小弟弟堅挺無比。","但伊莉絲並沒有讓我有太多思考的時間,他用腳溫柔的刺激著我的小兄弟,雖然還未從驚詫的情緒中平復,但伊莉絲熟練的技法很快就讓小弟弟堅挺無比。","But Elise didn't let me have too much time to think. He gently stimulated my little brother with his feet. Although I have not yet recovered from the surprise,, Elise's skillful techniques soon made my little brother Extremely strong.",しかし、エリゼは私に考える暇を与えず、私のペニスを足で優しく刺激した。私はショックから立ち直っていなかったが、エリゼの巧みなテクニックですぐにペニスは岩のように硬くなった。,"但伊莉丝并没有让我有太多思考的时间,他用脚温柔的刺激着我的小兄弟,虽然还未从惊诧的情绪中平复,但伊莉丝熟练的技法很快就让小弟弟坚挺无比。"
+SAY.Flowchart.124.Elise,,咕姆、咕姆....,咕姆、咕姆....,"Goomu, goomu...",グム、グム…,咕姆、咕姆....
+SAY.Flowchart.125.,,"伊莉絲用腳裹住了整根陰莖,那包覆感讓人無法相信是一個人的腳掌。","伊莉絲用腳裹住了整根陰莖,那包覆感讓人無法相信是一個人的腳掌。","Elise wrapped her entire penis with her feet, and the wrapping feeling was unbelievable that it was the sole of a person's foot.",エリゼは、それが人間の手のひらとは思えないほど、ペニス全体を足で包み込んだ。,"伊莉丝用脚裹住了整根阴茎,那包覆感让人无法相信是一个人的脚掌。"
+SAY.Flowchart.126.,,"不知怎地,在恐懼下變得異常的敏感的弟弟,在精神和肉體的雙重刺激下更加的腫脹起來。","不知怎地,在恐懼下變得異常的敏感的弟弟,在精神和肉體的雙重刺激下更加的腫脹起來。","Somehow, my younger brother, who had become extremely sensitive under fear, became even more swollen under the dual stimulation of both mind and body.",どういうわけか、恐怖で異常に敏感になっていた弟は、精神的にも肉体的にも刺激を受けてさらに膨れ上がった。,"不知怎地,在恐惧下变得异常的敏感的弟弟,在精神和肉体的双重刺激下更加的肿胀起来。"
+SAY.Flowchart.127.Elise,,哦! 好燙呢!,哦! 好燙呢!,Oh! It’s so hot!,ああ、とても暑いです！,哦! 好烫呢!
+SAY.Flowchart.128.,,"被裹住的肉棒在腳掌裡一跳一跳的,熱氣不時的從腳趾間散發出來。","被裹住的肉棒在腳掌裡一跳一跳的,熱氣不時的從腳趾間散發出來。","The wrapped cock jumped in the sole of the foot, and heat radiated from between the toes from time to time.",包まれたチンポが足の手のひらで跳ねた、足の指の間からは時折熱風が吹き出していた。,"被裹住的肉棒在脚掌里一跳一跳的,热气不时的从脚趾间散发出来。"
+SAY.Flowchart.129.???,,咕嗚..!,咕嗚..!,Goooo..!,ぐぅ…ふぅ…,咕呜..!
+SAY.Flowchart.131.,,"伊莉絲突然強行的將包皮撥開,突如而來的刺激讓我眼前一白,回過神來看見伊莉絲使用魔力在進行加速了。","伊莉絲突然強行的將包皮撥開,突如而來的刺激讓我眼前一白,回過神來看見伊莉絲使用魔力在進行加速了。","Elise suddenly pushed her foreskin away forcefully, and the sudden stimulation made my eyes go blank. When I came back to my senses, I saw Elise using magic power to accelerate.",エリゼがいきなり包皮を無理やり開いた。突然の刺激に私の目は白目をむき、振り返るとエリゼが魔法を使って加速していた。,"伊莉丝突然强行的将包皮拨开,突如而来的刺激让我眼前一白,回过神来看见伊莉丝使用魔力在进行加速了。"
+SAY.Flowchart.130.,,"使用魔力加速的時候,伊莉絲身上的魔力相對淡薄,也導致了衣服變成了薄紗的質感,裏頭粉嫩的白兔依稀可見。","使用魔力加速的時候,伊莉絲身上的魔力相對淡薄,也導致了衣服變成了薄紗的質感,裏頭粉嫩的白兔依稀可見。","When using magic power to accelerate, the magic power on Elise's body was relatively weak, which also caused the clothes to turn into a gauze texture, with the pink white rabbit inside vaguely visible.",魔力で加速すると、エリーゼの体にかかった魔力は比較的薄く、そのためドレスはモスリンのような質感になり、中のピンクの白ウサギがぼんやりと見えた。,"使用魔力加速的时候,伊莉丝身上的魔力相对淡薄,也导致了衣服变成了薄纱的质感,里头粉嫩的白兔依稀可见。"
+SAY.Flowchart.132.,,嗚啊啊??!!,嗚啊啊??!!,Uaaah??!!,あああああああああああああああああ？,呜啊啊??!!
+SAY.Flowchart.133.,,"這輩子沒有經歷過同等的刺激,忍不住發出了驚叫,雖然快速移動的腳趾給足了快感,但腳掌溫柔的包覆性卻又減少了過度的摩擦。","這輩子沒有經歷過同等的刺激,忍不住發出了驚叫,雖然快速移動的腳趾給足了快感,但腳掌溫柔的包覆性卻又減少了過度的摩擦。","I have never experienced the same stimulation in my life, and I couldn't help but scream. Although the fast moving toes gave me a lot of pleasure, the gentle covering of the soles of my feet reduced excessive friction.",人生で一度も経験したことのない刺激に、思わず声を上げてしまいました。足の指の動きの速さは快感でしたが、足裏を優しく覆うことで余計な摩擦が軽減されました。,"这辈子没有经历过同等的刺激,忍不住发出了惊叫,虽然快速移动的脚趾给足了快感,但脚掌温柔的包覆性却又减少了过度的摩擦。"
+SAY.Flowchart.134.???,,好像...要...嗚!,好像...要...嗚!,As if... To... woo!,まるで... に... フー！,好像...要...呜!
+SAY.Flowchart.135.,,"伊莉絲一邊注意著腳趾的動作,一邊不忘用足底板對蛋蛋進行照顧,腳掌的餘溫經由溫柔的按摩再度傳回我的身體。","伊莉絲一邊注意著腳趾的動作,一邊不忘用足底板對蛋蛋進行照顧,腳掌的餘溫經由溫柔的按摩再度傳回我的身體。","Elise paid attention to the movements of her toes, while not forgetting to use the soles of my feet to take care of my balls, the residual warmth of the soles of my feet was transmitted back to my body through gentle massage.",エリゼはつま先を見ていた、足の裏でボールをケアしながら、彼女の足の余熱が優しいマッサージを通して私の体に伝わってきた。,"伊莉丝一边注意着脚趾的动作,一边不忘用足底板对蛋蛋进行照顾,脚掌的余温经由温柔的按摩再度传回我的身体。"
+SAY.Flowchart.136.Elise,,可以哦!盡情地射在我的身上吧!,可以哦!盡情地射在我的身上吧!,It's okay! Cum on me as much as you want!,もちろん！,可以哦!尽情地射在我的身上吧!
+SAY.Flowchart.137.,,"伊莉絲的眼睛和印記散發著紅光,彷彿渴望著白濁的液體。","伊莉絲的眼睛和印記散發著紅光,彷彿渴望著白濁的液體。","Elise's eyes and marks glowed red, as if she was longing for the white liquid.",エリーゼの目と痕が、まるで白い液体を待ち望んでいるかのように赤く光った。,"伊莉丝的眼睛和印记散发着红光,仿佛渴望着白浊的液体。"
+SAY.Flowchart.138.???,,我要射了!,我要射了!,I'm going to cum!,イキそうだ。,我要射了!
+SAY.Flowchart.139.,,"在腳趾和腳掌無限的刺激下,我終於沒能把持住。濃稠的液體,像噴泉一樣在一瞬間爆發,噴濺到了伊莉絲的身上,白皙的乳房和子上沾滿了精液。","在腳趾和腳掌無限的刺激下,我終於沒能把持住。濃稠的液體,像噴泉一樣在一瞬間爆發,噴濺到了伊莉絲的身上,白皙的乳房和子上沾滿了精液。","Under the endless stimulation of my toes and soles, I finally couldn't control it. The thick liquid erupted in an instant like a fountain, splashing onto Elise's body, and her white breasts and breasts were covered with semen.",足の指と足の裏への絶え間ない刺激を受けて、私はついにそれを制御できなくなりました。濃厚な液体が一瞬にして噴水のように噴出し、エリーゼの体に飛び散り、白い乳房は精液で覆われた。,"在脚趾和脚掌无限的刺激下,我终于没能把持住。浓稠的液体,像喷泉一样在一瞬间爆发,喷溅到了伊莉丝的身上,白皙的乳房和子上沾满了精液。"
+SAY.Flowchart.140.Elise,,還沒有結束喔~,還沒有結束喔~,It’s not over yet~,まだ終わっていない。,还没有结束喔~
+SAY.Flowchart.141.,,"身體不受控制的弓起,不聽使喚的噴泉開始了第二次的噴發,這次的噴發,比起第一次更加的洶湧,如同洩洪一般,浸濕了伊莉絲的身體。","身體不受控制的弓起,不聽使喚的噴泉開始了第二次的噴發,這次的噴發,比起第一次更加的洶湧,如同洩洪一般,浸濕了伊莉絲的身體。","The body arched uncontrollably, and the unruly fountain began to erupt for the second time. This eruption was more turbulent than the first, like a flood, soaking Elise's body.",彼の体は抑えきれずに弓なりになった、制御不能の噴水が二度目の噴出を始めた。今回は一度目よりもさらに激しく、洪水のようにエリゼの身体を濡らした。,"身体不受控制的弓起,不听使唤的喷泉开始了第二次的喷发,这次的喷发,比起第一次更加的汹涌,如同泄洪一般,浸湿了伊莉丝的身体。"
+SAY.Flowchart.142.Elise,,"嗯..呵呵,表現的不錯嘛。","嗯..呵呵,表現的不錯嘛。","Hmm.. Haha, you performed well.",うーん、ははは、よくやった。,"嗯..呵呵,表现的不错嘛。"
+SAY.Flowchart.143.,,"伊莉絲舔了舔手上被一起濺到的精液,慢慢地從床邊站起。","伊莉絲舔了舔手上被一起濺到的精液,慢慢地從床邊站起。",Elise licked the semen that was splashed on her hand and slowly stood up from the bed.,エリーゼは手に飛び散った精液を舐め、ゆっくりとベッドから立ち上がった。,"伊莉丝舔了舔手上被一起溅到的精液,慢慢地从床边站起。"
+SAY.Flowchart.144.Elise,,"呵呵,祝你好夢~","呵呵,祝你好夢~","Haha, I wish you sweet dreams~",ハハ、良い夢を見ることを祈っている。,"呵呵,祝你好梦~"
+SAY.Flowchart.145.???,,等等!你為什麼....,等等!你為什麼....,Wait! Why are you...,待って、なぜあなたは...,等等!你为什么....
+SAY.Flowchart.146.,,"發現身體已回歸自由的人沒有等到伊莉絲的回答,身影早就從窗戶外消失,遁於夜色之中。","發現身體已回歸自由的人沒有等到伊莉絲的回答,身影早就從窗戶外消失,遁於夜色之中。","The person who found that his body had returned to freedom did not wait for Elise's answer, and the figure disappeared from the window long ago, escaping into the night.",動けることに気づいたエリゼの返事を待たずに。その人影はとっくに窓から消え、夜の闇に消えていた。,"发现身体已回归自由的人没有等到伊莉丝的回答,身影早就从窗户外消失,遁于夜色之中。"
+SAY.Flowchart.11.???,,"對不起呀,米婭小姐。","對不起呀,米婭小姐。","I'm sorry, Miss Mia.",ごめんなさい、ミアさん。,"对不起呀,米娅小姐。"
+SAY.Flowchart.12.???,,"我要是就這樣把你放了回去,我好像吃虧了。","我要是就這樣把你放了回去,我好像吃虧了。","If I just put you back like this, I seem to have suffered a loss.","このまま君を解放したい,私は損失を被ったようです。","我要是就这样把你放了回去,我好像吃亏了。"
+SAY.Flowchart.13.Mia,,放開我!我聽不懂你在說甚麼。,放開我!我聽不懂你在說甚麼。,Let go of me! I don't know what you're talking about.,放してくれ 何を言っているのか分からない。,放开我!我听不懂你在说什么。
+SAY.Flowchart.73.???,,是我有些著急了。,是我有些著急了。,It's me who's in a bit of a rush.,ちょっと急いでいたんだ。,是我有些着急了。
+SAY.Flowchart.74.???,,"我想也沒有必要自我介紹,這個東西你應該很熟悉了。","我想也沒有必要自我介紹,這個東西你應該很熟悉了。",I don't think there's any need to introduce myself. You should be familiar with this stuff.,自己紹介は必要ないと思う。 こういうことはよく知っているはずだ。,"我想也没有必要自我介绍,这个东西你应该很熟悉了。"
+SAY.Flowchart.76.,,"陌生男子語畢,有數條長條狀物從地板拔起,再一次纏上了米婭。","陌生男子語畢,有數條長條狀物從地板拔起,再一次纏上了米婭。","At the stranger's words, several long strips were pulled up from the floor and wrapped around Mia once more.",見知らぬ男の言葉に、床から何本もの長い帯が引き上げられ、ミアにもう一度巻きつけられた。,"陌生男子语毕,有数条长条状物从地板拔起,再一次缠上了米娅。"
+SAY.Flowchart.78.Mia,,是你!放開我!,是你!放開我!,It's you! Let go of me!,お前だ！ 放してくれ,是你!放开我!
+SAY.Flowchart.79.???,,"抱歉,恕難從命。","抱歉,恕難從命。","I'm sorry, I can't do that.",ごめん、それはできない。,"抱歉,恕难从命。"
+SAY.Flowchart.80.,,"米婭的身體因為方才的”激烈運動""早已疲憊不堪,擠不出一絲力氣再面對一次觸手怪物。","米婭的身體因為方才的”激烈運動""早已疲憊不堪,擠不出一絲力氣再面對一次觸手怪物。","Mia's body was exhausted from the ""intense exercise"" earlier, and she couldn't muster a single ounce of strength to face the tentacled monster again.","ミアの身体はすでに ""激しい運動 ""で疲れきっており、触手の怪物に再び立ち向かうだけの力を絞り出すことはできなかった。","米娅的身体因为方才的”激烈运动""早已疲惫不堪,挤不出一丝力气再面对一次触手怪物。"
+SAY.Flowchart.81.???,,"呀,別這麼緊張,剛才其實還挺舒服的吧?","呀,別這麼緊張,剛才其實還挺舒服的吧?","Oh, don't be so nervous. It was actually quite comfortable, wasn't it?",そんなに神経質にならなくても、実際快適だったでしょう？,"呀,别这么紧张,刚才其实还挺舒服的吧?"
+SAY.Flowchart.82.Mia,,怎..怎麼可能!那種事情...,怎..怎麼可能!那種事情...,How... How way! That kind of thing...,どうして... ありえないよ！ そんなこと...,怎..怎么可能!那种事情...
+SAY.Flowchart.83.???,,"看來是很舒服呢,我對觸手的掌控力可是一流的。","看來是很舒服呢,我對觸手的掌控力可是一流的。","It looks very comfortable, and I have excellent control of my hands.",とても快適そうです.私の触手の制御は一流です。,"看来是很舒服呢,我对触手的掌控力可是一流的。"
+SAY.Flowchart.84.???,,"既然你剛剛舒服完了,那該我了。","既然你剛剛舒服完了,那該我了。","Since you've just finished feeling comfortable, it's my turn.",あなたは快適になったところだ、今度は僕の番だ。,"既然你刚刚舒服完了,那该我了。"
+SAY.Flowchart.86.,,"男子脫下褲子,露出了雄偉的男性器官,雙手擠壓著胸部,就這麼來回蹭動了起來。","男子脫下褲子,露出了雄偉的男性器官,雙手擠壓著胸部,就這麼來回蹭動了起來。","Man takes off his pants, revealing his majestic male organ,He squeezed chest with both hands and started moving it back and forth.",男はズボンを脱ぐ、雄大な男性器を露出させ、両手で胸を圧迫し、前後に動かし始めた。,"男子脱下裤子,露出了雄伟的男性器官,双手挤压着胸部,就这么来回蹭动了起来。"
+SAY.Flowchart.87.Mia,,變態!,變態!,Pervert!,変態だ！,变态!
+SAY.Flowchart.88.,,"米婭奮力地挺身,張開嘴想用力的咬下,但很可惜,觸手控制的力道相比米婭孤注一擲的力量大上許多。","米婭奮力地挺身,張開嘴想用力的咬下,但很可惜,觸手控制的力道相比米婭孤注一擲的力量大上許多。","Mia stood up hard and opened her mouth to bite down hard, but unfortunately, the force controlled by the tentacles was much greater than Mia's desperate strength.",ミアは力強く立ち上がり、口を開いて強く噛み締めたが、残念ながら触手に制御される力はミアの必死の力をはるかに上回っていた。,"米娅奋力地挺身,张开嘴想用力的咬下,但很可惜,触手控制的力道相比米娅孤注一掷的力量大上许多。"
+SAY.Flowchart.89.???,,"米婭小姐,您的行為相當危險,但也讓我更加興奮了。","米婭小姐,您的行為相當危險,但也讓我更加興奮了。","Miss Mia, your behavior is quite dangerous, but it also makes me more excited.",ミアさん、あなたの行動はかなり危険ですが、それが私を興奮させます。,"米娅小姐,您的行为相当危险,但也让我更加兴奋了。"
+SAY.Flowchart.90.,,"男子不僅加快摩擦的速度,甚至用柔軟的胸部塑了一個更加適合抽插的孔道。","男子不僅加快摩擦的速度,甚至用柔軟的胸部塑了一個更加適合抽插的孔道。","The man not only speeded up the friction, he even used his soft chest to create a more suitable hole for penetration.",男は摩擦を加速するだけでなく、柔らかい胸を使って挿入に適した穴を作りさえした。,"男子不仅加快摩擦的速度,甚至用柔软的胸部塑了一个更加适合抽插的孔道。"
+SAY.Flowchart.91.Mia,,嗚噁...,嗚噁...,Ouch...,ああ...,呜恶...
+SAY.Flowchart.92.,,"強烈又刺激的氣味不斷衝擊米婭的鼻腔,費洛蒙在小小的範圍內越來越強烈。","強烈又刺激的氣味不斷衝擊米婭的鼻腔,費洛蒙在小小的範圍內越來越強烈。","The strong and irritating smell kept hitting Mia's nasal cavity, and the pheromones became more and more intense in a small area.",強烈な刺激臭がミアの鼻腔を襲い続け、狭い範囲でフェロモンがますます濃くなっていく。,"强烈又刺激的气味不断冲击米娅的鼻腔,费洛蒙在小小的范围内越来越强烈。"
+SAY.Flowchart.93.,,"作為一名純潔剛破處的少女,米婭沒有體會過這種感受。興奮、難受、違反道德的快感在米婭的心中逐漸長成。","作為一名純潔剛破處的少女,米婭沒有體會過這種感受。興奮、難受、違反道德的快感在米婭的心中逐漸長成。","As a pure girl who had just lost her virginity, Mia had never experienced this feeling. Exciting, uncomfortable, and unethical pleasure gradually grew in Mia's heart.",処女を失ったばかりの純粋な女の子として、ミアはこの感情を経験したことがありませんでした。 ミアの心には、刺激的で不快、非倫理的な快感が徐々に芽生えていった。,"作为一名纯洁刚破处的少女,米娅没有体会过这种感受。兴奋、难受、违反道德的快感在米娅的心中逐渐长成。"
+SAY.Flowchart.94.,,"呼吸著充滿男性味道的空氣,被做著不可名狀的事,夾雜著費洛蒙的化學作用下產生了一點變化。","呼吸著充滿男性味道的空氣,被做著不可名狀的事,夾雜著費洛蒙的化學作用下產生了一點變化。","Breathing the air full of masculine smell, being done indescribable things, and mixed with the chemical effects of pheromones, there was a slight change.",男の匂いが充満する空気を吸い、何とも言えないことをされ、フェロモンの化学作用と混ざり合って、わずかな変化があった。,"呼吸着充满男性味道的空气,被做着不可名状的事,夹杂着费洛蒙的化学作用下产生了一点变化。"
+SAY.Flowchart.95.Mia,,嘶哈...嘶哈....,嘶哈...嘶哈....,Hiss... hiss...,シューッ...シューッ...,嘶哈...嘶哈....
+SAY.Flowchart.96.???,,"哦!學得那麼好,居然這麼快就習慣了。","哦!學得那麼好,居然這麼快就習慣了。",Oh! learned so well and got used to it so quickly.,ああ、とてもよく学べて、すぐに慣れました。,"哦!学得那么好,居然这么快就习惯了。"
+SAY.Flowchart.97.Mia,,才、才沒有!,才、才沒有!,"No, no!",いいえ！いいえ！,才、才没有!
+SAY.Flowchart.98.???,,但你的身體可不會說謊。,但你的身體可不會說謊。,But your body doesn't lie.,でも、体は嘘をつかない。,但你的身体可不会说谎。
+SAY.Flowchart.99.,,"男子加大了腰部的動作,使得蕈狀的部分在每一次簡諧運動的過程,都會對米婭散發一次更強烈的氣味。","男子加大了腰部的動作,使得蕈狀的部分在每一次簡諧運動的過程,都會對米婭散發一次更強烈的氣味。","The man increased the movement of his waist, causing the muscular part to emit a stronger odor to Mia with each harmonious movement.",男は腰の動きを強め、筋肉質な部分が調和のとれた動きをするたびにミーアに強い匂いを発した。,"男子加大了腰部的动作,使得蕈状的部分在每一次简谐运动的过程,都会对米娅散发一次更强烈的气味。"
+SAY.Flowchart.100.Mia,,嗚...要、要碰到了...,嗚...要、要碰到了...,Woo...we're about bump into...,うわぁ…ぶつかりそう…,呜...要、要碰到了...
+SAY.Flowchart.101.,,"米婭盯著胸部上滾燙的棒狀物體不斷來回摩擦,想撇開頭卻發現鼻子被氣味的方向吸引。","米婭盯著胸部上滾燙的棒狀物體不斷來回摩擦,想撇開頭卻發現鼻子被氣味的方向吸引。","Mia stared at the hot rod rubbing back and forth on her breasts, trying to look away but finding her nose drawn in the direction of the scent.",ミアは自分の乳房を前後にこする熱い棒を見つめ、顔をそむけようとしたが、鼻が匂いの方向に引き寄せられるのがわかった。,"米娅盯着胸部上滚烫的棒状物体不断来回摩擦,想撇开头却发现鼻子被气味的方向吸引。"
+SAY.Flowchart.102.Mia,,嘶哈...嘶哈....,嘶哈...嘶哈....,Hiss... hiss...,シューッ...シューッ...,嘶哈...嘶哈....
+SAY.Flowchart.103.,,"肉棒在胸部的夾縫中極限生存,每一次的抽插,都會讓胸部產生變形。米婭也不再反抗,只是盡情的吸取空氣中的化學激素。\n","肉棒在胸部的夾縫中極限生存,每一次的抽插,都會讓胸部產生變形。米婭也不再反抗,只是盡情的吸取空氣中的化學激素。\n","The rod survived in the crevices of the breasts, deforming them with every thrust. Mia stopped resisting and just soaked up the chemical hormones in the air.
+",棒は乳房の隙間に食い込み、突き刺すたびに乳房を変形させた。 ミアはもう抵抗せず、ただ化学ホルモンを吸い出した。,"肉棒在胸部的夹缝中极限生存,每一次的抽插,都会让胸部产生变形。米娅也不再反抗,只是尽情的吸取空气中的化学激素。 \n"
+SAY.Flowchart.104.Mia,,哈嗚...嘶哈...哈啊、哈.....,哈嗚...嘶哈...哈啊、哈.....,Hiss... hiss...,シューッ...シューッ...,哈呜...嘶哈...哈啊、哈.....
+SAY.Flowchart.105.???,,我要射了。,我要射了。,I'm gonna cum.,イキそうだ。,我要射了。
+SAY.Flowchart.106.,,"短短的一句話,將米婭從夢中拉回現實。","短短的一句話,將米婭從夢中拉回現實。",One short sentence brought Mia back from her dream.,ある短い一文で、ミアは夢から覚めた。,"短短的一句话,将米娅从梦中拉回现实。"
+SAY.Flowchart.107.Mia,,嗚哈...等等..!不、不要..射在臉上...,嗚哈...等等..!不、不要..射在臉上...,"Uh-huh... wait...! No, don't... cum on the face...",う、うーん…待って…だめ、顔に射精しないで…！,呜哈...等等..!不、不要..射在脸上...
+SAY.Flowchart.108.,,"突然,胸部上的肉棒腫脹了起來,摩擦的速度也來到了極限。","突然,胸部上的肉棒腫脹了起來,摩擦的速度也來到了極限。","Suddenly, the rod on his chest swelled up and the friction reached its limit.",突然、胸元の肉棒が膨らみ、摩擦速度が限界に達した。,"突然,胸部上的肉棒肿胀了起来,摩擦的速度也来到了极限。"
+SAY.Flowchart.109.???,,射了!,射了!,Shot!,ショット！,射了!
+SAY.Flowchart.110.Mia,,咿..咿呀!!!,咿..咿呀!!!,Eeee... Eeee !!!,えええおおおおおおお？,咿..咿呀!!!
+SAY.Flowchart.111.,,"白濁的液體從粗壯的陰莖中噴湧而出,噴射在米婭的臉上,額外的精液漫流而下到了米婭胸部間的山谷中。","白濁的液體從粗壯的陰莖中噴湧而出,噴射在米婭的臉上,額外的精液漫流而下到了米婭胸部間的山谷中。","White, cloudy fluid gushed from the thick shaft, spraying Mia's face as extra semen roamed down into the valley between Mia's breasts.",太いペニスから白い液体が噴き出し、ミアの顔に飛び散り、余分な精液がミアの乳房の谷間に流れ落ちた。,"白浊的液体从粗壮的阴茎中喷涌而出,喷射在米娅的脸上,额外的精液漫流而下到了米娅胸部间的山谷中。"
+SAY.Flowchart.112.,,"伴著米婭微弱的喘息和飽和度極高的空氣,男子穿上了衣服整理了下儀容,將另外派出的觸手取回的清水放在失神的米婭旁。","伴著米婭微弱的喘息和飽和度極高的空氣,男子穿上了衣服整理了下儀容,將另外派出的觸手取回的清水放在失神的米婭旁。","With Mia's faint gasps and the saturated air, the man put on his clothes and groomed himself, placing the fresh water retrieved by the other tentacles next to the disoriented Mia.",ミアのかすかなあえぎ声と飽和した空気を感じながら、男は服を着て身づくろいをし、もう片方の触手で取り出した新鮮な水を、混乱しているミアの隣に置いた。,"伴着米娅微弱的喘息和饱和度极高的空气,男子穿上了衣服整理了下仪容,将另外派出的触手取回的清水放在失神的米娅旁。"
+SAY.Flowchart.113.???,,"我們會再會的,米婭小姐。","我們會再會的,米婭小姐。","We'll meet again, Miss Mia.",また会いましょう、ミス・ミア。,"我们会再会的,米娅小姐。"
+SAY.Flowchart.16.,,"脫下了褲子,精神的肉棒馬上彈了出來,第一次面對男性的生殖器官,史黛拉顯得不知所措。","脫下了褲子,精神的肉棒馬上彈了出來,第一次面對男性的生殖器官,史黛拉顯得不知所措。","After taking off her pants, the majestic cock popped out immediately. Facing the male reproductive organs for the first time, Stella seemed at a loss.",パンツを脱ぐと、すぐに雄大なチンポが飛び出し、初めて男性の生殖器を前にして、ステラは戸惑った様子だった。,"脱下了裤子,精神的肉棒马上弹了出来,第一次面对男性的生殖器官,史黛拉显得不知所措。"
+SAY.Flowchart.17.Stella,,"請你停下你的行為,神的旨意是不容你這樣褻瀆的!","請你停下你的行為,神的旨意是不容你這樣褻瀆的!","Please stop your behavior, God’s will does not allow you to blaspheme like this!",あなたの行動を止めてください。このような冒涜は神の御心によって許されないのです。,"请你停下你的行为,神的旨意是不容你这样亵渎的!"
+SAY.Flowchart.18.,,"史黛拉露出了嚴厲的表情,試著嚇阻面前的男子。","史黛拉露出了嚴厲的表情,試著嚇阻面前的男子。",Stella showed a stern expression and tried to scare the man in front of her.,ステラは厳しい表情で、目の前の男を制止しようとした。,"史黛拉露出了严厉的表情,试着吓阻面前的男子。"
+SAY.Flowchart.179.,,"「啪!啪!」兩下用力的耳光賞在了史黛拉的臉上,熱辣辣的痛覺馬上從臉頰上傳來,史黛拉緊盯著眼前的肉棒逐漸變大,心裡的恐懼不斷地加深...","「啪!啪!」兩下用力的耳光賞在了史黛拉的臉上,熱辣辣的痛覺馬上從臉頰上傳來,史黛拉緊盯著眼前的肉棒逐漸變大,心裡的恐懼不斷地加深...","""Pah! Pah!"" Two hard slaps were given to Stella's face, and hot pain immediately spread from her cheeks. Stella stared at the cock in front of her as it gradually grew bigger, and the fear in her heart continued to deepen. ..",「ぱっ、ぱっ！」 ステラの顔面に二発の強烈なビンタが与えられ、ステラの頬には熱い痛みが広がり、ステラは目の前の肉棒が徐々に大きくなっていくのを見つめ、心の中の恐怖はどんどん深まっていった......。,"「啪!啪!」两下用力的耳光赏在了史黛拉的脸上,热辣辣的痛觉马上从脸颊上传来,史黛拉紧盯着眼前的肉棒逐渐变大,心里的恐惧不断地加深. .."
+SAY.Flowchart.178.???,,"史黛拉小姐,雖然您日夜侍奉著神明,也不間斷地佈道。但您是否想過,為什麼人民的苦難卻不斷發生,無法結束?","史黛拉小姐,雖然您日夜侍奉著神明,也不間斷地佈道。但您是否想過,為什麼人民的苦難卻不斷發生,無法結束?","Miss Stella, although you serve the gods day and night, you also preach without interruption. But have you ever thought about why people’s suffering keeps happening and cannot end?",ステラさん、あなたは昼も夜も神に仕えていますが、途切れることなく説教もしています。しかし、なぜ人々の苦しみが起こり続け、終わることができないのか考えたことがありますか?,"史黛拉小姐,虽然您日夜侍奉着神明,也不间断地布道。但您是否想过,为什么人民的苦难却不断发生,无法结束?"
+SAY.Flowchart.180.Stella,,"唔...那..那是因為人們的心不夠虔誠,或者決心不夠堅強,只要持之以恆,總有一天會感動上天,得來善報的。","唔...那..那是因為人們的心不夠虔誠,或者決心不夠堅強,只要持之以恆,總有一天會感動上天,得來善報的。","Well...that...that's because people's hearts are not pious enough, or their determination is not strong enough. As long as they persevere, one day they will be moved by God and receive good rewards.",まあ... それは... それは、人々の心が敬虔でないか、決意が強くないからだ。 粘り強くやっていれば、いつか天に触れ、報われる日が来る。,"唔...那..那是因为人们的心不够虔诚,或者决心不够坚强,只要持之以恒,总有一天会感动上天,得来善报的。"
+SAY.Flowchart.182.???,,"說的太好了,但有沒有可能,只是方法錯了。","說的太好了,但有沒有可能,只是方法錯了。","That's great, but is it possible that the method is just wrong?",それは素晴らしいことですが、単に方法が間違っている可能性はありますか?,"说的太好了,但有没有可能,只是方法错了。"
+SAY.Flowchart.181.???,,"在你面前的,並不只是一般男性的肉棒,他可是聖器。","在你面前的,並不只是一般男性的肉棒,他可是聖器。","What is in front of you is not just an ordinary male cock, it is a sacred instrument.",あなたの目の前にあるのはただの男性のチンポではなく、神聖な道具です。,"在你面前的,并不只是一般男性的肉棒,他可是圣器。"
+SAY.Flowchart.183.Stella,,那是什麼...?,那是什麼...?,what is that...?,それは何ですか...？,那是什么...?
+SAY.Flowchart.184.???,,"我想你肯定聽說過的,無形者的使徒所持的天國的號角。","我想你肯定聽說過的,無形者的使徒所持的天國的號角。",I am sure you have heard of the trumpets of heaven held by the apostles of the invisible one.,目に見えない者の使徒たちが持っている天国のラッパについて聞いたことがあると思います。,"我想你肯定听说过的,无形者的使徒所持的天国的号角。"
+SAY.Flowchart.185.???,,"吹響它,你將獲得把天父的旨意傳向遠方的能力。","吹響它,你將獲得把天父的旨意傳向遠方的能力。","Blow it, and you will gain the power to spread Heavenly Father's will far away.",それを吹けば、父なる神の意志を遠くまで広く伝える能力を得ることができる。,"吹响它,你将获得把天父的旨意传向远方的能力。"
+SAY.Flowchart.186.Stella,,吹響它?,吹響它?,Blow it?,吹く？,吹响它?
+SAY.Flowchart.187.,,"史黛拉的內心有些動搖了,他曾行走在荒蕪的土地上為人們祈求,也曾流離在瘟疫的土地上為人們淨化,但沒有一次真正成功拯救世人。","史黛拉的內心有些動搖了,他曾行走在荒蕪的土地上為人們祈求,也曾流離在瘟疫的土地上為人們淨化,但沒有一次真正成功拯救世人。","Stella's heart was a little shaken. He once walked in the barren land to pray for people, and also wandered in the plagued land to purify people, but he never really succeeded in saving the world.",ステラの心は揺れ動いた。不毛の地を歩き、人々のために祈り、疫病が蔓延する地を巡り、人々を浄化してきたが、世界を救うことに成功したことは一度もなかった。,"史黛拉的内心有些动摇了,他曾行走在荒芜的土地上为人们祈求,也曾流离在瘟疫的土地上为人们净化,但没有一次真正成功拯救世人。"
+SAY.Flowchart.188.,,"而現在,機會就放在眼前,雖然她並不認得眼前的男子,但來自XXX教會的人絕非惡人。","而現在,機會就放在眼前,雖然她並不認得眼前的男子,但來自XXX教會的人絕非惡人。","And now, the opportunity was right in front of her. Although she didn't recognize the man in front of her, the people from the Church of Heavenly Man were by no means evil.",そして今、そのチャンスは彼女の目の前にあった。目の前の男に気付かなかったが、天人教会の人々は決して悪人ではなかった。,"而现在,机会就放在眼前,虽然她并不认得眼前的男子,但来自XXX教会的人绝非恶人。"
+SAY.Flowchart.189.???,,"沒錯,作為前輩的我,應該為你指點迷津。把你的嘴唇,包覆住牙齒,輕柔的含住眼前的聖器。","沒錯,作為前輩的我,應該為你指點迷津。把你的嘴唇,包覆住牙齒,輕柔的含住眼前的聖器。","Yes, as a senior, I should give you some guidance. Cover your teeth with your lips, and gently hold the holy vessel in front of you.",はい、先輩として指導させていただきます。唇で歯を覆い、目の前の聖なる器をそっと持ちます。,"没错,作为前辈的我,应该为你指点迷津。把你的嘴唇,包覆住牙齿,轻柔的含住眼前的圣器。"
+SAY.Flowchart.190.,,"透過一步一步的教導,史黛拉小心翼翼的照做。","透過一步一步的教導,史黛拉小心翼翼的照做。","Through step-by-step instructions, Stella followed it carefully.",段階を踏んで教えることで、ステラは慎重に言われたとおりにした。,"透过一步一步的教导,史黛拉小心翼翼的照做。"
+SAY.Flowchart.191.Stella,,像...像這樣?,像...像這樣?,Like...like this?,みたいな…こんな感じ？,像...像这样?
+SAY.Flowchart.192.,,"史黛拉怯生生的張開小嘴,將眼前的肉棒緩緩含入口中。奇怪的味道刺激著史黛拉的鼻腔,但對於史黛拉來說這並不算什麼。","史黛拉怯生生的張開小嘴,將眼前的肉棒緩緩含入口中。奇怪的味道刺激著史黛拉的鼻腔,但對於史黛拉來說這並不算什麼。","Stella timidly opened her small mouth and slowly took the cock in front of her into her mouth. The strange smell irritated Stella's nasal cavity, but to Stella it was nothing.",ステラは恐る恐る小さな口を開け、目の前のチンポをゆっくりと口に含んだ。奇妙な匂いがステラの鼻腔を刺激したが、ステラにとっては何でもなかった。,"史黛拉怯生生的张开小嘴,将眼前的肉棒缓缓含入口中。奇怪的味道刺激着史黛拉的鼻腔,但对于史黛拉来说这并不算什么。"
+SAY.Flowchart.193.???,,"沒錯,就是這樣。","沒錯,就是這樣。","Yes, that's it.",その通りだ、それだけです。,"没错,就是这样。"
+SAY.Flowchart.194.Stella,,再...再來呢?,再...再來呢?,What about... again?,また... また？,再...再来呢?
+SAY.Flowchart.195.???,,"再來請小心的上下移動,妳將一步一步的解開聖器的封印。","再來請小心的上下移動,妳將一步一步的解開聖器的封印。","Next, please move up and down carefully, and you will unlock the seal of the holy instrument step by step.",繰り返しますが、一歩ずつ聖なる遺物の封印を解きながら、慎重に上下に移動してください。,"再来请小心的上下移动,妳将一步一步的解开圣器的封印。"
+SAY.Flowchart.196.Stella,,哈姆...哈姆...哈啊姆...,哈姆...哈姆...哈啊姆...,Ham...ham...haam...,シューッ...シューッ...,哈姆...哈姆...哈啊姆...
+SAY.Flowchart.197.,,"雖然動作看起來笨拙了點,也偶爾會不小心用力過猛,但這一點一滴將會化作史黛拉的經驗,被好好的保留在腦袋裡。","雖然動作看起來笨拙了點,也偶爾會不小心用力過猛,但這一點一滴將會化作史黛拉的經驗,被好好的保留在腦袋裡。","Although the movements may seem a bit clumsy, and occasionally she may accidentally exert too much force, every bit of it will be transformed into Stella’s experience and be well preserved in her mind.",動きは少しぎこちないように見えたり、時には力を入れすぎてしまったりするかもしれませんが、そのすべてがステラの経験として変換され、彼女の心の中にしっかりと保存されます。,"虽然动作看起来笨拙了点,也偶尔会不小心用力过猛,但这一点一滴将会化作史黛拉的经验,被好好的保留在脑袋里。"
+SAY.Flowchart.198.Stella,,哈姆...哈啊...好痠...,哈姆...哈啊...好痠...,Ham...haha...so sour...,ハム...はは...酸っぱい...,哈姆...哈啊...好酸...
+SAY.Flowchart.199.,,"史黛拉的下巴由於不習慣而酸澀不已,抬起頭暫停了口交的進行。","史黛拉的下巴由於不習慣而酸澀不已,抬起頭暫停了口交的進行。","Stella's chin was sore because she was not used to it, so she raised her head and paused the oral sex.",ステラの顎は不快感で痛んでおり、オーラルセックスを一時中断しようと頭を上げた。,"史黛拉的下巴由于不习惯而酸涩不已,抬起头暂停了口交的进行。"
+SAY.Flowchart.200.???,,"就這嗎?妳對佈道的嚮往,就僅僅因為痠痛而停滯了腳步嗎?","就這嗎?妳對佈道的嚮往,就僅僅因為痠痛而停滯了腳步嗎?",Is that it? Is your yearning for preaching stalled just because of soreness?,それだけか？ あなたの説教欲は痛みによってのみ止められるのか？,"就这吗?妳对布道的向往,就仅仅因为酸痛而停滞了脚步吗?"
+SAY.Flowchart.201.,,"嚴厲的訓話讓史黛拉不得不提起勁,重新含起天國的號角,而在短短的練習下,史黛拉的口技已經變得愈發熟練。","嚴厲的訓話讓史黛拉不得不提起勁,重新含起天國的號角,而在短短的練習下,史黛拉的口技已經變得愈發熟練。","The stern lecture forced Stella to muster up her energy and pick up the horn of heaven again. However, after a short period of practice, Stella's ventriloquism has become more and more proficient.",厳しい講義にステラは気力を振り絞って再び天の角を手に取ることになったが、短期間の練習の後、ステラの腹話術はますます上手になった。,"严厉的训话让史黛拉不得不提起劲,重新含起天国的号角,而在短短的练习下,史黛拉的口技已经变得愈发熟练。"
+SAY.Flowchart.202.???,,"嗯!很好,我很滿意,那接下來可以開始加速了。","嗯!很好,我很滿意,那接下來可以開始加速了。","Well! Very good, I am very satisfied, then we can start to accelerate.",とてもよかったです。とても満足しています。それでは加速を始めましょう。,"嗯!很好,我很满意,那接下来可以开始加速了。"
+SAY.Flowchart.203.Stella,,加...加速...?,加...加速...?,Accelerate...?,加速…？,加...加速...?
+SAY.Flowchart.204.,,"不再只是史黛拉的小嘴上下移動,???挺直了腰,對史黛拉開始活塞運動。","不再只是史黛拉的小嘴上下移動,???挺直了腰,對史黛拉開始活塞運動。","No longer just Stella's little mouth moving up and down,??? straightened his waist and started piston movement towards Stella.",もはやステラの小さな口が上下に動くだけではなく、腰をまっすぐにしてステラに向かってピストン運動を始めた。,"不再只是史黛拉的小嘴上下移动,???挺直了腰,对史黛拉开始活塞运动。"
+SAY.Flowchart.205.Stella,,咕嗚...嗚喔...咕喔...!,咕嗚...嗚喔...咕喔...!,Goooo...ooooo...coooo...!,ああ... フーフー... フーフー..！,咕呜...呜喔...咕喔...!
+SAY.Flowchart.206.,,"肉棒頂到喉嚨的撞擊聲,伴隨著史黛拉的嗚噎在房間裡迴盪著。","肉棒頂到喉嚨的撞擊聲,伴隨著史黛拉的嗚噎在房間裡迴盪著。",The sound of the cock hitting her throat echoed in the room along with Stella's whimpers.,ステラの喘ぎ声とともに、竿が喉に当たる音が部屋中に響き渡った。,"肉棒顶到喉咙的撞击声,伴随着史黛拉的呜噎在房间里回荡着。"
+SAY.Flowchart.207.Stella,,嗚...咕嗚...咕...,嗚...咕嗚...咕...,Goooo...ooooo...coooo...!,グム、グム…,呜...咕呜...咕...
+SAY.Flowchart.208.???,,"習慣了嗎,這是解開封印的最後一步了!","習慣了嗎,這是解開封印的最後一步了!",Are you used to it? This is the last step to unlock the seal!,慣れてきましたか？これが封印を解く最後のステップです！,"习惯了吗,这是解开封印的最后一步了!"
+SAY.Flowchart.209.???,,"請包覆住聖器,並且開始吮吸。","請包覆住聖器,並且開始吮吸。",Please cover the sacred vessel.And started sucking.,聖具室を包んで、しゃぶり始める。,"请包覆住圣器,并且开始吮吸。"
+SAY.Flowchart.210.Stella,,嗚..嗚耶..?,嗚..嗚耶..?,Woo...woo yeah...?,ぐぅ…ふぅ…,呜..呜耶..?
+SAY.Flowchart.211.Stella,,嗯...咕啾...咕啾...,嗯...咕啾...咕啾...,Hmm... Gujiu... Gujiu...,うーん... グーチョ... クーチー...,嗯...咕啾...咕啾...
+SAY.Flowchart.212.,,"史黛拉乖乖地低著頭,忍住下巴脫臼的痠痛,努力的吸吮了起來,房間裡迴盪著淫蕩的水聲。","史黛拉乖乖地低著頭,忍住下巴脫臼的痠痛,努力的吸吮了起來,房間裡迴盪著淫蕩的水聲。","Stella lowered her head obediently, resisting the pain of dislocated jaw, and sucked hard, and the room echoed with the lustful sound of water.",ステラは従順に頭を下げ、脱臼した顎の痛みに耐え、激しくしゃぶり、部屋は欲望の飛沫で反響した。,"史黛拉乖乖地低着头,忍住下巴脱臼的酸痛,努力的吸吮了起来,房间里回荡着淫荡的水声。"
+SAY.Flowchart.213.???,,"沒錯,沒錯!","沒錯,沒錯!","That’s right, that’s right!",そうだ、そうだ！,"没错,没错!"
+SAY.Flowchart.214.Stella,,咕啾...咕啾...咕嚕嚕...,咕啾...咕啾...咕嚕嚕...,Gucho... Gurgling... Sweet and sour...,グチョ... グチョ... グチョ...,咕啾...咕啾...咕噜噜...
+SAY.Flowchart.215.???,,"我要射了,請接住!來自神的旨意吧!","我要射了,請接住!來自神的旨意吧!","I'm about to cum, please catch it! It's God's will!",イキそうだ。神の意志を受け取ってください！,"我要射了,请接住!来自神的旨意吧!"
+SAY.Flowchart.216.Stella,,呼耶...?,呼耶...?,Hoo yay...?,フーヤー？,呼耶...?
+SAY.Flowchart.217.,,"透過口腔,史黛拉感受到了來自號角的顫動,接著是無盡的白色液體從號角的吹口中噴湧而出,史黛拉小小的嘴巴根本無法含住,從嘴角流淌下來。","透過口腔,史黛拉感受到了來自號角的顫動,接著是無盡的白色液體從號角的吹口中噴湧而出,史黛拉小小的嘴巴根本無法含住,從嘴角流淌下來。","Through her mouth, Stella felt the vibration from the horn, and then endless white liquid spurted out from the mouthpiece of the horn. Stella's small mouth could not hold it at all, and it flowed from the corner of her mouth.",ステラは口にホルンの振動を感じ、やがてホルンの吹き口から白い液体がとめどなく噴き出し、ステラの小さな口では堪えきれず、口の端から流れ出た。,"透过口腔,史黛拉感受到了来自号角的颤动,接着是无尽的白色液体从号角的吹口中喷涌而出,史黛拉小小的嘴巴根本无法含住,从嘴角流淌下来。"
+SAY.Flowchart.218.Stella,,呼嚕...咕嗚...?,呼嚕...咕嗚...?,purr... Gulp...?,ぐぅ…ふぅ…,呼噜...咕呜...?
+SAY.Flowchart.219.???,,第一次嘗試天國的號角就獲得了盛宴!妳可是這方面的天才!,第一次嘗試天國的號角就獲得了盛宴!妳可是這方面的天才!,The first time you tried the trumpets of heaven you got a feast! You are a genius at this!,天の角」初挑戦でごちそうゲット！ 君は天才だ！,第一次尝试天国的号角就获得了盛宴!妳可是这方面的天才!
+SAY.Flowchart.220.,,"史黛拉意識到自己獲得了神的贈禮,急忙的把還遺留在嘴裡的液體吞下。","史黛拉意識到自己獲得了神的贈禮,急忙的把還遺留在嘴裡的液體吞下。","Stella realized that she had received a gift from God, and hurriedly swallowed the liquid still in her mouth.",ステラは自分が神から贈り物を受け取ったことに気づき、口の中にまだ残っていた液体を急いで飲み込みました。,"史黛拉意识到自己获得了神的赠礼,急忙的把还遗留在嘴里的液体吞下。"
+SAY.Flowchart.221.,,"???離開了房間,留下房內仍在細細品味號角味道的史黛拉.....","???離開了房間,留下房內仍在細細品味號角味道的史黛拉.....","The magician left the room, leaving Stella who was still savoring the smell of the horn...",角笛の匂いを嗅ぎ続けるステラを残して、魔術師は部屋を出て行った…。,"???离开了房间,留下房内仍在细细品味号角味道的史黛拉....."
+SAY.Flowchart.21.,,"男子一把將衣物褪下,緊接著抓住伊莉絲的大腿,用身體的力量將伊莉絲按在牆上。","男子一把將衣物褪下,緊接著抓住伊莉絲的大腿,用身體的力量將伊莉絲按在牆上。","The man removed his clothes, then grabbed Elyse's thighs and pressed Elyse against the wall with his body.",男は服を脱ぐとエリーゼの太ももを掴み、体当たりでエリーゼを壁に押し付けた。,"男子一把将衣物褪下,紧接着抓住伊莉丝的大腿,用身体的力量将伊莉丝按在墙上。"
+SAY.Flowchart.22.,,隨後掏出炙熱的肉棒抵住伊莉絲晃動的屁股肉上。,隨後掏出炙熱的肉棒抵住伊莉絲晃動的屁股肉上。,Then he took out his hot cock and pressed it against Elise's swaying butt flesh.,そして熱い棒を引き抜き、エリスの揺れる尻の肉に押し当てた。,随后掏出炙热的肉棒抵住伊莉丝晃动的屁股肉上。
+SAY.Flowchart.23.Elise,,"今天的你,跟上次好不一樣呢。","今天的你,跟上次好不一樣呢。",You are very different today from last time.,今日のあなたは前回とは大きく異なります。,"今天的你,跟上次好不一样呢。"
+SAY.Flowchart.147.Elise,,那就讓我來滿足你吧!,那就讓我來滿足你吧!,Then let me satisfy you!,じゃあ満足させてあげるよ！,那就让我来满足你吧!
+SAY.Flowchart.148.,,"白皙的皮膚大片的映入眼簾,飽滿的曲線隨著擠壓抖動著,一張一合的性器引誘著肉棒將其填滿。","白皙的皮膚大片的映入眼簾,飽滿的曲線隨著擠壓抖動著,一張一合的性器引誘著肉棒將其填滿。","A large expanse of fair skin came into view, the plump curves trembled with the squeeze, and the opening and closing of the genitals lured the cock to fill it up.",青白い皮膚は目の大部分を占め、ふくよかな曲線は圧力に震え、性器の開閉は肉棒を充満させようと誘惑した。,"白皙的皮肤大片的映入眼帘,饱满的曲线随着挤压抖动着,一张一合的性器引诱着肉棒将其填满。"
+SAY.Flowchart.149.Elise,,啊嗯!,啊嗯!,Uh-huh!,ああああ！,啊嗯!
+SAY.Flowchart.150.,,"蜜穴在毫無前戲的情況下,卻能利用魔力進行潤滑,而這潤滑的效果更甚淫水,於是???開始肆無忌憚的瘋狂抽插。","蜜穴在毫無前戲的情況下,卻能利用魔力進行潤滑,而這潤滑的效果更甚淫水,於是???開始肆無忌憚的瘋狂抽插。","The honey hole can be lubricated by magic power without any foreplay, and the effect of this lubrication is even more lustful, so the magician begins to thrust wildly and unscrupulously.",前戯なしでも蜜穴は魔力で潤滑され、その潤滑効果でさらに欲情するため、魔術師は荒々しく不謹慎に突き始める。,"蜜穴在毫无前戏的情况下,却能利用魔力进行润滑,而这润滑的效果更甚淫水,于是???开始肆无忌惮的疯狂抽插。"
+SAY.Flowchart.151.Elise,,嗯...!嗯!哈啊...!,嗯...!嗯!哈啊...!,Mmmm...! (GROANS) - Mmm! Haha...!,うーん..！ (うーん！ ハハ..！,嗯...!嗯!哈啊...!
+SAY.Flowchart.152.Elise,,好大!被插到最裡面了!,好大!被插到最裡面了!,It’s so big! It’s inserted all the way inside!,巨大だ！ 最深部まで挿入されました！,好大!被插到最里面了!
+SAY.Flowchart.153.???,,"這可是...忍耐好久的結果,請你收下!","這可是...忍耐好久的結果,請你收下!","This is the result of... enduring for a long time, please accept it!",これは…長い間耐えた結果です、受け入れてください！,"这可是...忍耐好久的结果,请你收下!"
+SAY.Flowchart.154.Elise,,哈啊...肉棒...在裡面進進出出....,哈啊...肉棒...在裡面進進出出....,Haah...the cock...going in and out...,ははは... 肉棒... 出たり入ったり．,哈啊...肉棒...在里面进进出出....
+SAY.Flowchart.155.,,"進入狀況的小穴纏住肉棒,每一次叫聲的腹部用力,都產生了極高的負壓,用力的吸取我的肉棒。","進入狀況的小穴纏住肉棒,每一次叫聲的腹部用力,都產生了極高的負壓,用力的吸取我的肉棒。","The pussy that had entered the state wrapped around my cock, and every time I screamed and exerted force on my abdomen, a very high negative pressure was generated, sucking my cock hard.",シチュエーションに入ってきたアソコが竿を包み込み、私が悲鳴を上げて腹部を押すたびに、非常に高い負圧が発生して竿に激しく吸い付いた。,"进入状况的小穴缠住肉棒,每一次叫声的腹部用力,都产生了极高的负压,用力的吸取我的肉棒。"
+SAY.Flowchart.156.???,,咕哦...好厲害!,咕哦...好厲害!,Goooh...so awesome!,グー...。 すごかったね！,咕哦...好厉害!
+SAY.Flowchart.157.???,,"好像一張嘴巴,不停的往內吸入。","好像一張嘴巴,不停的往內吸入。",It's like a mouth that keeps sucking in.,まるで吸い込まれ続ける口のようだ。,"好像一张嘴巴,不停的往内吸入。"
+SAY.Flowchart.158.Elise,,哈...哈啊...!再用力一點..!,哈...哈啊...!再用力一點..!,Ha...haah...! Harder...!,ハァ... ハァ..！ もっと強く..！,哈...哈啊...!再用力一点..!
+SAY.Flowchart.159.,,"伊莉絲萎靡的聲音隨著喘息傳來,伴著抽插的頻率扭動著腰肢,讓肉棒插進更深的地方。","伊莉絲萎靡的聲音隨著喘息傳來,伴著抽插的頻率扭動著腰肢,讓肉棒插進更深的地方。","Elise's languorous voice came as she gasped, and she twisted her waist with the frequency of thrusting, letting her cock penetrate deeper.",エリゼの萎えた声が喘ぎ声とともに聞こえ、突きの頻度に合わせて腰をひねり、棒がより深く突き刺さるのを許した。,"伊莉丝萎靡的声音随着喘息传来,伴着抽插的频率扭动着腰肢,让肉棒插进更深的地方。"
+SAY.Flowchart.160.Elise,,哈啊...好舒服....被..被填滿了!,哈啊...好舒服....被..被填滿了!,Haah...so comfortable...filled up!,はぁ…気持ちい... 満たされた..！,哈啊...好舒服....被..被填满了!
+SAY.Flowchart.161.???,,那我要加速了。,那我要加速了。,Then I'm going to speed up.,じゃあ、スピードを上げるよ。,那我要加速了。
+SAY.Flowchart.162.Elise,,咿呀!啊...哈啊...!哈啊...!,咿呀!啊...哈啊...!哈啊...!,Eee! Ah... Haah...! Haah...!,ええっ…はぁ…！,咿呀!啊...哈啊...!哈啊...!
+SAY.Flowchart.163.Elise,,太快了!太快了!這樣子我要....咕嗚嗚....,太快了!太快了!這樣子我要....咕嗚嗚....,"It’s too fast! It’s too fast! Like this, I want to... Guwuwu...",速すぎる！ 速すぎる！ これが欲しい．．． グー・グー・グー・・・。,太快了!太快了!这样子我要....咕呜呜....
+SAY.Flowchart.164.,,"肉棒不斷的突進小穴深處,每一下深深撞擊著靈魂的聲音,都變得越來越大聲。","肉棒不斷的突進小穴深處,每一下深深撞擊著靈魂的聲音,都變得越來越大聲。","The cock kept thrusting into the depths of the pussy, and the sound of each deep impact on the soul became louder and louder.",竿がアソコの奥へ奥へと突き進むにつれ、魂に深い衝撃が加わるたびに、その音はどんどん大きくなっていった。,"肉棒不断的突进小穴深处,每一下深深撞击着灵魂的声音,都变得越来越大声。"
+SAY.Flowchart.165.Elise,,嗯!要...嗯...!要壞...要壞掉了...!,嗯!要...嗯...!要壞...要壞掉了...!,Hmm! It's going to... um...! It's going to be broken... it's going to be broken...!,うーん、壊れちゃう…壊れちゃう…！,嗯!要...嗯...!要坏...要坏掉了...!
+SAY.Flowchart.166.,,"充著血的肉棒脹大到難以相信的大小,如同打樁機的運動不停加速衝撞著小穴,伊莉絲的表情從愉悅變得詫異,最後難以自理,只能順從自己的慾望,扭動著腰肢,尋求更激烈的快感。","充著血的肉棒脹大到難以相信的大小,如同打樁機的運動不停加速衝撞著小穴,伊莉絲的表情從愉悅變得詫異,最後難以自理,只能順從自己的慾望,扭動著腰肢,尋求更激烈的快感。","The cock filled with blood swelled to an unbelievable size. It was like a pile driver that kept accelerating and hit the pussy. Elise's expression changed from pleasure to surprise. Finally, she couldn't take care of herself. She could only obey her own desires and twist. Waist seeking more intense pleasure.",血が満たされたチンポは信じられないほど大きくなり、加速し続けるパイルドライバーにエリーゼの表情は快感から驚きへと変わった。欲望と腰をくねらせ、より激しい快感を求めて。,"充着血的肉棒胀大到难以相信的大小,如同打桩机的运动不停加速冲撞着小穴,伊莉丝的表情从愉悦变得诧异,最后难以自理,只能顺从自己的欲望,扭动着腰肢,寻求更激烈的快感。"
+SAY.Flowchart.167.Elise,,嗯啊!啊...!再這樣下去的話...啊...嗯啊...!,嗯啊!啊...!再這樣下去的話...啊...嗯啊...!,Uh-huh! Ah...! If this continues...ah...uh-huh...!,ああ…! このまま続くだろう。...ああ... ああ..！,嗯啊!啊...!再这样下去的话...啊...嗯啊...!
+SAY.Flowchart.168.???,,我快要射了...,我快要射了...,I'm about to cum...,イキそうなんだ...。,我快要射了...
+SAY.Flowchart.169.Elise,,嗯...哈啊...!可以喲....,嗯...哈啊...!可以喲....,Hmmm... Haha...!!! It's allowed... ....,うーん...はは...!,嗯...哈啊...!可以哟....
+SAY.Flowchart.170.Elise,,啊...!射在裡面...哼啊...射在我的子宮裡面...!,啊...!射在裡面...哼啊...射在我的子宮裡面...!,Ah...! Cum inside... Hum... Cum inside my womb...!,ああ..！ 中にザーメン... ああ... 子宮の中に..！,啊...!射在里面...哼啊...射在我的子宫里面...!
+SAY.Flowchart.171.Elise,,呀哈...!填滿我...哈啊...!讓我的子宮...充滿你的精液..!,呀哈...!填滿我...哈啊...!讓我的子宮...充滿你的精液..!,Ahhh...! Fill me up... Haaah...! Let my womb... fill with your cum..!,ああああ...! 子宮を...あなたの精液で満たしてください...!,呀哈...!填满我...哈啊...!让我的子宫...充满你的精液..!
+SAY.Flowchart.172.???,,要射了!,要射了!,Gonna cum!,イクつもりだ！,要射了!
+SAY.Flowchart.173.Elise,,嗯....嗯哈...!咿咿咿咿咿咿呀呀呀呀呀呀呀呀!!!!!!!!,嗯....嗯哈...!咿咿咿咿咿咿呀呀呀呀呀呀呀呀!!!!!!!!,Eeee... Eeee !!!,うーん…うーん…！,嗯....嗯哈...!咿咿咿咿咿咿呀呀呀呀呀呀呀呀!!!!!!!!
+SAY.Flowchart.174.,,"隨著伊莉絲的高潮,大量的白色液體灌滿了伊莉絲的小穴,進入子宮之中。","隨著伊莉絲的高潮,大量的白色液體灌滿了伊莉絲的小穴,進入子宮之中。","As Elise climaxed, a large amount of white liquid filled Elise's vagina and entered the womb.",エリゼが絶頂を迎えると、大量の白い液体がエリゼのアソコを満たし、子宮に入った。,"随着伊莉丝的高潮,大量的白色液体灌满了伊莉丝的小穴,进入子宫之中。"
+SAY.Flowchart.175.,,"伊莉絲的身體不受控制的抽動,像是觸電一般,癱倒在牆上。","伊莉絲的身體不受控制的抽動,像是觸電一般,癱倒在牆上。","Elise's body twitched uncontrollably, as if she was electrocuted, and she collapsed against the wall.",まるで感電したかのように、エリゼの体は制御不能なほどピクピクと動き、壁に倒れこんだ。,"伊莉丝的身体不受控制的抽动,像是触电一般,瘫倒在墙上。"
+SAY.Flowchart.176.Elise,,呼...呼啊...呼啊....,呼...呼啊...呼啊....,Hoo... Hooah... Hooah ....,はぁ…はぁ…はぁ…,呼...呼啊...呼啊....
+SAY.Flowchart.177.,,"伊莉絲沉浸在小穴蔓延到小腹的酥麻快感,以及無法平復的心跳。","伊莉絲沉浸在小穴蔓延到小腹的酥麻快感,以及無法平復的心跳。","Elise was immersed in the tingling pleasure that spread from her vagina to her lower abdomen, and her heartbeat that couldn't calm down.",エリーズは、アソコから腹にかけて広がるうずくような快感に酔いしれた。、落ち着かない鼓動に浸っていた。,"伊莉丝沉浸在小穴蔓延到小腹的酥麻快感,以及无法平复的心跳。"
+SAY.Flowchart.26.???,,"看來妳能善用天上賜予的贈禮,不愧是您,修女大人。","看來妳能善用天上賜予的贈禮,不愧是您,修女大人。","It seems that you are able to make good use of the gifts given by heaven, and you are worthy of it, Sister Sister.",あなたは天から与えられた賜物をうまく活用できるようです、そしてあなたはそれにふさわしいです、シスターシスター。,"看来妳能善用天上赐予的赠礼,不愧是您,修女大人。"
+SAY.Flowchart.27.Stella,,"您說笑了,要不是您在我的路上點了一座明燈。我怕是還在深不見底的泥沼裡混沌呢。","您說笑了,要不是您在我的路上點了一座明燈。我怕是還在深不見底的泥沼裡混沌呢。",You're joking. If you hadn't lit a lamp on my path. I'd still be in the bottomless mire.,冗談でしょ、あなたが私の道に灯をともしてくれなかったら。 私はまだ底なしの泥沼にいただろう。,"您说笑了,要不是您在我的路上点了一座明灯。我怕是还在深不见底的泥沼里混沌呢。"
+SAY.Flowchart.28.???,,"但是世界這麼大,您的心願豈是一個教會的修女。您是否忘記?天父的大愛,應該讓世人所共擁。","但是世界這麼大,您的心願豈是一個教會的修女。您是否忘記?天父的大愛,應該讓世人所共擁。","But the world is so big, and your wish is not to be a nun in the Church. Have you forgotten? The Father's love should be shared by all.",しかし、世界はとても広いので、あなたの願いは教会の修道女になることです。天の御父の偉大な愛は世界中のすべての人に受け入れられるべきであることを忘れていませんか。,"但是世界这么大,您的心愿岂是一个教会的修女。您是否忘记?天父的大爱,应该让世人所共拥。"
+SAY.Flowchart.222.Stella,,"我當然沒有忘記,反倒我期待著那一天的到來,那讓我脫俗的號角,何時會再度降臨。","我當然沒有忘記,反倒我期待著那一天的到來,那讓我脫俗的號角,何時會再度降臨。","Of course I have not forgotten, but I am looking forward to the day when the trumpet that will make me free from the world will come again.",もちろん忘れてはいないが、私を世界を超えさせるホルンが再びやってくる日を楽しみにしています。,"我当然没有忘记,反倒我期待着那一天的到来,那让我脱俗的号角,何时会再度降临。"
+SAY.Flowchart.223.???,,"今天我帶著的,是通往天國的鑰匙,而鑰匙的門扉,就在您的身上,史黛拉小姐。","今天我帶著的,是通往天國的鑰匙,而鑰匙的門扉,就在您的身上,史黛拉小姐。","I carry with me today the key to the kingdom of heaven, and the doorway to that key is in you, Miss Stella.",私は今日、天の王国への鍵を携えている。その鍵の入り口は、ステラさん、あなたの中にある。,"今天我带着的,是通往天国的钥匙,而钥匙的门扉,就在您的身上,史黛拉小姐。"
+SAY.Flowchart.224.Stella,,在我的身上?,在我的身上?,On my body?,私の体に？,在我的身上?
+SAY.Flowchart.225.???,,"緩緩的靠近史黛拉,輕柔的將史黛拉推倒在床上,剝開纏繞在史黛拉身上的絲絹。","緩緩的靠近史黛拉,輕柔的將史黛拉推倒在床上,剝開纏繞在史黛拉身上的絲絹。","Slowly approaching Stella, he gently pushed Stella down onto the bed and peeled off the silk silk that was wrapped around Stella's body.",ゆっくりとステラに近づき、優しくステラをベッドに押し倒し、ステラの体に巻かれていたシルクを剥がした。,"缓缓的靠近史黛拉,轻柔的将史黛拉推倒在床上,剥开缠绕在史黛拉身上的丝绢。"
+SAY.Flowchart.226.,,"粉嫩的乳頭點綴著兩隻大白兔,一絲不掛的身體透出了豐腴的線條,保養的非常良好的私處從床頭這邊一覽無遺。","粉嫩的乳頭點綴著兩隻大白兔,一絲不掛的身體透出了豐腴的線條,保養的非常良好的私處從床頭這邊一覽無遺。","The pink nipples are dotted with two big white rabbits, the naked body reveals plump lines, and the very well-maintained private parts can be seen from the bedside.",ピンクの乳首には2つの大きな白いウサギが飾られ、裸体は官能的なラインを露わにし、非常によく手入れされた陰部がベッドのこちら側から見える。,"粉嫩的乳头点缀着两只大白兔,一丝不挂的身体透出了丰腴的线条,保养的非常良好的私处从床头这边一览无遗。"
+SAY.Flowchart.227.,,"魔法師露出歡喜的表情,解開了褲袋,掏出了飢渴難耐的下身。","魔法師露出歡喜的表情,解開了褲袋,掏出了飢渴難耐的下身。","With a joyful look on his face, the wizard unzipped his trouser pockets and pulled out his hungry bottom.",マジシャンは嬉しそうな表情を浮かべ、ズボンのポケットを開け、渇いた下半身を取り出した。,"魔法师露出欢喜的表情,解开了裤袋,掏出了饥渴难耐的下身。"
+SAY.Flowchart.228.Stella,,這是?,這是?,This?,これか？,这是?
+SAY.Flowchart.229.???,,"這是天國的鑰匙,同時,您的身體也進化出了聖器,天國的門扉。只要我們一結合,神無邊的法力便會降臨,造福世上所有的人!","這是天國的鑰匙,同時,您的身體也進化出了聖器,天國的門扉。只要我們一結合,神無邊的法力便會降臨,造福世上所有的人!","This is the key to the Kingdom of Heaven, and at the same time, your body has evolved the Sacred Vessel, the doorway to the Kingdom of Heaven. As soon as we are united, God's infinite power will descend for the benefit of all the people of the world!",これは天の国への鍵であり、同時に、あなたの身体は天の国への扉である聖なる器を進化させた。 私たちがひとつになれば、神の無限の力が世界中の人々のために降り注ぐでしょう！,"这是天国的钥匙,同时,您的身体也进化出了圣器,天国的门扉。只要我们一结合,神无边的法力便会降临,造福世上所有的人!"
+SAY.Flowchart.230.,,"魔法師說完,將史黛拉摁倒,雙手壓在她纖細的手臂上,肉棒對準小穴,開始了摩擦。","魔法師說完,將史黛拉摁倒,雙手壓在她纖細的手臂上,肉棒對準小穴,開始了摩擦。","After the magician finished speaking, he pushed Stella down, pressed his hands on her slender arms, aimed his cock at her vagina, and started rubbing.",魔法使いはそう言うと、ステラを押さえつけ、彼女の細い腕を両手で押さえつけ、自分の棒を彼女のアソコにこすりつけ始めた。,"魔法师说完,将史黛拉摁倒,双手压在她纤细的手臂上,肉棒对准小穴,开始了摩擦。"
+SAY.Flowchart.231.Stella,,嗯...!癢癢的...好奇怪的感覺!,嗯...!癢癢的...好奇怪的感覺!,Hmmm...! It tickles... What a strange feeling!,うーん...！ くすぐったい...。 なんとも不思議な感覚だ！,嗯...!痒痒的...好奇怪的感觉!
+SAY.Flowchart.232.???,,"第一次成為聖器的感覺總是新鮮,過一下你就會熟悉了。","第一次成為聖器的感覺總是新鮮,過一下你就會熟悉了。","The feeling of becoming a holy weapon for the first time is always fresh, but you will become familiar with it after a while.",初めて聖武器になったときの感覚はいつも新鮮ですが、時間が経つと慣れてきます。,"第一次成为圣器的感觉总是新鲜,过一下你就会熟悉了。"
+SAY.Flowchart.233.,,"魔法師並沒有停下磨蹭的動作,反倒是小穴這邊已經開始泛出一些汁水。","魔法師並沒有停下磨蹭的動作,反倒是小穴這邊已經開始泛出一些汁水。","The magician didn't stop rubbing, but instead some juices started to come out of her pussy.",マジシャンはこするのをやめませんでしたが、オマンコからジュースが流れ始めました。,"魔法师并没有停下磨蹭的动作,反倒是小穴这边已经开始泛出一些汁水。"
+SAY.Flowchart.234.,,"史黛拉的身體操癢難耐,好像身上有東西在爬但苦無解法。","史黛拉的身體操癢難耐,好像身上有東西在爬但苦無解法。","Stella's body was itchy, as if something was crawling on it, but there was no solution.",ステラの体は、何かが体を這っているかのように、耐えられないほどかゆみを感じていましたが、解決策はありませんでした。,"史黛拉的身体操痒难耐,好像身上有东西在爬但苦无解法。"
+SAY.Flowchart.235.???,,讓我們一同創造通往天國的道路!,讓我們一同創造通往天國的道路!,Let's create the road to heaven together!,天国への道を一緒に作ろう！,让我们一同创造通往天国的道路!
+SAY.Flowchart.236.Stella,,嗚呀!,嗚呀!,Woohoo!,フー！,呜呀!
+SAY.Flowchart.237.,,"伴隨著處女膜撕裂的聲音和史黛拉的叫聲,肉棒插入了史黛拉的密穴。","伴隨著處女膜撕裂的聲音和史黛拉的叫聲,肉棒插入了史黛拉的密穴。","With the sound of her hymen tearing and Stella's screams, the rod penetrated Stella's pussy.",子宮口が裂ける音とステラの悲鳴とともに、棒はステラのアソコを貫いた。,"伴随着处女膜撕裂的声音和史黛拉的叫声,肉棒插入了史黛拉的密穴。"
+SAY.Flowchart.238.Stella,,嗚呀..!咕嗚...好痛...!,嗚呀..!咕嗚...好痛...!,Ouch...! Ouch...it hurts...!,ああ..！ うっ... 痛い..！,呜呀..!咕呜...好痛...!
+SAY.Flowchart.239.???,,"這是妳的身體接受了聖器的表現喔,妳應該感到光榮!","這是妳的身體接受了聖器的表現喔,妳應該感到光榮!",This is a sign that your body has accepted the sacred weapon. You should feel honored!,これはあなたの体が神聖な武器を受け入れたというサインです。あなたは光栄に思うはずです。,"这是妳的身体接受了圣器的表现喔,妳应该感到光荣!"
+SAY.Flowchart.240.,,"肉棒在史黛拉體內抽動著,伴隨著疼痛和一絲絲的酥麻感,史黛拉露出了欣慰的笑容。","肉棒在史黛拉體內抽動著,伴隨著疼痛和一絲絲的酥麻感,史黛拉露出了欣慰的笑容。","Stella smiled in relief as the rod pumped inside her, accompanied by pain and a tingling sensation.",ステラの中でチンポがピクピクと動き、痛みと軽いしびれを伴い、ステラは幸せそうな笑みを浮かべた。,"肉棒在史黛拉体内抽动着,伴随着疼痛和一丝丝的酥麻感,史黛拉露出了欣慰的笑容。"
+SAY.Flowchart.241.,,"魔法師挺直了腰,在狹窄的陰道了找尋出路。緊緻的肉壁從四面八方扒來,刺激感從小頭一路傳到大腦,讓???不禁有些把持不住。","魔法師挺直了腰,在狹窄的陰道了找尋出路。緊緻的肉壁從四面八方扒來,刺激感從小頭一路傳到大腦,讓???不禁有些把持不住。","The magician straightened his back and looked for a way out of the narrow vagina. The tight flesh walls were pulled out from all directions, and the stimulation spread from the head all the way to the brain, making the magician unable to control himself.",魔法使いは背筋を伸ばし、狭い膣からの出口を探した。強固な肉壁を四方八方から引きか、興奮が頭から脳まで伝わり、魔法使いは握力を失った。,"魔法师挺直了腰,在狭窄的阴道了找寻出路。紧致的肉壁从四面八方扒来,刺激感从小头一路传到大脑,让???不禁有些把持不住。"
+SAY.Flowchart.242.,,"在短暫的找回自我後,在短暫的找回自我後,魔法師開始緩慢的動了起來,肉棒在小穴裡進進出出,探尋著史黛拉的敏感帶。\n開始緩慢的動了起來,肉棒在小穴裡進進出出,探尋著史黛拉的敏感帶。","在短暫的找回自我後,在短暫的找回自我後,魔法師開始緩慢的動了起來,肉棒在小穴裡進進出出,探尋著史黛拉的敏感帶。\n開始緩慢的動了起來,肉棒在小穴裡進進出出,探尋著史黛拉的敏感帶。","After a brief period of finding himself, after a brief period of finding himself, the wizard began to move slowly, his rod moving in and out of his pussy, probing Stella's sensitive zones.
+Slowly, he began to move his rod in and out of his pussy, exploring Stella's sensitive zones.",「自分自身を見つける短い期間の後、魔法使いはゆっくりと動き始め、彼の棒が彼のアソコに出入りし、ステラの敏感なゾーンを探った。ゆっくりと、彼は動き始めた、彼の棒はステラの敏感なゾーンを探りながら、彼のアソコに出入りした。」,"在短暂的找回自我后,在短暂的找回自我后,魔法师开始缓慢的动了起来,肉棒在小穴里进进出出,探寻着史黛拉的敏感带。 \n开始缓慢的动了起来,肉棒在小穴里进进出出,探寻着史黛拉的敏感带。"
+SAY.Flowchart.243.Stella,,咕哦..!,咕哦..!,Goooooo...!,グーッ…！,咕哦..!
+SAY.Flowchart.244.,,"終於,從史黛拉發出的聲音不是疼痛的嗚鳴,???規律的搖動著腰部,往敏感的地帶進行深度的衝撞。","終於,從史黛拉發出的聲音不是疼痛的嗚鳴,???規律的搖動著腰部,往敏感的地帶進行深度的衝撞。","Finally, the sound coming from Stella was not a whine of pain. The magician shook his waist regularly and penetrated deeply into the sensitive area.",ついにステラからの声は痛みの呻き声ではなく、魔法使いは規則正しく腰を動かし、敏感な部分に深く深く突っ込んだ。,"终于,从史黛拉发出的声音不是疼痛的呜鸣,???规律的摇动着腰部,往敏感的地带进行深度的冲撞。"
+SAY.Flowchart.245.Stella,,嗚哦...!嗚哦....!好厲害!,嗚哦...!嗚哦....!好厲害!,Awww...! A big thank you to ....! Awesome!,うおおお…！うおおお…！すばらしい！,呜哦...!呜哦....!好厉害!
+SAY.Flowchart.246.,,"酥酥麻麻的熱感從小腹一路傳上來,隱隱約約,史黛拉在腦海中想像出了那個幸福國度的畫面。","酥酥麻麻的熱感從小腹一路傳上來,隱隱約約,史黛拉在腦海中想像出了那個幸福國度的畫面。","A numb and numb feeling of heat spread all the way up from her lower abdomen, and Stella vaguely imagined the picture of that happy country in her mind.",ヒリヒリするような熱が腹から上へと伝わり、ステラはぼんやりと、あの幸せな土地の絵を心に思い浮かべた。,"酥酥麻麻的热感从小腹一路传上来,隐隐约约,史黛拉在脑海中想像出了那个幸福国度的画面。"
+SAY.Flowchart.247.Stella,,呼...哈啊...呼哈....,呼...哈啊...呼哈....,Whew... Haha... huh ....,はぁ…はぁ…はぁ…,呼...哈啊...呼哈....
+SAY.Flowchart.248.,,"大力的喘息著,史黛拉沒有想到,通往天國的鏈結是如此的耗神。","大力的喘息著,史黛拉沒有想到,通往天國的鏈結是如此的耗神。","Breathing heavily, Stella hadn't realised that the link to the heavens was so exhausting.",大きく息をついたステラは、天界とのリンクがこれほど疲れるものだとは知らなかった。,"大力的喘息着,史黛拉没有想到,通往天国的链结是如此的耗神。"
+SAY.Flowchart.249.,,"突然,史黛拉發現,只要扭動腰肢,酥麻的刺激感就會更甚。像找到訣竅一樣,史黛拉一邊扭動著身體,一邊收縮著腹部的肌肉。","突然,史黛拉發現,只要扭動腰肢,酥麻的刺激感就會更甚。像找到訣竅一樣,史黛拉一邊扭動著身體,一邊收縮著腹部的肌肉。","Suddenly, Stella realised that by twisting her waist, the tingling sensation would intensify. As if she had found the trick, Stella twisted her body and contracted her abdominal muscles at the same time.",突然、ステラは腰をひねればヒリヒリ感が強まることに気づいた。 まるでトリックを見つけたかのように、ステラは体をひねり、同時に腹筋を収縮させた。,"突然,史黛拉发现,只要扭动腰肢,酥麻的刺激感就会更甚。像找到诀窍一样,史黛拉一边扭动着身体,一边收缩着腹部的肌肉。"
+SAY.Flowchart.250.???,,咕哦...!天才!天才呀!,咕哦...!天才!天才呀!,Oh...! Genius! Genius!,ああ.. 天才だ 天才だ,咕哦...!天才!天才呀!
+SAY.Flowchart.251.,,"史黛拉的動作對雙方都帶來了極大的快感,再度收緊的肉壁將肉棒死死的纏住,彷彿抓住獵物的血盆大口,在費力也無法逃脫掌握。","史黛拉的動作對雙方都帶來了極大的快感,再度收緊的肉壁將肉棒死死的纏住,彷彿抓住獵物的血盆大口,在費力也無法逃脫掌握。","Stella's movements brought great pleasure to both of them, the walls tightened again and wrapped around the rod as if it were a bloody maw that had grabbed its prey and could not be escaped from its grasp even with great effort.",ステラの動きは双方に大きな快感をもたらし、まるで獲物の血まみれの口を捉えたかのように、引き締まった肉壁が肉棒にしっかりと絡みつき、どんなに頑張っても逃れることはできなかった。,"史黛拉的动作对双方都带来了极大的快感,再度收紧的肉壁将肉棒死死的缠住,仿佛抓住猎物的血盆大口,在费力也无法逃脱掌握。"
+SAY.Flowchart.252.Stella,,哈啊....哈啊...神啊...神啊...!啊啊...!,哈啊....哈啊...神啊...神啊...!啊啊...!,.... Ah God... God...!!!! Ahhhh...!!!!,ハア．．． ハア... 神様... 神よ...！ ああ...ああ...!!!,哈啊....哈啊...神啊...神啊...!啊啊...!
+SAY.Flowchart.253.,,"史黛拉開始了禱告,雖然神智不清的她無法正確的念好禱詞,但相信她的虔誠被她所信賴的神都一一看在眼裡。","史黛拉開始了禱告,雖然神智不清的她無法正確的念好禱詞,但相信她的虔誠被她所信賴的神都一一看在眼裡。","Stella began to pray, and although she was too delirious to recite the prayers correctly, she believed that her devotion was seen by the God in whom she trusted.",ステラは祈り始め、錯乱状態で祈りを正確に唱えることはできなかったが、その献身は彼女が信頼している神に見られていると信じていた。,"史黛拉开始了祷告,虽然神智不清的她无法正确的念好祷词,但相信她的虔诚被她所信赖的神都一一看在眼里。"
+SAY.Flowchart.254.Stella,,要去了...!要去了...!請帶我去吧!,要去了...!要去了...!請帶我去吧!,Going for it...! I'm going...! Please take me!,行きます…! 行きます…!連れて行ってくれ,要去了...!要去了...!请带我去吧!
+SAY.Flowchart.255.???,,讓我們...一起...,讓我們...一起...,Let's... Together...,一緒に... 一緒に...,让我们...一起...
+SAY.Flowchart.257.,,"大量的精液從肉棒被擠出,像是被捏著的水管承受不住爆發一樣,狠狠的充向史黛拉的子宮。","大量的精液從肉棒被擠出,像是被捏著的水管承受不住爆發一樣,狠狠的充向史黛拉的子宮。",Haha... Haaaa... Yaah !!!!!,ハハ... ハア... ヤアアアアアアアアアアアアアアアアアアアアアアアア!!!!,"大量的精液从肉棒被挤出,像是被捏着的水管承受不住爆发一样,狠狠的充向史黛拉的子宫。"
+SAY.Flowchart.256.Stella,,哈啊...哈啊...呀啊啊啊啊啊啊!!!!!,哈啊...哈啊...呀啊啊啊啊啊啊!!!!!,"A large amount of semen was squeezed out of the rod, and like a pinched hose that couldn't take the burst, it filled Stella's uterus hard.",竿から大量の精液が絞り出され、破裂に耐え切れずつまったホースのように、ステラの子宮に怒涛のごとく襲いかかった。,哈啊...哈啊...呀啊啊啊啊啊啊!!!!!
+SAY.Flowchart.258.,,"同一時間,史黛拉的初次高潮帶給了她額外的體驗,眼前一片空白卻不影響史黛拉看見天國的樣子。","同一時間,史黛拉的初次高潮帶給了她額外的體驗,眼前一片空白卻不影響史黛拉看見天國的樣子。","At the same time, Stella's first orgasm gave her an extra experience. The blankness in front of her eyes did not affect Stella's vision of heaven.",同時に、ステラの最初のオーガズムは彼女に特別な経験を与えました。彼女の目の前の空白はステラの天国のビジョンに影響を与えませんでした。,"同一时间,史黛拉的初次高潮带给了她额外的体验,眼前一片空白却不影响史黛拉看见天国的样子。"
+SAY.Flowchart.259.Stella,,好幸福...這就是..天國...!,好幸福...這就是..天國...!,So happy...this is...the kingdom of heaven...!,とても幸せです...ここは...天国です...!,好幸福...这就是..天国...!
+SAY.Flowchart.260.,,"在此時此刻,史黛拉忘卻了人世間的煩惱,不用思考著誰的苦難,也無須思考今天晚上要吃甚麼,種種的問題都被拋到九霄雲外,在某種意義上,真正的來到了天國。","在此時此刻,史黛拉忘卻了人世間的煩惱,不用思考著誰的苦難,也無須思考今天晚上要吃甚麼,種種的問題都被拋到九霄雲外,在某種意義上,真正的來到了天國。","At this moment, Stella forgot about the troubles in the world. She didn’t need to think about whose suffering or what she was going to eat tonight. All kinds of problems were thrown away. In a sense, she had truly arrived. Heaven.",この瞬間、ステラはこの世の悩みを忘れ、誰の苦しみを考える必要もなく、今夜何を食べようかと考える必要もなく、あらゆる問題が風と共に去り、ある意味、本当に天の御国にやって来たのだ。,"在此时此刻,史黛拉忘却了人世间的烦恼,不用思考着谁的苦难,也无须思考今天晚上要吃什么,种种的问题都被抛到九霄云外,在某种意义上,真正的来到了天国。"
+SAY.Flowchart.261.,,"史黛拉雙手扣著嘴上念念有詞,放服要將世間的苦痛全都消除一般,看著悟出道了的史黛拉,???悄聲無息的離開了房間,消失在夜色之中.......","史黛拉雙手扣著嘴上念念有詞,放服要將世間的苦痛全都消除一般,看著悟出道了的史黛拉,???悄聲無息的離開了房間,消失在夜色之中.......","Stella hands clasped on the mouth recited words, put on the service to eliminate all the suffering in the world in general, look at the enlightenment of Stella, the wizard quietly and quietly left the room, disappeared in the night .......",真実を悟ったステラを見て、魔法使いは静かに部屋を出て夜の闇に消えていった……。,"史黛拉双手扣着嘴上念念有词,放服要将世间的苦痛全都消除一般,看着悟出道了的史黛拉,???悄声无息的离开了房间,消失在夜色之中. ......"
 CHARACTER.Stella,,Stella,史黛菈,Stella,ステラ,
 CHARACTER.Mia,,Mia,米婭,Mia,ミア,
 CHARACTER.???,,???,???,???,???,

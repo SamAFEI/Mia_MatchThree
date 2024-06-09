@@ -27,6 +27,18 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5932d9cd830c9ab46ab3126a1e81bd45
+    m_Address: Assets/Localization/UISprite Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5407e18721c22b94db7fc500a662800b
+    m_Address: "TCN\u6A19\u984C"
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-zh-Hans
+    - Locale-zh-TW
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 9bd6233dfbddc2647a3a9e55d030d255, type: 2}
   m_SchemaSet:

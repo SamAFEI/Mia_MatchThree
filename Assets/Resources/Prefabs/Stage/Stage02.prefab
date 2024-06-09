@@ -36,6 +36,14 @@ PrefabInstance:
       propertyPath: StageName
       value: Stage02
       objectReference: {fileID: 0}
+    - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
+      propertyPath: HideSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a85a6852aaa94b74996d27b72d6424df, type: 3}
+    - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
+      propertyPath: StageSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: fa81537625e587b44936e3a05fb3b36b, type: 3}
     - target: {fileID: 6749459902699436239, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: m_Pivot.x
       value: 0

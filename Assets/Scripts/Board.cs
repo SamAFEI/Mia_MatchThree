@@ -694,7 +694,7 @@ public class Board : MonoBehaviour
     private void DoPoison()
     {
         if (Poison == 0) { return; }
-        Player.Instance.Hurt((int)Poison);
+        Player.Instance.Hurt((int)Poison); 
     }
     #endregion
 

@@ -187,6 +187,7 @@ GameObject:
   - component: {fileID: 22268826}
   - component: {fileID: 11493918}
   - component: {fileID: 11419088}
+  - component: {fileID: 4847305486131480676}
   m_Layer: 5
   m_Name: Continue
   m_TagString: Untagged
@@ -235,7 +236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -308,6 +309,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4847305486131480676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 5225357640450179074
+  references:
+    version: 2
+    RefIds:
+    - rid: 5225357640450179074
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 11493918}
+        m_TrackedProperties:
+          items:
+          - rid: 5225357640450179075
+        m_UpdateType: 0
+    - rid: 5225357640450179075
+      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: m_Color.a
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: zh-TW
+          value: 0.5882353
+        - localeIdentifier:
+            m_Code: zh-Hans
+          value: 0.5882353
 --- !u!1 &188894
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,7 +504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.25882354, g: 0.25490198, b: 0.2627451, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -501,6 +538,7 @@ GameObject:
   - component: {fileID: 11488904}
   - component: {fileID: 22583964}
   - component: {fileID: 11478524}
+  - component: {fileID: 6003845659424791895}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -551,7 +589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.39215687}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -609,6 +647,42 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &6003845659424791895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69beb381e244f92449b8c4cf954630e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TrackedObjects:
+  - rid: 5225357640450179082
+  references:
+    version: 2
+    RefIds:
+    - rid: 5225357640450179082
+      type: {class: TrackedUGuiGraphic, ns: UnityEngine.Localization.PropertyVariants.TrackedObjects, asm: Unity.Localization}
+      data:
+        m_Target: {fileID: 11488904}
+        m_TrackedProperties:
+          items:
+          - rid: 5225357640450179083
+        m_UpdateType: 0
+    - rid: 5225357640450179083
+      type: {class: FloatTrackedProperty, ns: UnityEngine.Localization.PropertyVariants.TrackedProperties, asm: Unity.Localization}
+      data:
+        m_PropertyPath: m_Color.a
+        m_VariantData:
+        - localeIdentifier:
+            m_Code: zh-TW
+          value: 0.78431374
+        - localeIdentifier:
+            m_Code: zh-Hans
+          value: 0.5882353
 --- !u!1 &188902
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,7 +14,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: ATK
-      value: 8000
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: Data
@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 047206130b945b54c9bc7859a7cc4e55, type: 2}
     - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: MaxHP
-      value: 600000
+      value: 900000
       objectReference: {fileID: 0}
     - target: {fileID: 647897162921806808, guid: 734cefad5fdd0a44da162a09fd4177a5, type: 3}
       propertyPath: AnimName

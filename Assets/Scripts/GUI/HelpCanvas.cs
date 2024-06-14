@@ -24,9 +24,9 @@ public class HelpCanvas : MonoBehaviour
     public Button BtnNext { get; private set; }
     public Button BtnExit { get; private set; }
     public GameObject Area { get; private set; }
-    public List<Sprite> PagesSprite;
     public Image FrameImage { get; private set; }
     public int PageIndex { get; private set; }
+    public List<GameObject> Pages = new List<GameObject>();
     private void Awake()
     {
         if (instance != null)
@@ -35,35 +35,51 @@ public class HelpCanvas : MonoBehaviour
             return;
         }
         Area = transform.Find("Area").gameObject;
+        BtnPrevious = transform.Find("Area/BtnPrevious").GetComponent<Button>();
+        BtnNext = transform.Find("Area/BtnNext").GetComponent<Button>();
+        BtnExit = transform.Find("Area/BtnExit").GetComponent<Button>();
         FrameImage = transform.Find("Area/Frame").GetComponent<Image>();
-        BtnPrevious = transform.Find("Area/Frame/BtnPrevious").GetComponent<Button>();
-        BtnNext = transform.Find("Area/Frame/BtnNext").GetComponent<Button>();
-        BtnExit = transform.Find("Area/Frame/BtnExit").GetComponent<Button>();
     }
     private void Start()
     {
-        //FrameImage.sprite = PagesSprite[PageIndex];
-        BtnExit.onClick.AddListener(() => { Instance.Area.SetActive(false); });
+        for (int i = 0; i < Pages.Count; i++)
+        {
+            Pages[i].SetActive(false);
+        }
+        Pages[PageIndex].SetActive(true);
+        BtnExit.onClick.AddListener(() =>
+        {
+            GameManager.Instance.IsHelped = true;
+            Instance.Area.SetActive(false);
+        });
         BtnPrevious.onClick.AddListener(() =>
         {
-            if (PageIndex < PagesSprite.Count - 1)
+            if (PageIndex > 0)
             {
-                PageIndex++;
-                FrameImage.sprite = PagesSprite[PageIndex];
+                Pages[PageIndex].SetActive(false);
+                PageIndex--;
+                Pages[PageIndex].SetActive(true);
             }
         });
         BtnNext.onClick.AddListener(() =>
         {
-            if (PageIndex > 0)
+            if (PageIndex < Pages.Count - 1)
             {
-                PageIndex--;
-                FrameImage.sprite = PagesSprite[PageIndex];
+                Pages[PageIndex].SetActive(false);
+                PageIndex++;
+                Pages[PageIndex].SetActive(true);
             }
         });
+    }
+    private void Update()
+    {
+        BtnPrevious.interactable = PageIndex > 0;
+        BtnNext.interactable = PageIndex < (Pages.Count - 1);
     }
     public static void ShowCanvas()
     {
         Instance.Area.SetActive(true);
+        GameManager.Instance.IsHelped = true;
     }
 
     private static void CreateDefault()

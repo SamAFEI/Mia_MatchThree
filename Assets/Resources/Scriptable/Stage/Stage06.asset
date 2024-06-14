@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Stage06
   m_EditorClassIdentifier: 
   Character: {fileID: 2379232121419161926, guid: 2fe2fb3bba647f54c8a4dba9cefdb15c, type: 3}
-  MaxHP: 600000
+  MaxHP: 900000
   Id: 5
-  ATK: 8000
+  ATK: 10000
   AnimName: hiyori_m08
   StageName: Stage06
-  IsComplete: 1
+  IsComplete: 0
   PriorStage: {fileID: 11400000, guid: f4f6a401051556e4a9136a192a7f0d6a, type: 2}
   Background: {fileID: 21300000, guid: 9159ddbffd7674742a25e1baab5b2f52, type: 3}
   SlashFX: {fileID: 2591296678764458575, guid: df723cf0673d66e458d9c75c166d9a9c, type: 3}

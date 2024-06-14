@@ -68,6 +68,7 @@ namespace Assets.Scripts.Manager
         {
             Instance.gameData = new GameData();
             Instance.gameData.Coin = 4000;
+            Instance.gameData.IsHelped = false;
         }
         public static void LoadGame()
         {

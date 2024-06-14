@@ -6,6 +6,7 @@ namespace Assets.Scripts
     public class GameData
     {
         public int Coin;
+        public bool IsHelped;
         public StageStore CurrentStage;
         public List<StageStore> Stages = new List<StageStore>();
         public List<SkillStore> Skills = new List<SkillStore>();

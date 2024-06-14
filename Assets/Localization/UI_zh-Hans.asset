@@ -38,16 +38,29 @@ MonoBehaviour:
     m_Localized: "\u53D6\u6D88"
     m_Metadata:
       m_Items: []
-  - m_Id: 10551924038942720
-    m_Localized: set_sprite
+  - m_Id: 12761814427234304
+    m_Localized: "\u82B1\u8D39$\u5347\u7EA7\u6280\u80FD"
     m_Metadata:
       m_Items: []
-  - m_Id: 10551924055719936
-    m_Localized: UnityEngine.Object, UnityEngine
+  - m_Id: 12761814448205824
+    m_Localized: "\u9009\u53D6\u5173\u5361"
     m_Metadata:
       m_Items: []
-  - m_Id: 10552111075540992
-    m_Localized: GUID:5932d9cd830c9ab46ab3126a1e81bd45
+  - m_Id: 12761814448205825
+    m_Localized: "\u70B9\u51FB\u5BF9\u8BDD\u6846\u7EE7\u7EED\n\u5DE6Ctrl \u52A0\u901F\n\u5DE6Alt
+      \u9690\u85CF(\u663E\u793A)\u5BF9\u8BDD\u6846"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12761814448205826
+    m_Localized: "\u5012\u6570\u56DE\u5408\u6570 \u53CA \u654C\u65B9HP"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12761814448205827
+    m_Localized: "Buff \u663E\u793A \u53CA \u6211\u65B9HP"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12761814448205828
+    m_Localized: "\u53EF\u4F7F\u7528\u6280\u80FD"
     m_Metadata:
       m_Items: []
   references:

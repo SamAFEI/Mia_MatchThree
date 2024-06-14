@@ -38,6 +38,35 @@ MonoBehaviour:
     m_Localized: Cancel
     m_Metadata:
       m_Items: []
+  - m_Id: 12761814427234304
+    m_Localized: Spend $ to upgrade skills
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12761814448205824
+    m_Localized: Selection tasks
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12761814448205826
+    m_Localized: Countdown number of rounds and enemy HP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12761814448205827
+    m_Localized: Buff display and HP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12761814448205828
+    m_Localized: Available skills
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12761814448205825
+    m_Localized: 'Click on the dialog box to continue
+
+      Left Ctrl to accelerate
+
+      Left
+      Alt hides (shows) the dialog box'
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

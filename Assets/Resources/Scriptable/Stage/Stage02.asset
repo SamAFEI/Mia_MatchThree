@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Stage02
   m_EditorClassIdentifier: 
   Character: {fileID: 6279108308481357563, guid: 9c7d415b0b16692469a007ebb6a02c60, type: 3}
-  MaxHP: 600000
+  MaxHP: 900000
   Id: 1
-  ATK: 8000
+  ATK: 10000
   AnimName: Idle
   StageName: Stage02
-  IsComplete: 0
+  IsComplete: 1
   PriorStage: {fileID: 11400000, guid: 976ea2d783bd9cf4bbd42ca927036461, type: 2}
   Background: {fileID: 21300000, guid: d4d8810e8030f3f4fbef85fb1f9b7624, type: 3}
   SlashFX: {fileID: 9178572341572247942, guid: ad16f58e66e01b643b0a5ae66a4c1551, type: 3}

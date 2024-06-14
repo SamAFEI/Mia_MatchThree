@@ -35,16 +35,28 @@ MonoBehaviour:
     m_Key: BtnCancel
     m_Metadata:
       m_Items: []
-  - m_Id: 10551924038942720
-    m_Key: TitleScene/Canvas/Title
+  - m_Id: 12761814427234304
+    m_Key: SkillUpHint
     m_Metadata:
       m_Items: []
-  - m_Id: 10551924055719936
-    m_Key: TitleScene/Canvas/Title 1
+  - m_Id: 12761814448205824
+    m_Key: SelectStageHint
     m_Metadata:
       m_Items: []
-  - m_Id: 10552111075540992
-    m_Key: TitleScene/Canvas/Title 2
+  - m_Id: 12761814448205825
+    m_Key: DialogHint
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12761814448205826
+    m_Key: EnemyHint
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12761814448205827
+    m_Key: PlayerHint
+    m_Metadata:
+      m_Items: []
+  - m_Id: 12761814448205828
+    m_Key: SkillHint
     m_Metadata:
       m_Items: []
   m_Metadata:

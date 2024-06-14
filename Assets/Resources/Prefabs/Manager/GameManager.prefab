@@ -44,4 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04045edef93d43747bc37c5f8d5a7278, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CurrentStageBtnName: 
+  CursorDefault: {fileID: 0}
+  CursorSwap: {fileID: 0}
+  CursorBreak: {fileID: 0}
+  IsMosaic: 1

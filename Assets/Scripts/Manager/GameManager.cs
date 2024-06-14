@@ -32,6 +32,7 @@ public class GameManager : MonoBehaviour, ISaveManager
     public Texture2D CursorSwap;
     public Texture2D CursorBreak;
     public bool IsMosaic;
+    public bool IsHelped;
     private void Awake()
     {
         if (instance != null)
@@ -130,7 +131,7 @@ public class GameManager : MonoBehaviour, ISaveManager
         Instance.CursorSwap = Resources.Load<Texture2D>("Sprites/GUI/CursorSwap");
         Instance.CursorBreak = Resources.Load<Texture2D>("Sprites/GUI/CursorBreak");
         InitStages();
-        Stage stage = Resources.Load<Stage>("Prefabs/Stage/Stage05");
+        Stage stage = Resources.Load<Stage>("Prefabs/Stage/Stage01");
         Instance.CurrentStage = stage;
         SetCursorDefault();
     }
@@ -143,7 +144,7 @@ public class GameManager : MonoBehaviour, ISaveManager
         }
     }
 
-    public static IEnumerator ShakeCamera(float _duration, float magnitude) 
+    public static IEnumerator ShakeCamera(float _duration, float magnitude)
     {
         Camera _camera = Camera.main;
         Vector3 orignalPos = _camera.transform.localPosition;
@@ -163,6 +164,7 @@ public class GameManager : MonoBehaviour, ISaveManager
 
     public void LoadData(GameData _data)
     {
+        Instance.IsHelped = _data.IsHelped;
         if (_data.CurrentStage != null)
         {
             foreach (Stage stage in Instance.Stages)
@@ -190,6 +192,7 @@ public class GameManager : MonoBehaviour, ISaveManager
 
     public void SaveData(ref GameData _data)
     {
+        _data.IsHelped = Instance.IsHelped;
         _data.CurrentStage = new StageStore(Instance.CurrentStage.Data);
         _data.Stages = new List<StageStore>();
         foreach (Stage stage in Instance.Stages)

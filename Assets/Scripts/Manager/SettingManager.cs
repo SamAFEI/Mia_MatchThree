@@ -109,7 +109,7 @@ public class SettingManager : MonoBehaviour , ISaveManager
     {
         Instance.Language = (LanguageEnum)_index;;
         Instance.StartCoroutine(Instance.SetLocale(_index));
-        Debug.Log(Instance.Language.ToString());
+        //Debug.Log(Instance.Language.ToString());
     }
     public static void SetResolution(int _index)
     {
@@ -168,19 +168,17 @@ public class SettingManager : MonoBehaviour , ISaveManager
             }
         }
         Instance.ResolutionsDropdown.AddOptions(options);
+        int _value = Instance.Resolutions.Count - 1;
         for (int i = 0; i < Instance.Resolutions.Count; i++)
         {
             if (Instance.Resolutions[i].width == Instance.ResolutionWidth &&
                 Instance.Resolutions[i].height == Instance.ResolutionHeight)
             {
-                Instance.ResolutionsDropdown.value = i;
+                _value = i;
                 break;
             }
-            else
-            {
-                Instance.ResolutionsDropdown.value = Instance.Resolutions.Count - 2;
-            }
         }
+        Instance.ResolutionsDropdown.value = _value;
         Instance.ResolutionsDropdown.RefreshShownValue();
         SetResolution(Instance.ResolutionsDropdown.value);
     }

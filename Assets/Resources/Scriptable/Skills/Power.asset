@@ -40,12 +40,12 @@ MonoBehaviour:
     m_FallbackState: 0
     m_WaitForCompletion: 0
     m_LocalVariables: []
-  Level: 0
+  Level: 1
   MaxLevel: 2
   Values:
-  - 1.5
   - 2
-  - 2.5
+  - 3
+  - 4
   Costs: c4090000a00f000000000000
   ColdDowns: 040000000400000004000000
   Durations: 020000000200000002000000

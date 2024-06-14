@@ -23,6 +23,10 @@ public class MainScene : MonoBehaviour
         AudioManager.PlayMainBGM();
         TooltipManager.ShowToolTip("");
         SaveManager.LoadGame();
+        if (!GameManager.Instance.IsHelped) 
+        { 
+            HelpCanvas.ShowCanvas();
+        }
     }
     private void Update()
     {
